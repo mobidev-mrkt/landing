@@ -144,13 +144,14 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .pkg-foot a{color:var(--green-dark);font-weight:700}
 
 /* case */
-.case{background:var(--black);color:var(--white);border-radius:20px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.case{background:var(--black);color:var(--white);border-radius:20px;padding:56px}
 .case h2{color:var(--white);font-size:34px}
 .case p{color:#C9CCCB;margin-top:18px;font-size:17px}
-.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:14px;padding:22px 24px;display:flex;align-items:center;gap:14px;min-height:88px}
-.metric b{flex:0 0 auto;font-family:var(--font-display);font-weight:900;font-size:32px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.02em;white-space:nowrap}
-.metric span{font-size:16px;color:#E6E8E7;line-height:1.3}
+.case-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;padding-top:36px;border-top:1px solid #3A3A3A}
+.metric{padding:0 28px;border-left:1px solid #3A3A3A}
+.metric:first-child{padding-left:0;border-left:none}
+.metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.02em;line-height:1}
+.metric span{display:block;margin-top:10px;font-size:13px;color:#9A9D9C;text-transform:uppercase;letter-spacing:.06em;line-height:1.4}
 
 /* reviews (Clutch widget) */
 .rev-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin:64px 0 20px}
@@ -207,24 +208,10 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .step p{font-size:15px}
 .steps-note{margin-top:28px;font-size:15px;color:var(--muted)}
 
-/* sample report */
+/* deliverable list */
 #deliverable ul{list-style:none;display:grid;gap:12px;margin-top:24px}
 #deliverable li{display:flex;gap:11px;font-size:16px;color:var(--black)}
 #deliverable li::before{content:"";flex:0 0 16px;height:16px;margin-top:5px;border-radius:50%;background:var(--green)}
-.doc{background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 50px rgba(34,34,34,.10);overflow:hidden}
-.doc-top{display:flex;gap:6px;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--sec-white)}
-.doc-top i{width:10px;height:10px;border-radius:50%;background:#D9D9D9;display:block}
-.doc-body{padding:26px}
-.doc-h{font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:4px}
-.doc-meta{font-size:13px;color:var(--muted);margin-bottom:20px}
-.doc-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
-.sev{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:5px;white-space:nowrap}
-.sev.hi{background:#FDE7E4;color:#B23A2B}
-.sev.md{background:#FDF3DC;color:#8A6206}
-.sev.lo{background:#E9FAF0;color:#0D7A44}
-.doc-row span{font-size:14px;color:var(--black)}
-.doc-row em{font-style:normal;margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
-.doc-foot{margin-top:18px;font-size:12px;color:var(--muted)}
 
 /* team */
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -271,13 +258,6 @@ img.avatar{object-fit:cover;display:block}
 .final p{color:#C9CCCB;font-size:18px;margin-top:18px}
 .guar{margin-top:28px;display:grid;gap:12px}
 .guar div{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#E6E8E7}
-form{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:32px}
-.f-row{margin-bottom:18px}
-label{display:block;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C9CCCB;margin-bottom:8px}
-input,select,textarea{width:100%;background:#222;border:1px solid #4A4A4A;border-radius:8px;padding:14px;color:var(--white);font-family:var(--font-body);font-size:16px}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
-textarea{min-height:96px;resize:vertical}
-.f-note{font-size:13px;color:#9A9D9C;margin-top:14px;text-align:center}
 
 /* footer */
 footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;padding:32px 0;font-size:14px}
@@ -290,11 +270,13 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 @media(max-width:980px){
   h1{font-size:38px}h2{font-size:31px}
-  .hero-in,.final-in,.case{grid-template-columns:1fr;gap:36px}
+  .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
   .case{padding:36px}
+  .case-metrics{grid-template-columns:1fr 1fr;row-gap:28px}
+  .metric:nth-child(2){border-left:1px solid #3A3A3A}
+  .metric:nth-child(odd){padding-left:0;border-left:none}
   .pains,.pkgs,.why,.compare,.team,.notfor ul{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .sample{grid-template-columns:1fr;gap:32px}
   .pkg .desc,.pkg h3{min-height:0}
   .nav-links a:not(.btn){display:none}
   section{padding:64px 0}
@@ -645,10 +627,10 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <a href="#start" class="btn btn-primary" style="margin-top:28px">Start with an audit</a>
       </div>
       <div class="case-metrics">
-        <div class="metric"><b>3</b><span>Critical Issues Found</span></div>
-        <div class="metric"><b>72 h</b><span>for Audit + 2 fixes</span></div>
-        <div class="metric"><b>3</b><span>business risks detected</span></div>
-        <div class="metric"><b>$50K</b><span>Investment Raised</span></div>
+        <div class="metric"><b>3</b><span>Critical issues found</span></div>
+        <div class="metric"><b>72h</b><span>Audit + 2 fixes delivered</span></div>
+        <div class="metric"><b>3</b><span>Business risks detected</span></div>
+        <div class="metric"><b>$50K</b><span>Investment raised after</span></div>
       </div>
     </div>
 
@@ -738,51 +720,16 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 <!-- FINAL CTA -->
 <section id="start" class="final">
-  <div class="wrap final-in">
-    <div>
-      <div class="eyebrow" style="color:var(--green)">Get started</div>
-      <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
-      <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
-      <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
-      <div class="guar">
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Card is only held, not charged, until you approve</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
-      </div>
+  <div class="wrap" style="max-width:640px;text-align:center">
+    <div class="eyebrow" style="color:var(--green)">Get started</div>
+    <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
+    <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
+    <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
+    <div class="guar" style="text-align:left;max-width:460px;margin:28px auto 0">
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Card is only held, not charged, until you approve</div>
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
     </div>
-
-    <form name="vibecode-audit" method="POST" data-netlify="true" netlify-honeypot="company-website">
-      <input type="hidden" name="form-name" value="vibecode-audit">
-      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
-      <h3 style="color:#fff;font-size:19px;margin-bottom:8px">Not sure which package fits?</h3>
-      <p style="color:#9A9D9C;font-size:14px;margin-bottom:22px">Tell us what you're stuck on and we'll reply with a scope and a fixed price.</p>
-      <div class="f-row">
-        <label for="pkg">Package</label>
-        <select id="pkg" name="package">
-          <option>Vibecode Product Audit · $399</option>
-          <option selected>Audit + Single Bug Fix · $899</option>
-          <option>Audit + Two Fixes + Action Plan · $1,099</option>
-        </select>
-      </div>
-      <div class="f-row">
-        <label for="name">Your name</label>
-        <input id="name" name="name" required placeholder="Alex Rivera">
-      </div>
-      <div class="f-row">
-        <label for="email">Work email</label>
-        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
-      </div>
-      <div class="f-row">
-        <label for="repo">Repo link or how you'll share the code</label>
-        <input id="repo" name="repo" placeholder="github.com/… or “I'll send a .zip”">
-      </div>
-      <div class="f-row">
-        <label for="stuck">What are you most stuck on?</label>
-        <textarea id="stuck" name="stuck" placeholder="Checkout breaks for about 1 in 5 users and AI keeps making it worse…"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-full">Send it over</button>
-      <p class="f-note">We reply with a scope and a fixed price. No card details in this form.<br>By ordering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
-    </form>
   </div>
 </section>
 
@@ -882,8 +829,8 @@ document.querySelectorAll('[data-pkg]').forEach(function(b){
   var tier=b.getAttribute('data-tier'), url=tier?CHECKOUT_LINKS[tier]:'';
   if(url){ b.setAttribute('href',url); return; }           // pay online
   b.addEventListener('click',function(){                   // fallback: preselect in form
-    var v=b.getAttribute('data-pkg'), s=document.getElementById('pkg');
-    for(var i=0;i<s.options.length;i++){if(s.options[i].text===v){s.selectedIndex=i;break;}}
+    var v=b.getAttribute('data-pkg');
+    document.querySelectorAll('input[name="package"]').forEach(function(r){ r.checked=(r.value===v); });
   });
 });
 </script>
