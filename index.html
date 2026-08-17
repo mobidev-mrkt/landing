@@ -786,9 +786,9 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 <script>
 /* ─────────────────────────────────────────────────────────────
-   CHECKOUT LINKS. Paste the Stripe Payment Link (or Paddle /
-   LemonSqueezy checkout URL) for each tier here.
-   While a link is empty, the button falls back to the intake form.
+   CHECKOUT LINKS. Paste the PayPal (or other) checkout URL for
+   each tier here. While a link is empty, the button falls back
+   to the "Choose your package" CTA at #start.
    ───────────────────────────────────────────────────────────── */
 var CHECKOUT_LINKS = {
   tier1: '', // $399  Vibecode Product Audit
@@ -807,11 +807,7 @@ else { document.querySelectorAll('.reveal').forEach(function(el){ el.classList.a
 
 document.querySelectorAll('[data-pkg]').forEach(function(b){
   var tier=b.getAttribute('data-tier'), url=tier?CHECKOUT_LINKS[tier]:'';
-  if(url){ b.setAttribute('href',url); return; }           // pay online
-  b.addEventListener('click',function(){                   // fallback: preselect in form
-    var v=b.getAttribute('data-pkg');
-    document.querySelectorAll('input[name="package"]').forEach(function(r){ r.checked=(r.value===v); });
-  });
+  if(url){ b.setAttribute('href',url); }
 });
 </script>
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
