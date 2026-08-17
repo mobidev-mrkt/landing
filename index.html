@@ -60,11 +60,11 @@ a{color:inherit}
 .hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - 72px);padding:clamp(32px,5vh,64px) 0}
 .hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
 .hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;width:100%}
-.hero h1{color:var(--white);font-size:clamp(30px,3.2vw + 8px,48px)}
+.hero h1{color:var(--white);font-size:clamp(28px,2.8vw + 8px,42px);line-height:1.04}
 .hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-sub{color:#C9CCCB;font-size:clamp(16px,1.2vw + 6px,19px);margin-top:clamp(12px,1.8vh,22px);max-width:540px}
-.hero-cta{display:flex;gap:12px;margin-top:clamp(18px,2.6vh,32px);flex-wrap:wrap}
-.trust{list-style:none;margin-top:clamp(18px,2.8vh,32px);display:flex;flex-wrap:wrap;gap:12px 22px}
+.hero-sub{color:#C9CCCB;font-size:clamp(15px,1vw + 6px,17px);margin-top:clamp(10px,1.4vh,16px);max-width:540px}
+.hero-cta{display:flex;gap:12px;margin-top:clamp(14px,2vh,22px);flex-wrap:wrap}
+.trust{list-style:none;margin-top:clamp(12px,1.8vh,20px);display:flex;flex-wrap:wrap;gap:10px 20px}
 .trust li{display:flex;gap:9px;align-items:center;color:#fff;font-size:15px;font-weight:700}
 .tick{flex:0 0 20px;height:20px;border-radius:50%;background:var(--green);display:grid;place-items:center}
 .tick svg{width:11px;height:11px}
@@ -385,7 +385,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <!-- PAINS -->
 <section id="pains" class="grey">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head" style="max-width:none">
       <div class="eyebrow">Sound familiar?</div>
       <h2>You're not the only one stuck</h2>
       <p>Three messages we get almost every week, in the founders' own words. Names withheld, they asked.</p>
@@ -449,6 +449,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         </ul>
       </article>
       <article class="cmp win reveal" style="transition-delay:.16s">
+        <div class="cmp-badge">Recommended</div>
         <h3>Vibecode Product Audit</h3>
         <p class="cmp-sub">This page</p>
         <ul>
@@ -604,7 +605,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <p class="desc">The extended 360° audit with a detailed architecture report and a development roadmap: you see exactly what you have and what to do next, instead of guessing. And we fix the two most critical blockers while we're in there.</p>
         <div class="price">$1,099<small>fixed price</small></div>
         <div class="timeline">⏱ 3 business days</div>
-        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Two Fixes + Action Plan · $1,099">Future-proof it · $1,099</a>
+        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Two Fixes + Action Plan · $1,099">Future-proof your app · $1,099</a>
         <div class="scope-t">Scope and deliverables</div>
         <ul class="scope">
           <li>Everything in Audit + Single Bug Fix</li>
@@ -742,6 +743,57 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <p>With over two decades in software engineering, Rustam specializes in scalable AI, SaaS, and cloud solutions. His multi-stack expertise spans .NET, Azure, Go, Rust, and React. At MobiDev, he drives AIDD adoption and mentors engineers to become top-tier practitioners.</p>
       </article>
     </div>
+    <a href="#start" class="btn btn-dark" style="margin-top:32px">Start with an audit</a>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="start" class="final">
+  <div class="wrap final-in">
+    <div>
+      <div class="eyebrow" style="color:var(--green)">Get started</div>
+      <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
+      <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
+      <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
+      <div class="guar">
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Card is only held, not charged, until you approve</div>
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
+      </div>
+      <p style="margin-top:24px;font-size:15px;color:#9A9D9C">Not sure which package fits, or your case looks bigger than the three above? Use the form and we'll reply with a scope and a fixed price.</p>
+    </div>
+
+    <form name="vibecode-audit" method="POST" data-netlify="true" netlify-honeypot="company-website">
+      <input type="hidden" name="form-name" value="vibecode-audit">
+      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
+      <div class="f-row">
+        <label for="pkg">Package</label>
+        <select id="pkg" name="package">
+          <option>Vibecode Product Audit · $399</option>
+          <option selected>Audit + Single Bug Fix · $899</option>
+          <option>Audit + Two Fixes + Action Plan · $1,099</option>
+          <option>Not sure yet, help me choose</option>
+        </select>
+      </div>
+      <div class="f-row">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required placeholder="Alex Rivera">
+      </div>
+      <div class="f-row">
+        <label for="email">Work email</label>
+        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
+      </div>
+      <div class="f-row">
+        <label for="repo">Repo link or how you'll share the code</label>
+        <input id="repo" name="repo" placeholder="github.com/… or “I'll send a .zip”">
+      </div>
+      <div class="f-row">
+        <label for="stuck">What are you most stuck on?</label>
+        <textarea id="stuck" name="stuck" placeholder="Checkout breaks for about 1 in 5 users and AI keeps making it worse…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Send it over</button>
+      <p class="f-note">We reply with a scope and a fixed price. No card details in this form.<br>By ordering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
+    </form>
   </div>
 </section>
 
@@ -796,56 +848,6 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       </details>
 
     </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section id="start" class="final">
-  <div class="wrap final-in">
-    <div>
-      <div class="eyebrow" style="color:var(--green)">Get started</div>
-      <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
-      <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
-      <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
-      <div class="guar">
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Card is only held, not charged, until you approve</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
-      </div>
-      <p style="margin-top:24px;font-size:15px;color:#9A9D9C">Not sure which package fits, or your case looks bigger than the three above? Use the form and we'll reply with a scope and a fixed price.</p>
-    </div>
-
-    <form name="vibecode-audit" method="POST" data-netlify="true" netlify-honeypot="company-website">
-      <input type="hidden" name="form-name" value="vibecode-audit">
-      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
-      <div class="f-row">
-        <label for="pkg">Package</label>
-        <select id="pkg" name="package">
-          <option>Vibecode Product Audit · $399</option>
-          <option selected>Audit + Single Bug Fix · $899</option>
-          <option>Audit + Two Fixes + Action Plan · $1,099</option>
-          <option>Not sure yet, help me choose</option>
-        </select>
-      </div>
-      <div class="f-row">
-        <label for="name">Your name</label>
-        <input id="name" name="name" required placeholder="Alex Rivera">
-      </div>
-      <div class="f-row">
-        <label for="email">Work email</label>
-        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
-      </div>
-      <div class="f-row">
-        <label for="repo">Repo link or how you'll share the code</label>
-        <input id="repo" name="repo" placeholder="github.com/… or “I'll send a .zip”">
-      </div>
-      <div class="f-row">
-        <label for="stuck">What are you most stuck on?</label>
-        <textarea id="stuck" name="stuck" placeholder="Checkout breaks for about 1 in 5 users and AI keeps making it worse…"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-full">Send it over</button>
-      <p class="f-note">We reply with a scope and a fixed price. No card details in this form.<br>By ordering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
-    </form>
   </div>
 </section>
 
