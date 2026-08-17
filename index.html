@@ -228,7 +228,10 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .doc-foot{margin-top:18px;font-size:12px;color:var(--muted)}
 
 /* team */
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mate-cta{display:flex;flex-direction:column;justify-content:center;background:var(--sec-white);border-style:dashed}
+.mate-cta h3{margin-bottom:8px}
+.mate-cta p{margin-bottom:20px}
 .mate{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white)}
 .avatar{width:64px;height:64px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;color:#B7BAB9;margin-bottom:16px}
 .mate h3{font-size:18px}
@@ -742,8 +745,12 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <div class="role">Solutions Architect at MobiDev, AIDD Approach Evangelist, AI Certified Expert</div>
         <p>With over two decades in software engineering, Rustam specializes in scalable AI, SaaS, and cloud solutions. His multi-stack expertise spans .NET, Azure, Go, Rust, and React. At MobiDev, he drives AIDD adoption and mentors engineers to become top-tier practitioners.</p>
       </article>
+      <article class="mate mate-cta">
+        <h3>Want your app reviewed?</h3>
+        <p>Pick a package and one of our engineers gets assigned to your audit by name.</p>
+        <a href="#start" class="btn btn-dark btn-full">Start with an audit</a>
+      </article>
     </div>
-    <a href="#start" class="btn btn-dark" style="margin-top:32px">Start with an audit</a>
   </div>
 </section>
 
@@ -800,7 +807,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <!-- FAQ -->
 <section id="faq" class="grey">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head" style="max-width:none">
       <div class="eyebrow">FAQ</div>
       <h2>Questions founders ask before sending code</h2>
     </div>
