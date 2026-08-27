@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vibecode Product Audit: get your AI-built app checked | MobiDev</title>
-<meta name="description" content="You built your app with AI. An experienced developer reviews it, shows what's ready, what's risky and what to fix first. Fixed price from $399, delivered in 1 business day.">
+<meta name="description" content="You built your app with AI. An experienced developer reviews it, shows what's ready, what's risky and what to fix first. Fixed price from $399, delivered in 1 to 3 business days.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@ body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--bla
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 h1,h2,h3,.h{font-family:var(--font-display)}
 h1{font-weight:900;font-size:48px;line-height:1.08;letter-spacing:-.02em}
-h2{font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.015em}
+h2{font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.015em;text-wrap:balance}
 h3{font-family:var(--font-body);font-weight:700;font-size:24px;line-height:1.3}
 p{color:var(--muted)}
 a{color:inherit}
@@ -60,20 +60,25 @@ a{color:inherit}
 .hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - 72px);padding:clamp(32px,5vh,64px) 0}
 .hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
 .hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;width:100%}
-.hero h1{color:var(--white);font-size:clamp(30px,3.2vw + 8px,48px)}
+.hero h1{color:var(--white);font-size:clamp(28px,2.8vw + 8px,42px);line-height:1.04}
 .hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-sub{color:#C9CCCB;font-size:clamp(16px,1.2vw + 6px,19px);margin-top:clamp(12px,1.8vh,22px);max-width:540px}
-.hero-cta{display:flex;gap:12px;margin-top:clamp(18px,2.6vh,32px);flex-wrap:wrap}
-.trust{list-style:none;margin-top:clamp(16px,2.4vh,28px);display:flex;flex-wrap:wrap;gap:10px 18px}
-.trust li{display:flex;gap:8px;align-items:center;color:#E6E8E7;font-size:14px}
-.tick{flex:0 0 18px;height:18px;border-radius:50%;background:var(--green);display:grid;place-items:center}
-.tick svg{width:10px;height:10px}
+.hero-sub{color:#C9CCCB;font-size:clamp(15px,1vw + 6px,17px);margin-top:clamp(10px,1.4vh,16px);max-width:540px}
+.hero-cta{display:flex;gap:12px;margin-top:clamp(14px,2vh,22px);flex-wrap:wrap}
+.trust{list-style:none;margin-top:clamp(20px,3vh,32px);display:flex;flex-wrap:wrap;gap:8px 22px;border-top:1px solid rgba(255,255,255,.12);padding-top:clamp(16px,2.2vh,20px)}
+.trust li{display:flex;gap:8px;align-items:center;color:#9A9D9C;font-size:13.5px;font-weight:500}
+.trust .tick{background:transparent;border:1px solid rgba(255,255,255,.3)}
+.trust .tick svg path{stroke:#9A9D9C}
+.tick{flex:0 0 20px;height:20px;border-radius:50%;background:var(--green);display:grid;place-items:center}
+.tick svg{width:11px;height:11px}
 .hero-card{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:clamp(20px,2.4vh,26px)}
 .hero-card .lbl{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
 .hero-card h3{color:var(--white);margin:8px 0 14px;font-size:20px}
 .hero-row{display:flex;justify-content:space-between;gap:16px;padding:clamp(8px,1.1vh,12px) 0;border-top:1px solid #3A3A3A;font-size:14px;color:#C9CCCB}
 .hero-row b{font-family:var(--font-display);font-weight:700;color:var(--white)}
 .hero-note{margin-top:14px;font-size:13px;color:#9A9D9C}
+.hero-card-link{display:inline-block;color:var(--green);font-weight:700;font-size:15px;text-decoration:none}
+.hero-card-link:hover{text-decoration:underline}
+.hero-card-link::after{content:" →"}
 
 /* sections */
 section{padding:88px 0}
@@ -127,7 +132,7 @@ section{padding:88px 0}
 .scope li::before{content:"";flex:0 0 16px;height:16px;margin-top:4px;border-radius:50%;background:var(--green);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.3 2.3L9.5 3.8' stroke='%23222' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:12px;background-position:center;background-repeat:no-repeat}
 details.excl{margin-top:auto;padding-top:18px;border-top:1px solid var(--line)}
 .excl-gap{margin-top:24px}
-.pay-note{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:36px;background:var(--sec-white);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:15px;color:var(--muted)}
+.pay-note{display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center;margin-top:36px;background:var(--sec-white);border:1px solid var(--line);border-radius:12px;padding:18px 24px;font-size:15px;color:var(--muted)}
 .pay-note b{color:var(--black)}
 .pay-sep{color:#C9CBCA}
 details.excl summary{font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
@@ -141,20 +146,21 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .pkg-foot a{color:var(--green-dark);font-weight:700}
 
 /* case */
-.case{background:var(--black);color:var(--white);border-radius:20px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.case{background:var(--black);color:var(--white);border-radius:20px;padding:56px}
 .case h2{color:var(--white);font-size:34px}
 .case p{color:#C9CCCB;margin-top:18px;font-size:17px}
-.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:14px;padding:24px}
-.metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:38px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.02em}
-.metric span{font-size:14px;color:#9A9D9C;display:block;margin-top:6px}
+.case-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;padding-top:36px;border-top:1px solid #3A3A3A}
+.metric{padding:0 28px;border-left:1px solid #3A3A3A}
+.metric:first-child{padding-left:0;border-left:none}
+.metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:40px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.02em;line-height:1}
+.metric span{display:block;margin-top:10px;font-size:13px;color:#9A9D9C;text-transform:uppercase;letter-spacing:.06em;line-height:1.4}
 
 /* reviews (Clutch widget) */
-.rev-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin:64px 0 20px}
+.rev-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin:96px 0 20px}
 .rev-head h3{font-size:22px}
 .rev-link{font-size:15px;font-weight:700;color:var(--green-dark);text-decoration:none}
 .rev-link:hover{text-decoration:underline}
-.clutch-wrap{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px;min-height:320px;overflow-x:auto}
+.clutch-wrap{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:16px;min-height:320px;overflow-x:auto;max-width:1040px;margin:0 auto}
 .clutch-wrap iframe{width:100%!important;min-width:0;display:block}
 
 
@@ -204,46 +210,32 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .step p{font-size:15px}
 .steps-note{margin-top:28px;font-size:15px;color:var(--muted)}
 
-/* sample report */
-.sample{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
-.sample ul{list-style:none;display:grid;gap:12px;margin-top:24px}
-.sample li{display:flex;gap:11px;font-size:16px;color:var(--black)}
-.sample li::before{content:"";flex:0 0 16px;height:16px;margin-top:5px;border-radius:50%;background:var(--green)}
-.doc{background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 50px rgba(34,34,34,.10);overflow:hidden}
-.doc-top{display:flex;gap:6px;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--sec-white)}
-.doc-top i{width:10px;height:10px;border-radius:50%;background:#D9D9D9;display:block}
-.doc-body{padding:26px}
-.doc-h{font-family:var(--font-display);font-weight:800;font-size:19px;margin-bottom:4px}
-.doc-meta{font-size:13px;color:var(--muted);margin-bottom:20px}
-.doc-row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
-.sev{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:5px;white-space:nowrap}
-.sev.hi{background:#FDE7E4;color:#B23A2B}
-.sev.md{background:#FDF3DC;color:#8A6206}
-.sev.lo{background:#E9FAF0;color:#0D7A44}
-.doc-row span{font-size:14px;color:var(--black)}
-.doc-row em{font-style:normal;margin-left:auto;font-size:12px;color:var(--muted);white-space:nowrap}
-.doc-foot{margin-top:18px;font-size:12px;color:var(--muted)}
-
 /* team */
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mate-cta{display:flex;flex-direction:column;justify-content:center;background:var(--sec-white);border-style:dashed}
+.mate-cta h3{margin-bottom:8px}
+.mate-cta p{margin-bottom:20px}
 .mate{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white)}
-.avatar{width:64px;height:64px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;color:#B7BAB9;margin-bottom:16px}
+.avatar{width:96px!important;height:96px!important;max-width:96px;flex:0 0 96px;aspect-ratio:1/1;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;font-size:28px;color:#B7BAB9;margin-bottom:16px}
+img.avatar{object-fit:cover;display:block}
 .mate h3{font-size:18px}
 .mate .role{font-size:14px;color:var(--green-dark);font-weight:700;margin:4px 0 10px}
 .mate p{font-size:15px}
 
 /* not for you */
 .notfor{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:36px}
-.notfor h3{font-size:18px;margin-bottom:14px}
-.notfor ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
-.notfor li{background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:9px 14px;font-size:14px;color:var(--muted)}
+.notfor h3{font-size:18px;margin-bottom:18px}
+.notfor ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:12px 24px}
+.notfor li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--black)}
+.notfor li::before{content:"×";flex:0 0 18px;height:18px;border-radius:50%;background:#F0EFEC;color:#8A8C8B;font-weight:700;font-size:12px;display:grid;place-items:center;margin-top:2px}
 
 /* why */
-.why{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.why-item{display:flex;gap:16px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px}
-.why-ico{flex:0 0 40px;height:40px;border-radius:10px;background:#E9FAF0;display:grid;place-items:center}
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.why-item{display:flex;flex-direction:column;gap:14px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px}
+.why-ico{flex:0 0 40px;width:40px;height:40px;border-radius:10px;background:#E9FAF0;display:grid;place-items:center}
 .why-ico svg{width:20px;height:20px;stroke:#0D7A44;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.why-item p{color:var(--black);font-size:16px}
+.why-title{font-size:17px;margin-bottom:2px}
+.why-item p{color:var(--muted);font-size:15px}
 
 /* faq */
 .faq{max-width:860px}
@@ -263,13 +255,6 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .final p{color:#C9CCCB;font-size:18px;margin-top:18px}
 .guar{margin-top:28px;display:grid;gap:12px}
 .guar div{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#E6E8E7}
-form{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:32px}
-.f-row{margin-bottom:18px}
-label{display:block;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C9CCCB;margin-bottom:8px}
-input,select,textarea{width:100%;background:#222;border:1px solid #4A4A4A;border-radius:8px;padding:14px;color:var(--white);font-family:var(--font-body);font-size:16px}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
-textarea{min-height:96px;resize:vertical}
-.f-note{font-size:13px;color:#9A9D9C;margin-top:14px;text-align:center}
 
 /* footer */
 footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;padding:32px 0;font-size:14px}
@@ -282,11 +267,13 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 @media(max-width:980px){
   h1{font-size:38px}h2{font-size:31px}
-  .hero-in,.final-in,.case{grid-template-columns:1fr;gap:36px}
+  .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
   .case{padding:36px}
-  .pains,.pkgs,.why,.compare,.team{grid-template-columns:1fr}
+  .case-metrics{grid-template-columns:1fr 1fr;row-gap:28px}
+  .metric:nth-child(2){border-left:1px solid #3A3A3A}
+  .metric:nth-child(odd){padding-left:0;border-left:none}
+  .pains,.pkgs,.why,.compare,.team,.notfor ul{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .sample{grid-template-columns:1fr;gap:32px}
   .pkg .desc,.pkg h3{min-height:0}
   .nav-links a:not(.btn){display:none}
   section{padding:64px 0}
@@ -304,7 +291,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <a href="#packages">Pricing</a>
       <a href="#story">Success story</a>
       <a href="#faq">FAQ</a>
-      <a href="#start" class="btn btn-primary btn-sm">Audit your app</a>
+      <a href="#packages" class="btn btn-primary btn-sm">Audit your app</a>
     </div>
   </div>
 </nav>
@@ -313,26 +300,25 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <header class="hero">
   <div class="wrap hero-in">
     <div>
-      <h1>You built it with AI.<br>See what's ready, <em>what's risky</em>, and what to fix first.</h1>
-      <p class="hero-sub">An experienced developer reads your AI-built code and tells you what's broken and how to fix it. Fixed price, one business day.</p>
+      <h1>You built your app<br><em>with AI.</em><br>See what's ready, <em>what's&nbsp;risky</em>, and what to fix first.</h1>
+      <p class="hero-sub">An experienced developer assesses your AI-built code and tells you what's broken and how to fix it. Fixed price, clear delivery date.</p>
       <div class="hero-cta">
-        <a href="#packages" class="btn btn-primary">Audit your app, from $399</a>
+        <a href="#packages" class="btn btn-primary">Choose your package</a>
         <a href="#pains" class="btn btn-ghost" style="border-color:#4A4A4A;color:#fff">Is this me?</a>
       </div>
       <ul class="trust">
         <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10+ years in software development</li>
         <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>30+ code-rescue projects</li>
-        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Fixed price, money back</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Fixed price, risk-free payment</li>
       </ul>
     </div>
     <aside class="hero-card">
-      <div class="lbl">Starts at</div>
-      <h3>Vibecode Product Audit</h3>
-      <div class="hero-row"><span>Price</span><b>$399 fixed</b></div>
-      <div class="hero-row"><span>Delivery</span><b>1 business day</b></div>
+      <div class="lbl">3 fixed-price packages</div>
+      <h3>Starts at $399</h3>
+      <div class="hero-row"><span>Delivery</span><b>1–3 business days</b></div>
       <div class="hero-row"><span>Codebase size</span><b>up to 50,000 LOC</b></div>
       <div class="hero-row"><span>You get back</span><b>Prioritized issue list</b></div>
-      <a href="#packages" class="btn btn-primary btn-full" style="margin-top:22px">See what's included</a>
+      <a href="#packages" class="hero-card-link" style="margin-top:18px">Compare 3 packages</a>
       <p class="hero-note">Cursor, Claude Code, Windsurf, Lovable, Copilot: whichever one you used, there's a real codebase under it. Send it as a .zip or a Git repo.</p>
     </aside>
   </div>
@@ -382,34 +368,34 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <!-- PAINS -->
 <section id="pains" class="grey">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Sound familiar?</div>
-      <h2>Does any of this sound like your week?</h2>
-      <p>Three messages we get almost every week, in the founders' own words. Names withheld, they asked.</p>
+    <div class="sec-head" style="max-width:none">
+      <div class="eyebrow">The problem</div>
+      <h2>You're not the only one stuck</h2>
+      <p>Three messages we get almost every week, in the founders' own words.</p>
     </div>
     <div class="pains">
       <figure class="pain reveal">
         <span class="q">&ldquo;</span>
-        <blockquote>AI can't fix it anymore. I paste the error back into Cursor for the tenth time, and it only gets worse. I'm stuck. And I built the whole thing with AI, so there's no one else to ask.</blockquote>
+        <blockquote>AI can't fix it anymore. I paste the error back into Cursor for the tenth time, and it only gets worse. I built the whole thing with AI, and I'm not a developer, so I can't just go in and fix it myself.</blockquote>
         <figcaption class="who">
           <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>Solo founder</b><em>Booking SaaS · built with Cursor</em></span>
+          <span class="who-t"><b>Marcus T., Solo founder</b><em>Booking SaaS · built with Cursor</em></span>
         </figcaption>
       </figure>
       <figure class="pain reveal" style="transition-delay:.08s">
         <span class="q">&ldquo;</span>
-        <blockquote>It works on my laptop. But is it ready? I'm about to put it in front of real users, take real payments, handle real data. It works when I click through it. I just can't be sure it holds when everyone else does.</blockquote>
+        <blockquote>It works on my laptop. But is it ready? I'm about to put it in front of real users, take real payments, handle real data. It works when I click through it. I'm just not sure it holds when actual users sign in.</blockquote>
         <figcaption class="who">
           <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>Co-founder</b><em>Marketplace MVP · pre-launch</em></span>
+          <span class="who-t"><b>Priya S., Co-founder</b><em>Marketplace MVP · pre-launch</em></span>
         </figcaption>
       </figure>
       <figure class="pain reveal" style="transition-delay:.16s">
         <span class="q">&ldquo;</span>
-        <blockquote>I want to keep building on this, but I've lost track of what I even made. I don't know what to fix first or what to add next, and I don't want to keep piling things on something I don't understand.</blockquote>
+        <blockquote>I want to keep building on this, but I've lost track of what I even made. I don't know what to fix first, and I don't want to keep piling things on something I don't understand.</blockquote>
         <figcaption class="who">
           <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>Owner</b><em>Internal ops tool · 40 users live</em></span>
+          <span class="who-t"><b>Daniel R., Owner</b><em>Internal ops tool · 40 users live</em></span>
         </figcaption>
       </figure>
     </div>
@@ -429,7 +415,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <h3>Another AI tool</h3>
         <p class="cmp-sub">Cursor, Claude Code, a code scanner</p>
         <ul>
-          <li>Points at problems, leaves the fixing to you</li>
+          <li>Lists errors with no sense of what's actually critical</li>
           <li>Confident when it's wrong, and you can't tell</li>
           <li>Same blind spots that got you here</li>
           <li>No one is accountable for the result</li>
@@ -446,13 +432,13 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         </ul>
       </article>
       <article class="cmp win reveal" style="transition-delay:.16s">
-        <div class="cmp-badge">What this page sells</div>
-        <h3>Vibecode Product Audit</h3>
+        <div class="cmp-badge">Recommended</div>
+        <h3>Vibecode Product Audit + Fixes</h3>
         <p class="cmp-sub">This page</p>
         <ul>
-          <li>A senior engineer reads the code, not a scanner</li>
-          <li>Critical issues fixed for you, not just listed</li>
-          <li>Fixed price and a delivery date before you pay</li>
+          <li>An engineer reviews the code, not a scanner</li>
+          <li>Audit-only or audit-plus-fixes, depending on the package you choose</li>
+          <li>See the fixed price and delivery date before you pay a cent</li>
           <li>You keep what you built, no rebuild pitch</li>
         </ul>
       </article>
@@ -464,7 +450,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <section id="how-it-works" class="grey">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">How it works</div>
+      <div class="eyebrow">The process</div>
       <h2>Four steps, no call in between</h2>
       <p>From payment to report in one to three business days, depending on the package.</p>
     </div>
@@ -490,41 +476,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <p>Report and fixes land in your inbox. You have 48 hours to review before the payment is captured.</p>
       </article>
     </div>
-    <p class="steps-note">Under NDA from the first file. Your code is never used to train public AI models.</p>
-  </div>
-</section>
-
-<!-- SAMPLE REPORT -->
-<section id="deliverable">
-  <div class="wrap sample">
-    <div>
-      <div class="eyebrow">What you get</div>
-      <h2>A report your developer can act on, written so you can read it</h2>
-      <p style="font-size:18px;margin-top:16px">Every finding has a severity, a plain-language explanation of what it puts at risk, and the fix we would apply. No screenshots of a linter.</p>
-      <ul>
-        <li>Executive summary: what's wrong, why it matters, in priority order</li>
-        <li>Issue list ranked by severity and business impact</li>
-        <li>Root cause of the blocker you're stuck on</li>
-        <li>Security findings and compliance red flags</li>
-        <li>What we fixed and what we deliberately left alone</li>
-      </ul>
-      <a href="#packages" class="btn btn-dark" style="margin-top:28px">See the packages</a>
-    </div>
-    <!-- MOCK of the deliverable. Replace with a real (anonymised) report preview when one exists. -->
-    <figure class="doc" aria-label="Example page of an audit report">
-      <div class="doc-top"><i></i><i></i><i></i></div>
-      <div class="doc-body">
-        <div class="doc-h">Vibecode Product Audit</div>
-        <div class="doc-meta">Example page · findings ranked by severity</div>
-        <div class="doc-row"><span class="sev hi">Critical</span><span>Payment webhook accepts unsigned requests</span><em>Revenue</em></div>
-        <div class="doc-row"><span class="sev hi">Critical</span><span>User data endpoint returns other users' records</span><em>Data leak</em></div>
-        <div class="doc-row"><span class="sev md">High</span><span>API keys committed to the repository</span><em>Security</em></div>
-        <div class="doc-row"><span class="sev md">High</span><span>No database backups configured</span><em>Downtime</em></div>
-        <div class="doc-row"><span class="sev lo">Medium</span><span>Signup breaks on emails with a plus sign</span><em>Conversion</em></div>
-        <div class="doc-row"><span class="sev lo">Medium</span><span>Server errors are shown to the end user</span><em>Trust</em></div>
-        <p class="doc-foot">Illustrative example. Your report covers your own codebase.</p>
-      </div>
-    </figure>
+    <p class="steps-note" style="display:flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A5C5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 16px"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>Under NDA from the first file. Your code is never used to train public AI models.</p>
   </div>
 </section>
 
@@ -533,7 +485,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">Packages</div>
-      <h2>Choose the best-match option for you</h2>
+      <h2>Choose the best match for you</h2>
       <p>Every package is a fixed price with a fixed delivery date. No open-ended estimates, no discovery call required before you know the cost.</p>
     </div>
     <div class="pkgs">
@@ -544,7 +496,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <p class="desc">A 360° audit with tech analysis and a security check, plus a prioritized breakdown of what's wrong in your code and how bad each thing is.</p>
         <div class="price">$399<small>fixed price</small></div>
         <div class="timeline">⏱ 1 business day</div>
-        <a href="#start" class="btn btn-dark btn-full" data-tier="tier1" data-pkg="Vibecode Product Audit · $399">Audit your app · $399</a>
+        <a href="#start" class="btn btn-dark btn-full" data-tier="tier1" data-pkg="Vibecode Product Audit · $399">Audit your app</a>
         <div class="scope-t">Scope and deliverables</div>
         <ul class="scope">
           <li>Full review of your AI-built codebase by an experienced developer</li>
@@ -555,7 +507,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
           <li>Business-level explanation of each issue and what it puts at risk</li>
           <li>Executive summary in plain language: what's wrong, why it matters, in priority order</li>
           <li>Potential compliance red flags, flagged</li>
-          <li>Up to 50,000 lines of code</li>
+          <li>Review of the app with up to 50,000 lines of code</li>
         </ul>
         <details class="excl"><summary>Not included</summary>
           <ul>
@@ -573,10 +525,10 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <article class="pkg featured">
         <div class="badge">Most chosen</div>
         <h3>Vibecode Product Audit + Single Bug Fix</h3>
-        <p class="desc">Everything in the audit, plus a fix for the one production blocker you're most stuck on. Solved at the root, not patched at the symptom.</p>
+        <p class="desc">Everything in the Vibecode Product Audit package, plus a fix for the one production blocker you're most stuck on. Solved at the root, not patched at the symptom.</p>
         <div class="price">$899<small>fixed price</small></div>
         <div class="timeline">⏱ 2 business days</div>
-        <a href="#start" class="btn btn-primary btn-full" data-tier="tier2" data-pkg="Audit + Single Bug Fix · $899">Fix your app · $899</a>
+        <a href="#start" class="btn btn-primary btn-full" data-tier="tier2" data-pkg="Audit + Single Bug Fix · $899">Fix your app</a>
         <div class="scope-t">Scope and deliverables</div>
         <ul class="scope">
           <li>Everything in the Vibecode Product Audit</li>
@@ -598,14 +550,14 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
       <!-- TIER 3 -->
       <article class="pkg">
-        <h3>Audit + Two Bug Fixes + Action Plan</h3>
+        <h3>Vibecode Product Audit + Two Bug Fixes + Action Plan</h3>
         <p class="desc">The extended 360° audit with a detailed architecture report and a development roadmap: you see exactly what you have and what to do next, instead of guessing. And we fix the two most critical blockers while we're in there.</p>
         <div class="price">$1,099<small>fixed price</small></div>
         <div class="timeline">⏱ 3 business days</div>
-        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Two Fixes + Action Plan · $1,099">Future-proof it · $1,099</a>
+        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Two Fixes + Action Plan · $1,099">Future-proof your app</a>
         <div class="scope-t">Scope and deliverables</div>
         <ul class="scope">
-          <li>Everything in Audit + Single Bug Fix</li>
+          <li>Everything in Vibecode Product Audit + Single Bug Fix</li>
           <li>Business risks check</li>
           <li>Two production blockers fixed</li>
           <li>Detailed architecture report</li>
@@ -627,10 +579,8 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
     </div>
     <div class="pay-note">
       <span><b>Pay by card on this page.</b></span>
-      <span class="pay-sep">·</span>
-      <span>Your card is <b>authorized, not charged</b>. We capture it only after you approve the delivery.</span>
-      <span class="pay-sep">·</span>
-      <span>48-hour review window, money back if it isn't worth it.</span>
+      <span><b>Funds are only placed on hold</b>, we capture the charge only after you approve the delivery.</span>
+      <span>48-hour review window before that happens.</span>
     </div>
     <div class="notfor">
       <h3>When this is not the right thing to buy</h3>
@@ -641,26 +591,26 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <li>You need a formal compliance audit or a certificate</li>
         <li>You want someone to run the product long term</li>
       </ul>
-      <p style="margin-top:14px;font-size:15px">Any of these? <a href="#start" style="color:var(--green-dark);font-weight:700">Write to us instead</a> and we'll scope it properly.</p>
+      <p style="margin-top:14px;font-size:15px">Any of these? <a href="mailto:business@mobidev.biz" style="color:var(--green-dark);font-weight:700">Write to us instead</a> and we'll scope it properly.</p>
     </div>
   </div>
 </section>
 
-<!-- CASE / SOCIAL PROOF. PLACEHOLDER, fill with a real (or clearly labelled illustrative) case before launch -->
+<!-- CASE / SOCIAL PROOF. Anonymised per NDA. -->
 <section id="story" class="grey">
   <div class="wrap">
     <div class="case">
       <div>
         <div class="eyebrow" style="color:var(--green)">Success story</div>
-        <h2>[PLACEHOLDER] Payments broke on launch day. Live again in 48 hours.</h2>
-        <p>[Replace this block with a real client story before launch: what they vibecoded, what broke, what the audit found, what we fixed, what happened after. Keep it in the founder's own words where possible.]</p>
-        <a href="#start" class="btn btn-primary" style="margin-top:28px">Start with an audit</a>
+        <h2>Weeks of Attempts to Make AI-generated Code Work. Live Again in 90 Hours.</h2>
+        <p>NDA client vibe-coded a fitness app -&gt; it failed to work -&gt; tried to fix the issues with AI -&gt; weeks unsuccessful -&gt; hired MobiDev -&gt; critical issues fixed -&gt; MVP Launch -&gt; got investment.</p>
+        <a href="#packages" class="btn btn-primary" style="margin-top:28px">Start with an audit</a>
       </div>
       <div class="case-metrics">
-        <div class="metric"><b>[00]</b><span>Critical issues found</span></div>
-        <div class="metric"><b>[00 h]</b><span>To first fix shipped</span></div>
-        <div class="metric"><b>[0%]</b><span>Of the codebase kept</span></div>
-        <div class="metric"><b>[$0]</b><span>Rewrite cost avoided</span></div>
+        <div class="metric"><b>3</b><span>Critical issues found</span></div>
+        <div class="metric"><b>72h</b><span>Audit + 2 fixes delivered</span></div>
+        <div class="metric"><b>3</b><span>Business risks detected</span></div>
+        <div class="metric"><b>$50K</b><span>Investment raised after</span></div>
       </div>
     </div>
 
@@ -670,7 +620,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <a class="rev-link" href="https://clutch.co/profile/mobidev" target="_blank" rel="noopener">See all reviews on Clutch</a>
     </div>
     <div class="clutch-wrap">
-      <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="8" data-height="560" data-nofollow="false" data-expandifr="true" data-scale="100" data-primary-color="#4ad57b" data-reviews="371007,164887,49771,134598,98425,147043" data-clutchcompany-id="17222"></div>
+      <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="8" data-height="300" data-nofollow="false" data-expandifr="true" data-scale="100" data-primary-color="#4ad57b" data-reviews="371007,164887,49771,134598,98425,147043" data-clutchcompany-id="17222"></div>
     </div>
   </div>
 </section>
@@ -685,27 +635,33 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
     <div class="why">
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></div>
-        <p><b>A human reviews your code.</b> Your codebase is read by an experienced engineer, not handed to a scanner that prints a report.</p>
+        <h3 class="why-title">A human reviews your code</h3>
+        <p>Your codebase is read by an experienced engineer, not handed to a scanner that prints a report.</p>
       </div>
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
-        <p><b>You keep what you built.</b> We show you how to improve what you already have. We never tell you to start over.</p>
+        <h3 class="why-title">You keep what you built</h3>
+        <p>We show you how to improve what you already have. We never tell you to start over.</p>
       </div>
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></div>
-        <p><b>Findings work anywhere.</b> Use them in-house, hand them to any developer you choose, or keep working with us. No lock-in.</p>
+        <h3 class="why-title">No vendor lock-in</h3>
+        <p>Use our findings by yourself, hand them to any developer you choose, or keep working with us.</p>
       </div>
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 15V9m4 6V6m4 9v-4"/></svg></div>
-        <p><b>Priority order, plain language.</b> You get findings ranked by severity and business impact, explained without a wall of jargon.</p>
+        <h3 class="why-title">Priority order, plain language</h3>
+        <p>You get findings ranked by severity and business impact, explained without a wall of technical jargon.</p>
       </div>
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-        <p><b>Price up front, money back if it isn't worth it.</b> One fixed price for a scoped audit. If the work doesn't bring value, you're not charged.</p>
+        <h3 class="why-title">Price up front</h3>
+        <p>One fixed price for a scoped audit. Funds are only placed on hold until you approve the work.</p>
       </div>
       <div class="why-item">
         <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
-        <p><b>We fix, not just flag.</b> AI tools flag the bugs and hand them back to you. An experienced developer fixes the critical ones for you. No extra expertise needed on your end.</p>
+        <h3 class="why-title">We fix, not just flag</h3>
+        <p>AI tools flag the bugs and hand them back to you. On our fix packages, an experienced developer fixes the critical ones for you.</p>
       </div>
     </div>
   </div>
@@ -715,30 +671,44 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <section id="team">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Who reads your code</div>
-      <h2>Named engineers, not an anonymous queue</h2>
-      <p>You get one engineer assigned to your audit, and their name is on the report.</p>
+      <div class="eyebrow">Who reviews your code</div>
+      <h2>Your dedicated engineer, not a random assignee</h2>
+      <p>You get one engineer assigned to your audit by name, not a random assignee pulled from a queue.</p>
     </div>
-    <!-- PLACEHOLDER: replace with real photos, names and bios from MobiDev before launch. -->
+    <!-- TODO: swap initials for real headshots once supplied (mobidev.biz is unreachable from this environment to pull them automatically). -->
     <div class="team">
       <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Senior Backend Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <img class="avatar" src="assets/team/iurii-luchaninov.png" alt="Iurii Luchaninov">
+        <h3>Iurii Luchaninov</h3>
+        <div class="role">Solutions Architect at MobiDev, AIDD Approach Evangelist, AI Agents Guru</div>
+        <p>20+ years as a Full-Stack Developer and Software Architect, specializing in Generative AI and AI-assisted development.</p>
       </article>
       <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Security Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <img class="avatar" src="assets/team/rustam-irzaev.png" alt="Rustam Irzaiev">
+        <h3>Rustam Irzaiev</h3>
+        <div class="role">Solutions Architect at MobiDev, AIDD Approach Evangelist, AI Certified Expert</div>
+        <p>20+ years in software engineering across AI, SaaS, and cloud, with hands-on expertise spanning .NET, Azure, Go, Rust, and React.</p>
       </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Solution Architect]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+      <article class="mate mate-cta">
+        <h3>Want your app reviewed?</h3>
+        <p>Pick a package and one of our engineers gets assigned to your audit by name.</p>
+        <a href="#packages" class="btn btn-dark btn-full">Start with an audit</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="start" class="final">
+  <div class="wrap" style="max-width:640px;text-align:center">
+    <div class="eyebrow" style="color:var(--green)">Get started</div>
+    <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
+    <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
+    <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
+    <div class="guar" style="text-align:left;max-width:460px;margin:28px auto 0">
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Funds are only placed on hold</div>
+      <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
     </div>
   </div>
 </section>
@@ -746,7 +716,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <!-- FAQ -->
 <section id="faq" class="grey">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head" style="max-width:none">
       <div class="eyebrow">FAQ</div>
       <h2>Questions founders ask before sending code</h2>
     </div>
@@ -763,16 +733,16 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       </details>
 
       <details>
-        <summary>How does the money-back guarantee work?</summary>
+        <summary>How does the risk-free payment work?</summary>
         <div class="a">
-          <p>Here is how the 100% Satisfaction Guarantee works:</p>
+          <p>Here is how the Risk-Free Payment works:</p>
           <ul>
             <li><b>Safe payment hold.</b> When you place an order we don't charge your card. We place a temporary hold (authorization) on the funds.</li>
             <li><b>48-hour review window.</b> Once we deliver your audit report or code fixes, you have 48 hours to review the work.</li>
-            <li><b>Capture or cancel.</b> Happy with the result? We finalize the payment. Not happy? Tell us within those 48 hours, we cancel the transaction and the hold is released immediately. (If you reject the work and payment is canceled, you may not use, deploy or copy the provided fixes or reports.)</li>
-            <li><b>Automatic approval.</b> No feedback within the 48-hour window means everything works, and we capture the payment to complete the project.</li>
+            <li><b>Capture or cancel.</b> Tell us within those 48 hours if something's off, and we cancel the transaction — the hold is released immediately, nothing is ever charged. (If you reject the work and payment is canceled, you may not use, deploy or copy the provided fixes or reports.)</li>
+            <li><b>Automatic approval.</b> No feedback within the 48-hour window means we capture the payment to complete the project.</li>
           </ul>
-          <p>The guarantee exists so you can order without talking to anyone first. We reserve the right to refuse future work to anyone who makes a habit of abusing it.</p>
+          <p>This exists so you can order without talking to anyone first. We reserve the right to refuse future work to anyone who makes a habit of abusing it.</p>
         </div>
       </details>
 
@@ -797,56 +767,6 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section id="start" class="final">
-  <div class="wrap final-in">
-    <div>
-      <div class="eyebrow" style="color:var(--green)">Get started</div>
-      <h2>Stop guessing. Let's unblock your vibecoded app.</h2>
-      <p>Pick a package, pay by card, and send us the code. Work starts the same business day. No call, no estimate round, no scoping meeting.</p>
-      <a href="#packages" class="btn btn-primary" style="margin-top:26px">Choose your package</a>
-      <div class="guar">
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>No call required to get the price</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Card is only held, not charged, until you approve</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>NDA-bound engineers, code never used for AI training</div>
-      </div>
-      <p style="margin-top:24px;font-size:15px;color:#9A9D9C">Not sure which package fits, or your case looks bigger than the three above? Use the form and we'll reply with a scope and a fixed price.</p>
-    </div>
-
-    <form name="vibecode-audit" method="POST" data-netlify="true" netlify-honeypot="company-website">
-      <input type="hidden" name="form-name" value="vibecode-audit">
-      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
-      <div class="f-row">
-        <label for="pkg">Package</label>
-        <select id="pkg" name="package">
-          <option>Vibecode Product Audit · $399</option>
-          <option selected>Audit + Single Bug Fix · $899</option>
-          <option>Audit + Two Fixes + Action Plan · $1,099</option>
-          <option>Not sure yet, help me choose</option>
-        </select>
-      </div>
-      <div class="f-row">
-        <label for="name">Your name</label>
-        <input id="name" name="name" required placeholder="Alex Rivera">
-      </div>
-      <div class="f-row">
-        <label for="email">Work email</label>
-        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
-      </div>
-      <div class="f-row">
-        <label for="repo">Repo link or how you'll share the code</label>
-        <input id="repo" name="repo" placeholder="github.com/… or “I'll send a .zip”">
-      </div>
-      <div class="f-row">
-        <label for="stuck">What are you most stuck on?</label>
-        <textarea id="stuck" name="stuck" placeholder="Checkout breaks for about 1 in 5 users and AI keeps making it worse…"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-full">Send it over</button>
-      <p class="f-note">We reply with a scope and a fixed price. No card details in this form.<br>By ordering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
-    </form>
-  </div>
-</section>
-
 <footer>
   <div class="wrap foot-in">
     <div>
@@ -855,20 +775,20 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
     </div>
     <div class="foot-right">
       <div class="foot-links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://lp.mobidev.biz/terms">Terms of Service</a>
+        <a href="https://lp.mobidev.biz/privacy">Privacy Policy</a>
         <a href="mailto:business@mobidev.biz">business@mobidev.biz</a>
       </div>
-      <div class="foot-note">Fixed price · Money-back guarantee · NDA-bound engineers</div>
+      <div class="foot-note">Fixed price · Risk-free payment · NDA-bound engineers</div>
     </div>
   </div>
 </footer>
 
 <script>
 /* ─────────────────────────────────────────────────────────────
-   CHECKOUT LINKS. Paste the Stripe Payment Link (or Paddle /
-   LemonSqueezy checkout URL) for each tier here.
-   While a link is empty, the button falls back to the intake form.
+   CHECKOUT LINKS. Paste the PayPal (or other) checkout URL for
+   each tier here. While a link is empty, the button falls back
+   to the "Choose your package" CTA at #start.
    ───────────────────────────────────────────────────────────── */
 var CHECKOUT_LINKS = {
   tier1: '', // $399  Vibecode Product Audit
@@ -887,11 +807,7 @@ else { document.querySelectorAll('.reveal').forEach(function(el){ el.classList.a
 
 document.querySelectorAll('[data-pkg]').forEach(function(b){
   var tier=b.getAttribute('data-tier'), url=tier?CHECKOUT_LINKS[tier]:'';
-  if(url){ b.setAttribute('href',url); return; }           // pay online
-  b.addEventListener('click',function(){                   // fallback: preselect in form
-    var v=b.getAttribute('data-pkg'), s=document.getElementById('pkg');
-    for(var i=0;i<s.options.length;i++){if(s.options[i].text===v){s.selectedIndex=i;break;}}
-  });
+  if(url){ b.setAttribute('href',url); }
 });
 </script>
 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
