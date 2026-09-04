@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you | MobiDev Vibecode Product Audit</title>
+<meta name="description" content="Your payment is authorized and your Vibecode Product Audit request is confirmed. Here's what happens next.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#222222;--green:#4AD57B;--green-dark:#12B292;--blue:#2EB0F1;
+  --grad:linear-gradient(90deg,#2EB0F1 0%,#12B292 100%);
+  --sec-white:#F7F7F7;--white:#FFFFFF;
+  --line:#E4E6E5;--muted:#5A5C5B;
+  --font-display:'Inter',-apple-system,Segoe UI,sans-serif;
+  --font-body:'Open Sans',-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:16px;line-height:1.65;color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 24px}
+a{color:var(--green-dark)}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo img{height:28px;width:auto;display:block}
+.nav-links{display:flex;gap:24px;align-items:center;font-size:15px;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--black)}
+.nav-links a:not(.btn):hover{color:var(--green-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-body);font-weight:700;font-size:15px;padding:14px 24px;border-radius:8px;border:2px solid transparent;text-decoration:none;background:var(--green);color:var(--black);transition:.18s ease}
+.btn:hover{background:#35C169}
+.btn-ghost{background:transparent;color:var(--black);border-color:var(--black)}
+.btn-ghost:hover{background:var(--black);color:var(--white)}
+
+.hero{background:var(--black);color:var(--white);padding:72px 0 88px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
+.hero-in{position:relative;z-index:2;max-width:640px;margin:0 auto}
+.check{width:68px;height:68px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin:0 auto 26px}
+.check svg{width:32px;height:32px}
+.eyebrow{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+h1{font-family:var(--font-display);font-weight:900;font-size:clamp(30px,3.2vw + 8px,44px);line-height:1.14;letter-spacing:-.02em;color:var(--white)}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:#C9CCCB;font-size:17px;margin-top:18px;max-width:520px;margin-left:auto;margin-right:auto}
+
+main{padding:56px 0 80px}
+.order-card{background:var(--sec-white);border:1px solid var(--line);border-radius:14px;padding:24px 28px;margin-bottom:36px;display:none}
+.order-card.is-visible{display:block}
+.order-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+.order-row:first-child{border-top:none}
+.order-row span{color:var(--muted)}
+.order-row b{font-family:var(--font-display);font-weight:700;color:var(--black)}
+
+h2{font-family:var(--font-display);font-weight:800;font-size:21px;margin:0 0 18px;letter-spacing:-.01em}
+.steps{list-style:none;display:grid;gap:16px;margin-bottom:36px}
+.steps li{display:flex;gap:14px}
+.steps .n{flex:0 0 30px;height:30px;border-radius:50%;background:var(--black);color:var(--white);font-family:var(--font-display);font-weight:700;font-size:13px;display:grid;place-items:center}
+.steps p{color:var(--muted);margin:0}
+.steps b{color:var(--black)}
+
+.contact{background:var(--sec-white);border:1px solid var(--line);border-radius:14px;padding:24px 28px;margin-bottom:40px}
+.contact p{color:var(--muted);margin:0}
+.contact b{color:var(--black)}
+.contact a{font-weight:700}
+
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+footer{background:var(--black);color:#9A9D9C;padding:32px 0;font-size:14px}
+.foot-in{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot-logo{height:24px;width:auto;display:block;margin-bottom:10px}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a{color:#C9CCCB;text-decoration:none}
+.foot-links a:hover{color:var(--green)}
+
+@media(max-width:720px){
+  .nav-links a:not(.btn){display:none}
+  .hero{padding:52px 0 64px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="MobiDev"><img src="assets/mobidev-logo.png" alt="MobiDev"></a>
+    <div class="nav-links">
+      <a href="index.html">Back to the audit</a>
+      <a href="mailto:business@mobidev.biz" class="btn">business@mobidev.biz</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-in">
+    <div class="check" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12.5l5 5L20 6" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="eyebrow">Payment authorized</div>
+    <h1>Your request is in.<br><em>Here's what happens next.</em></h1>
+    <p class="hero-sub">Your card is authorized, not charged — we only capture the payment once you approve the delivery. You'll hear from us within 1 business day.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="order-card" id="orderCard">
+      <div class="order-row"><span>Package</span><b id="orderPackage">—</b></div>
+      <div class="order-row"><span>Amount held</span><b id="orderAmount">—</b></div>
+      <div class="order-row"><span>Status</span><b>Authorized, not charged</b></div>
+    </div>
+
+    <h2>What happens next</h2>
+    <ul class="steps">
+      <li><span class="n">1</span><p><b>An engineer picks up your request.</b> We start on the codebase or repo you sent us the same business day.</p></li>
+      <li><span class="n">2</span><p><b>You get a report (and fixes, if your package includes them).</b> Delivered within the timeline of your package — 1 to 3 business days.</p></li>
+      <li><span class="n">3</span><p><b>You have 48 hours to review.</b> Happy with it, we capture the payment. Not happy, tell us and the hold is released — no charge.</p></li>
+    </ul>
+
+    <div class="contact">
+      <p><b>Left something out of the form?</b> If there's anything about your project you didn't get to mention, just send it to <a href="mailto:business@mobidev.biz">business@mobidev.biz</a> — it goes straight to our team.</p>
+    </div>
+
+    <div class="cta-row">
+      <a href="index.html" class="btn">Back to the homepage</a>
+      <a href="index.html#faq" class="btn btn-ghost">Read the FAQ</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div>
+      <img class="foot-logo" src="assets/mobidev-logo.png" alt="MobiDev">
+      © <span id="yr"></span> MobiDev · Vibecode Product Audit
+    </div>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:business@mobidev.biz">business@mobidev.biz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Optional order summary, filled in from the checkout redirect's query string,
+// e.g. thank-you.html?package=Vibecode+Product+Audit&amount=%24399
+var params = new URLSearchParams(window.location.search);
+var pkg = params.get('package');
+var amount = params.get('amount');
+if (pkg || amount) {
+  document.getElementById('orderPackage').textContent = pkg || '—';
+  document.getElementById('orderAmount').textContent = amount || '—';
+  document.getElementById('orderCard').classList.add('is-visible');
+}
+</script>
+</body>
+</html>
