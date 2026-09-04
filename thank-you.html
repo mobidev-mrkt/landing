@@ -110,7 +110,8 @@ footer{background:var(--black);color:#9A9D9C;padding:32px 0;font-size:14px}
     <div class="order-card" id="orderCard">
       <div class="order-row"><span>Package</span><b id="orderPackage">—</b></div>
       <div class="order-row"><span>Amount held</span><b id="orderAmount">—</b></div>
-      <div class="order-row"><span>Status</span><b>Authorized, not charged</b></div>
+      <div class="order-row"><span>Status</span><b>Reserved, not charged yet</b></div>
+      <div class="order-row" id="orderUntilRow" style="display:none"><span>Reserved until</span><b id="orderUntil">—</b></div>
     </div>
 
     <h2>What happens next</h2>
@@ -151,13 +152,21 @@ footer{background:var(--black);color:#9A9D9C;padding:32px 0;font-size:14px}
 document.getElementById('yr').textContent = new Date().getFullYear();
 
 // Optional order summary, filled in from the checkout redirect's query string,
-// e.g. thank-you.html?package=Vibecode+Product+Audit&amount=%24399
+// e.g. thank-you.html?package=Vibecode+Product+Audit&amount=%24399&until=2026-09-08T10:32:02Z
 var params = new URLSearchParams(window.location.search);
 var pkg = params.get('package');
 var amount = params.get('amount');
-if (pkg || amount) {
+var until = params.get('until');
+if (pkg || amount || until) {
   document.getElementById('orderPackage').textContent = pkg || '—';
   document.getElementById('orderAmount').textContent = amount || '—';
+  if (until) {
+    var untilDate = new Date(until);
+    if (!isNaN(untilDate)) {
+      document.getElementById('orderUntil').textContent = untilDate.toUTCString();
+      document.getElementById('orderUntilRow').style.display = '';
+    }
+  }
   document.getElementById('orderCard').classList.add('is-visible');
 }
 </script>
