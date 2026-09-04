@@ -54,13 +54,6 @@ main{padding:56px 0 80px}
 .order-row span{color:var(--muted)}
 .order-row b{font-family:var(--font-display);font-weight:700;color:var(--black)}
 
-h2{font-family:var(--font-display);font-weight:800;font-size:21px;margin:0 0 18px;letter-spacing:-.01em}
-.steps{list-style:none;display:grid;gap:16px;margin-bottom:36px}
-.steps li{display:flex;gap:14px}
-.steps .n{flex:0 0 30px;height:30px;border-radius:50%;background:var(--black);color:var(--white);font-family:var(--font-display);font-weight:700;font-size:13px;display:grid;place-items:center}
-.steps p{color:var(--muted);margin:0}
-.steps b{color:var(--black)}
-
 .contact{background:var(--sec-white);border:1px solid var(--line);border-radius:14px;padding:24px 28px;margin-bottom:40px}
 .contact p{color:var(--muted);margin:0}
 .contact b{color:var(--black)}
@@ -100,7 +93,7 @@ footer{background:var(--black);color:#9A9D9C;padding:32px 0;font-size:14px}
     </div>
     <div class="eyebrow">Payment authorized</div>
     <h1>Your order is in.<br><em>Here's what happens next.</em></h1>
-    <p class="hero-sub">Your card is authorized, not charged — we only capture the payment once you approve the delivery. You'll hear from us within 1 business day.</p>
+    <p class="hero-sub">Your card is authorized, not charged. We only capture the payment once you approve the delivery, and you'll hear from us within 1 business day.</p>
   </div>
 </header>
 
@@ -108,21 +101,14 @@ footer{background:var(--black);color:#9A9D9C;padding:32px 0;font-size:14px}
   <div class="wrap">
 
     <div class="order-card" id="orderCard">
-      <div class="order-row"><span>Package</span><b id="orderPackage">—</b></div>
-      <div class="order-row"><span>Amount held</span><b id="orderAmount">—</b></div>
+      <div class="order-row"><span>Package</span><b id="orderPackage">-</b></div>
+      <div class="order-row"><span>Amount held</span><b id="orderAmount">-</b></div>
       <div class="order-row"><span>Status</span><b>Reserved, not charged yet</b></div>
-      <div class="order-row" id="orderUntilRow" style="display:none"><span>Reserved until</span><b id="orderUntil">—</b></div>
+      <div class="order-row" id="orderUntilRow" style="display:none"><span>Reserved until</span><b id="orderUntil">-</b></div>
     </div>
 
-    <h2>What happens next</h2>
-    <ul class="steps">
-      <li><span class="n">1</span><p><b>An engineer picks up your order.</b> We start on the codebase or repo you sent us the same business day.</p></li>
-      <li><span class="n">2</span><p><b>You get a report (and fixes, if your package includes them).</b> Delivered within the timeline of your package — 1 to 3 business days.</p></li>
-      <li><span class="n">3</span><p><b>You have 48 hours to review.</b> Happy with it, we capture the payment. Not happy, tell us and the hold is released — no charge.</p></li>
-    </ul>
-
     <div class="contact">
-      <p><b>Left something out of the form?</b> If there's anything about your project you didn't get to mention, just send it to <a href="mailto:business@mobidev.biz">business@mobidev.biz</a> — it goes straight to our team.</p>
+      <p><b>Left something out of the form?</b> If there's anything about your project you didn't get to mention, just send it to <a href="mailto:business@mobidev.biz">business@mobidev.biz</a>. It goes straight to our team.</p>
     </div>
 
     <div class="cta-row">
@@ -158,8 +144,8 @@ var pkg = params.get('package');
 var amount = params.get('amount');
 var until = params.get('until');
 if (pkg || amount || until) {
-  document.getElementById('orderPackage').textContent = pkg || '—';
-  document.getElementById('orderAmount').textContent = amount || '—';
+  document.getElementById('orderPackage').textContent = pkg || '-';
+  document.getElementById('orderAmount').textContent = amount || '-';
   if (until) {
     var untilDate = new Date(until);
     if (!isNaN(untilDate)) {
