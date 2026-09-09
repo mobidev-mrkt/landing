@@ -38,6 +38,7 @@ Ordered by what blocks the test.
 - [ ] **Speaker photos.** ~~Three `[ph]` avatar placeholders~~ real photos added for Serhii Ivanov, Ievgen Zadorozhnyi, Helen Khailova-Horash — confirm the client is OK with the AI-cutout + unified-background treatment before launch.
 - [ ] **Form destination.** ~~Form posts nowhere yet~~ now embeds the real HubSpot form (portal 47062060, form 171392a6-a943-4b51-80a7-548dac1f8200). The CSS override rules target HubSpot's standard form classes (`.hs-form-field`, `.hs-input`, `.hs-button`, etc.) from memory — this sandbox can't reach `js.hsforms.net` to render it live, so **load the page for real and check the form renders/looks right** before launch, especially on mobile and after a submit (success message state).
 - [ ] **Recording policy FAQ.** "Will it be recorded?" and "What if I can't make it live?" are unanswered placeholders.
+- [ ] **HubSpot consent text.** The form's legal-consent line ("By registering you agree to...") is configured inside the HubSpot form itself (portal 47062060), not in this HTML — update it there to reference Privacy Policy + Cookie Policy (there's no Terms of Service page, so drop that reference in the HubSpot form settings too).
 
 ## Claims to verify
 
