@@ -28,3 +28,18 @@ Ordered by what blocks the test.
 - [ ] GA4 or GTM, wired to the client's consent setup.
 - [ ] Thank-you page or inline success state after the form submits.
 - [ ] A short case or logo note explaining that the marquee logos are MobiDev clients, not buyers of this audit.
+
+---
+
+# webinar-ai-native-speed.html — "AI-Native Speed on a Legacy Codebase" (Sep 30)
+
+## Blocking
+
+- [ ] **Event time.** Page currently shows the date only (Sep 30, 2026), no time. Search for `[TIME TBD]`.
+- [ ] **Speaker photos.** Three `[ph]` avatar placeholders under Speakers → Serhii Ivanov, Ievgen Zadorozhnyi, Helen Khailova-Horash.
+- [ ] **Form destination.** Form posts nowhere yet. Waiting on the registration script/endpoint to wire in (webinar platform embed, or a form plugin once this moves to WordPress).
+- [ ] **Recording policy FAQ.** "Will it be recorded?" and "What if I can't make it live?" are unanswered placeholders.
+
+## Claims to verify
+
+- [ ] Confirm final speaker titles (Head of Resource Management / Delivery Manager at MobiDev / Senior Solutions Manager) match what goes on the internal brief doc.

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-Native Speed on a Legacy Codebase: free fireside chat | MobiDev</title>
+<meta name="description" content="A free fireside chat for founders and engineering leaders running an older codebase: what actually changes when AI gets into your SDLC, and what still doesn't. September 30, 2026.">
+<link rel="icon" type="image/png" href="mobidev-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#222222;
+  --green:#4AD57B;
+  --green-dark:#12B292;
+  --blue:#2EB0F1;
+  --grad:linear-gradient(90deg,#2EB0F1 0%,#12B292 100%);
+  --sec-white:#F7F7F7;
+  --white:#FFFFFF;
+  --line:#E4E6E5;
+  --muted:#5A5C5B;
+  --font-display:'Inter',-apple-system,Segoe UI,sans-serif;
+  --font-body:'Open Sans',-apple-system,Segoe UI,sans-serif;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+h1,h2,h3,.h{font-family:var(--font-display)}
+h1{font-weight:900;font-size:48px;line-height:1.08;letter-spacing:-.02em}
+h2{font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.015em}
+h3{font-family:var(--font-body);font-weight:700;font-size:24px;line-height:1.3}
+p{color:var(--muted)}
+a{color:inherit}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo img{height:28px;width:auto;display:block}
+.foot-logo{height:24px;width:auto;display:block;margin-bottom:10px}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--black)}
+.nav-links a:not(.btn):hover{color:var(--green-dark)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-body);font-weight:700;font-size:16px;padding:16px 28px;border-radius:8px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:.18s ease}
+.btn-primary{background:var(--green);color:var(--black)}
+.btn-primary:hover{background:#35C169;color:var(--black)}
+.btn-ghost{background:transparent;color:var(--black);border-color:var(--black)}
+.btn-ghost:hover{background:var(--black);color:var(--white)}
+.btn-sm{padding:11px 20px;font-size:15px}
+.btn-full{width:100%}
+
+/* hero */
+.hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - 72px);padding:clamp(32px,5vh,64px) 0}
+.hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;width:100%}
+.hero h1{color:var(--white);font-size:clamp(28px,3vw + 8px,44px)}
+.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.hero-sub{color:#C9CCCB;font-size:clamp(16px,1.2vw + 6px,19px);margin-top:clamp(12px,1.8vh,22px);max-width:540px}
+.hero-cta{display:flex;gap:12px;margin-top:clamp(18px,2.6vh,32px);flex-wrap:wrap}
+.trust{list-style:none;margin-top:clamp(16px,2.4vh,28px);display:flex;flex-wrap:wrap;gap:10px 18px}
+.trust li{display:flex;gap:8px;align-items:center;color:#E6E8E7;font-size:14px}
+.tick{flex:0 0 18px;height:18px;border-radius:50%;background:var(--green);display:grid;place-items:center}
+.tick svg{width:10px;height:10px}
+.hero-card{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:clamp(20px,2.4vh,26px)}
+.hero-card .lbl{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.hero-card h3{color:var(--white);margin:8px 0 14px;font-size:20px}
+.hero-row{display:flex;justify-content:space-between;gap:16px;padding:clamp(8px,1.1vh,12px) 0;border-top:1px solid #3A3A3A;font-size:14px;color:#C9CCCB}
+.hero-row b{font-family:var(--font-display);font-weight:700;color:var(--white);text-align:right}
+.hero-note{margin-top:14px;font-size:13px;color:#9A9D9C}
+
+/* sections */
+section{padding:88px 0}
+.sec-head{max-width:760px;margin-bottom:48px}
+.sec-head p{font-size:18px;margin-top:16px}
+.eyebrow{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark);margin-bottom:14px}
+.grey{background:var(--sec-white)}
+
+/* client logo marquee */
+.logos{padding:44px 0 40px;border-bottom:1px solid var(--line);overflow:hidden}
+.logos-lbl{text-align:center;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.marquee{display:flex;gap:56px;width:max-content;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{list-style:none;display:flex;align-items:center;gap:56px;padding-right:56px;animation:slide 42s linear infinite}
+.track img{height:38px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.62;transition:filter .25s ease,opacity .25s ease}
+.track img:hover{filter:none;opacity:1}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}.marquee{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
+
+/* pains */
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pain{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:32px;position:relative;display:flex;flex-direction:column}
+.pain .q{font-family:var(--font-display);font-weight:900;font-size:56px;line-height:1;color:var(--green);display:block;margin-bottom:8px}
+.pain blockquote{color:var(--black);font-size:17px;margin-bottom:22px}
+.who{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line)}
+.ava{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;overflow:hidden}
+.ava svg{width:26px;height:26px;fill:none;stroke:#9A9D9C;stroke-width:2.4;stroke-linecap:round}
+.who-t{display:flex;flex-direction:column;line-height:1.35}
+.who-t b{font-family:var(--font-display);font-weight:700;font-size:15px}
+.who-t em{font-style:normal;font-size:13px;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
+.step{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white);position:relative}
+.step .n{font-family:var(--font-display);font-weight:900;font-size:15px;width:34px;height:34px;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center;margin-bottom:16px}
+.step h3{font-size:17px;margin-bottom:8px}
+.step p{font-size:15px}
+
+/* why (format) */
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.why-item{display:flex;gap:16px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px}
+.why-ico{flex:0 0 40px;height:40px;border-radius:10px;background:#E9FAF0;display:grid;place-items:center}
+.why-ico svg{width:20px;height:20px;stroke:#0D7A44;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-item p{color:var(--black);font-size:16px}
+
+/* team / speakers */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mate{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white)}
+.avatar{width:64px;height:64px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;color:#B7BAB9;margin-bottom:16px;overflow:hidden}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.mate h3{font-size:18px}
+.mate .role{font-size:14px;color:var(--green-dark);font-weight:700;margin:4px 0 10px}
+.mate p{font-size:15px}
+
+/* faq */
+.faq{max-width:860px}
+.faq details{border-bottom:1px solid var(--line);padding:24px 0}
+.faq summary{font-family:var(--font-body);font-weight:700;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1;color:var(--green-dark)}
+.faq details[open] summary::after{content:"–"}
+.faq .a{margin-top:16px;font-size:16px}
+
+/* final cta + form */
+.final{background:var(--black);color:var(--white)}
+.final-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.final h2{color:var(--white)}
+.final p{color:#C9CCCB;font-size:18px;margin-top:18px}
+.guar{margin-top:28px;display:grid;gap:12px}
+.guar div{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#E6E8E7}
+form{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:32px}
+.f-row{margin-bottom:18px}
+label{display:block;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C9CCCB;margin-bottom:8px}
+input,select,textarea{width:100%;background:#222;border:1px solid #4A4A4A;border-radius:8px;padding:14px;color:var(--white);font-family:var(--font-body);font-size:16px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
+textarea{min-height:96px;resize:vertical}
+.f-note{font-size:13px;color:#9A9D9C;margin-top:14px;text-align:center}
+
+/* footer */
+footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;padding:32px 0;font-size:14px}
+.foot-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot-right{text-align:right}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:8px}
+.foot-links a{color:#C9CCCB;text-decoration:none;font-weight:600}
+.foot-links a:hover{color:var(--green)}
+.foot-note{font-size:13px}
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+@media(max-width:980px){
+  h1{font-size:34px}h2{font-size:29px}
+  .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
+  .pains,.why,.team{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .nav-links a:not(.btn){display:none}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#" aria-label="MobiDev"><img src="mobidev-logo.png" alt="MobiDev"></a>
+    <div class="nav-links">
+      <a href="#pains">Sound familiar?</a>
+      <a href="#agenda">What's covered</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#faq">FAQ</a>
+      <a href="#register" class="btn btn-primary btn-sm">Register free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <h1>AI-Native Speed on a Legacy Codebase<br><em>How to Outpace Competitors with AIDLC</em></h1>
+      <p class="hero-sub">A fireside chat for founders and engineering leaders running an older codebase: what actually changes once AI gets into your SDLC, and what still doesn't.</p>
+      <div class="hero-cta">
+        <a href="#register" class="btn btn-primary">Register free</a>
+        <a href="#format" class="btn btn-ghost" style="border-color:#4A4A4A;color:#fff">What's a fireside chat?</a>
+      </div>
+      <ul class="trust">
+        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>September 30, 2026</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Live fireside chat, not a slide deck</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ask your question at registration</li>
+      </ul>
+    </div>
+    <aside class="hero-card">
+      <div class="lbl">Free fireside chat</div>
+      <h3>AI-Native Speed on a Legacy Codebase</h3>
+      <div class="hero-row"><span>Date</span><b>Sep 30, 2026 <!-- [TIME TBD] --></b></div>
+      <div class="hero-row"><span>Format</span><b>Fireside chat, live Q&amp;A</b></div>
+      <div class="hero-row"><span>Speakers</span><b>2 + moderator</b></div>
+      <div class="hero-row"><span>You walk away with</span><b>What to fix first</b></div>
+      <a href="#register" class="btn btn-primary btn-full" style="margin-top:22px">Save my seat</a>
+      <p class="hero-note">Bring a specific question about your codebase. We'll pull it into the conversation.</p>
+    </aside>
+  </div>
+</header>
+
+<!-- CLIENT LOGOS -->
+<section class="logos" aria-label="Companies MobiDev has worked with">
+  <div class="wrap">
+    <p class="logos-lbl">Hosted by the team behind</p>
+  </div>
+  <div class="marquee">
+    <ul class="track">
+        <li><img src="beone-sports-logo-1-300x133.webp" alt="BeOne Sports" loading="lazy" width="150" height="66"></li>
+        <li><img src="camino-logo-1-300x133.webp" alt="Camino" loading="lazy" width="150" height="66"></li>
+        <li><img src="cers-logo-2-300x133.webp" alt="CERS" loading="lazy" width="150" height="66"></li>
+        <li><img src="cujoai-logo-1-300x133.webp" alt="CUJO AI" loading="lazy" width="150" height="66"></li>
+        <li><img src="discover.swiss-logo-2-300x133.webp" alt="discover.swiss" loading="lazy" width="150" height="66"></li>
+        <li><img src="lmn-logo-2-300x133.webp" alt="LMN" loading="lazy" width="150" height="66"></li>
+        <li><img src="operaio-logo-2-300x133.webp" alt="Operaio" loading="lazy" width="150" height="66"></li>
+        <li><img src="pgaa_logo_bk-1-300x273.webp" alt="PGAA" loading="lazy" width="150" height="66"></li>
+        <li><img src="quality-bridge-logo-2-300x133.webp" alt="Quality Bridge" loading="lazy" width="150" height="66"></li>
+        <li><img src="secure-groupe-logo-2-300x133.webp" alt="Secure Group" loading="lazy" width="150" height="66"></li>
+        <li><img src="smarttab-logo-2-300x133.webp" alt="SmartTab" loading="lazy" width="150" height="66"></li>
+        <li><img src="sms-group-logo-1-300x133.webp" alt="SMS Group" loading="lazy" width="150" height="66"></li>
+        <li><img src="verizon-media-logo-2-300x133.webp" alt="Verizon Media" loading="lazy" width="150" height="66"></li>
+        <li><img src="wfcca-logo-1-300x133.webp" alt="WFCCA" loading="lazy" width="150" height="66"></li>
+    </ul>
+    <ul class="track" aria-hidden="true">
+        <li><img src="beone-sports-logo-1-300x133.webp" alt="BeOne Sports" loading="lazy" width="150" height="66"></li>
+        <li><img src="camino-logo-1-300x133.webp" alt="Camino" loading="lazy" width="150" height="66"></li>
+        <li><img src="cers-logo-2-300x133.webp" alt="CERS" loading="lazy" width="150" height="66"></li>
+        <li><img src="cujoai-logo-1-300x133.webp" alt="CUJO AI" loading="lazy" width="150" height="66"></li>
+        <li><img src="discover.swiss-logo-2-300x133.webp" alt="discover.swiss" loading="lazy" width="150" height="66"></li>
+        <li><img src="lmn-logo-2-300x133.webp" alt="LMN" loading="lazy" width="150" height="66"></li>
+        <li><img src="operaio-logo-2-300x133.webp" alt="Operaio" loading="lazy" width="150" height="66"></li>
+        <li><img src="pgaa_logo_bk-1-300x273.webp" alt="PGAA" loading="lazy" width="150" height="66"></li>
+        <li><img src="quality-bridge-logo-2-300x133.webp" alt="Quality Bridge" loading="lazy" width="150" height="66"></li>
+        <li><img src="secure-groupe-logo-2-300x133.webp" alt="Secure Group" loading="lazy" width="150" height="66"></li>
+        <li><img src="smarttab-logo-2-300x133.webp" alt="SmartTab" loading="lazy" width="150" height="66"></li>
+        <li><img src="sms-group-logo-1-300x133.webp" alt="SMS Group" loading="lazy" width="150" height="66"></li>
+        <li><img src="verizon-media-logo-2-300x133.webp" alt="Verizon Media" loading="lazy" width="150" height="66"></li>
+        <li><img src="wfcca-logo-1-300x133.webp" alt="WFCCA" loading="lazy" width="150" height="66"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAINS -->
+<section id="pains" class="grey">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Sound familiar?</div>
+      <h2>Does this sound like your product right now?</h2>
+      <p>Three things we keep hearing from founders running an older codebase.</p>
+    </div>
+    <div class="pains">
+      <figure class="pain reveal">
+        <span class="q">&ldquo;</span>
+        <blockquote>Every quarter the roadmap slips a little more. Our competitors ship in weeks what takes us months, and I don't fully understand why anymore.</blockquote>
+        <figcaption class="who">
+          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
+          <span class="who-t"><b>Founder</b><em>SaaS product, 12 years old</em></span>
+        </figcaption>
+      </figure>
+      <figure class="pain reveal" style="transition-delay:.08s">
+        <span class="q">&ldquo;</span>
+        <blockquote>Half my engineering budget just keeps the lights on. I know that's not sustainable, I just don't know what to do about it without stopping the business.</blockquote>
+        <figcaption class="who">
+          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
+          <span class="who-t"><b>CEO</b><em>Vertical software, 9 years old</em></span>
+        </figcaption>
+      </figure>
+      <figure class="pain reveal" style="transition-delay:.16s">
+        <span class="q">&ldquo;</span>
+        <blockquote>Everyone tells me to "just use AI." I've seen what happens when a team vibe-codes production code. I'm not doing that to a system this old.</blockquote>
+        <figcaption class="who">
+          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
+          <span class="who-t"><b>VP Engineering</b><em>Fintech platform</em></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- AGENDA -->
+<section id="agenda">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What's actually covered</div>
+      <h2>Less pitch, more real talk</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">1</div>
+        <h3>Where the speed actually comes from</h3>
+        <p>Not the hype version, the mechanical one: model plus harness, and why the harness is most of the work.</p>
+      </div>
+      <div class="step reveal" style="transition-delay:.06s">
+        <div class="n">2</div>
+        <h3>What breaks first on old code</h3>
+        <p>The honest failure modes, not just the wins. Where AI helps fast and where it quietly makes things worse.</p>
+      </div>
+      <div class="step reveal" style="transition-delay:.12s">
+        <div class="n">3</div>
+        <h3>Your questions, live</h3>
+        <p>Submitted at registration, worked into the conversation as we go. Not a generic Q&amp;A dump at the end.</p>
+      </div>
+      <div class="step reveal" style="transition-delay:.18s">
+        <div class="n">4</div>
+        <h3>What people are actually asking AI</h3>
+        <p>The most common prompts we're seeing on this topic, and what that tells you about where teams get stuck.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT -->
+<section id="format" class="grey">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Why fireside chat</div>
+      <h2>No slide wall. Just two people who've done this, talking.</h2>
+    </div>
+    <div class="why">
+      <div class="why-item reveal">
+        <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+        <p><b>You ask, we answer live.</b> Drop your question when you register and we'll work it into the conversation instead of saving it for a rushed Q&amp;A at the end.</p>
+      </div>
+      <div class="why-item reveal" style="transition-delay:.08s">
+        <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <p><b>Real delivery, not theory.</b> Both speakers run these engagements day to day. What you hear is what actually happens on a project, not a deck.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Who's talking</div>
+      <h2>Two people who do this for a living</h2>
+    </div>
+    <!-- PLACEHOLDER: swap [ph] avatars for real speaker photos before launch. -->
+    <div class="team">
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>Serhii Ivanov</h3>
+        <div class="role">Head of Resource Management</div>
+        <p>Runs how MobiDev staffs and trains teams for AI-native delivery. Sees firsthand which roles change first when a team adopts AIDLC.</p>
+      </article>
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>Ievgen Zadorozhnyi</h3>
+        <div class="role">Delivery Manager at MobiDev</div>
+        <p>Delivers legacy modernization projects day to day. Talks about what actually happens on a timeline, not the pitch version.</p>
+      </article>
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>Helen Khailova-Horash</h3>
+        <div class="role">Senior Solutions Manager · Moderator</div>
+        <p>Hosts the conversation and brings your questions into it live.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="grey">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions people ask before registering</h2>
+    </div>
+    <div class="faq">
+
+      <details open>
+        <summary>Is this a sales pitch?</summary>
+        <div class="a"><p>No hard pitch. It's an hour of real talk. If you want to go deeper afterward, there's one clear next step at the end, that's it.</p></div>
+      </details>
+
+      <details>
+        <summary>Do I need a technical background?</summary>
+        <div class="a"><p>No. Founders and CEOs are as welcome as engineering leads. We keep it in plain language. This isn't a deep-dive technical workshop.</p></div>
+      </details>
+
+      <details>
+        <summary>Will it be recorded?</summary>
+        <div class="a"><p>[PLACEHOLDER: confirm recording policy before launch.]</p></div>
+      </details>
+
+      <details>
+        <summary>What if I can't make it live?</summary>
+        <div class="a"><p>[PLACEHOLDER: confirm before launch.]</p></div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + FORM -->
+<section id="register" class="final">
+  <div class="wrap final-in">
+    <div>
+      <div class="eyebrow" style="color:var(--green)">Register</div>
+      <h2>Save your seat for September 30</h2>
+      <p>Free to attend. Bring a question, or just come listen.</p>
+      <div class="guar">
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Free to attend</div>
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ask your question at registration</div>
+        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>One clear next step at the end, no pressure</div>
+      </div>
+    </div>
+
+    <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the real
+         endpoint (Netlify, WPForms, Gravity Forms, a webinar platform's own embed) once the
+         registration script is supplied. Keep these fields. -->
+    <form name="ai-native-speed-webinar" method="POST" data-netlify="true" netlify-honeypot="company-website">
+      <input type="hidden" name="form-name" value="ai-native-speed-webinar">
+      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
+      <div class="f-row">
+        <label for="name">Your name</label>
+        <input id="name" name="name" required placeholder="Alex Rivera">
+      </div>
+      <div class="f-row">
+        <label for="email">Work email</label>
+        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
+      </div>
+      <div class="f-row">
+        <label for="company">Company</label>
+        <input id="company" name="company" required placeholder="Your company">
+      </div>
+      <div class="f-row">
+        <label for="role">Role</label>
+        <select id="role" name="role">
+          <option>Founder / CEO</option>
+          <option>VP Engineering / CTO</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="f-row">
+        <label for="question">Your question for the panel (optional)</label>
+        <textarea id="question" name="question" placeholder="What's actually slowing your team down right now?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Save my seat</button>
+      <p class="f-note">We'll email the joining link before the event.<br>By registering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <img class="foot-logo" src="mobidev-logo.png" alt="MobiDev">
+      © <span id="yr">2026</span> MobiDev · AI-Native Speed on a Legacy Codebase
+    </div>
+    <div class="foot-right">
+      <div class="foot-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:business@mobidev.biz">business@mobidev.biz</a>
+      </div>
+      <div class="foot-note">Free to attend · Live fireside chat · September 30, 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// reveal on scroll
+var io_ = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io_.unobserve(e.target); } });
+}, {rootMargin:'0px 0px -12% 0px'}) : null;
+if(io_){ document.querySelectorAll('.reveal').forEach(function(el){ io_.observe(el); }); }
+else { document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); }); }
+</script>
+</body>
+</html>
