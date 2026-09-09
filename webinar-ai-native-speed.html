@@ -106,8 +106,10 @@ section{padding:80px 0}
 .spk{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center}
 .spk-top{display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:16px}
 .spk-avatar{flex:0 0 132px;width:132px;height:132px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--white),0 0 0 5px var(--line)}
-.spk-li{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.04em;color:var(--green-dark);text-decoration:none;margin-top:6px}
-.spk-li svg{width:14px;height:14px;fill:var(--green-dark)}
+.spk-li{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--sec-white);margin-top:8px;transition:background .15s}
+.spk-li:hover{background:var(--green-dark)}
+.spk-li svg{width:18px;height:18px;fill:var(--green-dark)}
+.spk-li:hover svg{fill:var(--white)}
 .spk h3{font-size:18px}
 .spk-role{font-size:13px;color:var(--muted);margin-top:2px}
 .spk-eyebrow{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;text-align:left}
@@ -144,16 +146,38 @@ section{padding:80px 0}
 .faq details[open] summary::after{content:"–"}
 .faq .a{margin-top:14px;font-size:15px}
 
-/* register */
-.hero-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
-.f-row{margin-bottom:0}
-.f-row.full{grid-column:1 / -1}
-label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-input,select,textarea{width:100%;background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:13px;color:var(--black);font-family:var(--font-body);font-size:15px}
-input::placeholder,textarea::placeholder{color:#9AA6A4}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-dark)}
-textarea{min-height:72px;resize:vertical}
-.f-note{font-size:13px;color:var(--muted);margin-top:16px}
+/* register (HubSpot embedded form, restyled to match the rest of the page) */
+#hs-register-form{margin-top:22px}
+#hs-register-form form{margin:0}
+#hs-register-form fieldset{max-width:none!important;display:grid;grid-template-columns:1fr 1fr;gap:16px;border:none;padding:0;margin:0 0 16px}
+#hs-register-form fieldset > .hs-form-field{grid-column:span 1}
+#hs-register-form .hs-fieldtype-textarea,
+#hs-register-form .hs-fieldtype-booleancheckbox,
+#hs-register-form .hs_submit,
+#hs-register-form .legal-consent-container{grid-column:1 / -1}
+#hs-register-form .input{margin:0}
+#hs-register-form label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+#hs-register-form label span.hs-form-required{color:var(--green-dark)}
+#hs-register-form input[type=text],
+#hs-register-form input[type=email],
+#hs-register-form input[type=tel],
+#hs-register-form input[type=number],
+#hs-register-form select,
+#hs-register-form textarea{width:100%!important;box-sizing:border-box;background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:13px;color:var(--black);font-family:var(--font-body);font-size:15px;height:auto}
+#hs-register-form input::placeholder,#hs-register-form textarea::placeholder{color:#9AA6A4}
+#hs-register-form input:focus,#hs-register-form select:focus,#hs-register-form textarea:focus{outline:none;border-color:var(--green-dark)}
+#hs-register-form textarea{min-height:72px;resize:vertical}
+#hs-register-form ul.inputs-list{list-style:none;margin:4px 0 0;padding:0}
+#hs-register-form .hs-error-msgs{list-style:none;margin:6px 0 0;padding:0;font-size:12px;color:#C0392B}
+#hs-register-form .hs_submit{margin-top:6px}
+#hs-register-form .hs-button{width:100%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 30px;border-radius:999px;border:2px solid transparent;background:var(--green);color:var(--navy);cursor:pointer;transition:.18s ease}
+#hs-register-form .hs-button:hover{background:#35C169;color:var(--navy)}
+#hs-register-form .hs-richtext,
+#hs-register-form .legal-consent-container{font-size:13px;color:var(--muted);margin-top:16px}
+#hs-register-form .legal-consent-container a,
+#hs-register-form .hs-richtext a{color:var(--green-dark)}
+#hs-register-form .submitted-message{font-size:16px;color:var(--black);text-align:center;padding:12px 0}
+@media(max-width:600px){#hs-register-form fieldset{grid-template-columns:1fr}}
 
 /* footer */
 footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
@@ -210,45 +234,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         <div class="hero-fact"><b>Free</b><span>No pitch, one Q&amp;A</span></div>
       </div>
 
-      <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the
-           real endpoint (webinar platform embed, Netlify, form plugin) once the registration
-           script is supplied. Keep these fields. -->
-      <form name="ai-native-speed-webinar" method="POST" data-netlify="true" netlify-honeypot="company-website">
-        <input type="hidden" name="form-name" value="ai-native-speed-webinar">
-        <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
-        <div class="hero-form-grid">
-          <div class="f-row">
-            <label for="name">Your name</label>
-            <input id="name" name="name" required placeholder="Alex Rivera">
-          </div>
-          <div class="f-row">
-            <label for="email">Work email</label>
-            <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
-          </div>
-          <div class="f-row">
-            <label for="company">Company</label>
-            <input id="company" name="company" required placeholder="Your company">
-          </div>
-          <div class="f-row">
-            <label for="role">Role</label>
-            <select id="role" name="role">
-              <option>Founder / CEO</option>
-              <option>CTO / VP Engineering</option>
-              <option>Head of Product</option>
-              <option>Head of AI / Innovation</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="f-row full">
-            <label for="question">Your question for the panel (optional)</label>
-            <textarea id="question" name="question" placeholder="What's actually slowing your team down right now?"></textarea>
-          </div>
-          <div class="f-row full">
-            <button type="submit" class="btn btn-primary btn-full">Register free</button>
-            <p class="f-note">We'll email the joining link before the event. By registering you agree to the <a href="terms.html" style="color:var(--green-dark)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green-dark)">Privacy Policy</a>.</p>
-          </div>
-        </div>
-      </form>
+      <div id="hs-register-form"></div>
     </div>
 
     <div class="trust-bar">
@@ -317,7 +303,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
           <div>
             <h3>Serhii Ivanov</h3>
             <div class="spk-role">Head of Resource Management</div>
-            <a href="#" class="spk-li"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg>Serhii Ivanov</a>
+            <a href="https://www.linkedin.com/in/serhii-i-72228776/" target="_blank" rel="noopener" class="spk-li" aria-label="Serhii Ivanov on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg></a>
           </div>
         </div>
         <div class="spk-eyebrow">Speaker expertise</div>
@@ -329,7 +315,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
           <div>
             <h3>Ievgen Zadorozhnyi</h3>
             <div class="spk-role">Delivery Manager at MobiDev</div>
-            <a href="#" class="spk-li"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg>Ievgen Zadorozhnyi</a>
+            <a href="https://www.linkedin.com/in/eugene-zadorozhniy/" target="_blank" rel="noopener" class="spk-li" aria-label="Ievgen Zadorozhnyi on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg></a>
           </div>
         </div>
         <div class="spk-eyebrow">Speaker expertise</div>
@@ -362,7 +348,10 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       <img class="mod-photo" src="speaker-helen-khailova-horash.jpg" alt="Helen Khailova-Horash" loading="lazy" width="170" height="170">
       <div>
         <div class="eyebrow" style="margin-bottom:4px">Moderator's insight</div>
-        <h3>Helen Khailova-Horash</h3>
+        <div style="display:flex;align-items:center;gap:10px">
+          <h3>Helen Khailova-Horash</h3>
+          <a href="https://www.linkedin.com/in/helen-khailova-prof1/" target="_blank" rel="noopener" class="spk-li" style="margin-top:0" aria-label="Helen Khailova-Horash on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg></a>
+        </div>
         <div class="role">Senior Solutions Manager</div>
         <p>"I keep hearing the same tension from founders: everyone says ship faster with AI, but nobody wants to be the team that broke production doing it. That's exactly the debate I want on stage this time, resourcing versus delivery, speed versus what actually holds up."</p>
       </div>
@@ -457,6 +446,15 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
   </div>
 </footer>
 
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "47062060",
+    formId: "171392a6-a943-4b51-80a7-548dac1f8200",
+    region: "na1",
+    target: "#hs-register-form"
+  });
+</script>
 <script>
 // reveal on scroll
 var io_ = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){
