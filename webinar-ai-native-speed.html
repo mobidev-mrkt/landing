@@ -459,17 +459,26 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
     portalId: "47062060",
     formId: "171392a6-a943-4b51-80a7-548dac1f8200",
     region: "na1",
-    target: "#hs-register-form",
-    onFormReady: function() {
-      // The portal's form styling sets the submit button's look via an
-      // inline style that a plain stylesheet (even with !important) can't
-      // reliably beat, so force it in JS after the form renders.
-      var btn = document.querySelector('#hs-register-form input[type="submit"], #hs-register-form .hs-button, #hs-register-form button[type="submit"]');
-      if (btn) {
-        var set = function(prop, val){ btn.style.setProperty(prop, val, 'important'); };
+    target: "#hs-register-form"
+  });
+
+  // The portal's own form/branding styling keeps re-asserting the submit
+  // button's default look (sometimes after a delay, sometimes re-rendering
+  // the node entirely), so a single onFormReady pass isn't enough. Instead,
+  // keep re-forcing the style: on an interval for the first few seconds,
+  // then via a MutationObserver for any later re-render.
+  (function () {
+    var container = document.getElementById('hs-register-form');
+    if (!container) return;
+    function styleButtons() {
+      var btns = container.querySelectorAll('input[type="submit"], .hs-button, button');
+      for (var i = 0; i < btns.length; i++) {
+        var btn = btns[i];
+        var hovering = btn.dataset.brandHover === '1';
+        var set = function (prop, val) { btn.style.setProperty(prop, val, 'important'); };
         set('width', 'auto');
-        set('background', '#4AD57B');
-        set('background-color', '#4AD57B');
+        set('background', hovering ? '#35C169' : '#4AD57B');
+        set('background-color', hovering ? '#35C169' : '#4AD57B');
         set('color', '#0E2A2C');
         set('border-radius', '999px');
         set('padding', '16px 42px');
@@ -479,11 +488,41 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         set('letter-spacing', '.03em');
         set('text-transform', 'uppercase');
         set('border', '2px solid transparent');
-        btn.addEventListener('mouseenter', function(){ set('background', '#35C169'); set('background-color', '#35C169'); });
-        btn.addEventListener('mouseleave', function(){ set('background', '#4AD57B'); set('background-color', '#4AD57B'); });
+        if (btn.dataset.brandStyled !== '1') {
+          btn.dataset.brandStyled = '1';
+          btn.addEventListener('mouseenter', function () { this.dataset.brandHover = '1'; this.style.setProperty('background', '#35C169', 'important'); this.style.setProperty('background-color', '#35C169', 'important'); });
+          btn.addEventListener('mouseleave', function () { this.dataset.brandHover = '0'; this.style.setProperty('background', '#4AD57B', 'important'); this.style.setProperty('background-color', '#4AD57B', 'important'); });
+        }
       }
     }
-  });
+    function styleLabels() {
+      var labels = container.querySelectorAll('label');
+      for (var i = 0; i < labels.length; i++) {
+        var lbl = labels[i];
+        if (lbl.closest('.hs-fieldtype-booleancheckbox')) continue;
+        var set = function (prop, val) { lbl.style.setProperty(prop, val, 'important'); };
+        set('display', 'block');
+        set('font-family', "'Inter',-apple-system,Segoe UI,sans-serif");
+        set('font-weight', '700');
+        set('font-size', '12px');
+        set('letter-spacing', '.06em');
+        set('text-transform', 'uppercase');
+        set('color', '#5A5C5B');
+        set('margin-bottom', '7px');
+      }
+    }
+    function styleAll() { styleButtons(); styleLabels(); }
+    styleAll();
+    var tries = 0;
+    var iv = setInterval(function () {
+      styleAll();
+      tries++;
+      if (tries > 20) clearInterval(iv); // ~10s of polling every 500ms
+    }, 500);
+    if (window.MutationObserver) {
+      new MutationObserver(styleAll).observe(container, { childList: true, subtree: true });
+    }
+  })();
 </script>
 <script>
 // reveal on scroll
