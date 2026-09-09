@@ -9,13 +9,24 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<!--
+  Built to match the live mobidev.biz look (nav, hero gradient, speaker cards,
+  Key Numbers tiles, persona cards, footer) from screenshots supplied by the
+  client, not from the site's actual CSS (this environment can't reach
+  mobidev.biz). Exact hex values, footer link targets and social handles are
+  best-effort approximations, marked [VERIFY] below, check against the real
+  site/brand kit before this goes live.
+-->
 <style>
 :root{
   --black:#222222;
+  --navy:#0E2A2C;
+  --navy-2:#123638;
   --green:#4AD57B;
   --green-dark:#12B292;
   --blue:#2EB0F1;
-  --grad:linear-gradient(90deg,#2EB0F1 0%,#12B292 100%);
+  --grad:linear-gradient(135deg,#0E2A2C 0%,#12786F 45%,#2EB0F1 100%);
+  --grad-flat:linear-gradient(90deg,#12B292 0%,#2EB0F1 100%);
   --sec-white:#F7F7F7;
   --white:#FFFFFF;
   --line:#E4E6E5;
@@ -29,134 +40,148 @@ html{scroll-behavior:smooth}
 body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 h1,h2,h3,.h{font-family:var(--font-display)}
-h1{font-weight:900;font-size:48px;line-height:1.08;letter-spacing:-.02em}
-h2{font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.015em}
-h3{font-family:var(--font-body);font-weight:700;font-size:24px;line-height:1.3}
+h1{font-weight:900;font-size:44px;line-height:1.1;letter-spacing:-.02em}
+h2{font-weight:700;font-size:36px;line-height:1.18;letter-spacing:-.015em}
+h3{font-family:var(--font-body);font-weight:700;font-size:22px;line-height:1.3}
 p{color:var(--muted)}
 a{color:inherit}
 
 /* nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo img{height:28px;width:auto;display:block}
-.foot-logo{height:24px;width:auto;display:block;margin-bottom:10px}
-.nav-links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:600}
-.nav-links a{text-decoration:none;color:var(--black)}
-.nav-links a:not(.btn):hover{color:var(--green-dark)}
+.logo img{height:26px;width:auto;display:block;filter:brightness(0) invert(1)}
+.foot-logo{height:24px;width:auto;display:block;margin-bottom:14px;filter:brightness(0) invert(1)}
+.nav-links{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:600}
+.nav-links a{text-decoration:none;color:#D7E4E3}
+.nav-links a:not(.btn):hover{color:var(--green)}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-body);font-weight:700;font-size:16px;padding:16px 28px;border-radius:8px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:.18s ease}
-.btn-primary{background:var(--green);color:var(--black)}
-.btn-primary:hover{background:#35C169;color:var(--black)}
-.btn-ghost{background:transparent;color:var(--black);border-color:var(--black)}
-.btn-ghost:hover{background:var(--black);color:var(--white)}
-.btn-sm{padding:11px 20px;font-size:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 30px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:.18s ease}
+.btn-primary{background:var(--green);color:var(--navy)}
+.btn-primary:hover{background:#35C169;color:var(--navy)}
+.btn-white{background:var(--white);color:var(--navy-2)}
+.btn-white:hover{background:#E6F7F2}
+.btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.4)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-sm{padding:11px 22px;font-size:13px}
 .btn-full{width:100%}
+.btn-link{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
+.btn-link:hover{text-decoration:underline}
 
 /* hero */
-.hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - 72px);padding:clamp(32px,5vh,64px) 0}
-.hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
-.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;width:100%}
-.hero h1{color:var(--white);font-size:clamp(28px,3vw + 8px,44px)}
-.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
-.hero-sub{color:#C9CCCB;font-size:clamp(16px,1.2vw + 6px,19px);margin-top:clamp(12px,1.8vh,22px);max-width:540px}
-.hero-cta{display:flex;gap:12px;margin-top:clamp(18px,2.6vh,32px);flex-wrap:wrap}
-.trust{list-style:none;margin-top:clamp(16px,2.4vh,28px);display:flex;flex-wrap:wrap;gap:10px 18px}
-.trust li{display:flex;gap:8px;align-items:center;color:#E6E8E7;font-size:14px}
-.tick{flex:0 0 18px;height:18px;border-radius:50%;background:var(--green);display:grid;place-items:center}
-.tick svg{width:10px;height:10px}
-.hero-card{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:clamp(20px,2.4vh,26px)}
-.hero-card .lbl{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
-.hero-card h3{color:var(--white);margin:8px 0 14px;font-size:20px}
-.hero-row{display:flex;justify-content:space-between;gap:16px;padding:clamp(8px,1.1vh,12px) 0;border-top:1px solid #3A3A3A;font-size:14px;color:#C9CCCB}
-.hero-row b{font-family:var(--font-display);font-weight:700;color:var(--white);text-align:right}
-.hero-note{margin-top:14px;font-size:13px;color:#9A9D9C}
+.hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(48px,7vh,80px) 0}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:32px}
+.hero-badge{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
+.hero h1{color:var(--white);max-width:760px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero-sub{color:#DCEDEC;font-size:18px;margin-top:16px;max-width:640px}
+.hero-card{background:var(--white);border-radius:20px;padding:clamp(24px,3vh,34px);box-shadow:0 30px 70px rgba(0,0,0,.28);display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;margin-top:36px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:22px}
+.hero-fact b{display:block;font-family:var(--font-display);font-weight:900;font-size:26px;color:var(--navy-2)}
+.hero-fact span{font-size:13px;color:var(--muted)}
+.hero-form{display:grid;gap:12px}
+.hero-form input,.hero-form select{width:100%;background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:13px 14px;font-family:var(--font-body);font-size:15px;color:var(--black)}
+.hero-form input:focus,.hero-form select:focus{outline:none;border-color:var(--green-dark)}
+.hero-consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;color:var(--muted)}
+.hero-consent input{margin-top:3px}
+.hero-consent a{color:var(--green-dark);text-decoration:underline}
+.trust-bar{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;color:#DCEDEC}
+.trust-bar b{color:var(--white)}
 
 /* sections */
-section{padding:88px 0}
-.sec-head{max-width:760px;margin-bottom:48px}
-.sec-head p{font-size:18px;margin-top:16px}
-.eyebrow{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark);margin-bottom:14px}
+section{padding:80px 0}
+.sec-head{max-width:720px;margin:0 auto 44px;text-align:center}
+.sec-head p{font-size:17px;margin-top:14px}
+.eyebrow{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-dark);margin-bottom:12px}
 .grey{background:var(--sec-white)}
 
-/* client logo marquee */
-.logos{padding:44px 0 40px;border-bottom:1px solid var(--line);overflow:hidden}
-.logos-lbl{text-align:center;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
-.marquee{display:flex;gap:56px;width:max-content;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.track{list-style:none;display:flex;align-items:center;gap:56px;padding-right:56px;animation:slide 42s linear infinite}
-.track img{height:38px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.62;transition:filter .25s ease,opacity .25s ease}
-.track img:hover{filter:none;opacity:1}
-.marquee:hover .track{animation-play-state:paused}
-@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-100%)}}
-@media(prefers-reduced-motion:reduce){.track{animation:none}.marquee{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
+/* takeaway cards */
+.take{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.take-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;text-align:left}
+.take-ico{width:44px;height:44px;border-radius:10px;background:#E9FAF0;display:grid;place-items:center;margin-bottom:16px}
+.take-ico svg{width:24px;height:24px;stroke:var(--green-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.take-card h3{font-size:18px;margin-bottom:8px}
+.take-card p{font-size:14px}
 
-/* pains */
-.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.pain{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:32px;position:relative;display:flex;flex-direction:column}
-.pain .q{font-family:var(--font-display);font-weight:900;font-size:56px;line-height:1;color:var(--green);display:block;margin-bottom:8px}
-.pain blockquote{color:var(--black);font-size:17px;margin-bottom:22px}
-.who{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line)}
-.ava{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;overflow:hidden}
-.ava svg{width:26px;height:26px;fill:none;stroke:#9A9D9C;stroke-width:2.4;stroke-linecap:round}
-.who-t{display:flex;flex-direction:column;line-height:1.35}
-.who-t b{font-family:var(--font-display);font-weight:700;font-size:15px}
-.who-t em{font-style:normal;font-size:13px;color:var(--muted)}
+/* gradient banner */
+.banner{background:var(--grad-flat);border-radius:20px;padding:48px;text-align:center}
+.banner h2{color:var(--white);font-size:28px;max-width:680px;margin:0 auto}
+.banner .btn{margin-top:26px}
 
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
-.step{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white);position:relative}
-.step .n{font-family:var(--font-display);font-weight:900;font-size:15px;width:34px;height:34px;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center;margin-bottom:16px}
-.step h3{font-size:17px;margin-bottom:8px}
-.step p{font-size:15px}
+/* speakers */
+.speakers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:820px;margin:0 auto}
+.spk{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px}
+.spk-top{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.spk-avatar{flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--grad-flat);display:grid;place-items:center;color:var(--white);font-family:var(--font-display);font-weight:900;font-size:13px}
+.spk-li{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.04em;color:var(--green-dark);text-decoration:none;margin-top:2px}
+.spk-li svg{width:14px;height:14px;fill:var(--green-dark)}
+.spk h3{font-size:18px}
+.spk-role{font-size:13px;color:var(--muted);margin-top:2px}
+.spk-eyebrow{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.spk p{font-size:14px}
 
-/* why (format) */
-.why{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.why-item{display:flex;gap:16px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px}
-.why-ico{flex:0 0 40px;height:40px;border-radius:10px;background:#E9FAF0;display:grid;place-items:center}
-.why-ico svg{width:20px;height:20px;stroke:#0D7A44;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.why-item p{color:var(--black);font-size:16px}
+/* key numbers */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.num{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px;text-align:center}
+.num b{display:block;font-family:var(--font-display);font-weight:900;font-size:32px;color:var(--navy-2)}
+.num span{font-size:13px;color:var(--muted);display:block;margin-top:6px}
 
-/* team / speakers */
-.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.mate{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white)}
-.avatar{width:64px;height:64px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;color:#B7BAB9;margin-bottom:16px;overflow:hidden}
-.avatar img{width:100%;height:100%;object-fit:cover}
-.mate h3{font-size:18px}
-.mate .role{font-size:14px;color:var(--green-dark);font-weight:700;margin:4px 0 10px}
-.mate p{font-size:15px}
+/* moderator */
+.mod{display:grid;grid-template-columns:.5fr 1fr;gap:40px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:40px}
+.mod-photo{width:130px;height:130px;border-radius:50%;background:var(--grad-flat);display:grid;place-items:center;color:var(--white);font-family:var(--font-display);font-weight:900;font-size:15px;justify-self:center}
+.mod h3{font-size:22px}
+.mod .role{color:var(--green-dark);font-weight:700;font-size:14px;margin:2px 0 14px}
+.mod p{font-size:16px;color:var(--black);font-style:italic}
+
+/* persona cards */
+.personas{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.persona{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+.persona-ico{width:20px;height:26px;margin-bottom:16px}
+.persona-ico svg{width:100%;height:100%;stroke:var(--blue);fill:none;stroke-width:2}
+.persona h3{font-size:17px;margin-bottom:8px}
+.persona p{font-size:14px;flex:1}
+.persona .btn-link{margin-top:16px}
 
 /* faq */
-.faq{max-width:860px}
-.faq details{border-bottom:1px solid var(--line);padding:24px 0}
-.faq summary{font-family:var(--font-body);font-weight:700;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.faq{max-width:820px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line);padding:22px 0}
+.faq summary{font-family:var(--font-body);font-weight:700;font-size:17px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1;color:var(--green-dark)}
+.faq summary::after{content:"+";font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1;color:var(--green-dark)}
 .faq details[open] summary::after{content:"–"}
-.faq .a{margin-top:16px;font-size:16px}
+.faq .a{margin-top:14px;font-size:15px}
 
-/* final cta + form */
-.final{background:var(--black);color:var(--white)}
-.final-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.final h2{color:var(--white)}
-.final p{color:#C9CCCB;font-size:18px;margin-top:18px}
-.guar{margin-top:28px;display:grid;gap:12px}
-.guar div{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#E6E8E7}
-form{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:32px}
-.f-row{margin-bottom:18px}
-label{display:block;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C9CCCB;margin-bottom:8px}
-input,select,textarea{width:100%;background:#222;border:1px solid #4A4A4A;border-radius:8px;padding:14px;color:var(--white);font-family:var(--font-body);font-size:16px}
+/* register */
+.register{background:var(--navy);color:var(--white)}
+.register .sec-head h2{color:var(--white)}
+.register .sec-head p{color:#B9CBC9}
+form{background:var(--navy-2);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:32px;max-width:560px;margin:0 auto}
+.f-row{margin-bottom:16px}
+label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#B9CBC9;margin-bottom:7px}
+input,select,textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px;color:var(--white);font-family:var(--font-body);font-size:15px}
+input::placeholder,textarea::placeholder{color:#8BA3A1}
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
-textarea{min-height:96px;resize:vertical}
-.f-note{font-size:13px;color:#9A9D9C;margin-top:14px;text-align:center}
+textarea{min-height:88px;resize:vertical}
+select option{color:#000}
+.f-note{font-size:13px;color:#8BA3A1;margin-top:14px;text-align:center}
 
 /* footer */
-footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;padding:32px 0;font-size:14px}
-.foot-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.foot-right{text-align:right}
-.foot-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:8px}
-.foot-links a{color:#C9CCCB;text-decoration:none;font-weight:600}
-.foot-links a:hover{color:var(--green)}
-.foot-note{font-size:13px}
+footer{background:var(--navy);color:#9FB6B4;padding:64px 0 28px;font-size:14px}
+.foot-top{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:32px;margin-bottom:48px}
+.foot-col h4{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#D7E4E3;margin-bottom:16px}
+.foot-col ul{list-style:none;display:grid;gap:10px}
+.foot-col a{color:#9FB6B4;text-decoration:none}
+.foot-col a:hover{color:var(--green)}
+.news-row{display:flex;gap:10px;margin:16px 0 10px}
+.news-row input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:12px 14px;color:var(--white);font-family:var(--font-body);font-size:14px}
+.news-consent{font-size:12px;color:#7B928F}
+.foot-contacts p{margin-bottom:8px;font-size:14px;color:#9FB6B4}
+.social{display:flex;gap:12px;margin-top:16px}
+.social a{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center}
+.social svg{width:15px;height:15px;fill:#9FB6B4}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+.foot-bottom a{color:#9FB6B4;text-decoration:none;margin-left:16px}
+.foot-bottom a:hover{color:var(--green)}
 
 /* scroll reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
@@ -164,12 +189,17 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
 @media(max-width:980px){
-  h1{font-size:34px}h2{font-size:29px}
-  .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
-  .pains,.why,.team{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr}
+  h1{font-size:32px}h2{font-size:27px}
+  .hero-card{grid-template-columns:1fr}
+  .take,.nums,.personas{grid-template-columns:1fr 1fr}
+  .speakers,.mod{grid-template-columns:1fr}
+  .mod-photo{width:96px;height:96px}
+  .foot-top{grid-template-columns:1fr 1fr}
   .nav-links a:not(.btn){display:none}
-  section{padding:64px 0}
+  section{padding:56px 0}
+}
+@media(max-width:600px){
+  .take,.nums,.personas{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -179,8 +209,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   <div class="wrap nav-in">
     <a class="logo" href="#" aria-label="MobiDev"><img src="mobidev-logo.png" alt="MobiDev"></a>
     <div class="nav-links">
-      <a href="#pains">Sound familiar?</a>
-      <a href="#agenda">What's covered</a>
+      <a href="#take-away">What you'll learn</a>
       <a href="#speakers">Speakers</a>
       <a href="#faq">FAQ</a>
       <a href="#register" class="btn btn-primary btn-sm">Register free</a>
@@ -192,188 +221,199 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 <header class="hero">
   <div class="wrap hero-in">
     <div>
-      <h1>AI-Native Speed on a Legacy Codebase<br><em>How to Outpace Competitors with AIDLC</em></h1>
+      <div class="hero-badge">Free fireside chat · September 30, 2026</div>
+      <h1>AI-Native Speed on a Legacy Codebase: <em>How to Outpace Competitors with AIDLC</em></h1>
       <p class="hero-sub">A fireside chat for founders and engineering leaders running an older codebase: what actually changes once AI gets into your SDLC, and what still doesn't.</p>
-      <div class="hero-cta">
-        <a href="#register" class="btn btn-primary">Register free</a>
-        <a href="#format" class="btn btn-ghost" style="border-color:#4A4A4A;color:#fff">What's a fireside chat?</a>
-      </div>
-      <ul class="trust">
-        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>September 30, 2026</li>
-        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Live fireside chat, not a slide deck</li>
-        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ask your question at registration</li>
-      </ul>
     </div>
-    <aside class="hero-card">
-      <div class="lbl">Free fireside chat</div>
-      <h3>AI-Native Speed on a Legacy Codebase</h3>
-      <div class="hero-row"><span>Date</span><b>Sep 30, 2026 <!-- [TIME TBD] --></b></div>
-      <div class="hero-row"><span>Format</span><b>Fireside chat, live Q&amp;A</b></div>
-      <div class="hero-row"><span>Speakers</span><b>2 + moderator</b></div>
-      <div class="hero-row"><span>You walk away with</span><b>What to fix first</b></div>
-      <a href="#register" class="btn btn-primary btn-full" style="margin-top:22px">Save my seat</a>
-      <p class="hero-note">Bring a specific question about your codebase. We'll pull it into the conversation.</p>
-    </aside>
+
+    <div class="hero-card">
+      <div>
+        <h3 style="margin-bottom:6px">Save your seat</h3>
+        <p style="font-size:14px;margin-bottom:18px">Bring a specific question about your codebase, we'll pull it into the conversation live.</p>
+        <div class="hero-facts">
+          <div class="hero-fact"><b>45 min</b><span>Live fireside chat</span></div>
+          <div class="hero-fact"><b>2 + 1</b><span>Speakers + moderator</span></div>
+          <div class="hero-fact"><b>Free</b><span>No pitch, one Q&amp;A</span></div>
+        </div>
+      </div>
+
+      <!-- PLACEHOLDER: form has no destination yet, waiting on the registration script -->
+      <form class="hero-form" name="ai-native-speed-webinar" method="POST" data-netlify="true" netlify-honeypot="company-website" style="background:none;border:none;padding:0">
+        <input type="hidden" name="form-name" value="ai-native-speed-webinar">
+        <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
+        <input name="name" required placeholder="Your name">
+        <input type="email" name="email" required placeholder="Work email">
+        <input name="company" required placeholder="Company">
+        <div class="hero-consent">
+          <input type="checkbox" id="consent" required>
+          <label for="consent" style="text-transform:none;font-weight:400;font-size:12px;color:var(--muted)">I'd like to receive more valuable content &amp; updates. By submitting this form you agree with our <a href="privacy.html">Privacy Policy</a> and Cookie policy.</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Register free</button>
+      </form>
+    </div>
+
+    <div class="trust-bar">
+      <span><b>65+</b> AI &amp; ML products shipped</span>
+      <span><b>16 years</b> in software development</span>
+      <span><b>9.1 NPS</b> per 2025 client survey</span>
+    </div>
   </div>
 </header>
 
-<!-- CLIENT LOGOS -->
-<section class="logos" aria-label="Companies MobiDev has worked with">
-  <div class="wrap">
-    <p class="logos-lbl">Hosted by the team behind</p>
-  </div>
-  <div class="marquee">
-    <ul class="track">
-        <li><img src="beone-sports-logo-1-300x133.webp" alt="BeOne Sports" loading="lazy" width="150" height="66"></li>
-        <li><img src="camino-logo-1-300x133.webp" alt="Camino" loading="lazy" width="150" height="66"></li>
-        <li><img src="cers-logo-2-300x133.webp" alt="CERS" loading="lazy" width="150" height="66"></li>
-        <li><img src="cujoai-logo-1-300x133.webp" alt="CUJO AI" loading="lazy" width="150" height="66"></li>
-        <li><img src="discover.swiss-logo-2-300x133.webp" alt="discover.swiss" loading="lazy" width="150" height="66"></li>
-        <li><img src="lmn-logo-2-300x133.webp" alt="LMN" loading="lazy" width="150" height="66"></li>
-        <li><img src="operaio-logo-2-300x133.webp" alt="Operaio" loading="lazy" width="150" height="66"></li>
-        <li><img src="pgaa_logo_bk-1-300x273.webp" alt="PGAA" loading="lazy" width="150" height="66"></li>
-        <li><img src="quality-bridge-logo-2-300x133.webp" alt="Quality Bridge" loading="lazy" width="150" height="66"></li>
-        <li><img src="secure-groupe-logo-2-300x133.webp" alt="Secure Group" loading="lazy" width="150" height="66"></li>
-        <li><img src="smarttab-logo-2-300x133.webp" alt="SmartTab" loading="lazy" width="150" height="66"></li>
-        <li><img src="sms-group-logo-1-300x133.webp" alt="SMS Group" loading="lazy" width="150" height="66"></li>
-        <li><img src="verizon-media-logo-2-300x133.webp" alt="Verizon Media" loading="lazy" width="150" height="66"></li>
-        <li><img src="wfcca-logo-1-300x133.webp" alt="WFCCA" loading="lazy" width="150" height="66"></li>
-    </ul>
-    <ul class="track" aria-hidden="true">
-        <li><img src="beone-sports-logo-1-300x133.webp" alt="BeOne Sports" loading="lazy" width="150" height="66"></li>
-        <li><img src="camino-logo-1-300x133.webp" alt="Camino" loading="lazy" width="150" height="66"></li>
-        <li><img src="cers-logo-2-300x133.webp" alt="CERS" loading="lazy" width="150" height="66"></li>
-        <li><img src="cujoai-logo-1-300x133.webp" alt="CUJO AI" loading="lazy" width="150" height="66"></li>
-        <li><img src="discover.swiss-logo-2-300x133.webp" alt="discover.swiss" loading="lazy" width="150" height="66"></li>
-        <li><img src="lmn-logo-2-300x133.webp" alt="LMN" loading="lazy" width="150" height="66"></li>
-        <li><img src="operaio-logo-2-300x133.webp" alt="Operaio" loading="lazy" width="150" height="66"></li>
-        <li><img src="pgaa_logo_bk-1-300x273.webp" alt="PGAA" loading="lazy" width="150" height="66"></li>
-        <li><img src="quality-bridge-logo-2-300x133.webp" alt="Quality Bridge" loading="lazy" width="150" height="66"></li>
-        <li><img src="secure-groupe-logo-2-300x133.webp" alt="Secure Group" loading="lazy" width="150" height="66"></li>
-        <li><img src="smarttab-logo-2-300x133.webp" alt="SmartTab" loading="lazy" width="150" height="66"></li>
-        <li><img src="sms-group-logo-1-300x133.webp" alt="SMS Group" loading="lazy" width="150" height="66"></li>
-        <li><img src="verizon-media-logo-2-300x133.webp" alt="Verizon Media" loading="lazy" width="150" height="66"></li>
-        <li><img src="wfcca-logo-1-300x133.webp" alt="WFCCA" loading="lazy" width="150" height="66"></li>
-    </ul>
-  </div>
-</section>
-
-<!-- PAINS -->
-<section id="pains" class="grey">
+<!-- WHAT YOU'LL TAKE AWAY -->
+<section id="take-away">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Sound familiar?</div>
-      <h2>Does this sound like your product right now?</h2>
-      <p>Three things we keep hearing from founders running an older codebase.</p>
-    </div>
-    <div class="pains">
-      <figure class="pain reveal">
-        <span class="q">&ldquo;</span>
-        <blockquote>Every quarter the roadmap slips a little more. Our competitors ship in weeks what takes us months, and I don't fully understand why anymore.</blockquote>
-        <figcaption class="who">
-          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>Founder</b><em>SaaS product, 12 years old</em></span>
-        </figcaption>
-      </figure>
-      <figure class="pain reveal" style="transition-delay:.08s">
-        <span class="q">&ldquo;</span>
-        <blockquote>Half my engineering budget just keeps the lights on. I know that's not sustainable, I just don't know what to do about it without stopping the business.</blockquote>
-        <figcaption class="who">
-          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>CEO</b><em>Vertical software, 9 years old</em></span>
-        </figcaption>
-      </figure>
-      <figure class="pain reveal" style="transition-delay:.16s">
-        <span class="q">&ldquo;</span>
-        <blockquote>Everyone tells me to "just use AI." I've seen what happens when a team vibe-codes production code. I'm not doing that to a system this old.</blockquote>
-        <figcaption class="who">
-          <span class="ava"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="15" r="7"/><path d="M6 38c0-7.7 6.3-14 14-14s14 6.3 14 14"/></svg></span>
-          <span class="who-t"><b>VP Engineering</b><em>Fintech platform</em></span>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- AGENDA -->
-<section id="agenda">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">What's actually covered</div>
+      <div class="eyebrow">What you'll take away</div>
       <h2>Less pitch, more real talk</h2>
     </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="n">1</div>
-        <h3>Where the speed actually comes from</h3>
-        <p>Not the hype version, the mechanical one: model plus harness, and why the harness is most of the work.</p>
+    <div class="take">
+      <div class="take-card reveal">
+        <div class="take-ico"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></div>
+        <h3>The real speed math</h3>
+        <p>Model plus harness, and why the harness ends up being most of the work.</p>
       </div>
-      <div class="step reveal" style="transition-delay:.06s">
-        <div class="n">2</div>
-        <h3>What breaks first on old code</h3>
-        <p>The honest failure modes, not just the wins. Where AI helps fast and where it quietly makes things worse.</p>
+      <div class="take-card reveal" style="transition-delay:.06s">
+        <div class="take-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Two delivery perspectives</h3>
+        <p>Resourcing and hands-on delivery, side by side, not just a slide with theory.</p>
       </div>
-      <div class="step reveal" style="transition-delay:.12s">
-        <div class="n">3</div>
-        <h3>Your questions, live</h3>
-        <p>Submitted at registration, worked into the conversation as we go. Not a generic Q&amp;A dump at the end.</p>
+      <div class="take-card reveal" style="transition-delay:.12s">
+        <div class="take-ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Live, not a Q&amp;A dump</h3>
+        <p>Your question, submitted at registration, worked into the conversation as we go.</p>
       </div>
-      <div class="step reveal" style="transition-delay:.18s">
-        <div class="n">4</div>
-        <h3>What people are actually asking AI</h3>
-        <p>The most common prompts we're seeing on this topic, and what that tells you about where teams get stuck.</p>
+      <div class="take-card reveal" style="transition-delay:.18s">
+        <div class="take-ico"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg></div>
+        <h3>What teams actually ask AI</h3>
+        <p>The most common prompts we're seeing on this exact problem, and what that tells you.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FORMAT -->
-<section id="format" class="grey">
+<!-- BANNER -->
+<section>
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Why fireside chat</div>
-      <h2>No slide wall. Just two people who've done this, talking.</h2>
-    </div>
-    <div class="why">
-      <div class="why-item reveal">
-        <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
-        <p><b>You ask, we answer live.</b> Drop your question when you register and we'll work it into the conversation instead of saving it for a rushed Q&amp;A at the end.</p>
-      </div>
-      <div class="why-item reveal" style="transition-delay:.08s">
-        <div class="why-ico"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
-        <p><b>Real delivery, not theory.</b> Both speakers run these engagements day to day. What you hear is what actually happens on a project, not a deck.</p>
-      </div>
+    <div class="banner">
+      <h2>Is your team shipping AI-native speed, or just faster vibe coding?</h2>
+      <a href="#register" class="btn btn-white">Save my seat</a>
     </div>
   </div>
 </section>
 
 <!-- SPEAKERS -->
-<section id="speakers">
+<section id="speakers" class="grey">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">Who's talking</div>
+      <div class="eyebrow">Presented by MobiDev</div>
       <h2>Two people who do this for a living</h2>
+      <p>65+ AI &amp; ML products shipped, 16 years in software development.</p>
     </div>
-    <!-- PLACEHOLDER: swap [ph] avatars for real speaker photos before launch. -->
-    <div class="team">
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>Serhii Ivanov</h3>
-        <div class="role">Head of Resource Management</div>
+    <!-- PLACEHOLDER: swap initials for real photos and LinkedIn URLs before launch. -->
+    <div class="speakers">
+      <article class="spk">
+        <div class="spk-top">
+          <div class="spk-avatar">SI</div>
+          <div>
+            <h3>Serhii Ivanov</h3>
+            <div class="spk-role">Head of Resource Management</div>
+            <a href="#" class="spk-li"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg>Serhii Ivanov</a>
+          </div>
+        </div>
+        <div class="spk-eyebrow">Speaker expertise</div>
         <p>Runs how MobiDev staffs and trains teams for AI-native delivery. Sees firsthand which roles change first when a team adopts AIDLC.</p>
       </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>Ievgen Zadorozhnyi</h3>
-        <div class="role">Delivery Manager at MobiDev</div>
+      <article class="spk">
+        <div class="spk-top">
+          <div class="spk-avatar">IZ</div>
+          <div>
+            <h3>Ievgen Zadorozhnyi</h3>
+            <div class="spk-role">Delivery Manager at MobiDev</div>
+            <a href="#" class="spk-li"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg>Ievgen Zadorozhnyi</a>
+          </div>
+        </div>
+        <div class="spk-eyebrow">Speaker expertise</div>
         <p>Delivers legacy modernization projects day to day. Talks about what actually happens on a timeline, not the pitch version.</p>
       </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY NUMBERS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Key numbers</div>
+      <h2>Why we get to have this conversation</h2>
+    </div>
+    <div class="nums">
+      <div class="num reveal"><b>65+</b><span>AI &amp; ML development products</span></div>
+      <div class="num reveal" style="transition-delay:.06s"><b>35+</b><span>Successful AI-assisted MVPs delivered</span></div>
+      <div class="num reveal" style="transition-delay:.12s"><b>9.1 NPS</b><span>As per 2025 client survey</span></div>
+      <div class="num reveal" style="transition-delay:.18s"><b>16 Years</b><span>Experience across different tech stacks</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MODERATOR -->
+<section class="grey">
+  <div class="wrap">
+    <div class="mod">
+      <!-- PLACEHOLDER: swap initials for a real photo before launch. -->
+      <div class="mod-photo">HK</div>
+      <div>
+        <div class="eyebrow" style="margin-bottom:4px">Moderator's insight</div>
         <h3>Helen Khailova-Horash</h3>
-        <div class="role">Senior Solutions Manager · Moderator</div>
-        <p>Hosts the conversation and brings your questions into it live.</p>
-      </article>
+        <div class="role">Senior Solutions Manager</div>
+        <p>"I keep hearing the same tension from founders: everyone says ship faster with AI, but nobody wants to be the team that broke production doing it. That's exactly the debate I want on stage this time, resourcing versus delivery, speed versus what actually holds up."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Who this is for</div>
+      <h2>This session is tailor-made for you if you're a:</h2>
+    </div>
+    <div class="personas">
+      <div class="persona reveal">
+        <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 8l14-5v14L3 12"/></svg></div>
+        <h3>CEO &amp; Founder</h3>
+        <p>Navigating whether to modernize now or wait, while the roadmap keeps slipping.</p>
+        <a href="#register" class="btn-link">Save my seat &rarr;</a>
+      </div>
+      <div class="persona reveal" style="transition-delay:.06s">
+        <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 8l14-5v14L3 12"/></svg></div>
+        <h3>CTO / VP Engineering</h3>
+        <p>Leading a team that's already feeling the AI-native pressure from competitors.</p>
+        <a href="#register" class="btn-link">Save my seat &rarr;</a>
+      </div>
+      <div class="persona reveal" style="transition-delay:.12s">
+        <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 8l14-5v14L3 12"/></svg></div>
+        <h3>Head of Product</h3>
+        <p>Trying to figure out how much faster the roadmap could realistically move.</p>
+        <a href="#register" class="btn-link">Save my seat &rarr;</a>
+      </div>
+      <div class="persona reveal" style="transition-delay:.18s">
+        <div class="persona-ico"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 8l14-5v14L3 12"/></svg></div>
+        <h3>Head of AI / Innovation</h3>
+        <p>Scaling AI use past isolated experiments into everyday delivery.</p>
+        <a href="#register" class="btn-link">Save my seat &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER 2 -->
+<section>
+  <div class="wrap">
+    <div class="banner">
+      <h2>Save your seat for September 30</h2>
+      <a href="#register" class="btn btn-white">Register free</a>
     </div>
   </div>
 </section>
@@ -386,51 +426,41 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <h2>Questions people ask before registering</h2>
     </div>
     <div class="faq">
-
       <details open>
         <summary>Is this a sales pitch?</summary>
-        <div class="a"><p>No hard pitch. It's an hour of real talk. If you want to go deeper afterward, there's one clear next step at the end, that's it.</p></div>
+        <div class="a"><p>No hard pitch. It's 45 minutes of real talk. If you want to go deeper afterward, there's one clear next step at the end, that's it.</p></div>
       </details>
-
       <details>
         <summary>Do I need a technical background?</summary>
         <div class="a"><p>No. Founders and CEOs are as welcome as engineering leads. We keep it in plain language. This isn't a deep-dive technical workshop.</p></div>
       </details>
-
       <details>
         <summary>Will it be recorded?</summary>
         <div class="a"><p>[PLACEHOLDER: confirm recording policy before launch.]</p></div>
       </details>
-
       <details>
         <summary>What if I can't make it live?</summary>
         <div class="a"><p>[PLACEHOLDER: confirm before launch.]</p></div>
       </details>
-
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA + FORM -->
-<section id="register" class="final">
-  <div class="wrap final-in">
-    <div>
+<!-- REGISTER -->
+<section id="register" class="register">
+  <div class="wrap">
+    <div class="sec-head">
       <div class="eyebrow" style="color:var(--green)">Register</div>
-      <h2>Save your seat for September 30</h2>
+      <h2>Save your seat</h2>
       <p>Free to attend. Bring a question, or just come listen.</p>
-      <div class="guar">
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Free to attend</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ask your question at registration</div>
-        <div><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>One clear next step at the end, no pressure</div>
-      </div>
     </div>
 
-    <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the real
-         endpoint (Netlify, WPForms, Gravity Forms, a webinar platform's own embed) once the
-         registration script is supplied. Keep these fields. -->
-    <form name="ai-native-speed-webinar" method="POST" data-netlify="true" netlify-honeypot="company-website">
-      <input type="hidden" name="form-name" value="ai-native-speed-webinar">
-      <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
+    <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the
+         real endpoint (webinar platform embed, Netlify, form plugin) once the registration
+         script is supplied. Keep these fields. -->
+    <form name="ai-native-speed-webinar-full" method="POST" data-netlify="true" netlify-honeypot="company-website-2">
+      <input type="hidden" name="form-name" value="ai-native-speed-webinar-full">
+      <p style="display:none"><label>Leave this empty: <input name="company-website-2"></label></p>
       <div class="f-row">
         <label for="name">Your name</label>
         <input id="name" name="name" required placeholder="Alex Rivera">
@@ -447,7 +477,9 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <label for="role">Role</label>
         <select id="role" name="role">
           <option>Founder / CEO</option>
-          <option>VP Engineering / CTO</option>
+          <option>CTO / VP Engineering</option>
+          <option>Head of Product</option>
+          <option>Head of AI / Innovation</option>
           <option>Other</option>
         </select>
       </div>
@@ -461,26 +493,79 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="wrap foot-in">
-    <div>
-      <img class="foot-logo" src="mobidev-logo.png" alt="MobiDev">
-      © <span id="yr">2026</span> MobiDev · AI-Native Speed on a Legacy Codebase
-    </div>
-    <div class="foot-right">
-      <div class="foot-links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:business@mobidev.biz">business@mobidev.biz</a>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-col">
+        <img class="foot-logo" src="mobidev-logo.png" alt="MobiDev">
+        <h4>Get fresh insights monthly!</h4>
+        <div class="news-row">
+          <input type="email" placeholder="a.yarosh@mobidev.biz" aria-label="Email for newsletter">
+          <button class="btn btn-primary btn-sm" type="button">Subscribe</button>
+        </div>
+        <p class="news-consent">I consent and agree with the right to process my personal data as specified in the Privacy Policy, including commercial and marketing communication under the Terms of Use.</p>
       </div>
-      <div class="foot-note">Free to attend · Live fireside chat · September 30, 2026</div>
+      <!-- [VERIFY] column labels/links approximate what's on the live footer; confirm exact paths before publishing. -->
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://mobidev.biz/services/consulting">Consulting</a></li>
+          <li><a href="https://mobidev.biz/services/artificial-intelligence">AI Development</a></li>
+          <li><a href="https://mobidev.biz/services/new-product-development">New Product Development</a></li>
+          <li><a href="https://mobidev.biz/services/software-modernization">Software Modernization</a></li>
+          <li><a href="https://mobidev.biz/services/software-product-scaling">Software Product Scaling</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="https://mobidev.biz/industries/retail">Retail</a></li>
+          <li><a href="https://mobidev.biz/industries/hospitality">Hospitality</a></li>
+          <li><a href="https://mobidev.biz/industries/fitness">Fitness</a></li>
+          <li><a href="https://mobidev.biz/industries/sports">Sports</a></li>
+          <li><a href="https://mobidev.biz/industries/fintech">Fintech</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="https://mobidev.biz/company/about-us">About us</a></li>
+          <li><a href="https://mobidev.biz/company/testimonials">Testimonials</a></li>
+          <li><a href="https://mobidev.biz/company/events">Events</a></li>
+          <li><a href="https://mobidev.biz/company/careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://mobidev.biz/blog">Blog</a></li>
+          <li><a href="https://mobidev.biz/webinar">Webinars</a></li>
+          <li><a href="https://mobidev.biz/case-studies">Success Stories</a></li>
+          <li><a href="https://mobidev.biz/knowledge-hub">Knowledge Hub</a></li>
+        </ul>
+        <div class="foot-contacts" style="margin-top:20px">
+          <p>+1 (918) 243-0648</p>
+          <p><a href="mailto:contact@mobidev.biz">contact@mobidev.biz</a></p>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/mobi-dev" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.24h4.6V23H.22V8.24zM8.4 8.24h4.4v2.01h.06c.62-1.17 2.13-2.4 4.38-2.4 4.68 0 5.55 3.08 5.55 7.09V23h-4.6v-6.99c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.69V23H8.4V8.24z"/></svg></a>
+          <a href="https://www.facebook.com/MobiDevCompany" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a href="https://twitter.com/MobiDevCompany" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7.2 8.3L23 22h-6.6l-5.2-6.8L5 22H2l7.7-8.9L1 2h6.8l4.7 6.2zm-1.2 18h1.7L7.4 4H5.6z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Copyright © 2026 MobiDev. All Rights Reserved.</span>
+      <span>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </span>
     </div>
   </div>
 </footer>
 
 <script>
-document.getElementById('yr').textContent=new Date().getFullYear();
-
 // reveal on scroll
 var io_ = ('IntersectionObserver' in window) ? new IntersectionObserver(function(es){
   es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io_.unobserve(e.target); } });
