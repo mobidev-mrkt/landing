@@ -36,9 +36,9 @@ Ordered by what blocks the test.
 ## Blocking
 
 - [ ] **Speaker photos.** ~~Three `[ph]` avatar placeholders~~ real photos added for Serhii Ivanov, Ievgen Zadorozhnyi, Helen Khailova-Horash — confirm the client is OK with the AI-cutout + unified-background treatment before launch.
-- [ ] **Form destination.** ~~Form posts nowhere yet~~ now embeds the real HubSpot form (portal 47062060, form 171392a6-a943-4b51-80a7-548dac1f8200). The CSS override rules target HubSpot's standard form classes (`.hs-form-field`, `.hs-input`, `.hs-button`, etc.) from memory — this sandbox can't reach `js.hsforms.net` to render it live, so **load the page for real and check the form renders/looks right** before launch, especially on mobile and after a submit (success message state).
-- [ ] **Recording policy FAQ.** "Will it be recorded?" and "What if I can't make it live?" are unanswered placeholders.
-- [ ] **HubSpot consent text.** The form's legal-consent line ("By registering you agree to...") is configured inside the HubSpot form itself (portal 47062060), not in this HTML — update it there to reference Privacy Policy + Cookie Policy (there's no Terms of Service page, so drop that reference in the HubSpot form settings too).
+- [x] ~~Form destination~~ — embeds the real HubSpot form (portal 47062060, form 171392a6-a943-4b51-80a7-548dac1f8200); confirmed live on the actual HubSpot landing page (contentId 221489397169), fields and button render styled correctly.
+- [x] ~~HubSpot consent text~~ — already says "Privacy Policy and Cookie Policy" in the live form, no Terms of Service mentioned. Nothing to change.
+- [ ] **Form's rich-text intro is unedited placeholder copy.** The live form shows the literal HubSpot default text "This is a rich text area, you can add whatever copy you like" above the name fields. This lives inside the FORM itself (Marketing > Forms > this form in the HubSpot portal), not in the page — there's no API/MCP tool available here to edit form field content, so **edit or delete that rich-text block directly in the HubSpot form editor** before launch.
 
 ## Claims to verify
 

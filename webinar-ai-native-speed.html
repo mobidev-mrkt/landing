@@ -147,40 +147,42 @@ section{padding:80px 0}
 .faq .a{margin-top:14px;font-size:15px}
 
 /* register (HubSpot embedded form, restyled to match the rest of the page) */
-#hs-register-form{margin-top:22px}
-#hs-register-form form{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
-#hs-register-form fieldset{max-width:none!important;display:contents;border:none;padding:0;margin:0}
-#hs-register-form .hs-fieldtype-textarea{grid-column:1;grid-row:3 / span 2}
-#hs-register-form .hs-fieldtype-booleancheckbox{grid-column:1 / -1}
-#hs-register-form .legal-consent-container{grid-column:2;grid-row:3;align-self:start;margin-top:0}
-#hs-register-form .hs_submit{grid-column:2;grid-row:4;align-self:start;margin-top:0}
-#hs-register-form .input{margin:0}
-#hs-register-form label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
-#hs-register-form label span.hs-form-required{color:var(--green-dark)}
+/* Fortified with !important throughout: HubSpot injects its own default form
+   stylesheet client-side, after this one, so ordinary specificity is not
+   enough to reliably win. Layout is flex-based (not a hardcoded grid) so it
+   keeps working regardless of how many fields the form actually has. */
+#hs-register-form{margin-top:22px!important}
+#hs-register-form form{margin:0!important}
+#hs-register-form fieldset{max-width:none!important;border:none!important;padding:0!important;margin:0 0 16px!important;display:flex!important;flex-wrap:wrap!important;gap:16px!important}
+#hs-register-form fieldset>.hs-form-field{flex:1 1 200px!important;min-width:0!important}
+#hs-register-form .hs-richtext{font-size:14px!important;color:var(--muted)!important;margin:0 0 16px!important}
+#hs-register-form .input{margin:0!important}
+#hs-register-form label{display:block!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:12px!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--muted)!important;margin-bottom:7px!important}
+#hs-register-form label span.hs-form-required{color:var(--green-dark)!important}
 #hs-register-form input[type=text],
 #hs-register-form input[type=email],
 #hs-register-form input[type=tel],
+#hs-register-form input[type=url],
 #hs-register-form input[type=number],
 #hs-register-form select,
-#hs-register-form textarea{width:100%!important;box-sizing:border-box;background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:13px;color:var(--black);font-family:var(--font-body);font-size:15px;height:auto}
-#hs-register-form input::placeholder,#hs-register-form textarea::placeholder{color:#9AA6A4}
-#hs-register-form input:focus,#hs-register-form select:focus,#hs-register-form textarea:focus{outline:none;border-color:var(--green-dark)}
-#hs-register-form textarea{min-height:72px;resize:vertical}
-#hs-register-form ul.inputs-list{list-style:none;margin:4px 0 0;padding:0}
-#hs-register-form .hs-error-msgs{list-style:none;margin:6px 0 0;padding:0;font-size:12px;color:#C0392B}
-#hs-register-form .hs-button{width:auto;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 42px;border-radius:999px;border:2px solid transparent;background:var(--green);color:var(--navy);cursor:pointer;transition:.18s ease}
-#hs-register-form .hs-button:hover{background:#35C169;color:var(--navy)}
-#hs-register-form .hs-richtext{font-size:13px;color:var(--muted);margin-top:16px}
-#hs-register-form .legal-consent-container{font-size:13px;color:var(--muted)}
+#hs-register-form textarea{width:100%!important;box-sizing:border-box!important;background:var(--sec-white)!important;border:1px solid var(--line)!important;border-radius:8px!important;padding:13px!important;color:var(--black)!important;font-family:var(--font-body)!important;font-size:15px!important;height:auto!important}
+#hs-register-form input::placeholder,#hs-register-form textarea::placeholder{color:#9AA6A4!important}
+#hs-register-form input:focus,#hs-register-form select:focus,#hs-register-form textarea:focus{outline:none!important;border-color:var(--green-dark)!important}
+#hs-register-form textarea{min-height:72px!important;resize:vertical!important}
+#hs-register-form ul.inputs-list{list-style:none!important;margin:4px 0 0!important;padding:0!important}
+#hs-register-form .hs-error-msgs{list-style:none!important;margin:6px 0 0!important;padding:0!important;font-size:12px!important;color:#C0392B!important}
+#hs-register-form .hs-fieldtype-booleancheckbox{display:flex!important;align-items:flex-start!important;gap:8px!important}
+#hs-register-form .hs-fieldtype-booleancheckbox label{display:inline!important;font-family:var(--font-body)!important;font-weight:400!important;font-size:14px!important;letter-spacing:normal!important;text-transform:none!important;color:var(--black)!important;margin:0!important}
+#hs-register-form input[type=checkbox]{width:auto!important;margin-top:3px!important;flex:0 0 auto!important}
+#hs-register-form .hs_submit{margin-top:6px!important}
+#hs-register-form .hs-button,
+#hs-register-form input[type=submit]{width:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
+#hs-register-form .hs-button:hover,
+#hs-register-form input[type=submit]:hover{background:#35C169!important;color:var(--navy)!important}
+#hs-register-form .legal-consent-container{font-size:13px!important;color:var(--muted)!important;margin-top:16px!important}
 #hs-register-form .legal-consent-container a,
-#hs-register-form .hs-richtext a{color:var(--green-dark)}
-#hs-register-form .submitted-message{font-size:16px;color:var(--black);text-align:center;padding:12px 0}
-@media(max-width:600px){
-  #hs-register-form form{grid-template-columns:1fr}
-  #hs-register-form .hs-fieldtype-textarea,
-  #hs-register-form .legal-consent-container,
-  #hs-register-form .hs_submit{grid-column:1;grid-row:auto}
-}
+#hs-register-form .hs-richtext a{color:var(--green-dark)!important}
+#hs-register-form .submitted-message{font-size:16px!important;color:var(--black)!important;text-align:center!important;padding:12px 0!important}
 
 /* footer */
 footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
@@ -427,12 +429,8 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         <div class="a"><p>No. Founders and CEOs are as welcome as engineering leads. We keep it in plain language. This isn't a deep-dive technical workshop.</p></div>
       </details>
       <details>
-        <summary>Will it be recorded?</summary>
-        <div class="a"><p>[PLACEHOLDER: confirm recording policy before launch.]</p></div>
-      </details>
-      <details>
         <summary>What if I can't make it live?</summary>
-        <div class="a"><p>[PLACEHOLDER: confirm before launch.]</p></div>
+        <div class="a"><p>No problem, register anyway. We'll record the session and send you the link afterward.</p></div>
       </details>
     </div>
   </div>
