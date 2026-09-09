@@ -35,8 +35,7 @@ Ordered by what blocks the test.
 
 ## Blocking
 
-- [ ] **Event time.** Page currently shows the date only (Sep 30, 2026), no time. Search for `[TIME TBD]`.
-- [ ] **Speaker photos.** Three `[ph]` avatar placeholders under Speakers → Serhii Ivanov, Ievgen Zadorozhnyi, Helen Khailova-Horash.
+- [ ] **Speaker photos.** ~~Three `[ph]` avatar placeholders~~ real photos added for Serhii Ivanov, Ievgen Zadorozhnyi, Helen Khailova-Horash — confirm the client is OK with the AI-cutout + unified-background treatment before launch.
 - [ ] **Form destination.** Form posts nowhere yet. Waiting on the registration script/endpoint to wire in (webinar platform embed, or a form plugin once this moves to WordPress).
 - [ ] **Recording policy FAQ.** "Will it be recorded?" and "What if I can't make it live?" are unanswered placeholders.
 

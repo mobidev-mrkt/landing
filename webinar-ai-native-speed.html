@@ -103,15 +103,15 @@ section{padding:80px 0}
 
 /* speakers */
 .speakers{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:820px;margin:0 auto}
-.spk{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px}
-.spk-top{display:flex;gap:16px;align-items:center;margin-bottom:16px}
-.spk-avatar{flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--grad-flat);display:grid;place-items:center;color:var(--white);font-family:var(--font-display);font-weight:900;font-size:13px}
-.spk-li{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.04em;color:var(--green-dark);text-decoration:none;margin-top:2px}
+.spk{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center}
+.spk-top{display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:16px}
+.spk-avatar{flex:0 0 132px;width:132px;height:132px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--white),0 0 0 5px var(--line)}
+.spk-li{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.04em;color:var(--green-dark);text-decoration:none;margin-top:6px}
 .spk-li svg{width:14px;height:14px;fill:var(--green-dark)}
 .spk h3{font-size:18px}
 .spk-role{font-size:13px;color:var(--muted);margin-top:2px}
-.spk-eyebrow{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-.spk p{font-size:14px}
+.spk-eyebrow{font-family:var(--font-display);font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;text-align:left}
+.spk p{font-size:14px;text-align:left}
 
 /* key numbers */
 .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -121,7 +121,7 @@ section{padding:80px 0}
 
 /* moderator */
 .mod{display:grid;grid-template-columns:.5fr 1fr;gap:40px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:40px}
-.mod-photo{width:130px;height:130px;border-radius:50%;background:var(--grad-flat);display:grid;place-items:center;color:var(--white);font-family:var(--font-display);font-weight:900;font-size:15px;justify-self:center}
+.mod-photo{width:170px;height:170px;border-radius:50%;object-fit:cover;justify-self:center;box-shadow:0 0 0 4px var(--white),0 0 0 5px var(--line)}
 .mod h3{font-size:22px}
 .mod .role{color:var(--green-dark);font-weight:700;font-size:14px;margin:2px 0 14px}
 .mod p{font-size:16px;color:var(--black);font-style:italic}
@@ -309,11 +309,11 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       <h2>Two people who do this for a living</h2>
       <p>65+ AI &amp; ML products shipped, 16 years in software development.</p>
     </div>
-    <!-- PLACEHOLDER: swap initials for real photos and LinkedIn URLs before launch. -->
+    <!-- PLACEHOLDER: confirm LinkedIn URLs before launch. -->
     <div class="speakers">
       <article class="spk">
         <div class="spk-top">
-          <div class="spk-avatar">SI</div>
+          <img class="spk-avatar" src="speaker-serhii-ivanov.jpg" alt="Serhii Ivanov" loading="lazy" width="132" height="132">
           <div>
             <h3>Serhii Ivanov</h3>
             <div class="spk-role">Head of Resource Management</div>
@@ -325,7 +325,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       </article>
       <article class="spk">
         <div class="spk-top">
-          <div class="spk-avatar">IZ</div>
+          <img class="spk-avatar" src="speaker-ievgen-zadorozhniy.jpg" alt="Ievgen Zadorozhnyi" loading="lazy" width="132" height="132">
           <div>
             <h3>Ievgen Zadorozhnyi</h3>
             <div class="spk-role">Delivery Manager at MobiDev</div>
@@ -359,8 +359,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
 <section class="grey">
   <div class="wrap">
     <div class="mod">
-      <!-- PLACEHOLDER: swap initials for a real photo before launch. -->
-      <div class="mod-photo">HK</div>
+      <img class="mod-photo" src="speaker-helen-khailova-horash.jpg" alt="Helen Khailova-Horash" loading="lazy" width="170" height="170">
       <div>
         <div class="eyebrow" style="margin-bottom:4px">Moderator's insight</div>
         <h3>Helen Khailova-Horash</h3>
