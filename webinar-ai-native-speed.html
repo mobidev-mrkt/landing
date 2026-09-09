@@ -148,13 +148,12 @@ section{padding:80px 0}
 
 /* register (HubSpot embedded form, restyled to match the rest of the page) */
 #hs-register-form{margin-top:22px}
-#hs-register-form form{margin:0}
-#hs-register-form fieldset{max-width:none!important;display:grid;grid-template-columns:1fr 1fr;gap:16px;border:none;padding:0;margin:0 0 16px}
-#hs-register-form fieldset > .hs-form-field{grid-column:span 1}
-#hs-register-form .hs-fieldtype-textarea,
-#hs-register-form .hs-fieldtype-booleancheckbox,
-#hs-register-form .hs_submit,
-#hs-register-form .legal-consent-container{grid-column:1 / -1}
+#hs-register-form form{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#hs-register-form fieldset{max-width:none!important;display:contents;border:none;padding:0;margin:0}
+#hs-register-form .hs-fieldtype-textarea{grid-column:1;grid-row:3 / span 2}
+#hs-register-form .hs-fieldtype-booleancheckbox{grid-column:1 / -1}
+#hs-register-form .legal-consent-container{grid-column:2;grid-row:3;align-self:start;margin-top:0}
+#hs-register-form .hs_submit{grid-column:2;grid-row:4;align-self:start;margin-top:0}
 #hs-register-form .input{margin:0}
 #hs-register-form label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
 #hs-register-form label span.hs-form-required{color:var(--green-dark)}
@@ -169,15 +168,19 @@ section{padding:80px 0}
 #hs-register-form textarea{min-height:72px;resize:vertical}
 #hs-register-form ul.inputs-list{list-style:none;margin:4px 0 0;padding:0}
 #hs-register-form .hs-error-msgs{list-style:none;margin:6px 0 0;padding:0;font-size:12px;color:#C0392B}
-#hs-register-form .hs_submit{margin-top:6px}
-#hs-register-form .hs-button{width:100%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 30px;border-radius:999px;border:2px solid transparent;background:var(--green);color:var(--navy);cursor:pointer;transition:.18s ease}
+#hs-register-form .hs-button{width:auto;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 42px;border-radius:999px;border:2px solid transparent;background:var(--green);color:var(--navy);cursor:pointer;transition:.18s ease}
 #hs-register-form .hs-button:hover{background:#35C169;color:var(--navy)}
-#hs-register-form .hs-richtext,
-#hs-register-form .legal-consent-container{font-size:13px;color:var(--muted);margin-top:16px}
+#hs-register-form .hs-richtext{font-size:13px;color:var(--muted);margin-top:16px}
+#hs-register-form .legal-consent-container{font-size:13px;color:var(--muted)}
 #hs-register-form .legal-consent-container a,
 #hs-register-form .hs-richtext a{color:var(--green-dark)}
 #hs-register-form .submitted-message{font-size:16px;color:var(--black);text-align:center;padding:12px 0}
-@media(max-width:600px){#hs-register-form fieldset{grid-template-columns:1fr}}
+@media(max-width:600px){
+  #hs-register-form form{grid-template-columns:1fr}
+  #hs-register-form .hs-fieldtype-textarea,
+  #hs-register-form .legal-consent-container,
+  #hs-register-form .hs_submit{grid-column:1;grid-row:auto}
+}
 
 /* footer */
 footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
@@ -215,7 +218,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       <a href="#take-away">What you'll learn</a>
       <a href="#speakers">Speakers</a>
       <a href="#faq">FAQ</a>
-      <a href="#register" class="btn btn-primary btn-sm">Register free</a>
+      <a href="#register" class="btn btn-primary btn-sm">Save my seat</a>
     </div>
   </div>
 </nav>
@@ -232,9 +235,8 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
     <div class="hero-card">
       <div class="hero-facts">
         <div class="hero-fact"><b>Sep 30</b><span>5 PM CEST / 11 AM EDT</span></div>
-        <div class="hero-fact"><b>45 min</b><span>Live fireside chat</span></div>
+        <div class="hero-fact"><b>60 min</b><span>Live fireside chat</span></div>
         <div class="hero-fact"><b>2 + 1</b><span>Speakers + moderator</span></div>
-        <div class="hero-fact"><b>Free</b><span>No pitch, one Q&amp;A</span></div>
       </div>
 
       <div id="hs-register-form"></div>
@@ -403,7 +405,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
   <div class="wrap">
     <div class="banner">
       <h2>Save your seat for September 30</h2>
-      <a href="#register" class="btn btn-white">Register free</a>
+      <a href="#register" class="btn btn-white">Count me in</a>
     </div>
   </div>
 </section>
@@ -418,7 +420,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
     <div class="faq">
       <details open>
         <summary>Is this a sales pitch?</summary>
-        <div class="a"><p>No hard pitch. It's 45 minutes of real talk. If you want to go deeper afterward, there's one clear next step at the end, that's it.</p></div>
+        <div class="a"><p>No hard pitch. It's 60 minutes of real talk. If you want to go deeper afterward, there's one clear next step at the end, that's it.</p></div>
       </details>
       <details>
         <summary>Do I need a technical background?</summary>
