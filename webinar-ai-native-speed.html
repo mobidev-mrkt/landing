@@ -459,7 +459,30 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
     portalId: "47062060",
     formId: "171392a6-a943-4b51-80a7-548dac1f8200",
     region: "na1",
-    target: "#hs-register-form"
+    target: "#hs-register-form",
+    onFormReady: function() {
+      // The portal's form styling sets the submit button's look via an
+      // inline style that a plain stylesheet (even with !important) can't
+      // reliably beat, so force it in JS after the form renders.
+      var btn = document.querySelector('#hs-register-form input[type="submit"], #hs-register-form .hs-button, #hs-register-form button[type="submit"]');
+      if (btn) {
+        var set = function(prop, val){ btn.style.setProperty(prop, val, 'important'); };
+        set('width', 'auto');
+        set('background', '#4AD57B');
+        set('background-color', '#4AD57B');
+        set('color', '#0E2A2C');
+        set('border-radius', '999px');
+        set('padding', '16px 42px');
+        set('font-family', "'Inter',-apple-system,Segoe UI,sans-serif");
+        set('font-weight', '700');
+        set('font-size', '14px');
+        set('letter-spacing', '.03em');
+        set('text-transform', 'uppercase');
+        set('border', '2px solid transparent');
+        btn.addEventListener('mouseenter', function(){ set('background', '#35C169'); set('background-color', '#35C169'); });
+        btn.addEventListener('mouseleave', function(){ set('background', '#4AD57B'); set('background-color', '#4AD57B'); });
+      }
+    }
   });
 </script>
 <script>
