@@ -55,8 +55,7 @@ a{color:inherit}
 .nav-links a:not(.btn):hover{color:var(--green)}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 30px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:.18s ease;position:relative;overflow:hidden}
-.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:btn-shimmer-sweep 3.2s ease-in-out infinite}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:.03em;text-transform:uppercase;padding:16px 30px;border-radius:999px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:.18s ease}
 .btn-primary{background:var(--green);color:var(--navy)}
 .btn-primary:hover{background:#35C169;color:var(--navy)}
 .btn-white{background:var(--white);color:var(--navy-2)}
@@ -67,8 +66,10 @@ a{color:inherit}
 .btn-full{width:100%}
 .btn-link{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
 .btn-link:hover{text-decoration:underline}
+.btn-shimmer{position:relative;overflow:hidden}
+.btn-shimmer::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:btn-shimmer-sweep 3.2s ease-in-out infinite}
 @keyframes btn-shimmer-sweep{0%,15%{left:-60%}55%,100%{left:130%}}
-@media(prefers-reduced-motion:reduce){.btn::after{animation:none;display:none}}
+@media(prefers-reduced-motion:reduce){.btn-shimmer::after{animation:none;display:none}}
 
 /* hero */
 .hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(48px,7vh,80px) 0}
@@ -179,10 +180,7 @@ section{padding:80px 0}
 #hs-register-form input[type=checkbox]{width:auto!important;margin-top:3px!important;flex:0 0 auto!important}
 #hs-register-form .hs_submit{margin-top:6px!important}
 #hs-register-form .hs-button,
-#hs-register-form input[type=submit]{width:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important;position:relative!important;overflow:hidden!important}
-#hs-register-form .hs-button::after,
-#hs-register-form input[type=submit]::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:btn-shimmer-sweep 3.2s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){#hs-register-form .hs-button::after,#hs-register-form input[type=submit]::after{animation:none;display:none}}
+#hs-register-form input[type=submit]{width:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
 #hs-register-form .hs-button:hover,
 #hs-register-form input[type=submit]:hover{background:#35C169!important;color:var(--navy)!important}
 #hs-register-form .legal-consent-container{font-size:13px!important;color:var(--muted)!important;margin-top:16px!important}
@@ -226,7 +224,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       <a href="#take-away">What you'll learn</a>
       <a href="#speakers">Speakers</a>
       <a href="#faq">FAQ</a>
-      <a href="#register" class="btn btn-primary btn-sm">Save my seat</a>
+      <a href="#register" class="btn btn-primary btn-sm btn-shimmer">Save my seat</a>
     </div>
   </div>
 </nav>
