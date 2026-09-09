@@ -66,6 +66,10 @@ a{color:inherit}
 .btn-full{width:100%}
 .btn-link{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
 .btn-link:hover{text-decoration:underline}
+.btn-shimmer{position:relative;overflow:hidden}
+.btn-shimmer::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:btn-shimmer-sweep 3.2s ease-in-out infinite}
+@keyframes btn-shimmer-sweep{0%,15%{left:-60%}55%,100%{left:130%}}
+@media(prefers-reduced-motion:reduce){.btn-shimmer::after{animation:none;display:none}}
 
 /* hero */
 .hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(48px,7vh,80px) 0}
@@ -74,10 +78,10 @@ a{color:inherit}
 .hero h1{color:var(--white);max-width:760px}
 .hero h1 em{font-style:normal;color:var(--green)}
 .hero-sub{color:#DCEDEC;font-size:18px;margin-top:16px;max-width:640px}
-.hero-card{background:var(--white);border-radius:20px;padding:clamp(28px,3vh,40px);box-shadow:0 30px 70px rgba(0,0,0,.28);margin-top:28px;display:grid;grid-template-columns:200px 1fr;gap:40px}
-.hero-facts{display:flex;flex-direction:column;gap:26px;padding-right:40px;border-right:1px solid var(--line)}
-.hero-fact b{display:block;font-family:var(--font-display);font-weight:900;font-size:40px;line-height:1.05;color:var(--navy-2)}
-.hero-fact span{font-size:14px;color:var(--muted);margin-top:4px;display:block}
+.hero-card{background:rgba(255,255,255,.14);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:clamp(28px,3vh,40px);box-shadow:0 30px 70px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.4);margin-top:28px;display:grid;grid-template-columns:200px 1fr;gap:40px}
+.hero-facts{display:flex;flex-direction:column;gap:26px;padding-right:40px;border-right:1px solid rgba(255,255,255,.28)}
+.hero-fact b{display:block;font-family:var(--font-display);font-weight:900;font-size:40px;line-height:1.05;color:var(--white);text-shadow:0 2px 12px rgba(0,0,0,.15)}
+.hero-fact span{font-size:14px;color:rgba(255,255,255,.8);margin-top:4px;display:block}
 .trust-bar{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;color:#DCEDEC}
 .trust-bar b{color:var(--white)}
 
@@ -155,33 +159,33 @@ section{padding:80px 0}
 #hs-register-form form{margin:0!important}
 #hs-register-form fieldset{max-width:none!important;border:none!important;padding:0!important;margin:0 0 16px!important;display:flex!important;flex-wrap:wrap!important;gap:16px!important}
 #hs-register-form fieldset>.hs-form-field{flex:1 1 200px!important;min-width:0!important}
-#hs-register-form .hs-richtext{font-size:14px!important;color:var(--muted)!important;margin:0 0 16px!important}
+#hs-register-form .hs-richtext{font-size:14px!important;color:rgba(255,255,255,.8)!important;margin:0 0 16px!important}
 #hs-register-form .input{margin:0!important}
-#hs-register-form label{display:block!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:12px!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--muted)!important;margin-bottom:7px!important}
-#hs-register-form label span.hs-form-required{color:var(--green-dark)!important}
+#hs-register-form label{display:block!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:12px!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:rgba(255,255,255,.85)!important;margin-bottom:7px!important}
+#hs-register-form label span.hs-form-required{color:var(--green)!important}
 #hs-register-form input[type=text],
 #hs-register-form input[type=email],
 #hs-register-form input[type=tel],
 #hs-register-form input[type=url],
 #hs-register-form input[type=number],
 #hs-register-form select,
-#hs-register-form textarea{width:100%!important;box-sizing:border-box!important;background:var(--sec-white)!important;border:1px solid var(--line)!important;border-radius:8px!important;padding:13px!important;color:var(--black)!important;font-family:var(--font-body)!important;font-size:15px!important;height:auto!important}
-#hs-register-form input::placeholder,#hs-register-form textarea::placeholder{color:#9AA6A4!important}
-#hs-register-form input:focus,#hs-register-form select:focus,#hs-register-form textarea:focus{outline:none!important;border-color:var(--green-dark)!important}
+#hs-register-form textarea{width:100%!important;box-sizing:border-box!important;background:rgba(255,255,255,.55)!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;border:1px solid rgba(255,255,255,.55)!important;border-radius:8px!important;padding:13px!important;color:var(--black)!important;font-family:var(--font-body)!important;font-size:15px!important;height:auto!important}
+#hs-register-form input::placeholder,#hs-register-form textarea::placeholder{color:rgba(34,34,34,.5)!important}
+#hs-register-form input:focus,#hs-register-form select:focus,#hs-register-form textarea:focus{outline:none!important;border-color:var(--green-dark)!important;background:rgba(255,255,255,.75)!important}
 #hs-register-form textarea{min-height:72px!important;resize:vertical!important}
 #hs-register-form ul.inputs-list{list-style:none!important;margin:4px 0 0!important;padding:0!important}
-#hs-register-form .hs-error-msgs{list-style:none!important;margin:6px 0 0!important;padding:0!important;font-size:12px!important;color:#C0392B!important}
+#hs-register-form .hs-error-msgs{list-style:none!important;margin:6px 0 0!important;padding:0!important;font-size:12px!important;color:#FFB4AC!important}
 #hs-register-form .hs-fieldtype-booleancheckbox{display:flex!important;align-items:flex-start!important;gap:8px!important}
-#hs-register-form .hs-fieldtype-booleancheckbox label{display:inline!important;font-family:var(--font-body)!important;font-weight:400!important;font-size:14px!important;letter-spacing:normal!important;text-transform:none!important;color:var(--black)!important;margin:0!important}
+#hs-register-form .hs-fieldtype-booleancheckbox label{display:inline!important;font-family:var(--font-body)!important;font-weight:400!important;font-size:14px!important;letter-spacing:normal!important;text-transform:none!important;color:rgba(255,255,255,.85)!important;margin:0!important}
 #hs-register-form input[type=checkbox]{width:auto!important;margin-top:3px!important;flex:0 0 auto!important}
 #hs-register-form .hs_submit{margin-top:6px!important}
 #hs-register-form .hs-button,
 #hs-register-form input[type=submit]{width:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
 #hs-register-form .hs-button:hover,
 #hs-register-form input[type=submit]:hover{background:#35C169!important;color:var(--navy)!important}
-#hs-register-form .legal-consent-container{font-size:13px!important;color:var(--muted)!important;margin-top:16px!important}
+#hs-register-form .legal-consent-container{font-size:13px!important;color:rgba(255,255,255,.8)!important;margin-top:16px!important}
 #hs-register-form .legal-consent-container a,
-#hs-register-form .hs-richtext a{color:var(--green-dark)!important}
+#hs-register-form .hs-richtext a{color:var(--green)!important}
 #hs-register-form .submitted-message{font-size:16px!important;color:var(--black)!important;text-align:center!important;padding:12px 0!important}
 
 /* footer */
@@ -220,7 +224,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
       <a href="#take-away">What you'll learn</a>
       <a href="#speakers">Speakers</a>
       <a href="#faq">FAQ</a>
-      <a href="#register" class="btn btn-primary btn-sm">Save my seat</a>
+      <a href="#register" class="btn btn-primary btn-sm btn-shimmer">Save my seat</a>
     </div>
   </div>
 </nav>
