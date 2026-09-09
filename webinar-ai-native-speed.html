@@ -145,18 +145,15 @@ section{padding:80px 0}
 .faq .a{margin-top:14px;font-size:15px}
 
 /* register */
-.register{background:var(--navy);color:var(--white)}
-.register .sec-head h2{color:var(--white)}
-.register .sec-head p{color:#B9CBC9}
-form{background:var(--navy-2);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:32px;max-width:560px;margin:0 auto}
-.f-row{margin-bottom:16px}
-label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#B9CBC9;margin-bottom:7px}
-input,select,textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);border-radius:8px;padding:13px;color:var(--white);font-family:var(--font-body);font-size:15px}
-input::placeholder,textarea::placeholder{color:#8BA3A1}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green)}
-textarea{min-height:88px;resize:vertical}
-select option{color:#000}
-.f-note{font-size:13px;color:#8BA3A1;margin-top:14px;text-align:center}
+.hero-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.f-row{margin-bottom:0}
+.f-row.full{grid-column:1 / -1}
+label{display:block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+input,select,textarea{width:100%;background:var(--sec-white);border:1px solid var(--line);border-radius:8px;padding:13px;color:var(--black);font-family:var(--font-body);font-size:15px}
+input::placeholder,textarea::placeholder{color:#9AA6A4}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-dark)}
+textarea{min-height:72px;resize:vertical}
+.f-note{font-size:13px;color:var(--muted);margin-top:16px}
 
 /* footer */
 footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
@@ -197,7 +194,7 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
 </nav>
 
 <!-- HERO -->
-<header class="hero">
+<header class="hero" id="register">
   <div class="wrap hero-in">
     <div>
       <div class="hero-badge">Free fireside chat · September 30, 2026 · 5 PM CEST / 11 AM EDT</div>
@@ -212,8 +209,46 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         <div class="hero-fact"><b>2 + 1</b><span>Speakers + moderator</span></div>
         <div class="hero-fact"><b>Free</b><span>No pitch, one Q&amp;A</span></div>
       </div>
-      <p style="font-size:15px;margin-top:18px">Bring a specific question about your codebase, we'll pull it into the conversation live.</p>
-      <a href="#register" class="btn btn-primary" style="margin-top:20px">Register free</a>
+
+      <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the
+           real endpoint (webinar platform embed, Netlify, form plugin) once the registration
+           script is supplied. Keep these fields. -->
+      <form name="ai-native-speed-webinar" method="POST" data-netlify="true" netlify-honeypot="company-website">
+        <input type="hidden" name="form-name" value="ai-native-speed-webinar">
+        <p style="display:none"><label>Leave this empty: <input name="company-website"></label></p>
+        <div class="hero-form-grid">
+          <div class="f-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" required placeholder="Alex Rivera">
+          </div>
+          <div class="f-row">
+            <label for="email">Work email</label>
+            <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
+          </div>
+          <div class="f-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" required placeholder="Your company">
+          </div>
+          <div class="f-row">
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option>Founder / CEO</option>
+              <option>CTO / VP Engineering</option>
+              <option>Head of Product</option>
+              <option>Head of AI / Innovation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="f-row full">
+            <label for="question">Your question for the panel (optional)</label>
+            <textarea id="question" name="question" placeholder="What's actually slowing your team down right now?"></textarea>
+          </div>
+          <div class="f-row full">
+            <button type="submit" class="btn btn-primary btn-full">Register free</button>
+            <p class="f-note">We'll email the joining link before the event. By registering you agree to the <a href="terms.html" style="color:var(--green-dark)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green-dark)">Privacy Policy</a>.</p>
+          </div>
+        </div>
+      </form>
     </div>
 
     <div class="trust-bar">
@@ -407,53 +442,6 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         <div class="a"><p>[PLACEHOLDER: confirm before launch.]</p></div>
       </details>
     </div>
-  </div>
-</section>
-
-<!-- REGISTER -->
-<section id="register" class="register">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow" style="color:var(--green)">Register</div>
-      <h2>Save your seat</h2>
-      <p>Free to attend. Bring a question, or just come listen.</p>
-    </div>
-
-    <!-- PLACEHOLDER: form has no destination yet. Replace the <form> attributes / add the
-         real endpoint (webinar platform embed, Netlify, form plugin) once the registration
-         script is supplied. Keep these fields. -->
-    <form name="ai-native-speed-webinar-full" method="POST" data-netlify="true" netlify-honeypot="company-website-2">
-      <input type="hidden" name="form-name" value="ai-native-speed-webinar-full">
-      <p style="display:none"><label>Leave this empty: <input name="company-website-2"></label></p>
-      <div class="f-row">
-        <label for="name">Your name</label>
-        <input id="name" name="name" required placeholder="Alex Rivera">
-      </div>
-      <div class="f-row">
-        <label for="email">Work email</label>
-        <input id="email" type="email" name="email" required placeholder="alex@yourproduct.com">
-      </div>
-      <div class="f-row">
-        <label for="company">Company</label>
-        <input id="company" name="company" required placeholder="Your company">
-      </div>
-      <div class="f-row">
-        <label for="role">Role</label>
-        <select id="role" name="role">
-          <option>Founder / CEO</option>
-          <option>CTO / VP Engineering</option>
-          <option>Head of Product</option>
-          <option>Head of AI / Innovation</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="f-row">
-        <label for="question">Your question for the panel (optional)</label>
-        <textarea id="question" name="question" placeholder="What's actually slowing your team down right now?"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-full">Save my seat</button>
-      <p class="f-note">We'll email the joining link before the event.<br>By registering you agree to the <a href="terms.html" style="color:var(--green)">Terms of Service</a> and <a href="privacy.html" style="color:var(--green)">Privacy Policy</a>.</p>
-    </form>
   </div>
 </section>
 
