@@ -73,7 +73,7 @@ a{color:inherit}
 
 /* hero */
 .hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(40px,6vh,64px) 0}
-.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .hero-kicker{font-family:var(--font-display);font-weight:900;font-size:40px;line-height:1.1;letter-spacing:-.02em;color:var(--green);max-width:460px}
 .hero h1{color:var(--white);font-weight:700;font-size:22px;line-height:1.3;margin-top:8px;max-width:440px}
 .hero-sub{color:#DCEDEC;font-size:17px;margin-top:18px;max-width:440px}
@@ -156,9 +156,11 @@ section{padding:80px 0}
 #hs-register-form form{margin:0!important}
 #hs-register-form fieldset{max-width:none!important;border:none!important;padding:0!important;margin:0 0 16px!important;display:flex!important;flex-wrap:wrap!important;gap:16px!important}
 #hs-register-form fieldset>.hs-form-field{flex:1 1 200px!important;min-width:0!important;display:flex!important;flex-direction:column!important}
+#hs-register-form fieldset>.hs-form-field.hs-fieldtype-hidden,
+#hs-register-form fieldset>.hs-form-field:has(input[type=hidden]){display:none!important}
 #hs-register-form .hs-richtext{font-size:14px!important;color:var(--muted)!important;margin:0 0 16px!important}
 #hs-register-form .input{margin:0!important}
-#hs-register-form label{display:block!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:12px!important;line-height:1.3!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:var(--muted)!important;margin-bottom:7px!important;min-height:2.6em!important}
+#hs-register-form label{display:block!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:13px!important;line-height:1.3!important;letter-spacing:normal!important;text-transform:none!important;color:var(--muted)!important;margin-bottom:7px!important;min-height:2.6em!important}
 #hs-register-form label span.hs-form-required{color:var(--green-dark)!important}
 #hs-register-form input[type=text],
 #hs-register-form input[type=email],
@@ -499,14 +501,21 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         set('display', 'block');
         set('font-family', "'Inter',-apple-system,Segoe UI,sans-serif");
         set('font-weight', '700');
-        set('font-size', '12px');
-        set('letter-spacing', '.06em');
-        set('text-transform', 'uppercase');
+        set('font-size', '13px');
+        set('letter-spacing', 'normal');
+        set('text-transform', 'none');
         set('color', '#5A5C5B');
         set('margin-bottom', '7px');
       }
     }
-    function styleAll() { styleButtons(); styleLabels(); }
+    function hideHiddenFields() {
+      var hiddenInputs = container.querySelectorAll('input[type="hidden"]');
+      for (var i = 0; i < hiddenInputs.length; i++) {
+        var field = hiddenInputs[i].closest('.hs-form-field');
+        if (field) field.style.setProperty('display', 'none', 'important');
+      }
+    }
+    function styleAll() { styleButtons(); styleLabels(); hideHiddenFields(); }
     styleAll();
     var iv = setInterval(styleAll, 400);
     if (window.MutationObserver) {
