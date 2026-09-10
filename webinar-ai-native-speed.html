@@ -177,9 +177,9 @@ section{padding:80px 0}
 #hs-register-form .hs-fieldtype-booleancheckbox{display:flex!important;align-items:flex-start!important;gap:8px!important}
 #hs-register-form .hs-fieldtype-booleancheckbox label{display:inline!important;font-family:var(--font-body)!important;font-weight:400!important;font-size:14px!important;letter-spacing:normal!important;text-transform:none!important;color:var(--black)!important;margin:0!important}
 #hs-register-form input[type=checkbox]{width:auto!important;margin-top:3px!important;flex:0 0 auto!important}
-#hs-register-form .hs_submit{margin-top:18px!important;display:block!important}
+#hs-register-form .hs_submit{margin-top:18px!important;display:block!important;text-align:center!important}
 #hs-register-form .hs-button,
-#hs-register-form input[type=submit]{width:auto!important;max-width:none!important;flex:none!important;align-self:flex-start!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
+#hs-register-form input[type=submit]{width:auto!important;max-width:none!important;flex:none!important;align-self:center!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
 #hs-register-form .hs-button:hover,
 #hs-register-form input[type=submit]:hover{background:#35C169!important;color:var(--navy)!important}
 #hs-register-form .legal-consent-container{font-size:13px!important;color:var(--muted)!important;margin-top:16px!important}
@@ -473,7 +473,9 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         set('width', 'auto');
         set('max-width', 'none');
         set('flex', 'none');
-        set('align-self', 'flex-start');
+        set('align-self', 'center');
+        var submitWrap = btn.closest('.hs_submit');
+        if (submitWrap) submitWrap.style.setProperty('text-align', 'center', 'important');
         set('background', hovering ? '#35C169' : '#4AD57B');
         set('background-color', hovering ? '#35C169' : '#4AD57B');
         set('color', '#0E2A2C');
