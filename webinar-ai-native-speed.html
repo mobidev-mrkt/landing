@@ -72,18 +72,15 @@ a{color:inherit}
 @media(prefers-reduced-motion:reduce){.btn-shimmer::after{animation:none;display:none}}
 
 /* hero */
-.hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(48px,7vh,80px) 0}
-.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:32px}
-.hero-badge{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:14px}
-.hero h1{color:var(--white);max-width:760px}
+.hero{background:var(--grad);color:var(--white);position:relative;overflow:hidden;padding:clamp(40px,6vh,64px) 0}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{color:var(--white);max-width:600px;font-size:46px}
 .hero h1 em{font-style:normal;color:var(--green)}
-.hero-sub{color:#DCEDEC;font-size:18px;margin-top:16px;max-width:640px}
-.hero-card{background:var(--white);border-radius:20px;padding:clamp(28px,3vh,40px);box-shadow:0 30px 70px rgba(0,0,0,.28);margin-top:28px;display:grid;grid-template-columns:200px 1fr;gap:40px}
-.hero-facts{display:flex;flex-direction:column;gap:26px;padding-right:40px;border-right:1px solid var(--line)}
-.hero-fact b{display:block;font-family:var(--font-display);font-weight:900;font-size:40px;line-height:1.05;color:var(--navy-2)}
-.hero-fact span{font-size:14px;color:var(--muted);margin-top:4px;display:block}
-.trust-bar{margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 28px;font-size:14px;color:#DCEDEC}
-.trust-bar b{color:var(--white)}
+.hero-sub{color:#DCEDEC;font-size:18px;margin-top:18px;max-width:520px}
+.hero-card{background:var(--white);border-radius:20px;padding:clamp(28px,3vh,36px);box-shadow:0 30px 70px rgba(0,0,0,.28)}
+.hero-facts{display:flex;gap:32px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-fact b{display:block;font-family:var(--font-display);font-weight:900;font-size:32px;line-height:1;color:var(--white)}
+.hero-fact span{font-size:13px;color:#DCEDEC;margin-top:5px;display:block}
 
 /* sections */
 section{padding:80px 0}
@@ -178,7 +175,7 @@ section{padding:80px 0}
 #hs-register-form .hs-fieldtype-booleancheckbox{display:flex!important;align-items:flex-start!important;gap:8px!important}
 #hs-register-form .hs-fieldtype-booleancheckbox label{display:inline!important;font-family:var(--font-body)!important;font-weight:400!important;font-size:14px!important;letter-spacing:normal!important;text-transform:none!important;color:var(--black)!important;margin:0!important}
 #hs-register-form input[type=checkbox]{width:auto!important;margin-top:3px!important;flex:0 0 auto!important}
-#hs-register-form .hs_submit{margin-top:6px!important}
+#hs-register-form .hs_submit{margin-top:18px!important}
 #hs-register-form .hs-button,
 #hs-register-form input[type=submit]{width:auto!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;font-family:var(--font-display)!important;font-weight:700!important;font-size:14px!important;letter-spacing:.03em!important;text-transform:uppercase!important;padding:16px 42px!important;border-radius:999px!important;border:2px solid transparent!important;background:var(--green)!important;color:var(--navy)!important;cursor:pointer!important;transition:.18s ease!important}
 #hs-register-form .hs-button:hover,
@@ -206,9 +203,10 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
   .mod-photo{width:96px;height:96px}
   .nav-links a:not(.btn){display:none}
   section{padding:56px 0}
-  .hero-card{grid-template-columns:1fr}
-  .hero-facts{flex-direction:row;flex-wrap:wrap;gap:20px 28px;padding-right:0;border-right:none;border-bottom:1px solid var(--line);padding-bottom:24px}
-  .hero-fact b{font-size:28px}
+  .hero-in{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+  .hero-facts{flex-wrap:wrap;row-gap:16px}
+  .hero-fact b{font-size:26px}
 }
 @media(max-width:600px){
   .take,.nums,.personas{grid-template-columns:1fr}
@@ -233,25 +231,18 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
 <header class="hero" id="register">
   <div class="wrap hero-in">
     <div>
-      <div class="hero-badge">Free fireside chat · September 30, 2026 · 5 PM CEST / 11 AM EDT</div>
       <h1>AI-Native Speed on a Legacy Codebase: <em>How to Outpace Competitors with AIDLC</em></h1>
       <p class="hero-sub">A fireside chat for founders and engineering leaders running an older codebase: what actually changes once AI gets into your SDLC, and what still doesn't.</p>
-    </div>
 
-    <div class="hero-card">
       <div class="hero-facts">
         <div class="hero-fact"><b>Sep 30</b><span>5 PM CEST / 11 AM EDT</span></div>
         <div class="hero-fact"><b>60 min</b><span>Live fireside chat</span></div>
         <div class="hero-fact"><b>2 + 1</b><span>Speakers + moderator</span></div>
       </div>
-
-      <div id="hs-register-form"></div>
     </div>
 
-    <div class="trust-bar">
-      <span><b>65+</b> AI &amp; ML products shipped</span>
-      <span><b>16 years</b> in software development</span>
-      <span><b>9.1 NPS</b> per 2025 client survey</span>
+    <div class="hero-card">
+      <div id="hs-register-form"></div>
     </div>
   </div>
 </header>
