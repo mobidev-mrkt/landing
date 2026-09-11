@@ -528,11 +528,18 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         links[i].style.setProperty('color', '#FFFFFF', 'important');
       }
     }
-    function styleAll() { styleButtons(); styleLabels(); hideHiddenFields(); styleLegalLinks(); }
+    var observer;
+    function styleAll() {
+      if (observer) observer.disconnect();
+      styleButtons(); styleLabels(); hideHiddenFields(); styleLegalLinks();
+      if (observer) observer.observe(container, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+    }
     styleAll();
     var iv = setInterval(styleAll, 400);
+    setTimeout(function () { clearInterval(iv); }, 6000);
     if (window.MutationObserver) {
-      new MutationObserver(styleAll).observe(container, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+      observer = new MutationObserver(styleAll);
+      observer.observe(container, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
     }
     window.addEventListener('beforeunload', function () { clearInterval(iv); });
   })();
