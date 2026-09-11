@@ -520,7 +520,13 @@ footer{background:var(--navy);color:#9FB6B4;padding:32px 0;font-size:14px}
         if (field) field.style.setProperty('display', 'none', 'important');
       }
     }
-    function styleAll() { styleButtons(); styleLabels(); hideHiddenFields(); }
+    function styleLegalLinks() {
+      var links = container.querySelectorAll('.legal-consent-container a, .hs-richtext a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].style.setProperty('color', '#FFFFFF', 'important');
+      }
+    }
+    function styleAll() { styleButtons(); styleLabels(); hideHiddenFields(); styleLegalLinks(); }
     styleAll();
     var iv = setInterval(styleAll, 400);
     if (window.MutationObserver) {
