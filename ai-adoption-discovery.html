@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free AI Adoption Discovery | MobiDev</title>
+<meta name="description" content="Fill out a short form and find out where your team actually sits on the AI-native maturity curve, and what's realistically blocking growth or margin right now. Offer closes 48 hours after the webinar.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0F14;
+  --card:#131A22;
+  --green:#4AD57B;
+  --green-dark:#12B292;
+  --white:#FFFFFF;
+  --muted:#AEB7C2;
+  --muted-2:#7C8896;
+  --line:#232C36;
+  --font-display:'Inter',-apple-system,Segoe UI,sans-serif;
+  --font-body:'Open Sans',-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.page{
+  width:100%;
+  max-width:1080px;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:0;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  min-height:0;
+}
+.pitch{
+  padding:48px 44px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+}
+.logo{
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:18px;
+  letter-spacing:-.02em;
+}
+.logo span{color:var(--green)}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  align-self:flex-start;
+  background:rgba(74,213,123,.12);
+  border:1px solid rgba(74,213,123,.35);
+  color:var(--green);
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:12px;
+  letter-spacing:.02em;
+  text-transform:uppercase;
+  padding:6px 12px;
+  border-radius:999px;
+}
+h1{
+  font-family:var(--font-display);
+  font-weight:900;
+  font-size:clamp(28px,3.4vw,40px);
+  line-height:1.08;
+  letter-spacing:-.02em;
+}
+h1 .accent{color:var(--green)}
+.sub{
+  font-size:16px;
+  line-height:1.55;
+  color:var(--muted);
+  max-width:46ch;
+}
+.trust{
+  font-size:13px;
+  color:var(--muted-2);
+  padding-top:8px;
+  border-top:1px solid var(--line);
+  margin-top:4px;
+}
+.trust strong{color:var(--white)}
+.form-side{
+  background:#0E141B;
+  padding:40px 40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border-left:1px solid var(--line);
+}
+.form-title{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:15px;
+  color:var(--white);
+  margin-bottom:4px;
+}
+.form-note{
+  font-size:13px;
+  color:var(--muted-2);
+  margin-bottom:18px;
+}
+#hs-form-target{
+  width:100%;
+}
+.reassure{
+  font-size:12px;
+  color:var(--muted-2);
+  margin-top:14px;
+  text-align:center;
+}
+.alt{
+  font-size:12px;
+  color:var(--muted-2);
+  margin-top:8px;
+  text-align:center;
+}
+.alt a{
+  color:var(--green);
+  font-weight:600;
+  text-decoration:none;
+}
+.alt a:hover{text-decoration:underline}
+
+/* HubSpot embedded form overrides, dark theme */
+#hs-form-target .hs-form{
+  color:var(--white);
+  font-family:var(--font-body) !important;
+}
+#hs-form-target .hs-form-field{
+  margin-bottom:14px;
+}
+#hs-form-target label{
+  color:var(--muted) !important;
+  font-size:13px !important;
+  font-weight:600 !important;
+  margin-bottom:6px !important;
+  display:block;
+}
+#hs-form-target input[type="text"],
+#hs-form-target input[type="email"],
+#hs-form-target input[type="tel"],
+#hs-form-target textarea,
+#hs-form-target select{
+  width:100% !important;
+  background:#151D26 !important;
+  border:1px solid var(--line) !important;
+  color:var(--white) !important;
+  border-radius:10px !important;
+  padding:11px 12px !important;
+  font-size:14px !important;
+  font-family:var(--font-body) !important;
+}
+#hs-form-target select{
+  appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%237C8896' stroke-width='1.5' fill='none' fill-rule='evenodd'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+}
+#hs-form-target input::placeholder,
+#hs-form-target textarea::placeholder{color:var(--muted-2) !important}
+#hs-form-target input:focus,
+#hs-form-target textarea:focus,
+#hs-form-target select:focus{
+  outline:none !important;
+  border-color:var(--green) !important;
+  box-shadow:0 0 0 3px rgba(74,213,123,.18) !important;
+}
+#hs-form-target ul.inputs-list{list-style:none}
+#hs-form-target ul.inputs-list li{margin-bottom:8px}
+#hs-form-target .hs-form-radio label,
+#hs-form-target .hs-form-checkbox label{
+  display:flex !important;
+  align-items:center;
+  gap:8px;
+  font-weight:400 !important;
+  color:var(--muted) !important;
+  font-size:14px !important;
+}
+#hs-form-target .hs-error-msgs{list-style:none;margin-top:4px}
+#hs-form-target .hs-error-msgs label{color:#FF8A8A !important;font-size:12px !important;font-weight:400 !important}
+#hs-form-target .hs-button{
+  width:100%;
+  background:var(--green) !important;
+  background-image:none !important;
+  color:#0B0F14 !important;
+  font-family:var(--font-display) !important;
+  font-weight:800 !important;
+  font-size:15px !important;
+  border:none !important;
+  border-radius:999px !important;
+  padding:13px 20px !important;
+  cursor:pointer;
+  margin-top:6px;
+  transition:transform .15s ease, background .15s ease;
+}
+#hs-form-target .hs-button:hover{background:var(--green-dark) !important; transform:translateY(-1px)}
+#hs-form-target .hs-richtext,
+#hs-form-target .hs-main-font-element{color:var(--muted) !important}
+#hs-form-target .submitted-message{
+  color:var(--white) !important;
+  font-family:var(--font-display) !important;
+  font-size:16px;
+  text-align:center;
+}
+
+@media (max-width:860px){
+  .page{grid-template-columns:1fr}
+  .form-side{border-left:none; border-top:1px solid var(--line)}
+  .pitch{padding:36px 24px 24px}
+  .form-side{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="pitch">
+    <div class="logo">mob<span>/</span>dev</div>
+    <span class="badge">Offer closes 48 hours after the webinar</span>
+    <h1>Free <span class="accent">AI Adoption</span> Discovery</h1>
+    <p class="sub">Fill out the form and we'll tell you where your team actually sits on the AI-native maturity curve, and what's realistically blocking your growth or margin right now.</p>
+    <p class="trust">From the team behind <strong>120+ legacy modernization projects</strong>.</p>
+  </div>
+
+  <div class="form-side">
+    <div class="form-title">Get your AI adoption level</div>
+    <div class="form-note">Takes about 2 minutes.</div>
+    <div id="hs-form-target"></div>
+    <p class="reassure">One of our engineers reviews your answers personally and emails back your AI-adoption level.</p>
+    <p class="alt">Prefer to just talk it through? <a href="mailto:hello@mobidev.biz">Email us at hello@mobidev.biz</a></p>
+  </div>
+</div>
+
+<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "47062060",
+    formId: "d9e61b82-8826-4cef-ab18-d87f5e3c8f4a",
+    region: "na1",
+    target: "#hs-form-target"
+  });
+</script>
+</body>
+</html>
