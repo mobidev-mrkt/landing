@@ -1,0 +1,158 @@
+<!-- Portable styled embed: "Free AI Adoption Discovery" HubSpot form.
+     Drop this whole block anywhere (any page, any host background) —
+     it carries its own dark card wrapper so it never inherits the host page's styles. -->
+
+<div class="mdaa-form-wrap">
+  <div class="mdaa-form-card">
+    <div class="mdaa-form-title">Get your AI adoption level</div>
+    <div class="mdaa-form-note">Takes about 2 minutes.</div>
+    <div id="mdaa-hs-form"></div>
+    <p class="mdaa-reassure">One of our engineers reviews your answers personally and emails back your AI-adoption level.</p>
+    <p class="mdaa-alt">Prefer to just talk it through? <a href="mailto:hello@mobidev.biz">Email us at hello@mobidev.biz</a></p>
+  </div>
+</div>
+
+<style>
+.mdaa-form-wrap{
+  --mdaa-bg:#0B0F14;
+  --mdaa-card:#131A22;
+  --mdaa-green:#4AD57B;
+  --mdaa-green-dark:#12B292;
+  --mdaa-white:#FFFFFF;
+  --mdaa-muted:#AEB7C2;
+  --mdaa-muted-2:#7C8896;
+  --mdaa-line:#232C36;
+  --mdaa-font-display:'Inter',-apple-system,Segoe UI,sans-serif;
+  --mdaa-font-body:'Open Sans',-apple-system,Segoe UI,sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:16px;
+}
+.mdaa-form-wrap *{box-sizing:border-box}
+.mdaa-form-card{
+  width:100%;
+  max-width:420px;
+  background:var(--mdaa-card);
+  border:1px solid var(--mdaa-line);
+  border-radius:16px;
+  padding:28px 28px 24px;
+  font-family:var(--mdaa-font-body);
+}
+.mdaa-form-title{
+  font-family:var(--mdaa-font-display);
+  font-weight:700;
+  font-size:16px;
+  color:var(--mdaa-white);
+  margin-bottom:4px;
+}
+.mdaa-form-note{
+  font-size:13px;
+  color:var(--mdaa-muted-2);
+  margin-bottom:16px;
+}
+.mdaa-reassure{
+  font-size:12px;
+  color:var(--mdaa-muted-2);
+  margin-top:14px;
+  text-align:center;
+}
+.mdaa-alt{
+  font-size:12px;
+  color:var(--mdaa-muted-2);
+  margin-top:8px;
+  text-align:center;
+}
+.mdaa-alt a{color:var(--mdaa-green);font-weight:600;text-decoration:none}
+.mdaa-alt a:hover{text-decoration:underline}
+
+/* HubSpot embedded form overrides, scoped to this wrapper only */
+#mdaa-hs-form .hs-form{color:var(--mdaa-white);font-family:var(--mdaa-font-body) !important}
+#mdaa-hs-form .hs-form-field{margin-bottom:14px}
+#mdaa-hs-form label{
+  color:var(--mdaa-muted) !important;
+  font-size:13px !important;
+  font-weight:600 !important;
+  margin-bottom:6px !important;
+  display:block;
+}
+#mdaa-hs-form input[type="text"],
+#mdaa-hs-form input[type="email"],
+#mdaa-hs-form input[type="tel"],
+#mdaa-hs-form textarea,
+#mdaa-hs-form select{
+  width:100% !important;
+  background:#151D26 !important;
+  border:1px solid var(--mdaa-line) !important;
+  color:var(--mdaa-white) !important;
+  border-radius:10px !important;
+  padding:11px 12px !important;
+  font-size:14px !important;
+  font-family:var(--mdaa-font-body) !important;
+}
+#mdaa-hs-form select{
+  appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%237C8896' stroke-width='1.5' fill='none' fill-rule='evenodd'/></svg>");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+}
+#mdaa-hs-form input::placeholder,
+#mdaa-hs-form textarea::placeholder{color:var(--mdaa-muted-2) !important}
+#mdaa-hs-form input:focus,
+#mdaa-hs-form textarea:focus,
+#mdaa-hs-form select:focus{
+  outline:none !important;
+  border-color:var(--mdaa-green) !important;
+  box-shadow:0 0 0 3px rgba(74,213,123,.18) !important;
+}
+#mdaa-hs-form ul.inputs-list{list-style:none}
+#mdaa-hs-form ul.inputs-list li{margin-bottom:8px}
+#mdaa-hs-form .hs-form-radio label,
+#mdaa-hs-form .hs-form-checkbox label{
+  display:flex !important;
+  align-items:center;
+  gap:8px;
+  font-weight:400 !important;
+  color:var(--mdaa-muted) !important;
+  font-size:14px !important;
+}
+#mdaa-hs-form .hs-error-msgs{list-style:none;margin-top:4px}
+#mdaa-hs-form .hs-error-msgs label{color:#FF8A8A !important;font-size:12px !important;font-weight:400 !important}
+#mdaa-hs-form .hs-button{
+  width:100%;
+  background:var(--mdaa-green) !important;
+  background-image:none !important;
+  color:#0B0F14 !important;
+  font-family:var(--mdaa-font-display) !important;
+  font-weight:800 !important;
+  font-size:15px !important;
+  border:none !important;
+  border-radius:999px !important;
+  padding:13px 20px !important;
+  cursor:pointer;
+  margin-top:6px;
+  transition:transform .15s ease, background .15s ease;
+}
+#mdaa-hs-form .hs-button:hover{background:var(--mdaa-green-dark) !important; transform:translateY(-1px)}
+#mdaa-hs-form .hs-richtext,
+#mdaa-hs-form .hs-main-font-element{color:var(--mdaa-muted) !important}
+#mdaa-hs-form .submitted-message{
+  color:var(--mdaa-white) !important;
+  font-family:var(--mdaa-font-display) !important;
+  font-size:16px;
+  text-align:center;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    portalId: "47062060",
+    formId: "d9e61b82-8826-4cef-ab18-d87f5e3c8f4a",
+    region: "na1",
+    target: "#mdaa-hs-form"
+  });
+</script>
