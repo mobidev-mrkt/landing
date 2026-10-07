@@ -133,7 +133,7 @@ section{padding:88px 0}
 .case-compact-side{display:flex;flex-direction:column;gap:14px}
 .case-compact-metrics{display:flex;gap:14px}
 .case-compact-metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:12px;padding:16px;flex:1;text-align:center}
-.case-compact-metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:26px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.case-compact-metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:38px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .case-compact-metric span{font-size:12px;color:#9A9D9C;display:block;margin-top:4px}
 
 /* packages */
@@ -362,7 +362,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       </ul>
     </div>
     <aside class="hero-card hero-video">
-      <div class="video-frame" id="heroVideo" data-yt-id="OaGAPIEFoiU">
+      <div class="video-frame" id="heroVideo" data-drive-id="1yIsoTxymi5iCq56rDI--BkGTnLte-azR" style="background-image:url('assets/video/iurii-poster.jpg');background-size:cover;background-position:center">
         <button type="button" class="video-play" aria-label="Play video">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#4AD57B"/><path d="M10 8.3l6.2 3.7-6.2 3.7z" fill="#222"/></svg>
         </button>
@@ -910,13 +910,18 @@ document.querySelectorAll('[data-pkg]').forEach(function(b){
   });
 });
 
-// hero video: click-to-play YouTube facade, no iframe until a real video id is set
+// hero video: click-to-play facade (YouTube or Google Drive), no iframe until a real video id is set
 document.querySelectorAll('.video-frame').forEach(function(frame){
   frame.addEventListener('click', function(){
-    var id = frame.getAttribute('data-yt-id');
+    var ytId = frame.getAttribute('data-yt-id');
+    var driveId = frame.getAttribute('data-drive-id');
     var caption = frame.querySelector('.video-caption');
-    if(!id){ if(caption) caption.textContent = 'Video coming soon'; return; }
-    frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1" title="Vibecode Product Audit walkthrough" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    if(driveId){
+      frame.innerHTML = '<iframe src="https://drive.google.com/file/d/'+driveId+'/preview" title="Vibecode Product Audit walkthrough" allow="autoplay" allowfullscreen></iframe>';
+      return;
+    }
+    if(!ytId){ if(caption) caption.textContent = 'Video coming soon'; return; }
+    frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+ytId+'?autoplay=1&rel=0&playsinline=1" title="Vibecode Product Audit walkthrough" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
   });
 });
 
