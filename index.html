@@ -77,7 +77,8 @@ a{color:inherit}
 .hero-row{display:flex;justify-content:space-between;gap:16px;padding:clamp(8px,1.1vh,12px) 0;border-top:1px solid #3A3A3A;font-size:14px;color:#C9CCCB}
 .hero-row b{font-family:var(--font-display);font-weight:700;color:var(--white)}
 .hero-note{margin-top:14px;font-size:13px;color:#9A9D9C}
-.video-frame{position:relative;aspect-ratio:9/16;max-width:300px;margin:0 auto;border-radius:22px;overflow:hidden;background:radial-gradient(circle at 28% 22%,#333 0%,#1A1A1A 72%);display:flex;align-items:center;justify-content:center;cursor:pointer;border:3px solid #3A3A3A}
+.video-frame{position:relative;aspect-ratio:9/16;max-width:300px;margin:0 auto;border-radius:22px;overflow:hidden;background:radial-gradient(circle at 28% 22%,#333 0%,#1A1A1A 72%);display:flex;align-items:center;justify-content:center;cursor:pointer;border:3px solid #3A3A3A;transition:aspect-ratio .2s ease,max-width .2s ease}
+.video-frame.is-playing{aspect-ratio:16/9;max-width:560px}
 .video-frame::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px}
 .video-play{position:relative;z-index:2;width:30%;max-width:72px;border:none;background:none;padding:0;cursor:pointer;transition:transform .18s ease}
 .video-play:hover{transform:scale(1.08)}
@@ -917,6 +918,7 @@ document.querySelectorAll('.video-frame').forEach(function(frame){
     var driveId = frame.getAttribute('data-drive-id');
     var caption = frame.querySelector('.video-caption');
     if(driveId){
+      frame.classList.add('is-playing');
       frame.innerHTML = '<iframe src="https://drive.google.com/file/d/'+driveId+'/preview" title="Vibecode Product Audit walkthrough" allow="autoplay" allowfullscreen></iframe>';
       return;
     }
