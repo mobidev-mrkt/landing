@@ -79,7 +79,7 @@ a{color:inherit}
 .hero-row{display:flex;justify-content:space-between;gap:16px;padding:clamp(8px,1.1vh,12px) 0;border-top:1px solid #3A3A3A;font-size:14px;color:#C9CCCB}
 .hero-row b{font-family:var(--font-display);font-weight:700;color:var(--white)}
 .hero-note{margin-top:14px;font-size:13px;color:#9A9D9C}
-.video-frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:radial-gradient(circle at 28% 22%,#333 0%,#1A1A1A 72%);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.video-frame{position:relative;aspect-ratio:9/16;max-width:300px;margin:0 auto;border-radius:22px;overflow:hidden;background:radial-gradient(circle at 28% 22%,#333 0%,#1A1A1A 72%);display:flex;align-items:center;justify-content:center;cursor:pointer;border:3px solid #3A3A3A}
 .video-frame::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:26px 26px}
 .video-play{position:relative;z-index:2;width:30%;max-width:72px;border:none;background:none;padding:0;cursor:pointer;transition:transform .18s ease}
 .video-play:hover{transform:scale(1.08)}
@@ -363,8 +363,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       </ul>
     </div>
     <aside class="hero-card hero-video">
-      <!-- VIDEO PLACEHOLDER: set data-yt-id to the real YouTube video id once it exists. Click-to-play, no iframe loaded until then. -->
-      <div class="video-frame" id="heroVideo" data-yt-id="">
+      <div class="video-frame" id="heroVideo" data-yt-id="OaGAPIEFoiU">
         <button type="button" class="video-play" aria-label="Play video">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#4AD57B"/><path d="M10 8.3l6.2 3.7-6.2 3.7z" fill="#222"/></svg>
         </button>
@@ -929,7 +928,7 @@ document.querySelectorAll('.video-frame').forEach(function(frame){
     var id = frame.getAttribute('data-yt-id');
     var caption = frame.querySelector('.video-caption');
     if(!id){ if(caption) caption.textContent = 'Video coming soon'; return; }
-    frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" title="Vibecode Product Audit walkthrough" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1" title="Vibecode Product Audit walkthrough" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
   });
 });
 
