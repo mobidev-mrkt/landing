@@ -58,6 +58,7 @@ a{color:inherit}
 
 /* hero */
 .hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - 72px);padding:clamp(32px,5vh,64px) 0}
+@media(max-height:820px){.hero{min-height:auto;padding:28px 0 36px}}
 .hero::after{content:"";position:absolute;inset:auto -10% -60% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%)}
 .hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center;width:100%}
 .hero h1{color:var(--white);font-size:clamp(30px,3.2vw + 8px,48px)}
@@ -65,9 +66,13 @@ a{color:inherit}
 .hero-sub{color:#C9CCCB;font-size:clamp(16px,1.2vw + 6px,19px);margin-top:clamp(12px,1.8vh,22px);max-width:540px}
 .hero-cta{display:flex;gap:12px;margin-top:clamp(18px,2.6vh,32px);flex-wrap:wrap}
 .trust{list-style:none;margin-top:clamp(16px,2.4vh,28px);display:flex;flex-wrap:wrap;gap:10px 18px}
-.trust li{display:flex;gap:8px;align-items:center;color:#E6E8E7;font-size:14px}
+.trust li{display:flex;gap:8px;align-items:center;color:var(--white);font-size:14px;font-weight:600}
 .tick{flex:0 0 18px;height:18px;border-radius:50%;background:var(--green);display:grid;place-items:center}
 .tick svg{width:10px;height:10px}
+.tick.rating{background:none}
+.tick.rating svg{width:16px;height:16px}
+.tool-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(12px,1.8vh,18px)}
+.tool-chips span{background:#2C2C2C;border:1px solid #3A3A3A;color:#C9CCCB;font-family:var(--font-display);font-weight:700;font-size:12px;padding:6px 11px;border-radius:7px}
 .hero-card{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:clamp(20px,2.4vh,26px)}
 .hero-card .lbl{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
 .hero-card h3{color:var(--white);margin:8px 0 14px;font-size:20px}
@@ -117,8 +122,46 @@ section{padding:88px 0}
 .who-t{display:flex;flex-direction:column;line-height:1.35}
 .who-t b{font-family:var(--font-display);font-weight:700;font-size:15px}
 .who-t em{font-style:normal;font-size:13px;color:var(--muted)}
+.pains-caption{text-align:center;font-size:13px;color:var(--muted);margin-top:20px}
+
+/* case (compact, under pain quotes) */
+.case-compact{background:var(--black);color:var(--white);border-radius:16px;padding:clamp(24px,3vw,40px);margin-top:36px;display:grid;grid-template-columns:1.6fr 1fr;gap:32px;align-items:center}
+.case-compact h3{color:var(--white);font-size:22px;margin:8px 0 10px}
+.case-compact p{color:#C9CCCB;font-size:15px}
+.case-compact blockquote{color:#E6E8E7;font-size:14px;font-style:italic;margin-top:14px;border-left:3px solid var(--green);padding-left:14px}
+.case-compact blockquote span{display:block;margin-top:6px;font-size:12px;color:#9A9D9C}
+.case-compact-side{display:flex;flex-direction:column;gap:14px}
+.case-compact-metrics{display:flex;gap:14px}
+.case-compact-metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:12px;padding:16px;flex:1;text-align:center}
+.case-compact-metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:26px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.case-compact-metric span{font-size:12px;color:#9A9D9C;display:block;margin-top:4px}
 
 /* packages */
+.proof-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
+.proof-item{background:var(--sec-white);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.proof-item b{display:block;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--black)}
+.proof-item span{font-size:13px;color:var(--muted);display:block;margin-top:2px}
+
+.quiz{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:20px}
+.quiz h3{font-size:19px;margin-bottom:18px}
+.quiz-q{margin-bottom:18px}
+.quiz-label{font-family:var(--font-display);font-weight:700;font-size:14px;color:var(--black);margin-bottom:10px}
+.quiz-opts{display:flex;flex-wrap:wrap;gap:10px}
+.quiz-opts button{font-family:var(--font-body);font-size:14px;font-weight:600;padding:10px 16px;border-radius:8px;border:1px solid var(--line);background:var(--white);color:var(--black);cursor:pointer;transition:.15s ease}
+.quiz-opts button:hover{border-color:var(--black)}
+.quiz-opts button.active{background:var(--black);color:var(--white);border-color:var(--black)}
+.quiz-suggestion{background:#E9FAF0;border:1px solid #BFE9D3;border-radius:10px;padding:16px 18px;margin-top:4px}
+.quiz-suggestion b{color:#0D7A44;font-size:15px}
+.quiz-suggestion p{color:#0D7A44;font-size:14px;margin-top:4px;opacity:.85}
+.loc-note{text-align:center;font-size:14px;color:var(--muted);margin:0 auto 32px;max-width:640px}
+
+.excl-shared{max-width:640px;margin:28px auto 0}
+.pkg-note{font-size:13px;color:var(--muted);text-align:center;margin:-16px 0 20px}
+
+.process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.process-step{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--black);background:var(--sec-white);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.process-n{flex:0 0 26px;height:26px;border-radius:50%;background:var(--black);color:var(--white);font-family:var(--font-display);font-weight:700;font-size:12px;display:grid;place-items:center}
+
 .pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .pkg{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:32px;display:flex;flex-direction:column;height:100%}
 .pkg.featured{border:2px solid var(--black);box-shadow:0 18px 44px rgba(34,34,34,.10);position:relative}
@@ -148,17 +191,9 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .pkg-foot{text-align:center;margin-top:40px;font-size:17px}
 .pkg-foot a{color:var(--green-dark);font-weight:700}
 
-/* case */
-.case{background:var(--black);color:var(--white);border-radius:20px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.case h2{color:var(--white);font-size:34px}
-.case p{color:#C9CCCB;margin-top:18px;font-size:17px}
-.case-metrics{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:14px;padding:24px}
-.metric b{display:block;font-family:var(--font-display);font-weight:900;font-size:38px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.02em}
-.metric span{font-size:14px;color:#9A9D9C;display:block;margin-top:6px}
-
 /* reviews (Clutch widget) */
 .rev-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap;margin:64px 0 20px}
+.wrap>.rev-head:first-child{margin-top:0}
 .rev-head h3{font-size:22px}
 .rev-link{font-size:15px;font-weight:700;color:var(--green-dark);text-decoration:none}
 .rev-link:hover{text-decoration:underline}
@@ -239,6 +274,8 @@ details.excl li::before{content:"–";color:#B7BAB9}
 .mate h3{font-size:18px}
 .mate .role{font-size:14px;color:var(--green-dark);font-weight:700;margin:4px 0 10px}
 .mate p{font-size:15px}
+.li-link{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--green-dark);text-decoration:none}
+.li-link:hover{text-decoration:underline}
 
 /* not for you */
 .notfor{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:36px}
@@ -290,10 +327,11 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 @media(max-width:980px){
   h1{font-size:38px}h2{font-size:31px}
-  .hero-in,.final-in,.case{grid-template-columns:1fr;gap:36px}
-  .case{padding:36px}
+  .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
   .pains,.pkgs,.why,.compare,.team{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
+  .proof-strip,.process-row{grid-template-columns:1fr 1fr}
+  .case-compact{grid-template-columns:1fr}
   .sample{grid-template-columns:1fr;gap:32px}
   .pkg .desc,.pkg h3{min-height:0}
   .nav-links a:not(.btn){display:none}
@@ -322,14 +360,15 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   <div class="wrap hero-in">
     <div>
       <h1>You built it with AI.<br>See what's ready, <em>what's risky</em>, and what to fix first.</h1>
-      <p class="hero-sub">An experienced developer reads your AI-built code and tells you what's broken and how to fix it. Fixed price, one business day.</p>
+      <p class="hero-sub">An experienced developer reads your AI-built code and tells you what's broken and how to fix it. Fixed price. Work starts the same business day.</p>
       <div class="hero-cta">
         <a href="#packages" class="btn btn-primary">Audit your app, from $399</a>
-        <a href="#pains" class="btn btn-ghost" style="border-color:#4A4A4A;color:#fff">Is this me?</a>
+        <a href="#start" class="btn btn-ghost" style="border-color:#4A4A4A;color:#fff" id="talkToEngineer">Talk to an engineer</a>
       </div>
       <ul class="trust">
-        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10+ years in software development</li>
+        <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>15+ years in software development</li>
         <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>30+ code-rescue projects</li>
+        <li><span class="tick rating"><svg viewBox="0 0 20 20" fill="#4AD57B"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9l-5.6 3.2 1.4-6.3L1 7.5l6.4-.6z"/></svg></span>4.9 on Clutch</li>
         <li><span class="tick"><svg viewBox="0 0 12 12"><path d="M2.5 6.2l2.3 2.3L9.5 3.8" stroke="#222" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Fixed price, money back</li>
       </ul>
     </div>
@@ -341,7 +380,10 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         </button>
         <span class="video-caption">See how the audit works</span>
       </div>
-      <p class="hero-note">Cursor, Claude Code, Windsurf, Lovable, Copilot: whichever one you used, there's a real codebase under it. Send it as a .zip or a Git repo.</p>
+      <div class="tool-chips" aria-label="Supported tools">
+        <span>Cursor</span><span>Claude Code</span><span>Windsurf</span><span>Lovable</span><span>Copilot</span><span>Bolt</span><span>Replit</span><span>v0</span>
+      </div>
+      <p class="hero-note">Whichever one you used, there's a real codebase under it. Send it as a .zip or a Git repo.</p>
     </aside>
   </div>
 </header>
@@ -421,6 +463,234 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         </figcaption>
       </figure>
     </div>
+    <p class="pains-caption">Paraphrased from real inquiries; identifying details removed.</p>
+
+    <!-- CASE: real, anonymised case per the proposal. Confirm wording/numbers before launch if this isn't the final approved story. -->
+    <div class="case-compact reveal" id="story">
+      <div>
+        <div class="eyebrow" style="color:var(--green)">Real case, under NDA</div>
+        <h3>Weeks of AI loops. Live again in 3 days.</h3>
+        <p>A founder vibe-coded a fitness app and spent weeks trying to fix it with AI. We found 3 critical issues, fixed the two blocking launch, and the MVP went live. They raised $50K after.</p>
+        <blockquote>&ldquo;I'd tried everything AI could suggest. An actual engineer found the problem in an afternoon.&rdquo; <span>— Founder, fitness app (anonymous, under NDA)</span></blockquote>
+      </div>
+      <div class="case-compact-side">
+        <div class="case-compact-metrics">
+          <div class="case-compact-metric"><b>3 days</b><span>stuck to live</span></div>
+          <div class="case-compact-metric"><b>$50K</b><span>raised after</span></div>
+        </div>
+        <a href="#start" class="btn btn-primary btn-full" data-tier="tier3" data-pkg="Audit + Fix + Roadmap · $1,099">Get the same package</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Packages</div>
+      <h2>Choose the best-match option for you</h2>
+      <p>Every package is a fixed price with a fixed delivery date. No open-ended estimates, no discovery call required before you know the cost.</p>
+    </div>
+
+    <div class="proof-strip">
+      <div class="proof-item"><b>4.9</b><span>on Clutch, 16 reviews</span></div>
+      <div class="proof-item"><b>30+</b><span>code-rescue projects</span></div>
+      <div class="proof-item"><b>NDA</b><span>from the first file</span></div>
+      <div class="proof-item"><b>Card held</b><span>not charged</span></div>
+    </div>
+
+    <!-- QUIZ: two questions, no backend, just a client-side suggestion -->
+    <div class="quiz">
+      <h3>Not sure which package fits?</h3>
+      <div class="quiz-q">
+        <p class="quiz-label">Is something broken right now?</p>
+        <div class="quiz-opts" data-quiz="broken">
+          <button type="button" data-val="checkup">No, I want a check-up</button>
+          <button type="button" data-val="one" class="active">Yes, one thing blocks me</button>
+          <button type="button" data-val="several">Yes, several things</button>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p class="quiz-label">What's next for the app?</p>
+        <div class="quiz-opts" data-quiz="next">
+          <button type="button" data-val="launch">Launch it as it is</button>
+          <button type="button" data-val="build">Keep building on it</button>
+        </div>
+      </div>
+      <div class="quiz-suggestion" id="quizSuggestion">
+        <b>Our suggestion: Audit + Fix, $899</b>
+        <p>We fix the blocker you're stuck on and show what else needs attention.</p>
+      </div>
+    </div>
+    <p class="loc-note">Up to 50,000 lines of code. Most MVPs built with Lovable, Bolt or Cursor are well under that, and we confirm the size before your card is charged.</p>
+
+    <div class="pkgs">
+
+      <!-- TIER 1 -->
+      <article class="pkg">
+        <h3>Audit</h3>
+        <p class="desc">A 360° audit with tech analysis and a security check, plus a prioritized breakdown of what's wrong in your code and how bad each thing is.</p>
+        <div class="price">$399<small>fixed price</small></div>
+        <div class="timeline">⏱ 1 business day</div>
+        <a href="#start" class="btn btn-dark btn-full" data-tier="tier1" data-pkg="Audit · $399">Audit your app · $399</a>
+        <p class="pkg-note">Card held, not charged. 48h to review.</p>
+        <div class="scope-t">Scope and deliverables</div>
+        <ul class="scope">
+          <li>Full review of your AI-built codebase by an experienced developer</li>
+          <li>Tech analysis and security check</li>
+          <li>Root-cause diagnosis of what's breaking</li>
+          <li>Issues prioritized by severity and business impact, in plain language</li>
+          <li>Executive summary: what's wrong and why it matters, in priority order</li>
+          <li>Potential compliance red flags, flagged</li>
+        </ul>
+      </article>
+
+      <!-- TIER 2 -->
+      <article class="pkg featured">
+        <div class="badge">Most chosen</div>
+        <h3>Audit + Fix</h3>
+        <p class="desc">Everything in the audit, plus a fix for the one production blocker you're most stuck on. Solved at the root, not patched at the symptom.</p>
+        <div class="price">$899<small>fixed price</small></div>
+        <div class="timeline">⏱ 2 business days</div>
+        <a href="#start" class="btn btn-primary btn-full" data-tier="tier2" data-pkg="Audit + Fix · $899">Fix your app · $899</a>
+        <p class="pkg-note">Card held, not charged. 48h to review.</p>
+        <div class="scope-t">Scope and deliverables</div>
+        <ul class="scope">
+          <li><b>Everything in Audit</b></li>
+          <li>One production blocker fixed</li>
+          <li>Broken flows or integrations restored where feasible in scope</li>
+          <li>Short fix summary: what was broken, what we did</li>
+        </ul>
+      </article>
+
+      <!-- TIER 3 -->
+      <article class="pkg">
+        <h3>Audit + Fix + Roadmap</h3>
+        <p class="desc">The extended 360° audit with a detailed architecture report and a development roadmap: you see exactly what you have and what to do next, instead of guessing. And we fix the two most critical blockers while we're in there.</p>
+        <div class="price">$1,099<small>fixed price</small></div>
+        <div class="timeline">⏱ 3 business days</div>
+        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Fix + Roadmap · $1,099">Future-proof it · $1,099</a>
+        <p class="pkg-note">Card held, not charged. 48h to review.</p>
+        <div class="scope-t">Scope and deliverables</div>
+        <ul class="scope">
+          <li><b>Everything in Audit + Fix</b></li>
+          <li>Business risks check</li>
+          <li>Two production blockers fixed</li>
+          <li>Detailed architecture report</li>
+          <li>Development roadmap you can act on</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <details class="excl excl-shared"><summary>Not included in any package</summary>
+      <ul>
+        <li>Full refactor or rebuild</li>
+        <li>New feature implementation</li>
+        <li>Ongoing support after delivery</li>
+        <li>Full stabilization or performance optimization</li>
+        <li>Compliance audit or certification</li>
+        <li>Fixes beyond the production-blocker count listed in each package's scope above</li>
+      </ul>
+    </details>
+
+    <!-- HOW IT WORKS: compressed to a row, was its own section -->
+    <div class="process-row" id="how-it-works">
+      <div class="process-step"><span class="process-n">1</span>Pick a package and pay</div>
+      <div class="process-step"><span class="process-n">2</span>Send the code</div>
+      <div class="process-step"><span class="process-n">3</span>An engineer digs in</div>
+      <div class="process-step"><span class="process-n">4</span>Get your report</div>
+    </div>
+    <p class="steps-note">Card authorized, not charged. Report in 1 to 3 business days depending on the package. Under NDA from the first file.</p>
+
+    <div class="pay-note">
+      <span><b>Pay by card on this page.</b></span>
+      <span class="pay-sep">·</span>
+      <span>Your card is <b>authorized, not charged</b>. We capture it only after you approve the delivery.</span>
+      <span class="pay-sep">·</span>
+      <span>48-hour review window, money back if it isn't worth it.</span>
+    </div>
+    <div class="notfor">
+      <h3>When this is not the right thing to buy</h3>
+      <ul>
+        <li>You want a full rewrite or a rebuild from scratch</li>
+        <li>Your codebase is well over 50,000 lines</li>
+        <li>You need new features built, not existing ones fixed</li>
+        <li>You need a formal compliance audit or a certificate</li>
+        <li>You want someone to run the product long term</li>
+      </ul>
+      <p style="margin-top:14px;font-size:15px">Any of these? <a href="#start" style="color:var(--green-dark);font-weight:700">Write to us instead</a> and we'll scope it properly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE REPORT -->
+<section id="deliverable" class="grey">
+  <div class="wrap sample">
+    <div>
+      <div class="eyebrow">What you get</div>
+      <h2>A report your developer can act on, written so you can read it</h2>
+      <p style="font-size:18px;margin-top:16px">Every finding has a severity, a plain-language explanation of what it puts at risk, and the fix we would apply. No screenshots of a linter.</p>
+      <ul>
+        <li>Executive summary: what's wrong, why it matters, in priority order</li>
+        <li>Issue list ranked by severity and business impact</li>
+        <li>Root cause of the blocker you're stuck on</li>
+        <li>Security findings and compliance red flags</li>
+        <li>What we fixed and what we deliberately left alone</li>
+      </ul>
+      <a href="#packages" class="btn btn-dark" style="margin-top:28px">See the packages</a>
+    </div>
+    <!-- MOCK of the deliverable. Replace with a real (anonymised) report preview when one exists. -->
+    <figure class="doc" aria-label="Example page of an audit report">
+      <div class="doc-top"><i></i><i></i><i></i></div>
+      <div class="doc-body">
+        <div class="doc-h">Vibecode Product Audit</div>
+        <div class="doc-meta">Example page · findings ranked by severity</div>
+        <div class="doc-row"><span class="sev hi">Critical</span><span>Payment webhook accepts unsigned requests</span><em>Revenue</em></div>
+        <div class="doc-row"><span class="sev hi">Critical</span><span>User data endpoint returns other users' records</span><em>Data leak</em></div>
+        <div class="doc-row"><span class="sev md">High</span><span>API keys committed to the repository</span><em>Security</em></div>
+        <div class="doc-row"><span class="sev md">High</span><span>No database backups configured</span><em>Downtime</em></div>
+        <div class="doc-row"><span class="sev lo">Medium</span><span>Signup breaks on emails with a plus sign</span><em>Conversion</em></div>
+        <div class="doc-row"><span class="sev lo">Medium</span><span>Server errors are shown to the end user</span><em>Trust</em></div>
+        <p class="doc-foot">Illustrative example. Your report covers your own codebase.</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Who reads your code</div>
+      <h2>Named engineers, not an anonymous queue</h2>
+      <p>You get one engineer assigned to your audit, and their name is on the report.</p>
+    </div>
+    <!-- PLACEHOLDER: replace with real photos, names and bios from MobiDev before launch. LinkedIn hrefs are placeholders ("#") until real profile URLs are supplied. -->
+    <div class="team">
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>[Engineer name]</h3>
+        <div class="role">[Role, e.g. Senior Backend Engineer]</div>
+        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <a class="li-link" href="#">LinkedIn ↗</a>
+      </article>
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>[Engineer name]</h3>
+        <div class="role">[Role, e.g. Security Engineer]</div>
+        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <a class="li-link" href="#">LinkedIn ↗</a>
+      </article>
+      <article class="mate">
+        <div class="avatar">[ph]</div>
+        <h3>[Engineer name]</h3>
+        <div class="role">[Role, e.g. Solution Architect]</div>
+        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <a class="li-link" href="#">LinkedIn ↗</a>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -456,7 +726,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <article class="cmp win reveal" style="transition-delay:.16s">
         <div class="cmp-badge">What this page sells</div>
         <h3>Vibecode Product Audit</h3>
-        <p class="cmp-sub">This page</p>
+        <p class="cmp-sub">MobiDev, from $399</p>
         <ul>
           <li>A senior engineer reads the code, not a scanner</li>
           <li>Critical issues fixed for you, not just listed</li>
@@ -468,242 +738,9 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section id="how-it-works" class="grey">
+<!-- REVIEWS. The founder success story moved up into the compact case-compact card under the pain quotes. -->
+<section id="reviews" class="grey">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">How it works</div>
-      <h2>Four steps, no call in between</h2>
-      <p>From payment to report in one to three business days, depending on the package.</p>
-    </div>
-    <div class="steps">
-      <article class="step">
-        <div class="n">1</div>
-        <h3>Pick a package and pay</h3>
-        <p>Card is authorized, not charged. Nothing leaves your account until you approve the work.</p>
-      </article>
-      <article class="step">
-        <div class="n">2</div>
-        <h3>Send the code</h3>
-        <p>A .zip or a Git repo, plus a couple of lines on what's breaking and where you're stuck.</p>
-      </article>
-      <article class="step">
-        <div class="n">3</div>
-        <h3>An engineer digs in</h3>
-        <p>Tech analysis, security check, root cause of the blocker. On the fix packages, the critical ones get fixed.</p>
-      </article>
-      <article class="step">
-        <div class="n">4</div>
-        <h3>You get the report</h3>
-        <p>Report and fixes land in your inbox. You have 48 hours to review before the payment is captured.</p>
-      </article>
-    </div>
-    <p class="steps-note">Under NDA from the first file. Your code is never used to train public AI models.</p>
-  </div>
-</section>
-
-<!-- SAMPLE REPORT -->
-<section id="deliverable">
-  <div class="wrap sample">
-    <div>
-      <div class="eyebrow">What you get</div>
-      <h2>A report your developer can act on, written so you can read it</h2>
-      <p style="font-size:18px;margin-top:16px">Every finding has a severity, a plain-language explanation of what it puts at risk, and the fix we would apply. No screenshots of a linter.</p>
-      <ul>
-        <li>Executive summary: what's wrong, why it matters, in priority order</li>
-        <li>Issue list ranked by severity and business impact</li>
-        <li>Root cause of the blocker you're stuck on</li>
-        <li>Security findings and compliance red flags</li>
-        <li>What we fixed and what we deliberately left alone</li>
-      </ul>
-      <a href="#packages" class="btn btn-dark" style="margin-top:28px">See the packages</a>
-    </div>
-    <!-- MOCK of the deliverable. Replace with a real (anonymised) report preview when one exists. -->
-    <figure class="doc" aria-label="Example page of an audit report">
-      <div class="doc-top"><i></i><i></i><i></i></div>
-      <div class="doc-body">
-        <div class="doc-h">Vibecode Product Audit</div>
-        <div class="doc-meta">Example page · findings ranked by severity</div>
-        <div class="doc-row"><span class="sev hi">Critical</span><span>Payment webhook accepts unsigned requests</span><em>Revenue</em></div>
-        <div class="doc-row"><span class="sev hi">Critical</span><span>User data endpoint returns other users' records</span><em>Data leak</em></div>
-        <div class="doc-row"><span class="sev md">High</span><span>API keys committed to the repository</span><em>Security</em></div>
-        <div class="doc-row"><span class="sev md">High</span><span>No database backups configured</span><em>Downtime</em></div>
-        <div class="doc-row"><span class="sev lo">Medium</span><span>Signup breaks on emails with a plus sign</span><em>Conversion</em></div>
-        <div class="doc-row"><span class="sev lo">Medium</span><span>Server errors are shown to the end user</span><em>Trust</em></div>
-        <p class="doc-foot">Illustrative example. Your report covers your own codebase.</p>
-      </div>
-    </figure>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section id="packages">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Packages</div>
-      <h2>Choose the best-match option for you</h2>
-      <p>Every package is a fixed price with a fixed delivery date. No open-ended estimates, no discovery call required before you know the cost.</p>
-    </div>
-    <div class="pkgs">
-
-      <!-- TIER 1 -->
-      <article class="pkg">
-        <h3>Vibecode Product Audit</h3>
-        <p class="desc">A 360° audit with tech analysis and a security check, plus a prioritized breakdown of what's wrong in your code and how bad each thing is.</p>
-        <div class="price">$399<small>fixed price</small></div>
-        <div class="timeline">⏱ 1 business day</div>
-        <a href="#start" class="btn btn-dark btn-full" data-tier="tier1" data-pkg="Vibecode Product Audit · $399">Audit your app · $399</a>
-        <div class="scope-t">Scope and deliverables</div>
-        <ul class="scope">
-          <li>Full review of your AI-built codebase by an experienced developer</li>
-          <li>Tech analysis</li>
-          <li>Security check</li>
-          <li>Root-cause diagnosis of what's breaking</li>
-          <li>Main quality and security issues, prioritized by severity and business impact</li>
-          <li>Business-level explanation of each issue and what it puts at risk</li>
-          <li>Executive summary in plain language: what's wrong, why it matters, in priority order</li>
-          <li>Potential compliance red flags, flagged</li>
-          <li>Up to 50,000 lines of code</li>
-        </ul>
-        <details class="excl"><summary>Not included</summary>
-          <ul>
-            <li>Code fixes on our side</li>
-            <li>Refactoring or rebuilding</li>
-            <li>New feature implementation</li>
-            <li>Ongoing support after delivery</li>
-            <li>Full stabilization or performance optimization</li>
-            <li>Compliance audit or certification</li>
-          </ul>
-        </details>
-      </article>
-
-      <!-- TIER 2 -->
-      <article class="pkg featured">
-        <div class="badge">Most chosen</div>
-        <h3>Vibecode Product Audit + Single Bug Fix</h3>
-        <p class="desc">Everything in the audit, plus a fix for the one production blocker you're most stuck on. Solved at the root, not patched at the symptom.</p>
-        <div class="price">$899<small>fixed price</small></div>
-        <div class="timeline">⏱ 2 business days</div>
-        <a href="#start" class="btn btn-primary btn-full" data-tier="tier2" data-pkg="Audit + Single Bug Fix · $899">Fix your app · $899</a>
-        <div class="scope-t">Scope and deliverables</div>
-        <ul class="scope">
-          <li>Everything in the Vibecode Product Audit</li>
-          <li>One production blocker fixed</li>
-          <li>Broken flows or integrations restored where feasible in scope</li>
-          <li>Short fix summary: what was broken, what we did</li>
-        </ul>
-        <details class="excl"><summary>Not included</summary>
-          <ul>
-            <li>Code fixes for more than one production blocker</li>
-            <li>Refactoring or rebuilding</li>
-            <li>New feature implementation</li>
-            <li>Ongoing support after delivery</li>
-            <li>Full stabilization or performance optimization</li>
-            <li>Compliance audit or certification</li>
-          </ul>
-        </details>
-      </article>
-
-      <!-- TIER 3 -->
-      <article class="pkg">
-        <h3>Audit + Two Bug Fixes + Action Plan</h3>
-        <p class="desc">The extended 360° audit with a detailed architecture report and a development roadmap: you see exactly what you have and what to do next, instead of guessing. And we fix the two most critical blockers while we're in there.</p>
-        <div class="price">$1,099<small>fixed price</small></div>
-        <div class="timeline">⏱ 3 business days</div>
-        <a href="#start" class="btn btn-dark btn-full" data-tier="tier3" data-pkg="Audit + Two Fixes + Action Plan · $1,099">Future-proof it · $1,099</a>
-        <div class="scope-t">Scope and deliverables</div>
-        <ul class="scope">
-          <li>Everything in Audit + Single Bug Fix</li>
-          <li>Business risks check</li>
-          <li>Two production blockers fixed</li>
-          <li>Detailed architecture report</li>
-          <li>Development roadmap you can act on</li>
-        </ul>
-        <details class="excl"><summary>Not included</summary>
-          <ul>
-            <li>Full refactor or rebuild</li>
-            <li>Implementation of the full roadmap</li>
-            <li>Code fixes for more than two production blockers</li>
-            <li>New feature implementation</li>
-            <li>Ongoing support after delivery</li>
-            <li>Full stabilization or performance optimization</li>
-            <li>Compliance audit or certification</li>
-          </ul>
-        </details>
-      </article>
-
-    </div>
-    <div class="pay-note">
-      <span><b>Pay by card on this page.</b></span>
-      <span class="pay-sep">·</span>
-      <span>Your card is <b>authorized, not charged</b>. We capture it only after you approve the delivery.</span>
-      <span class="pay-sep">·</span>
-      <span>48-hour review window, money back if it isn't worth it.</span>
-    </div>
-    <div class="notfor">
-      <h3>When this is not the right thing to buy</h3>
-      <ul>
-        <li>You want a full rewrite or a rebuild from scratch</li>
-        <li>Your codebase is well over 50,000 lines</li>
-        <li>You need new features built, not existing ones fixed</li>
-        <li>You need a formal compliance audit or a certificate</li>
-        <li>You want someone to run the product long term</li>
-      </ul>
-      <p style="margin-top:14px;font-size:15px">Any of these? <a href="#start" style="color:var(--green-dark);font-weight:700">Write to us instead</a> and we'll scope it properly.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section id="team">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Who reads your code</div>
-      <h2>Named engineers, not an anonymous queue</h2>
-      <p>You get one engineer assigned to your audit, and their name is on the report.</p>
-    </div>
-    <!-- PLACEHOLDER: replace with real photos, names and bios from MobiDev before launch. -->
-    <div class="team">
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Senior Backend Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
-      </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Security Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
-      </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Solution Architect]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- CASE / SOCIAL PROOF. PLACEHOLDER, fill with a real (or clearly labelled illustrative) case before launch -->
-<section id="story" class="grey">
-  <div class="wrap">
-    <div class="case">
-      <div>
-        <div class="eyebrow" style="color:var(--green)">Success story</div>
-        <h2>[PLACEHOLDER] Payments broke on launch day. Live again in 48 hours.</h2>
-        <p>[Replace this block with a real client story before launch: what they vibecoded, what broke, what the audit found, what we fixed, what happened after. Keep it in the founder's own words where possible.]</p>
-        <a href="#start" class="btn btn-primary" style="margin-top:28px">Start with an audit</a>
-      </div>
-      <div class="case-metrics">
-        <div class="metric"><b>[00]</b><span>Critical issues found</span></div>
-        <div class="metric"><b>[00 h]</b><span>To first fix shipped</span></div>
-        <div class="metric"><b>[0%]</b><span>Of the codebase kept</span></div>
-        <div class="metric"><b>[$0]</b><span>Rewrite cost avoided</span></div>
-      </div>
-    </div>
-
     <!-- REVIEWS: official Clutch widget (MobiDev company id 17222). Needs network; renders nothing offline. -->
     <div class="rev-head">
       <h3>What clients say about MobiDev</h3>
@@ -761,13 +798,38 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
     <div class="faq">
 
       <details open>
+        <summary>What exactly do I get for $399?</summary>
+        <div class="a"><p>An experienced developer reviews your full AI-built codebase and runs a tech analysis and a security check. You get a prioritized list of the main quality and security issues, each rated by severity and business impact, a plain-language summary of what's wrong and what it puts at risk, and any compliance red flags we spot. Delivered in one business day.</p><p>This tier is the audit itself. Code fixes start at the next package.</p></div>
+      </details>
+
+      <details>
         <summary>What if my app is built on Cursor, Claude Code, Windsurf or GitHub Copilot?</summary>
         <div class="a"><p>Whichever tool you used, it produced a real codebase underneath, and that codebase is what we work on. To get started, send us your source code, either as an archive (.zip) or a Git repository. Most of these tools let you export it. If you're not sure how, tell us which one you used and we'll walk you through it.</p></div>
       </details>
 
       <details>
-        <summary>What exactly do I get for $399?</summary>
-        <div class="a"><p>An experienced developer reviews your full AI-built codebase and runs a tech analysis and a security check. You get a prioritized list of the main quality and security issues, each rated by severity and business impact, a plain-language summary of what's wrong and what it puts at risk, and any compliance red flags we spot. Delivered in one business day.</p><p>This tier is the audit itself. Code fixes start at the next package.</p></div>
+        <summary>What counts as a production blocker?</summary>
+        <div class="a"><p>Anything stopping your app from working for real users: a broken checkout, a login that fails, a crash on a core flow. That's what the fix packages solve, one or two at a time. If you're not sure whether your issue qualifies, tell us what's happening before you pick a package and we'll confirm.</p></div>
+      </details>
+
+      <details>
+        <summary>Which stacks and tools do you support?</summary>
+        <div class="a"><p>Any modern web stack. We've reviewed codebases built with Cursor, Claude Code, Windsurf, Lovable, Bolt, Replit, v0, and GitHub Copilot, on top of the usual JavaScript/TypeScript, Python, and common frameworks underneath them. If it runs in a browser or as an API, we can audit it.</p></div>
+      </details>
+
+      <details>
+        <summary>How do I export my code from Lovable, Bolt or Replit?</summary>
+        <div class="a"><p>Each of these lets you connect a GitHub repo or download a .zip from the project's settings. If you can't find the option, tell us which tool you used and we'll point you to the exact menu.</p></div>
+      </details>
+
+      <details>
+        <summary>Will you need access to my production environment?</summary>
+        <div class="a"><p>No. We work from your source code, sent as a .zip or a Git repo. We don't need logins to your hosting, database, or admin panel unless a specific finding requires confirming something live, and we'll always ask first.</p></div>
+      </details>
+
+      <details>
+        <summary>What does further work cost after the audit?</summary>
+        <div class="a"><p>Whatever you ask for, scoped and quoted before you pay, the same way this page works: a fixed price and a delivery date, no hourly billing. Most follow-up requests are scoped within a day of your audit report.</p></div>
       </details>
 
       <details>
@@ -827,9 +889,9 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <div class="f-row">
         <label for="pkg">Package</label>
         <select id="pkg" name="package">
-          <option>Vibecode Product Audit · $399</option>
-          <option selected>Audit + Single Bug Fix · $899</option>
-          <option>Audit + Two Fixes + Action Plan · $1,099</option>
+          <option>Audit · $399</option>
+          <option selected>Audit + Fix · $899</option>
+          <option>Audit + Fix + Roadmap · $1,099</option>
           <option>Not sure yet, help me choose</option>
         </select>
       </div>
@@ -909,6 +971,43 @@ document.querySelectorAll('.video-frame').forEach(function(frame){
     var caption = frame.querySelector('.video-caption');
     if(!id){ if(caption) caption.textContent = 'Video coming soon'; return; }
     frame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" title="Vibecode Product Audit walkthrough" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  });
+});
+
+// "Talk to an engineer" -> jump to the form with "Not sure yet" preselected
+var talkBtn = document.getElementById('talkToEngineer');
+if(talkBtn){
+  talkBtn.addEventListener('click', function(){
+    var s = document.getElementById('pkg');
+    for(var i=0;i<s.options.length;i++){ if(s.options[i].text==='Not sure yet, help me choose'){ s.selectedIndex=i; break; } }
+  });
+}
+
+// packages quiz: two questions, client-side suggestion, no backend
+var QUIZ_SUGGESTIONS = {
+  checkup: { title:'Audit, $399', text:'A full review and a prioritized issue list. No code changes, just clarity on what’s wrong.', tier:'tier1', pkg:'Audit · $399' },
+  one_launch: { title:'Audit + Fix, $899', text:'We fix the blocker you’re stuck on and show what else needs attention.', tier:'tier2', pkg:'Audit + Fix · $899' },
+  one_build: { title:'Audit + Fix + Roadmap, $1,099', text:'The blocker gets fixed, plus the architecture report and roadmap for what’s next.', tier:'tier3', pkg:'Audit + Fix + Roadmap · $1,099' },
+  several: { title:'Audit + Fix + Roadmap, $1,099', text:'Two blockers fixed, plus the architecture report and roadmap for what’s next.', tier:'tier3', pkg:'Audit + Fix + Roadmap · $1,099' }
+};
+var quizState = { broken:'one', next:null };
+function renderQuizSuggestion(){
+  var key = quizState.broken;
+  if(key==='one'){ key = quizState.next==='build' ? 'one_build' : 'one_launch'; }
+  var s = QUIZ_SUGGESTIONS[key];
+  var box = document.getElementById('quizSuggestion');
+  if(!box || !s) return;
+  box.innerHTML = '<b>Our suggestion: '+s.title+'</b><p>'+s.text+'</p>';
+}
+document.querySelectorAll('.quiz-opts').forEach(function(group){
+  var name = group.getAttribute('data-quiz');
+  group.querySelectorAll('button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      group.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      quizState[name] = btn.getAttribute('data-val');
+      renderQuizSuggestion();
+    });
   });
 });
 </script>
