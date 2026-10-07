@@ -141,10 +141,11 @@ section{padding:88px 0}
 .case-compact-metric span{font-size:12px;color:#9A9D9C;display:block;margin-top:4px}
 
 /* packages */
-.proof-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px}
-.proof-item{background:var(--sec-white);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
-.proof-item b{display:block;font-family:var(--font-display);font-weight:800;font-size:18px;color:var(--black)}
-.proof-item span{font-size:13px;color:var(--muted);display:block;margin-top:2px}
+.proof-strip{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;background:var(--sec-white);border:1px solid var(--line);border-radius:12px;padding:14px 6px;margin-bottom:32px}
+.proof-item{display:flex;align-items:baseline;gap:6px;padding:5px 22px;position:relative}
+.proof-item:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:1px;height:16px;background:var(--line)}
+.proof-item b{font-family:var(--font-display);font-weight:800;font-size:15px;color:var(--black)}
+.proof-item span{font-size:13px;color:var(--muted)}
 
 .quiz{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:20px}
 .quiz h3{font-size:19px;margin-bottom:18px}
@@ -332,7 +333,9 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   .hero-in,.final-in{grid-template-columns:1fr;gap:36px}
   .pains,.pkgs,.compare,.team{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
-  .proof-strip,.process-row{grid-template-columns:1fr 1fr}
+  .process-row{grid-template-columns:1fr 1fr}
+  .proof-item{padding:5px 14px}
+  .proof-item:nth-child(2)::after{display:none}
   .case-compact{grid-template-columns:1fr}
   .sample{grid-template-columns:1fr;gap:32px}
   .pkg .desc,.pkg h3{min-height:0}
