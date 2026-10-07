@@ -128,6 +128,8 @@ section{padding:88px 0}
 .case-compact p{color:#C9CCCB;font-size:15px}
 .case-compact blockquote{color:#E6E8E7;font-size:14px;font-style:italic;margin-top:14px;border-left:3px solid var(--green);padding-left:14px}
 .case-compact blockquote span{display:block;margin-top:6px;font-size:12px;color:#9A9D9C}
+.case-quote-who{display:flex!important;align-items:center;gap:8px;margin-top:10px!important}
+.case-quote-who img{width:28px;height:28px;border-radius:50%;object-fit:cover;flex:0 0 28px}
 .case-compact-side{display:flex;flex-direction:column;gap:14px}
 .case-compact-metrics{display:flex;gap:14px}
 .case-compact-metric{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:12px;padding:16px;flex:1;text-align:center}
@@ -264,6 +266,9 @@ details.excl li::before{content:"–";color:#B7BAB9}
 
 /* team */
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.mate-cta{display:flex;flex-direction:column;justify-content:center;background:var(--sec-white);border-style:dashed}
+.mate-cta h3{margin-bottom:8px}
+.mate-cta p{margin-bottom:20px}
 .mate{border:1px solid var(--line);border-radius:14px;padding:26px;background:var(--white)}
 .avatar{width:64px;height:64px;border-radius:50%;background:var(--sec-white);border:2px solid var(--green);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;color:#B7BAB9;margin-bottom:16px}
 .mate h3{font-size:18px}
@@ -449,13 +454,15 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
     </div>
     <p class="pains-caption">Paraphrased from real inquiries; identifying details removed.</p>
 
-    <!-- CASE: real, anonymised case per the proposal. Confirm wording/numbers before launch if this isn't the final approved story. -->
+    <!-- CASE: real, named-engineer case. Client identity stays under NDA. -->
     <div class="case-compact reveal" id="story">
       <div>
         <div class="eyebrow" style="color:var(--green)">Real case, under NDA</div>
         <h3>Weeks of AI loops. Live again in 3 days.</h3>
-        <p>A founder vibe-coded a fitness app and spent weeks trying to fix it with AI. We found 3 critical issues, fixed the two blocking launch, and the MVP went live. They raised $50K after.</p>
-        <blockquote>&ldquo;I'd tried everything AI could suggest. An actual engineer found the problem in an afternoon.&rdquo; <span>— Founder, fitness app (anonymous, under NDA)</span></blockquote>
+        <p>In 3 days, MobiDev's Solutions Architect, Rustam Irzaev, conducted the audit, fixed 2 severe issues, and provided a detailed development roadmap. This work enabled our client to successfully launch their product and attract $50,000 in investment.</p>
+        <blockquote>&ldquo;By the time this client reached out, they'd been stuck for several weeks. Same pattern every time: ask the AI to fix a bug, get a fix, break something else three screens over. Nobody was checking how the new code talked to the old code, so the app just kept drifting further from working, unnoticed. Honestly, that's the most common failure mode we see &mdash; one tool, one prompt, no one asking whether this piece fits the rest of the system. We build differently: a few AI tools cross-checking each other, and a real architect looking at the whole picture before anything goes live. People think MVP speed means skipping steps. It's the opposite &mdash; you go fast because you caught the problem in week one.&rdquo;
+          <span class="case-quote-who"><img src="https://mobidev-mrkt.github.io/landing/assets/team/rustam-irzaev.png" alt="Rustam Irzaev">Rustam Irzaev, Solutions Architect, MobiDev</span>
+        </blockquote>
       </div>
       <div class="case-compact-side">
         <div class="case-compact-metrics">
@@ -644,28 +651,25 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <h2>Named engineers, not an anonymous queue</h2>
       <p>You get one engineer assigned to your audit, and their name is on the report.</p>
     </div>
-    <!-- PLACEHOLDER: replace with real photos, names and bios from MobiDev before launch. LinkedIn hrefs are placeholders ("#") until real profile URLs are supplied. -->
     <div class="team">
       <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Senior Backend Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <img class="avatar" src="https://mobidev-mrkt.github.io/landing/assets/team/iurii-luchaninov.png" alt="Iurii Luchaninov" style="object-fit:cover;display:block">
+        <h3>Iurii Luchaninov</h3>
+        <div class="role">Solutions Architect at MobiDev, AIDD Approach Evangelist, AI Agents Guru</div>
+        <p>20+ years as a Full-Stack Developer and Software Architect, specializing in Generative AI and AI-assisted development.</p>
         <a class="li-link" href="#">LinkedIn ↗</a>
       </article>
       <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Security Engineer]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
+        <img class="avatar" src="https://mobidev-mrkt.github.io/landing/assets/team/rustam-irzaev.png" alt="Rustam Irzaev" style="object-fit:cover;display:block">
+        <h3>Rustam Irzaev</h3>
+        <div class="role">Solutions Architect at MobiDev, AIDD Approach Evangelist, AI Certified Expert</div>
+        <p>20+ years in software engineering across AI, SaaS, and cloud, with hands-on expertise spanning .NET, Azure, Go, Rust, and React.</p>
         <a class="li-link" href="#">LinkedIn ↗</a>
       </article>
-      <article class="mate">
-        <div class="avatar">[ph]</div>
-        <h3>[Engineer name]</h3>
-        <div class="role">[Role, e.g. Solution Architect]</div>
-        <p>[Years in production software, main stack, what kind of rescue work they handle.]</p>
-        <a class="li-link" href="#">LinkedIn ↗</a>
+      <article class="mate mate-cta">
+        <h3>Want your app reviewed?</h3>
+        <p>Pick a package and one of our engineers gets assigned to your audit by name.</p>
+        <a href="#packages" class="btn btn-dark btn-full">Start with an audit</a>
       </article>
     </div>
   </div>
