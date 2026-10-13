@@ -1,0 +1,95 @@
+<!--
+  JSON-LD for https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase
+  Paste into the page <head> (e.g. a header-scripts field or a Custom HTML block).
+  Yoast already outputs WebPage, BreadcrumbList, WebSite and Organization; this graph adds
+  Event, VideoObject (with Clip key moments), FAQPage and Person, and links to Yoast's
+  Organization by @id.
+  Replace every "[...]" before publishing. Clip offsets must match the YouTube description.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Event",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#event",
+      "name": "AI-Native Speed on a Legacy Codebase: How to Outpace Competitors with AI-Driven SDLC",
+      "description": "MobiDev fireside chat on AI SDLC for legacy code: why AI raises cost per feature on old code, a 4-step setup for PHP and .NET, the AI adoption curve, and a case with 81% less delivery effort.",
+      "startDate": "2026-09-30T15:00:00Z",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "location": { "@type": "VirtualLocation", "url": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase" },
+      "image": "[OG image URL]",
+      "isAccessibleForFree": true,
+      "organizer": { "@id": "https://mobidev.biz/#organization" },
+      "performer": [
+        { "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#serhii-ivanov" },
+        { "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#ievgen-zadorozhnyi" },
+        { "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#helen-khailova-horash" }
+      ],
+      "recordedIn": { "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#video" }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#video",
+      "name": "AI SDLC on a Legacy Codebase: How to Outpace Competitors (Full Webinar)",
+      "description": "Can AI speed up delivery on a 10- or 15-year-old codebase, or does it just pile up tech debt faster? Full recording of MobiDev's fireside chat with Serhii Ivanov and Ievgen Zadorozhnyi, moderated by Helen Khailova-Horash.",
+      "thumbnailUrl": "https://i.ytimg.com/vi/[VIDEO_ID]/maxresdefault.jpg",
+      "uploadDate": "[YYYY-MM-DD]",
+      "duration": "[PT00H00M00S]",
+      "embedUrl": "https://www.youtube.com/embed/[VIDEO_ID]",
+      "contentUrl": "https://www.youtube.com/watch?v=[VIDEO_ID]",
+      "publisher": { "@id": "https://mobidev.biz/#organization" },
+      "hasPart": [
+        { "@type": "Clip", "name": "Intro: speakers and webinar format", "startOffset": 0, "endOffset": 369, "url": "https://www.youtube.com/watch?v=[VIDEO_ID]&t=0" },
+        { "@type": "Clip", "name": "What is AI SDLC? AI in all five stages of the lifecycle", "startOffset": 369, "endOffset": 516, "url": "https://www.youtube.com/watch?v=[VIDEO_ID]&t=369" },
+        { "@type": "Clip", "name": "Is AI-native SDLC just a buzzword?", "startOffset": 516, "endOffset": 713, "url": "https://www.youtube.com/watch?v=[VIDEO_ID]&t=516" },
+        { "@type": "Clip", "name": "Competitors ship faster: how to catch up with AI", "startOffset": 713, "endOffset": 898, "url": "https://www.youtube.com/watch?v=[VIDEO_ID]&t=713" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do we lose control of our codebase if a vendor uses AI?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not if the vendor works safely. Check four things: enterprise AI environments where your code isn't used for model training, AI security training and NDAs for engineers, senior engineers reviewing every AI output, and AI security scanning in the CI/CD pipeline." } },
+        { "@type": "Question", "name": "How do you control AI token and compute costs?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Match the model to the task: cheap, fast models for simple edits and top-tier models for architecture and complex debugging. Keep sessions short and start a new one for each task. Track usage in provider dashboards, and batch API calls at the architecture level." } },
+        { "@type": "Question", "name": "Can AI help apply \"Working Effectively with Legacy Code\" by Michael Feathers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Feathers defines legacy code as code without tests, and AI can generate characterization and unit tests. But AI tends to write tests that pass. Use human review and mutation testing to check that the tests actually catch failures." } },
+        { "@type": "Question", "name": "Is AI development actually faster than standard practices?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, when AI covers the whole SDLC. Applied to coding alone, it speeds up code generation by 30–40%, while review and QA can slow down by 50%, so time-to-market stays flat or gets worse." } },
+        { "@type": "Question", "name": "What should executives expect when starting AI SDLC?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A temporary slowdown while processes are set up, then real gains. Clean up legacy code first, apply AI across all five stages, budget for tooling and infrastructure, and expect AI model pricing to change." } }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#serhii-ivanov",
+      "name": "Serhii Ivanov",
+      "jobTitle": "Head of Resource Management",
+      "worksFor": { "@id": "https://mobidev.biz/#organization" },
+      "url": "https://mobidev.biz/our-team/serhii-ivanov",
+      "image": "https://d2d1s3b58ci0ra.cloudfront.net/2024/03/ivanov-2-300x300.jpg",
+      "sameAs": ["https://www.linkedin.com/in/serhii-i-72228776/"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#ievgen-zadorozhnyi",
+      "name": "Ievgen Zadorozhnyi",
+      "jobTitle": "Product Manager & Delivery Expert",
+      "worksFor": { "@id": "https://mobidev.biz/#organization" },
+      "sameAs": ["[LinkedIn URL: Ievgen Zadorozhnyi]"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mobidev.biz/webinar/ai-sdlc-on-legacy-software-codebase#helen-khailova-horash",
+      "name": "Helen Khailova-Horash",
+      "jobTitle": "Senior Solutions Manager",
+      "worksFor": { "@id": "https://mobidev.biz/#organization" },
+      "url": "https://mobidev.biz/our-team/helen-khailova-horash",
+      "sameAs": ["[LinkedIn URL: Helen Khailova-Horash]"]
+    }
+  ]
+}
+</script>
