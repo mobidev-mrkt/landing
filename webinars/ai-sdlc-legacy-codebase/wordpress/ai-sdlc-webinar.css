@@ -26,21 +26,40 @@
 .hero-webinar[data-layout="single"] .hero-webinar__content { max-width: 62rem; }
 .hero-webinar[data-layout="single"] .hero-webinar__wrapper { padding-bottom: 6rem; }
 .hero-webinar__subtitle p { font-weight: 600; line-height: 1.4; }
-.ais-hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+
+/* Hero buttons. Markup lives in the ACF "text" field of block-hero-single-webinar:
+   <div class="hero-webinar__actions"><a class="hero-webinar__btn hero-webinar__btn--ghost">…</a>…</div>
+   Selectors are .hero-webinar-scoped so they beat the theme's `.hero-webinar__text *` rules.
+   Shape and type copy the theme's round .cta__button. */
+.hero-webinar .hero-webinar__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+.hero-webinar .hero-webinar__actions .hero-webinar__btn {
+  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;
+  min-height: 4rem; margin: 0; padding: 0 2.5rem; border-radius: 4rem;
+  font-family: var(--font-open, "Open Sans", sans-serif); font-size: 1.125rem; font-weight: 700; line-height: 1.2;
+  letter-spacing: 0; text-transform: uppercase; text-align: center; text-decoration: none; cursor: pointer;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+.hero-webinar .hero-webinar__actions .hero-webinar__btn--primary { background: #fff; color: #01978C; border: 2px solid #fff; }
+.hero-webinar .hero-webinar__actions .hero-webinar__btn--primary:hover { background: #0D2C3E; border-color: #0D2C3E; color: #fff; }
+.hero-webinar .hero-webinar__actions .hero-webinar__btn--ghost { background: transparent; color: #fff; border: 2px solid #fff; }
+.hero-webinar .hero-webinar__actions .hero-webinar__btn--ghost:hover { background: #fff; color: #01978C; }
+.hero-webinar .hero-webinar__actions .hero-webinar__btn:focus-visible { outline: 3px solid #FFB800; outline-offset: 3px; }
+@media (max-width: 1200px) {
+  .hero-webinar .hero-webinar__actions { margin-top: 2rem; }
+  .hero-webinar .hero-webinar__actions .hero-webinar__btn { min-height: 3.5rem; font-size: 1rem; padding: 0 2rem; }
+}
+@media (max-width: 767px) {
+  .hero-webinar[data-layout="single"] .hero-webinar__wrapper { padding-bottom: 3rem; margin-bottom: 0; }
+  .hero-webinar .hero-webinar__actions { flex-direction: column; margin-top: 1.5rem; }
+  .hero-webinar .hero-webinar__actions .hero-webinar__btn { width: 100%; padding: 0 1rem; }
+}
+
+/* generic round button (used in the form fallback) */
 .ais-btn {
   display: inline-flex; align-items: center; justify-content: center; min-height: 3.5rem;
   padding: 0 2rem; border-radius: 4rem; font-family: var(--font-open); font-size: 1rem; font-weight: 700;
   text-transform: uppercase; text-decoration: none; text-align: center; cursor: pointer;
   transition: background-color .2s ease, color .2s ease, border-color .2s ease;
-}
-.ais-btn--primary { background: #fff; color: #01978C; border: 2px solid #fff; }
-.ais-btn--primary:hover { background: #0D2C3E; border-color: #0D2C3E; color: #fff; }
-.ais-btn--ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.85); }
-.ais-btn--ghost:hover { background: rgba(255,255,255,.15); }
-@media (max-width: 767px) {
-  .hero-webinar[data-layout="single"] .hero-webinar__wrapper { padding-bottom: 3rem; margin-bottom: 0; }
-  .ais-hero-actions { flex-direction: column; margin-top: 1.75rem; }
-  .ais-btn { width: 100%; padding: 0 1rem; }
 }
 
 /* ---------- video + chapters ---------- */
@@ -126,6 +145,6 @@
 .ais-placeholder { outline: 2px dashed #AD083A; outline-offset: 4px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ais-btn, .ais-video__play { transition: none; }
+  .ais-btn, .ais-video__play, .hero-webinar__btn { transition: none; }
   html { scroll-behavior: auto !important; }
 }
