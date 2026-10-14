@@ -90,6 +90,7 @@ a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:
   var poster = box.querySelector('.ais-video__poster');
   var img = poster.querySelector('img');
   var links = box.querySelectorAll('.ais-video__chapter');
+  var yt = null, creating = false, pending = 0;
 
   img.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
   img.onerror = function () {
@@ -97,18 +98,59 @@ a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:
     else img.remove();
   };
 
-  function play(start) {
-    var f = player.querySelector('iframe');
-    if (!f) {
-      f = document.createElement('iframe');
-      f.title = 'AI SDLC on a Legacy Codebase: full webinar recording';
-      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      f.allowFullscreen = true;
-      player.innerHTML = '';
-      player.appendChild(f);
+  /* Fallback without the YouTube API: plain iframe that starts at the given second */
+  function plainIframe(start) {
+    var f = document.createElement('iframe');
+    f.title = 'AI SDLC on a Legacy Codebase: full webinar recording';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    f.allowFullscreen = true;
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1&start=' + start + '&t=' + start + '&_=' + Date.now();
+    player.innerHTML = '';
+    player.appendChild(f);
+  }
+
+  function loadApi(cb) {
+    if (window.YT && window.YT.Player) return cb();
+    var prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = function () { if (typeof prev === 'function') prev(); cb(); };
+    if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+      var s = document.createElement('script');
+      s.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(s);
     }
-    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&start=' + start;
+  }
+
+  function play(start) {
+    pending = start;
     (window.dataLayer = window.dataLayer || []).push({ event: start ? 'chapter_click' : 'video_play', video_start: start });
+
+    if (yt && typeof yt.seekTo === 'function') {   // player already running: jump to the second
+      yt.seekTo(start, true);
+      yt.playVideo();
+      return;
+    }
+    if (creating) return;                           // player is loading: onReady will use `pending`
+    creating = true;
+    player.innerHTML = '<div id="ais-yt-player"></div>';
+
+    var fallback = setTimeout(function () { if (!yt) { creating = false; plainIframe(pending); } }, 4000);
+    loadApi(function () {
+      new window.YT.Player('ais-yt-player', {
+        host: 'https://www.youtube-nocookie.com',
+        videoId: id,
+        playerVars: { autoplay: 1, rel: 0, playsinline: 1, start: pending },
+        events: {
+          onReady: function (e) {
+            clearTimeout(fallback);
+            yt = e.target;
+            var f = yt.getIframe && yt.getIframe();
+            if (f) f.title = 'AI SDLC on a Legacy Codebase: full webinar recording';
+            yt.seekTo(pending, true);
+            yt.playVideo();
+          }
+        }
+      });
+    });
   }
 
   poster.addEventListener('click', function (e) { e.preventDefault(); play(0); });
