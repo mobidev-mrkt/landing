@@ -20,7 +20,7 @@
 .ais-video__chapters li::before{display:none}
 .ais-video__chapter{display:grid;grid-template-columns:4.25rem 1fr;gap:.75rem;min-height:44px;padding:.75rem 1.5rem;box-sizing:border-box;color:#303b4e;font-family:var(--font-open,"Open Sans",sans-serif);font-size:1rem;line-height:1.45}
 .ais-video .ais-video__chapter,.ais-video .ais-video__chapter:hover,.ais-video .ais-video__chapter:focus,.ais-video .ais-video__poster,.ais-video .ais-video__poster:hover{text-decoration:none!important}
-a.ais-video__chapter{color:#303b4e!important;cursor:pointer}
+.ais-video a.ais-video__chapter{color:#303b4e!important;cursor:pointer}
 a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:#eef8f6}
 .ais-video__chapter time{color:#01978c;font-family:var(--font-inter,"Inter",sans-serif);font-weight:700;font-variant-numeric:tabular-nums}
 .ais-video :focus-visible{outline:3px solid #ffb800;outline-offset:2px}
@@ -42,41 +42,39 @@ a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:
 @media (prefers-reduced-motion:reduce){.ais-video__play{transition:none}}
 </style>
 
-<!--
-  1. data-video-id: YouTube ID або повне посилання на відео.
-  2. data-t у кожному чаптері: час у форматі хв:сс (наприклад 21:40) або год:хв:сс.
-     Порожній data-t = чаптер показується без часу і не клікається.
--->
 <section class="ais-video" id="recording" data-video-id="SfYV3KhjuNY">
   <div class="ais-video__inner">
     <h2>Watch the Full Recording</h2>
     <div class="ais-video__grid">
       <div class="ais-video__player">
-          <a class="ais-video__poster" href="https://www.youtube.com/watch?v=SfYV3KhjuNY" aria-label="Play the webinar recording: AI SDLC on a Legacy Codebase">
-            <img alt="" width="1280" height="720" loading="lazy" decoding="async">
-            <span class="ais-video__play" aria-hidden="true"></span>
-          </a>
+        <a class="ais-video__poster" href="https://www.youtube.com/watch?v=SfYV3KhjuNY" aria-label="Play the webinar recording: AI SDLC on a Legacy Codebase">
+          <img alt="" width="1280" height="720" loading="lazy" decoding="async">
+          <span class="ais-video__play" aria-hidden="true"></span>
+        </a>
       </div>
       <div class="ais-video__side">
-      <nav class="ais-video__chapters" aria-labelledby="ais-chapters-title">
-        <h3 id="ais-chapters-title">Chapters</h3>
-        <ol>
-          <li><a class="ais-video__chapter" data-t="0:00">Intro: speakers and webinar format</a></li>
-          <li><a class="ais-video__chapter" data-t="6:09">What is AI SDLC? AI in all five stages of the lifecycle</a></li>
-          <li><a class="ais-video__chapter" data-t="8:36">Is AI-native SDLC just a buzzword?</a></li>
-          <li><a class="ais-video__chapter" data-t="11:53">Competitors ship faster: how to catch up with AI</a></li>
-          <li><a class="ais-video__chapter" data-t="14:58">Why AI on legacy code raises cost per feature and tech debt</a></li>
-          <li><a class="ais-video__chapter" data-t="">Can AI understand a 15-year-old PHP codebase or migrate legacy .NET?</a></li>
-          <li><a class="ais-video__chapter" data-t="">4 steps to use AI safely on legacy code</a></li>
-          <li><a class="ais-video__chapter" data-t="">We bought AI licenses and got slower: the AI adoption curve</a></li>
-          <li><a class="ais-video__chapter" data-t="">Lost documentation: AI reverse-engineering of a legacy system</a></li>
-          <li><a class="ais-video__chapter" data-t="">AI vendors and IP: how to keep control of your codebase</a></li>
-          <li><a class="ais-video__chapter" data-t="">Key advice for executives starting AI SDLC</a></li>
-          <li><a class="ais-video__chapter" data-t="">Q&amp;A: controlling AI token and compute costs</a></li>
-          <li><a class="ais-video__chapter" data-t="">Q&amp;A: "Working Effectively with Legacy Code" and AI-written tests</a></li>
-          <li><a class="ais-video__chapter" data-t="">Case study: 81% less delivery effort on a legacy retail platform</a></li>
-        </ol>
-      </nav>
+        <nav class="ais-video__chapters" aria-labelledby="ais-chapters-title">
+          <h3 id="ais-chapters-title">Chapters</h3>
+          <ol>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=0s" data-start="0"><time>00:00</time><span>Intro &amp; speakers</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=184s" data-start="184"><time>03:04</time><span>Why MobiDev &amp; session format</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=323s" data-start="323"><time>05:23</time><span>What is AI-driven SDLC?</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=470s" data-start="470"><time>07:50</time><span>Is AI-native SDLC just a buzzword?</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=635s" data-start="635"><time>10:35</time><span>Competitors ship faster: how to catch up</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=803s" data-start="803"><time>13:23</time><span>Why AI raises cost per feature on legacy code</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=979s" data-start="979"><time>16:19</time><span>Can AI understand a legacy PHP or .NET codebase?</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=1319s" data-start="1319"><time>21:59</time><span>Paid for AI licenses, got slower: the adoption curve</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=1543s" data-start="1543"><time>25:43</time><span>Is AI really faster than standard development?</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=1657s" data-start="1657"><time>27:37</time><span>No documentation, no knowledge keeper: where to start</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=2080s" data-start="2080"><time>34:40</time><span>Working with a vendor without losing control of your IP</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=2332s" data-start="2332"><time>38:52</time><span>Key takeaways for executives</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=2602s" data-start="2602"><time>43:22</time><span>Bonus: AI SDLC readiness assessment</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=2668s" data-start="2668"><time>44:28</time><span>Q&amp;A: Managing token and compute costs</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=3081s" data-start="3081"><time>51:21</time><span>Q&amp;A: "Working Effectively with Legacy Code" and AI</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=3317s" data-start="3317"><time>55:17</time><span>Case study: 81% less delivery effort</span></a></li>
+            <li><a class="ais-video__chapter" href="https://www.youtube.com/watch?v=SfYV3KhjuNY&amp;t=3551s" data-start="3551"><time>59:11</time><span>Wrap-up</span></a></li>
+          </ol>
+        </nav>
       </div>
     </div>
     <p class="ais-video__caption">Speakers: Serhii Ivanov and Ievgen Zadorozhnyi. Moderator: Helen Khailova-Horash. Full session with audience Q&amp;A.</p>
@@ -87,22 +85,19 @@ a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:
 (function () {
   var box = document.getElementById('recording');
   if (!box) return;
-  var raw = (box.getAttribute('data-video-id') || '').trim();
-  var m = raw.match(/(?:youtu\.be\/|v=|embed\/|shorts\/|live\/)([\w-]{11})/);
-  var id = m ? m[1] : (/^[\w-]{11}$/.test(raw) ? raw : '');
+  var id = box.getAttribute('data-video-id');
   var player = box.querySelector('.ais-video__player');
   var poster = box.querySelector('.ais-video__poster');
   var img = poster.querySelector('img');
-  var watch = id ? 'https://www.youtube.com/watch?v=' + id : '';
+  var links = box.querySelectorAll('.ais-video__chapter');
 
-  function toSec(t) {
-    if (!t) return null;
-    var p = t.split(':').map(Number), s = 0;
-    for (var i = 0; i < p.length; i++) { if (isNaN(p[i])) return null; s = s * 60 + p[i]; }
-    return s;
-  }
+  img.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
+  img.onerror = function () {
+    if (img.src.indexOf('hqdefault') < 0) img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
+    else img.remove();
+  };
+
   function play(start) {
-    if (!id) return false;
     var f = player.querySelector('iframe');
     if (!f) {
       f = document.createElement('iframe');
@@ -112,34 +107,16 @@ a.ais-video__chapter:hover,a.ais-video__chapter[aria-current="true"]{background:
       player.innerHTML = '';
       player.appendChild(f);
     }
-    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&start=' + (start || 0);
-    (window.dataLayer = window.dataLayer || []).push({ event: start ? 'chapter_click' : 'video_play', video_start: start || 0 });
-    return true;
+    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&start=' + start;
+    (window.dataLayer = window.dataLayer || []).push({ event: start ? 'chapter_click' : 'video_play', video_start: start });
   }
 
-  if (id) {
-    poster.href = watch;
-    img.src = 'https://i.ytimg.com/vi/' + id + '/maxresdefault.jpg';
-    img.onerror = function () { if (img.src.indexOf('hqdefault') < 0) img.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'; else img.remove(); };
-  } else {
-    img.remove();
-  }
-  poster.addEventListener('click', function (e) { if (play(0)) e.preventDefault(); });
+  poster.addEventListener('click', function (e) { e.preventDefault(); play(0); });
 
-  var links = box.querySelectorAll('.ais-video__chapter');
   Array.prototype.forEach.call(links, function (a) {
-    var t = (a.getAttribute('data-t') || '').trim(), s = toSec(t);
-    var time = document.createElement('time');
-    time.textContent = s === null ? '' : t;
-    var label = document.createElement('span');
-    label.textContent = a.textContent;
-    a.textContent = '';
-    a.appendChild(time); a.appendChild(label);
-    if (s === null || !id) { if (s === null) return; }
-    if (id) a.href = watch + '&t=' + s + 's';
     a.addEventListener('click', function (e) {
-      if (!play(s)) return;
       e.preventDefault();
+      play(parseInt(a.getAttribute('data-start'), 10) || 0);
       Array.prototype.forEach.call(links, function (x) { x.removeAttribute('aria-current'); });
       a.setAttribute('aria-current', 'true');
       if (window.innerWidth < 1200) window.scrollTo({ top: player.getBoundingClientRect().top + window.pageYOffset - 120, behavior: 'smooth' });
