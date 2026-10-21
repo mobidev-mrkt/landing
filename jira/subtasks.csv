@@ -1,0 +1,868 @@
+Issue Id,Parent Id,Issue Type,Summary,Description
+1,,Task,Аудит і доопрацювання всіх сторінок Services та Industries (меню в хедері),"Привести всі сторінки з розділів Services та Industries у хедері до єдиного стандарту. Детальний фідбек по 7 фітнес-сторінках: https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit. Кожна сторінка — окрема сабтаска з конкретними проблемами, кейсами для додавання та чеклістом.
+
+h3. Фідбек з документа (дослівно)
+h4. AI Agents
+* Блок дуже перевантажений. Треба замінити на інший вигляд.
+* Знову момент з рукою зліва.
+* Тут те саме + ідентичний меседж. Треба унікалізувати.
+* Немає відгуків на сторінці.
+* Можна додати цитату Юри Лучанінова, додати трохи експертності цій сторінці. Бо зараз вона перевантаження текстом і СТА елементами.
+h4. AI Pose Estimation
+* Ця сторінка вже виглядає набагато краще, але давайте розбавляти СТА з Оленою з більш лаконічними СТА секціями. Бо зараз трошки передоз Олени 🙂
+h4. AI Fitness App Development
+* Тут треба обов'язково додати кнопку СТА.
+* Дуже багато тексту, месседж не зчитується. Потрібно скоротити текст + в Олени обрізана рука зліва. Через велику кількість тексту фото сильно розтягується і якість фото відверто псується. Також, варто міксувати фото Олени в рамках однієї сторінки, щоб секції не виглядали ідентично.
+* Задовгі заголовки. Потрібно скоротити, а якщо не можна, то хоча брозділити на 2 строки, щоб краще читалося.
+* Після третього блоку варто додати нейтральну СТА секцію без Олени на темно зеленому фоні (можна обрати колір фону в табці Settings в налаштування блоку).
+* Підзаголовок досить обємний. Важко читається. Можливо, варто перенести 2-ге речення на другу строку. Краще порадитись з Анною. Бо блок виглядає дещо перевантаженим.
+* Тут також обрізана рука зліва. Щоб цього уникнути, треба вибрати такі налаштування: (див. скрін у документі)
+* Думаю, варто писати більш унікальний текст для кнопок. Фокус більше на велью/результаті, аніж на дії + на цій сторінці “Contact us” повторюється декілька разів і до кінця сторінки око вже настільки замилюється, що ти просто не відрізняєш ці секції.
+h4. Workout App Development
+* В секції з кейсами всього 2 кейси. А на сторінці немає шахматки з картинками. Моя пропозиція, додати ці 2 кейси шахматкою у форматі Problem-Solution-Results. Приклад є на новій сторінці з записом вебінару: (див. скрін у документі)
+h4. Wearable App Development
+* Основна проблема - на сторінці немає кейсів!
+h4. Yoga App Development
+* Я не впевнена щодо цього меседжа в підзаголовку. Він класний, але, як на мене, він більше підходить до СТА в статті, ніж на десіжен сторінці.
+* Давайте робити більш унікальни тексти на кпопках, бо дуже дженерік.
+* На сторінці лише 1 кейс. В нас є юз кейс з йоги. Давайте додамо його, як лід магніт, щоб підсилити довіру і захоплювати лідів. Але важливо - його треба скачати прямо на сторінці, без переходу на іншу сторінку.
+h4. AI Fitness Coach App Development
+* Треба додати кнопку СТА.
+* Тут теж можна оформити кейси у вигляді шахматки з картинками та результатами.
+
+Definition of Done: усі сабтаски закриті, коментарі в документі з фідбеком закриті, сторінки передані на рев'ю."
+2,1,Sub-task,[Services] AI Agents — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ai-agent-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Блок дуже перевантажений. Треба замінити на інший вигляд.
+* Знову момент з рукою зліва.
+* Тут те саме + ідентичний меседж. Треба унікалізувати.
+* Немає відгуків на сторінці.
+* Можна додати цитату Юри Лучанінова, додати трохи експертності цій сторінці. Бо зараз вона перевантаження текстом і СТА елементами.
+
+h3. Знайдено перевіркою
+* Лише 1 кейс
+* Немає відгуків
+
+h3. Додати кейси
+* Building a Multi-AI-Agent System for Software Testing
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+3,1,Sub-task,[Services] AI Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ai-consulting
+
+h3. Знайдено перевіркою
+* На сторінці 2 H1: «Get a Clear AI Plan Before You Invest» змінити на H2
+
+h3. Додати кейси
+* AI Agent Delivering a 24% Increase in User Retention for a Training Companion App
+* AI Platform Supporting Sustainable Recycling
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+4,1,Sub-task,[Services] AI Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/artificial-intelligence
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* AI Agent Delivering a 24% Increase in User Retention for a Training Companion App
+* AI Fitness Coach for Strength Training
+* AI-Powered HIIT Workout App
+* AI Platform Supporting Sustainable Recycling
+* iOS Solution Preventing Drowsy Driving
+* HIPAA-compliant Cross-platform healthcare management solution
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+5,1,Sub-task,[Services] AI Pose Estimation — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/human-pose-estimation-app-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Ця сторінка вже виглядає набагато краще, але давайте розбавляти СТА з Оленою з більш лаконічними СТА секціями. Бо зараз трошки передоз Олени 🙂
+
+h3. Знайдено перевіркою
+* Посилання на кейс з йогою веде на старий URL (yoga-training-app-premium-accounts-growth, 301-редірект) — замінити на /case-studies/yoga-ai-coach-app-development
+
+h3. Додати кейси
+* Athlete Performance Analysis for US-Based Athlete Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+6,1,Sub-task,[Services] Rapid MVP Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/rapid-mvp-development
+
+h3. Знайдено перевіркою
+* Задовгий H2 («Building a SaaS CRM MVP in 18 Hours…», 89 символів) — скоротити або розбити на 2 рядки
+
+h3. Додати кейси
+* Software Development for a Startup: Delivering a Beta for Musicians
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+7,1,Sub-task,[Services] Agentic Testing — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ai-agentic-testing
+
+h3. Знайдено перевіркою
+* Тонка сторінка — лише 4 H2, наповнити
+* Кейс про AI-агента для фітнес-апки не по темі сторінки — замінити
+
+h3. Додати кейси
+* Building a Multi-AI-Agent System for Software Testing
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+* Helping a Fitness App Founder Fix AI-Generated Code in 3 Days
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+8,1,Sub-task,[Services] Technology Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/technology-consulting
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* AR Consulting & Development for Home Renovation Software Product
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+9,1,Sub-task,[Services] DS Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/data-science
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Employee Turnover Analytics & Management Platform
+* Python-based HR Analytics Product
+* AI Platform Supporting Sustainable Recycling
+* Athlete Performance Analysis for US-Based Athlete Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+10,1,Sub-task,[Services] ML Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/machine-learning-consulting
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* AI Platform Supporting Sustainable Recycling
+* iOS Solution Preventing Drowsy Driving
+* Athlete Performance Analysis for US-Based Athlete Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+11,1,Sub-task,[Services] AR Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ar-consulting
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Bringing LiDAR and AR Damage Measurement to a Road Repair SaaS Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+12,1,Sub-task,[Services] IoT Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/iot-development
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Modernizing IoT Application for Wheel Suspension Control
+* Turning IoT Keg Data into Business Intelligence (Draft Beverage)
+* Cross-Platform System for Energy Consumption Management
+* How To Make A Smart Mirror With Alexa And AWS IoT
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+13,1,Sub-task,[Services] DevOps Consulting — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/devops-consulting-and-engineering
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* AWS Cost Optimization for a High-Load Fitness Platform
+* Moving from Monolith to Microservices
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+14,1,Sub-task,[Services] Software Audit — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/software-audit
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Helping a Fitness App Founder Fix AI-Generated Code in 3 Days
+* Refactoring a 7-Year-Old Ruby on Rails Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+15,1,Sub-task,[Services] UX/UI Audit — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ux-ui-design-audit
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Designing an Award-Winning Digital Content Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+16,1,Sub-task,[Services] Tech Strategy Creation — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/tech-strategy-consulting
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+17,1,Sub-task,[Services] Software Engineering — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/software-engineering
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Нових релевантних кейсів у каталозі не знайдено — перевірити вручну
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+18,1,Sub-task,[Services] Dedicated Team — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/dedicated-development-team
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+* Ім'я людини оформлене як H5 одразу після H2 — замінити на звичайний текст (NICK SHAMRAI)
+
+h3. Додати кейси
+* Turning IoT Keg Data into Business Intelligence, as a Draft Beverage Startup’s Dedicated Team for 6 Years
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+19,1,Sub-task,[Services] Team Augmentation — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/software-development-team-augmentation
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+* Ім'я людини оформлене як H5 одразу після H2 — замінити на звичайний текст (OLESIA TSYMBAL)
+
+h3. Додати кейси
+* Xamarin & Microsoft Azure-based SaaS For Corporate Clients
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+20,1,Sub-task,[Services] Augmented Reality — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/augmented-reality
+
+h3. Знайдено перевіркою
+* Лише 2 кейси
+
+h3. Додати кейси
+* Bringing LiDAR and AR Damage Measurement to a Road Repair SaaS Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+21,1,Sub-task,[Services] Web Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/web-application-development
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Online Workplace Development for Hail Damage Repair Professionals
+* Web-Based Proofreading Editing Platform
+* HR Portal & Automated Employee Management System
+* Inspection Management Software Development for Government Entities
+* Migrating a 12-Hotel Booking Engine and Guest Portal from AngularJS to Angular
+* Migrating Retailer’s Inventory and BOPIS App from AngularJS to React
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+22,1,Sub-task,[Services] Mobile Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/mobile-application-development
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Apple Watch Multisport Companion
+* Bringing a Coach-Led Kids’ Sports Program to 1,000+ Parents Through One Flutter App
+* Cross-Platform App Development for a Premium Car Subscription Service
+* Cross-Platform Flutter-Based Social Media & Gaming Platform
+* Migrating a Fitness App to React Native Preserving Business Logic
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+23,1,Sub-task,[Services] Cloud Migration — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/cloud-migration-modernization
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Moving from Monolith to Microservices
+* AWS Cost Optimization for a High-Load Fitness Platform
+* Xamarin & Microsoft Azure-based SaaS For Corporate Clients
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+24,1,Sub-task,[Services] UX/UI Design — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ui-ux-design
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Designing an Award-Winning Digital Content Platform
+* Cloud Platform for Group Therapy and Wellness
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+25,1,Sub-task,[Services] Quality Assurance — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/qa-software-testing
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Building a Multi-AI-Agent System for Software Testing
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+26,1,Sub-task,[Services] New Product Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/software-product-development
+
+h3. Знайдено перевіркою
+* Перевірити структуру H2/H3
+
+h3. Додати кейси
+* Building a Construction Management Platform That Increases Crane Productivity by 20%
+* Robot Delivery Solution, which Secured $10.7M in Investments
+* Software Development for a Startup: Delivering a Beta for Musicians
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+27,1,Sub-task,[Services] Software Product Scaling — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/scale-up-software-product
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* AWS Cost Optimization for a High-Load Fitness Platform
+* Moving from Monolith to Microservices
+* SaaS-enabled Marketplace Serving 1.5K Wineries across Europe
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+28,1,Sub-task,[Services] App Modernization — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/application-modernization
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+* Лише 1 кейс, і той про AWS-оптимізацію, а не модернізацію
+
+h3. Додати кейси
+* Refactoring a 7-Year-Old Ruby on Rails Platform
+* Upgrading a Legacy Ruby on Rails Portal After the Original Dev Team Left the Stack
+* Refactoring a Legacy CRM without Downtime
+* Migrating a 12-Hotel Booking Engine and Guest Portal from AngularJS to Angular
+* Migrating Retailer’s Inventory and BOPIS App from AngularJS to React
+* Migrating a Fitness App to React Native Preserving Business Logic
+* Moving from Monolith to Microservices
+* Modernizing IoT Application for Wheel Suspension Control
+* Upgrading IoT Application for Car Tailpipe Sound Setup
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+29,1,Sub-task,[Services] POS Software Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/pos-software-development
+
+h3. Знайдено перевіркою
+* H2 скопійований з Hospitality: «How MobiDev can help your hospitality business build a winning POS software» — переписати під POS і скоротити
+
+h3. Додати кейси
+* Migrating Retailer’s Inventory and BOPIS App from AngularJS to React
+* Turning IoT Keg Data into Business Intelligence (Draft Beverage)
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+30,1,Sub-task,[Services] ERP Software Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/erp-software-development
+
+h3. Знайдено перевіркою
+* Лише 1 кейс
+
+h3. Додати кейси
+* Building a POS That Holds 0.03-Second Response Under High-Volume Service
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+31,1,Sub-task,[Industries] Retail — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/retail-software-development
+
+h3. Знайдено перевіркою
+* Задовгий H2 («How MobiDev can help your retail business…», капсом) — скоротити або розбити на 2 рядки
+
+h3. Додати кейси
+* Turning Client-Led Vibe Coding Into a Governed AI SDLC Process for a Legacy Retail Operations Platform
+* Migrating Retailer’s Inventory and BOPIS App from AngularJS to React
+* MVP for Retail Deal Discovery App
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+32,1,Sub-task,[Industries] Hospitality — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/hospitality-software-development
+
+h3. Знайдено перевіркою
+* 2 задовгі H2 капсом («How MobiDev can help your hospitality business…», «Build, scale, modernize with cutting-edge technologies…») — скоротити
+
+h3. Додати кейси
+* Migrating a 12-Hotel Booking Engine and Guest Portal from AngularJS to Angular
+* Providing Team Augmentation for Microsoft-Based Swiss Tourism Platform
+* Augmented Reality-Based Mobile Applications for the Travel Industry
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+33,1,Sub-task,[Industries] Sports — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/sports-app-development
+
+h3. Знайдено перевіркою
+* Лише 2 кейси
+
+h3. Додати кейси
+* Athlete Performance Analysis for US-Based Athlete Platform
+* Refactoring a 7-Year-Old Ruby on Rails Platform (Sports Association)
+* Apple Watch Multisport Companion
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+34,1,Sub-task,[Industries] Healthcare — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/healthcare-app-development
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Cloud Platform for Group Therapy and Wellness
+* Medical Search Engine App Development
+* MVP for Habit Tracking & Analytics App
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+35,1,Sub-task,[Industries] Manufacturing — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/manufacturing-software-development
+
+h3. Знайдено перевіркою
+* Немає блоку FAQ — додати
+
+h3. Додати кейси
+* Building a Construction Management Platform That Increases Crane Productivity by 20%
+* AI Platform Supporting Sustainable Recycling
+* Modernizing IoT Application for Wheel Suspension Control
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+36,1,Sub-task,[Industries] Fitness — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/fitness-app-development
+
+h3. Знайдено перевіркою
+* Задовгий H2 (у CTA, 79 символів) — скоротити або розбити на 2 рядки
+
+h3. Додати кейси
+* Apple Watch Multisport Companion
+* Custom Gym Management App Development
+* Helping a Fitness App Founder Fix AI-Generated Code in 3 Days
+* Athlete Performance Analysis for US-Based Athlete Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+37,1,Sub-task,[Industries] AI Fitness App Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ai-fitness-app-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Тут треба обов'язково додати кнопку СТА.
+* Дуже багато тексту, месседж не зчитується. Потрібно скоротити текст + в Олени обрізана рука зліва. Через велику кількість тексту фото сильно розтягується і якість фото відверто псується. Також, варто міксувати фото Олени в рамках однієї сторінки, щоб секції не виглядали ідентично.
+* Задовгі заголовки. Потрібно скоротити, а якщо не можна, то хоча брозділити на 2 строки, щоб краще читалося.
+* Після третього блоку варто додати нейтральну СТА секцію без Олени на темно зеленому фоні (можна обрати колір фону в табці Settings в налаштування блоку).
+* Підзаголовок досить обємний. Важко читається. Можливо, варто перенести 2-ге речення на другу строку. Краще порадитись з Анною. Бо блок виглядає дещо перевантаженим.
+* Тут також обрізана рука зліва. Щоб цього уникнути, треба вибрати такі налаштування: (див. скрін у документі)
+* Думаю, варто писати більш унікальний текст для кнопок. Фокус більше на велью/результаті, аніж на дії + на цій сторінці “Contact us” повторюється декілька разів і до кінця сторінки око вже настільки замилюється, що ти просто не відрізняєш ці секції.
+
+h3. Знайдено перевіркою
+* Задовгий H2 («Turn Your AI Fitness App Idea into a Product…», 72 символи) — скоротити або розбити на 2 рядки
+* Посилання на кейс з йогою веде на старий URL (yoga-training-app-premium-accounts-growth, 301-редірект) — замінити на /case-studies/yoga-ai-coach-app-development
+
+h3. Додати кейси
+* AI Fitness Coach for Strength Training
+* AI-Powered HIIT Workout App
+* Athlete Performance Analysis for US-Based Athlete Platform
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+38,1,Sub-task,[Industries] Workout App Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/workout-app-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* В секції з кейсами всього 2 кейси. А на сторінці немає шахматки з картинками. Моя пропозиція, додати ці 2 кейси шахматкою у форматі Problem-Solution-Results. Приклад є на новій сторінці з записом вебінару: (див. скрін у документі)
+
+h3. Знайдено перевіркою
+* Лише 1 кейс
+* Задовгий H2 (×2: «Read Success Stories…», «Workout App Development: Technology for…») — скоротити або розбити на 2 рядки
+
+h3. Додати кейси
+* Custom Gym Management App Development
+* AI Fitness Coach for Strength Training
+* Flutter-Based Cross-Platform Fitness Application Development
+* Android Fitness App Development With Video Streaming
+* Apple Watch Multisport Companion
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+39,1,Sub-task,[Industries] Wearable App Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/wearable-app-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Основна проблема - на сторінці немає кейсів!
+
+h3. Знайдено перевіркою
+* Єдиний кейс (AWS Cost Optimization) не по темі сторінки
+
+h3. Додати кейси
+* Apple Watch Multisport Companion — обов'язково
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+40,1,Sub-task,[Industries] Yoga App Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/yoga-app-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Я не впевнена щодо цього меседжа в підзаголовку. Він класний, але, як на мене, він більше підходить до СТА в статті, ніж на десіжен сторінці.
+* Давайте робити більш унікальни тексти на кпопках, бо дуже дженерік.
+* На сторінці лише 1 кейс. В нас є юз кейс з йоги. Давайте додамо його, як лід магніт, щоб підсилити довіру і захоплювати лідів. Але важливо - його треба скачати прямо на сторінці, без переходу на іншу сторінку.
+
+h3. Знайдено перевіркою
+* Посилання на кейс з йогою веде на старий URL (yoga-training-app-premium-accounts-growth, 301-редірект) — замінити на /case-studies/yoga-ai-coach-app-development
+
+h3. Додати кейси
+* Нових релевантних кейсів у каталозі не знайдено — перевірити вручну
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
+41,1,Sub-task,[Industries] AI Fitness Coach App Development — доопрацювати сторінку,"Сторінка: https://mobidev.biz/services/ai-fitness-coach-development
+
+h3. Фідбек з документа (дослівно)
+Джерело (зі скрінами): https://docs.google.com/document/d/1UUFS8vyaXBV5Z-azhkd5wFSAeWQpEUQ1FhGQu6b4MMo/edit
+* Треба додати кнопку СТА.
+* Тут теж можна оформити кейси у вигляді шахматки з картинками та результатами.
+
+h3. Знайдено перевіркою
+* Задовгий H2 («Start Building Your AI Fitness Coach Today…», 81 символ) — скоротити або розбити на 2 рядки
+* Посилання на кейс з йогою веде на старий URL (yoga-training-app-premium-accounts-growth, 301-редірект) — замінити на /case-studies/yoga-ai-coach-app-development
+
+h3. Додати кейси
+* AI Fitness Coach for Strength Training — кейс з такою ж назвою, як сторінка
+* AI-Powered HIIT Workout App
+
+h3. Чекліст
+* Блок FAQ є, питання релевантні сторінці
+* Додані всі релевантні кейси з https://mobidev.biz/case-studies; при 1–3 кейсах — шахматка Problem → Solution → Results
+* Є відгуки / цитата експерта / лід-магніт
+* Рівно один H1; секції — H2, підпункти — H3; рівні не пропускаються
+* H1/H2 до ~60–70 символів, не скопійовані з іншої сторінки
+* Текстові блоки не перевантажені
+* CTA різні (з Оленою / нейтральні), кнопки з унікальним текстом про результат
+* Фото не обрізані й не розтягнуті
+* Перевірено на мобільній версії"
