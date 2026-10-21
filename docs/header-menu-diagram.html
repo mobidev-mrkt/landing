@@ -1,0 +1,314 @@
+<title>Дерево меню mobidev.biz</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Unbounded:wght@600&display=swap">
+<style>
+/* Layout: one wide level-by-level tree (columns = menu depth), summary strip above, audit notes below */
+:root {
+  --bg: #F6F8F7; --surface: #FFFFFF; --fg: #1F2321; --muted: #5E6662; --line: #CBD3CF;
+  --accent: #12B292; --accent-soft: #DDF5EC; --dup: #D9480F; --dup-soft: #FFE8D9;
+  --hot: #E8590C; --top: #2F9E5A;
+  --f-display: "Unbounded", "Golos Text", system-ui, sans-serif;
+  --f-body: "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141816; --surface: #1D2220; --fg: #E6ECE9; --muted: #98A39E; --line: #3A4440;
+  --accent: #4AD57B; --accent-soft: #1D3A2C; --dup: #FF8A4C; --dup-soft: #3D2516;
+  --hot: #FF8A4C; --top: #4AD57B; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141816; --surface: #1D2220; --fg: #E6ECE9; --muted: #98A39E; --line: #3A4440;
+  --accent: #4AD57B; --accent-soft: #1D3A2C; --dup: #FF8A4C; --dup-soft: #3D2516;
+  --hot: #FF8A4C; --top: #4AD57B; color-scheme: dark }
+
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1320px; margin: 0 auto; padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1 { font-family: var(--f-display); font-weight: 600; font-size: clamp(22px, 3.2vw, 32px); line-height: 1.2; margin: 0; text-wrap: balance; }
+h2 { font-size: 18px; margin: 0 0 10px; }
+.lede { margin: 8px 0 0; color: var(--muted); max-width: 70ch; }
+.lede a { color: var(--accent); }
+
+.levels { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.lvl { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 2px; }
+.lvl b { font-size: 26px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.lvl span { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.lvl small { color: var(--muted); font-size: 13px; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--muted); align-items: center; }
+.legend i { display: inline-block; width: 26px; height: 14px; border-radius: 4px; vertical-align: -2px; margin-right: 6px; border: 1.5px solid var(--line); background: var(--surface); }
+.legend i.nolink { border-style: dashed; }
+.legend i.dup { border-color: var(--dup); background: var(--dup-soft); }
+.legend i.root { background: var(--accent-soft); border-color: var(--accent); }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; }
+button { font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); cursor: pointer; }
+button:hover { border-color: var(--accent); }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+figure { margin: 0; }
+.scroller { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+#tree { display: block; }
+figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+/* SVG parts */
+.colhead { font: 600 11px var(--f-body); letter-spacing: .08em; text-transform: uppercase; fill: var(--muted); }
+.colrule { stroke: var(--line); stroke-dasharray: 2 4; }
+.edge { fill: none; stroke: var(--line); stroke-width: 1.4; transition: stroke .15s, opacity .15s; }
+.node rect { fill: var(--surface); stroke: var(--line); stroke-width: 1.4; transition: stroke .15s; }
+.node.nolink rect { stroke-dasharray: 4 3; }
+.node.l0 rect, .node.l1 rect { fill: var(--accent-soft); stroke: var(--accent); }
+.node.cta rect { fill: var(--accent); stroke: var(--accent); }
+.node.cta text.lab { fill: var(--bg); }
+.node.dup rect { stroke: var(--dup); fill: var(--dup-soft); }
+.node text.lab { font: 500 12.5px var(--f-body); fill: var(--fg); }
+.node.l0 text.lab, .node.l1 text.lab { font-weight: 700; font-size: 13.5px; }
+.node text.path { font: 400 11px var(--f-mono); fill: var(--muted); }
+.node text.badge { font: 700 9px var(--f-body); letter-spacing: .05em; }
+.node text.badge.HOT { fill: var(--hot); } .node text.badge.TOP { fill: var(--top); }
+.node text.cnt { font: 700 10px var(--f-body); fill: var(--dup); }
+.node text.tog { font: 700 12px var(--f-mono); fill: var(--accent); }
+.node.click { cursor: pointer; }
+.node a text.lab { text-decoration: none; }
+.node a:hover text.lab { text-decoration: underline; }
+svg.focus .edge { opacity: .25; }
+svg.focus .edge.on { stroke: var(--accent); stroke-width: 2; opacity: 1; }
+svg.focus .node.on rect { stroke: var(--accent); }
+
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.note { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--dup); border-radius: 8px; padding: 12px 14px; min-width: 0; }
+.note b { display: block; margin-bottom: 4px; }
+.note p { margin: 0; color: var(--muted); font-size: 14px; }
+code { font-family: var(--f-mono); font-size: .85em; overflow-wrap: anywhere; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Дерево меню хедера mobidev.biz</h1>
+    <p class="lede">Усі пункти хедера, розкладені за рівнями вкладеності: від кнопки меню до кінцевої сторінки. Знято з <a href="https://mobidev.biz/" target="_blank" rel="noopener">mobidev.biz</a> 21.10.2026. Наведіть на пункт, щоб підсвітити його гілку; клік по розділу згортає його.</p>
+  </header>
+
+  <section class="levels" id="levels" aria-label="Кількість пунктів на кожному рівні"></section>
+
+  <div class="legend">
+    <span><i class="root"></i>Розділ верхнього рівня</span>
+    <span><i></i>Посилання на сторінку</span>
+    <span><i class="nolink"></i>Заголовок без посилання</span>
+    <span><i class="dup"></i>URL повторюється в меню (×N)</span>
+    <span><b style="color:var(--hot)">HOT</b> / <b style="color:var(--top)">TOP</b> мітки з сайту</span>
+  </div>
+
+  <div class="tools">
+    <button type="button" id="expand">Розгорнути все</button>
+    <button type="button" id="collapse">Лише рівні 0–1</button>
+    <button type="button" id="paths">Сховати URL</button>
+  </div>
+
+  <figure>
+    <div class="scroller"><svg id="tree" role="img" aria-label="Дерево меню хедера mobidev.biz: 7 розділів, їхні вкладки та групи, кінцеві сторінки з URL"></svg></div>
+    <figcaption>Кожна колонка відповідає рівню вкладеності. Лінія з'єднує пункт із батьківським. Пунктирна рамка означає, що заголовок не клікабельний.</figcaption>
+  </figure>
+
+  <section>
+    <h2>Що видно з дерева</h2>
+    <div class="notes">
+      <div class="note"><b>Одна сторінка, три входи</b><p><code>/services/human-pose-estimation-app-development</code> висить у Services → Artificial Intelligence, Services → Expertise та Industries → Fitness, ще й під двома назвами (AI Pose Estimation і HPE App Development).</p></div>
+      <div class="note"><b>Testimonials двічі</b><p>І окремий розділ рівня 1, і пункт у Company.</p></div>
+      <div class="note"><b>Нерівна глибина</b><p>Services та Industries мають три рівні, Company та Insights два, Case Studies, Testimonials і Contact Us лише один.</p></div>
+      <div class="note"><b>Порожні вузли</b><p>Services, Industries, Company, Insights, вкладки Artificial Intelligence та Expertise не мають власних сторінок. Хабу AI-послуг у меню немає.</p></div>
+    </div>
+  </section>
+</div>
+
+<script>
+const BASE = 'https://mobidev.biz';
+const T = (n, u, c, b) => ({ n, u: u || '', c: c || [], b: b || '' });
+const L = (n, u, b) => T(n, u, [], b);
+const HPE = '/services/human-pose-estimation-app-development';
+
+const DATA = T('Хедер', '', [
+  T('Services', '', [
+    T('Artificial Intelligence', '', [
+      L('AI Agents', '/services/ai-agent-development', 'HOT'),
+      L('AI Consulting', '/services/ai-consulting'),
+      L('AI Development', '/services/artificial-intelligence'),
+      L('AI Pose Estimation', HPE, 'HOT'),
+      L('Rapid MVP Development', '/services/rapid-mvp-development'),
+      L('Agentic Testing', '/services/ai-agentic-testing'),
+    ], 'TOP'),
+    T('Consulting', '/services/technology-consulting', [
+      L('DS Consulting', '/services/data-science'),
+      L('ML Consulting', '/services/machine-learning-consulting'),
+      L('AR Consulting', '/services/ar-consulting'),
+      L('IoT Consulting', '/services/iot-development'),
+      L('DevOps Consulting', '/services/devops-consulting-and-engineering'),
+      L('Software Audit', '/services/software-audit'),
+      L('UX/UI Audit', '/services/ux-ui-design-audit'),
+      L('Tech Strategy Creation', '/services/tech-strategy-consulting'),
+    ]),
+    T('Engineering', '/services/software-engineering', [
+      L('Dedicated Team', '/services/dedicated-development-team'),
+      L('Team Augmentation', '/services/software-development-team-augmentation'),
+      L('Augmented Reality', '/services/augmented-reality'),
+      L('Web Development', '/services/web-application-development'),
+      L('Mobile Development', '/services/mobile-application-development'),
+      L('Cloud Migration', '/services/cloud-migration-modernization'),
+      L('UX/UI Design', '/services/ui-ux-design'),
+      L('Quality Assurance', '/services/qa-software-testing'),
+    ]),
+    T('Expertise', '', [
+      L('New Product Development', '/services/software-product-development'),
+      L('Software Product Scaling', '/services/scale-up-software-product'),
+      L('App Modernization', '/services/application-modernization'),
+      L('POS Software Development', '/services/pos-software-development'),
+      L('ERP Software Development', '/services/erp-software-development'),
+      L('AI Pose Estimation', HPE, 'HOT'),
+    ]),
+  ]),
+  T('Industries', '', [
+    L('Retail', '/services/retail-software-development'),
+    L('Hospitality', '/services/hospitality-software-development'),
+    L('Sports', '/services/sports-app-development', 'TOP'),
+    L('Healthcare', '/services/healthcare-app-development'),
+    L('Manufacturing', '/services/manufacturing-software-development'),
+    T('Fitness', '/services/fitness-app-development', [
+      L('HPE App Development', HPE),
+      L('AI Fitness App Development', '/services/ai-fitness-app-development'),
+      L('Workout App Development', '/services/workout-app-development'),
+      L('Wearable App Development', '/services/wearable-app-development'),
+      L('Yoga App Development', '/services/yoga-app-development'),
+      L('AI Fitness Coach App Development', '/services/ai-fitness-coach-development'),
+    ]),
+  ]),
+  L('Case Studies', '/case-studies'),
+  L('Testimonials', '/clients-and-testimonials'),
+  T('Company', '', [
+    L('About us', '/our-team'),
+    L('Testimonials', '/clients-and-testimonials'),
+    L('Events', '/meet-us-events'),
+    L('News', '/category/newsroom'),
+    L('Careers', '/vacancies'),
+  ]),
+  T('Insights', '', [
+    L('Blog', '/trends-and-insights'),
+    L('Webinars', '/webinars'),
+    L('Knowledge Hub', '/knowledge-hub'),
+  ]),
+  L('CONTACT US', '/contact-us'),
+]);
+
+// index nodes
+const all = [], urlCount = {};
+(function walk(n, depth, parent) {
+  n.depth = depth; n.parent = parent; n.id = all.length; n.open = true; all.push(n);
+  if (n.u) urlCount[n.u] = (urlCount[n.u] || 0) + 1;
+  n.c.forEach(ch => walk(ch, depth + 1, n));
+})(DATA, 0, null);
+DATA.c[DATA.c.length - 1].cta = true;
+const MAXD = Math.max(...all.map(n => n.depth));
+
+// level summary
+const levelNames = ['Хедер', 'Розділи', 'Вкладки та групи', 'Кінцеві пункти'];
+const levelHint = ['кнопка меню', 'Services, Industries, …', 'вкладки Services, галузі, пункти Company/Insights', 'сторінки у вкладках і панелі Fitness'];
+const linkCount = all.filter(n => n.u).length, uniq = Object.keys(urlCount).length;
+document.getElementById('levels').innerHTML =
+  levelNames.map((nm, d) => `<div class="lvl"><span>Рівень ${d} · ${nm}</span><b>${all.filter(n => n.depth === d).length}</b><small>${levelHint[d]}</small></div>`).join('') +
+  `<div class="lvl"><span>Посилань</span><b>${linkCount}</b><small>${uniq} унікальних URL</small></div>`;
+
+// layout + render
+const svg = document.getElementById('tree'), NS = 'http://www.w3.org/2000/svg';
+const ROW = 26, BOXH = 20, PADX = 9, COLGAP = 46, TOPY = 44, LEFT = 18, GROUPGAP = 12;
+let showPaths = true;
+const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const visKids = n => n.open ? n.c : [];
+
+function render() {
+  svg.innerHTML = '';
+  svg.classList.remove('focus');
+  const gEdges = el('g', {}, svg), gNodes = el('g', {}, svg);
+  const vis = [];
+  (function v(n) { vis.push(n); visKids(n).forEach(v); })(DATA);
+
+  // pass 1: draw labels to measure widths
+  vis.forEach(n => {
+    const g = el('g', { class: `node l${n.depth}${n.u ? '' : ' nolink'}${urlCount[n.u] > 1 ? ' dup' : ''}${n.cta ? ' cta' : ''}${n.c.length && n.depth > 0 ? ' click' : ''}` }, gNodes);
+    n.g = g;
+    const host = n.u ? el('a', { href: BASE + n.u, target: '_blank', rel: 'noopener' }, g) : g;
+    let x = PADX;
+    if (n.b) { const b = el('text', { class: `badge ${n.b}`, x, y: 4 }, host); b.textContent = n.b; x += b.getComputedTextLength() + 5; }
+    const t = el('text', { class: 'lab', x, y: 4 }, host); t.textContent = n.n;
+    x += t.getComputedTextLength() + PADX;
+    if (n.c.length && n.depth > 0) { const tg = el('text', { class: 'tog', x: x - 3, y: 4 }, g); tg.textContent = n.open ? '−' : `+${n.c.length}`; x += tg.getComputedTextLength() + 6; }
+    if (urlCount[n.u] > 1) { const c = el('text', { class: 'cnt', x: x - 2, y: 4 }, g); c.textContent = '×' + urlCount[n.u]; x += c.getComputedTextLength() + 6; }
+    n.w = x;
+    const tt = el('title', {}, g); tt.textContent = n.u ? BASE + n.u : n.n + ' (без посилання)';
+  });
+
+  // column x from widest box in each column
+  const colX = [LEFT];
+  for (let d = 0; d < MAXD; d++) colX.push(colX[d] + Math.max(0, ...vis.filter(n => n.depth === d).map(n => n.w)) + COLGAP);
+
+  // y: leaves stacked, parents centred on children; extra gap between top-level sections
+  let cursor = TOPY + ROW / 2;
+  (function place(n) {
+    const kids = visKids(n);
+    if (!kids.length) { n.y = cursor; cursor += ROW; return; }
+    kids.forEach((k, i) => { if (n.depth === 0 && i > 0) cursor += GROUPGAP; place(k); });
+    n.y = (kids[0].y + kids[kids.length - 1].y) / 2;
+  })(DATA);
+
+  // pass 2: boxes, paths, edges
+  let maxX = 0;
+  vis.forEach(n => {
+    n.x = colX[n.depth];
+    n.g.setAttribute('transform', `translate(${n.x},${n.y})`);
+    n.g.insertBefore(el('rect', { x: 0, y: -BOXH / 2, width: n.w, height: BOXH, rx: 6 }), n.g.firstChild);
+    let right = n.x + n.w;
+    if (showPaths && n.u && !visKids(n).length) {
+      const p = el('text', { class: 'path', x: n.w + 8, y: 4 }, n.g); p.textContent = n.u;
+      right += 8 + p.getComputedTextLength();
+    }
+    maxX = Math.max(maxX, right);
+    if (n.parent) {
+      const x1 = n.parent.x + n.parent.w, y1 = n.parent.y, x2 = n.x, y2 = n.y, mx = (x1 + x2) / 2;
+      n.edge = el('path', { class: 'edge', d: `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}` }, gEdges);
+    }
+  });
+
+  // column headings
+  const gHead = el('g', {}, svg);
+  for (let d = 0; d <= MAXD; d++) {
+    if (!vis.some(n => n.depth === d)) continue;
+    el('text', { class: 'colhead', x: colX[d], y: 20 }, gHead).textContent = `Рівень ${d}`;
+    el('line', { class: 'colrule', x1: colX[d], x2: colX[d] + 60, y1: 28, y2: 28 }, gHead);
+  }
+
+  const W = Math.ceil(maxX + LEFT), H = Math.ceil(cursor + 8);
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('width', W); svg.setAttribute('height', H);
+
+  // interactions
+  vis.forEach(n => {
+    n.g.addEventListener('mouseenter', () => highlight(n, true));
+    n.g.addEventListener('mouseleave', () => highlight(n, false));
+    if (n.c.length && n.depth > 0) n.g.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      n.open = !n.open; render();
+    });
+  });
+}
+
+function highlight(n, on) {
+  svg.classList.toggle('focus', on);
+  const mark = m => { m.g && m.g.classList.toggle('on', on); m.edge && m.edge.classList.toggle('on', on); };
+  for (let a = n; a; a = a.parent) mark(a);
+  (function down(m) { visKids(m).forEach(k => { mark(k); down(k); }); })(n);
+}
+
+document.getElementById('expand').onclick = () => { all.forEach(n => n.open = true); render(); };
+document.getElementById('collapse').onclick = () => { all.forEach(n => n.open = n.depth === 0); render(); };
+document.getElementById('paths').onclick = e => { showPaths = !showPaths; e.target.textContent = showPaths ? 'Сховати URL' : 'Показати URL'; render(); };
+
+render();
+document.fonts && document.fonts.ready.then(render);
+</script>
