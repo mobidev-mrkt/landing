@@ -5,7 +5,7 @@ Usage: python3 -I build_report.py --site https://mobidev.biz --work WORK --out r
 Inputs (WORK): findings.json, auto.json, txt/_meta.json, schema_pages.json, schema_site.json,
   optional spell_confirmed.json {"wrong": "right"} and facts.json [[fact, version A, version B, action], ...]
   (facts.json is curated by hand from cross_facts.json — contradictions between pages).
-Sheets: Зведення · Знахідки · Факти компанії · Title і meta · Schema — весь сайт · Schema — по сторінках · Schema — шаблони
+Sheets: Зведення · Знахідки (сайт) · Знахідки (блог) · Факти компанії · Title і meta · Schema — весь сайт · Schema — по сторінках · Schema — шаблони
 Every findings row has an exact quote for Ctrl+F, a fix, and a Status dropdown.
 """
 import argparse, os, re, json, collections
@@ -67,9 +67,11 @@ def main():
             dv = DataValidation(type='list', formula1='"Не почато,В роботі,Виправлено,Не баг"', allow_blank=True)
             ws.add_data_validation(dv); dv.add(f'{get_column_letter(ws.max_column)}2:{get_column_letter(ws.max_column)}{len(data) + 1}')
         return ws
-    ws = sheet('Знахідки', ['Пріоритет', 'Розділ', 'Сторінка', 'Тип', 'Що не так (точна цитата для Ctrl+F)', 'Як виправити', 'Коментар', 'Як знайдено'],
-               rows, [12, 14, 48, 22, 60, 45, 40, 14], link_col=3, status=True)
-    for row in ws.iter_rows(min_row=2): row[1].fill = PatternFill('solid', fgColor={'1': 'FBEBEB', '2': 'F9EEDA', '3': 'F0EFEC'}[row[1].value[0]])
+    hdr = ['Пріоритет', 'Розділ', 'Сторінка', 'Тип', 'Що не так (точна цитата для Ctrl+F)', 'Як виправити', 'Коментар', 'Як знайдено']
+    site_rows_, blog_rows = [r for r in rows if r[1] != 'Блог'], [r for r in rows if r[1] == 'Блог']
+    for title, data in (('Знахідки (сайт)', site_rows_), ('Знахідки (блог)', blog_rows)):
+        ws = sheet(title, hdr, data, [12, 14, 48, 22, 60, 45, 40, 14], link_col=3, status=True)
+        for row in ws.iter_rows(min_row=2): row[1].fill = PatternFill('solid', fgColor={'1': 'FBEBEB', '2': 'F9EEDA', '3': 'F0EFEC'}[row[1].value[0]])
     sheet('Факти компанії', ['Факт', 'Версія А', 'Версія Б (і далі)', 'Що зробити'], load('facts.json', []), [22, 55, 75, 45])
     meta = load('txt/_meta.json', {}); seo = []
     for k in ('meta_missing_desc', 'meta_missing_title', 'meta_title_long', 'meta_desc_long', 'meta_dup_title', 'meta_dup_desc', 'h1_count'):
@@ -89,6 +91,8 @@ def main():
     for c in sorted({r[3] for r in rows}, key=lambda c: -sum(cc[(c, x)] for x in '123')):
         x = [cc[(c, k)] for k in '123']; su.append([c, *x, sum(x)])
     su.append(['Разом', *[sum(1 for r in rows if r[0][0] == k) for k in '123'], len(rows)])
+    su.append(['  з них «Знахідки (сайт)»', *[sum(1 for r in site_rows_ if r[0][0] == k) for k in '123'], len(site_rows_)])
+    su.append(['  з них «Знахідки (блог)»', *[sum(1 for r in blog_rows if r[0][0] == k) for k in '123'], len(blog_rows)])
     su.append([]); su.append(['Title і meta', len(seo)]); su.append(['Schema — по сторінках', len(sp)]); su.append(['Schema — весь сайт', len(sr)])
     su.column_dimensions['A'].width = 40
     wb.save(a.out); print('saved', a.out, len(rows), 'findings')

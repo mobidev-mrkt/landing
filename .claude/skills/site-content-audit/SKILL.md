@@ -8,7 +8,7 @@ description: Full content and structured-data audit of a published website — c
 Rebuilt from the run of 2026-10-27/28 on mobidev.biz (646 URLs → 1 727 verified text findings,
 336 title/meta rows, 701 schema rows). Re-run it the same way; the scripts carry the lessons.
 
-**Output:** one `.xlsx` — Зведення · Знахідки · Факти компанії · Title і meta · Schema — весь сайт ·
+**Output:** one `.xlsx` — Зведення · Знахідки (сайт) · Знахідки (блог) · Факти компанії · Title і meta · Schema — весь сайт ·
 Schema — по сторінках · Schema — шаблони. Every row: page URL, exact quote (Ctrl+F-able), fix,
 priority, and a Status dropdown (Не почато / В роботі / Виправлено / Не баг).
 
