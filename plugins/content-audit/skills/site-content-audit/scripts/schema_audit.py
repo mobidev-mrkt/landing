@@ -92,6 +92,14 @@ def main():
                 add(p, M, 'Відгук/цитата без розмітки', 'Review (itemReviewed → #organization, author → Person з посадою) або Quotation', 'Розмічений відгук — одиниця довіри, яку легко процитувати')
         if s == 'team' and 'Person' not in types and '__' in p: add(p, H, 'Сторінка експерта без Person/ProfilePage', 'ProfilePage → Person (name, jobTitle, worksFor #organization, image, sameAs, knowsAbout)', WHY['person'])
         if any(T(n) == 'Service' and 'provider' not in n for n in ns): add(p, L, 'Service без provider', 'provider: {"@id": ".../#organization"}', 'Прив’язує послугу до компанії')
+        for n in ns:
+            if T(n) == 'Event':
+                if not n.get('image'): add(p, M, 'Event без image', 'Додати image (обкладинка вебінару 1200×630)', 'Потрібно для показу події в Google і превʼю в AI-відповідях')
+                perf = n.get('performer') or []
+                perf = perf if isinstance(perf, list) else [perf]
+                if any(isinstance(x, dict) and not (x.get('sameAs') or x.get('url')) for x in perf):
+                    add(p, L, 'Спікери в Event без url/sameAs', 'Додати кожному Person url (сторінка спікера) і sameAs (LinkedIn)', 'Звʼязує спікерів з їхніми профілями — сигнал експертизи для AI-пошуку')
+                if re.search(r'name=["\']robots["\'][^>]*noindex', raw): add(p, M, 'Event-розмітка на сторінці з noindex', 'Якщо потрібен показ події в Google — прибрати noindex; інакше розмітка не працює', 'Rich result для події неможливий на неіндексованій сторінці')
         if 'HowTo' in types: add(p, L, 'HowTo', 'Можна лишити, але rich result Google прибрав у 2023', 'Не шкодить, ефекту в Google немає')
     site_rows = []
     if len(sameas) > 1:
@@ -102,7 +110,9 @@ def main():
     if weak: site_rows.append([H, 'Organization (#organization)', 'Поля є на меншості сторінок (є/всього): ' + ', '.join(weak), 'Винести повний вузол Organization у спільний шаблон, однаковий на всіх сторінках', 'З цього вузла моделі будують уявлення про компанію'])
     if nologo: site_rows.append([M, 'Organization.logo', f'Немає logo на {len(set(nologo))} стор.', 'Підтягнути logo в усі шаблони', 'Неповна сутність'])
     if len(ratings) > 1: site_rows.append([H, 'AggregateRating', 'Різні значення: ' + '; '.join(f'{k} ({len(v)} стор.)' for k, v in sorted(ratings.items(), key=lambda x: -len(x[1]))), 'Одна цифра з одного джерела (Clutch) або прибрати', WHY['rating']])
+    scope = json.load(open(f'{a.work}/site.json')).get('scope')
     cur = lambda u: subprocess.run(['curl', '-sSL', '-A', 'Mozilla/5.0', '-w', '\n%{http_code}', u], capture_output=True, text=True).stdout
+    if scope == 'page': return finish(rows, site_rows, inv, a)
     llms = cur(site + '/llms.txt'); body, code = llms.rsplit('\n', 1) if '\n' in llms else ('', llms)
     if code.strip() != '200': site_rows.append([M, 'llms.txt', 'Файлу немає', 'Створити за llmstxt.org: опис компанії + списки посилань на ключові сторінки', 'Карта сайту для AI-агентів'])
     else:
@@ -111,6 +121,9 @@ def main():
     robots = cur(site + '/robots.txt')
     bots = [b for b in ('GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'ClaudeBot', 'Google-Extended') if b not in robots]
     site_rows.append([M if bots else L, 'robots.txt', 'Не згадані: ' + ', '.join(bots) if bots else 'AI-боти дозволені', 'Перевірити також блокування на рівні CDN/WAF за логами', 'Інакше дозвіл у robots.txt нічого не дає'])
+    finish(rows, site_rows, inv, a)
+
+def finish(rows, site_rows, inv, a):
     json.dump(rows, open(f'{a.work}/schema_pages.json', 'w'), ensure_ascii=False, indent=0)
     json.dump(site_rows, open(f'{a.work}/schema_site.json', 'w'), ensure_ascii=False, indent=0)
     json.dump({k: dict(v) for k, v in inv.items()}, open(f'{a.work}/schema_inventory.json', 'w'), ensure_ascii=False, indent=0)
