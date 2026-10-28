@@ -19,7 +19,7 @@ MIXED = rf'\b\w*(?:[A-Za-z]{CYR}|{CYR}[A-Za-z])\w*\b'
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--work', required=True)
-    ap.add_argument('--brand', default='MobiDev'); a = ap.parse_args()
+    ap.add_argument('--brand', default='', help='exact brand spelling, e.g. MobiDev (optional)'); a = ap.parse_args()
     D = f'{a.work}/txt'; meta = json.load(open(f'{D}/_meta.json'))
     F = collections.defaultdict(list)
     add = lambda c, p, t: F[c].append([p, t.strip()[:240]])
@@ -41,7 +41,7 @@ def main():
             for mm in re.finditer(r'\b[a-z]{3,}[.,][A-Z][a-z]{2,}\b', L):
                 if not re.search(r'\.(js|io|ai|NET|com|net|org|biz)', mm.group(0)): add('missing_space_after_punct', p, f'{mm.group(0)} :: {L}')
             if re.search(r"(by|to|of|up to|increased|decreased|reduced|grew)\s+%", L, re.I) and 'IMG' in L: add('alt_number_missing', p, L)
-            if not L.startswith('[IMG') and any(m.group(0) != a.brand for m in re.finditer(rf'\b{a.brand}\b', L, re.I)): add('brand_casing', p, L)
+            if a.brand and not L.startswith('[IMG') and any(m.group(0) != a.brand for m in re.finditer(rf'\b{a.brand}\b', L, re.I)): add('brand_casing', p, L)
             if L.endswith(':') and len(L) > 25 and (nxt.startswith('<H') or nxt == '<END>'): add('dangling_colon', p, f'{L}  →  {nxt[:60]}')
             if not (re.search(r'[{};=<>]|\(\)|//', L) and not L.startswith('<H')):
                 for w in re.findall(r"(?<![\w@./'’-])([a-z]{4,})(?![\w@/'’-])", L):

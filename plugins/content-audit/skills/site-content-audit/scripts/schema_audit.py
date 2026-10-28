@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Step 7. Structured-data (JSON-LD) audit for Google rich results and AI answer engines.
 
-Usage: python3 -I schema_audit.py --site https://mobidev.biz --work WORK
+Usage: python3 -I schema_audit.py --work WORK
 Writes WORK/schema_pages.json  [[slug, priority, problem, fix, why], ...]
        WORK/schema_site.json   [[priority, where, problem, fix, why], ...]  (site-wide, data-driven)
        WORK/schema_inventory.json  {section: {type: page_count}}
@@ -13,7 +13,7 @@ testimonial on page without Review/Quotation; team page without Person/ProfilePa
 Service without provider; HowTo (no Google rich result since 2023).
 Site-wide: Organization sameAs variants, missing Organization fields, rating values that differ
 between pages, llms.txt presence/links/stale numbers, AI bots in robots.txt.
-Section = first path segment; adjust SECTION names below for another site.
+Page kinds are detected from the first path segment (KINDS below); extend the lists for unusual URL schemes.
 """
 import argparse, os, re, json, collections, subprocess
 
@@ -30,6 +30,15 @@ def nodes(raw):
         except json.JSONDecodeError: err += 1
     return acc, err
 
+KINDS = {
+ 'blog': ('blog', 'articles', 'insights', 'news', 'posts', 'resources', 'journal', 'stories', 'trends-and-insights'),
+ 'case': ('case-studies', 'case-study', 'cases', 'portfolio', 'work', 'success-stories', 'customers', 'clients'),
+ 'team': ('our-team', 'team', 'authors', 'author', 'people', 'experts', 'about-us__team'),
+ 'service': ('services', 'service', 'solutions', 'expertise', 'industries'),
+}
+def kind(slug):
+    sg = slug.split('__')[0] if '__' in slug else ''
+    return next((k for k, v in KINDS.items() if sg in v), 'page')
 T = lambda n: n['@type'] if isinstance(n['@type'], str) else '/'.join(n['@type'])
 H, M, L = '1 Високий', '2 Середній', '3 Низький'
 WHY = {
@@ -41,13 +50,13 @@ WHY = {
 }
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--site', required=True); ap.add_argument('--work', required=True)
-    a = ap.parse_args(); site = a.site.rstrip('/')
+    ap = argparse.ArgumentParser(); ap.add_argument('--work', required=True)
+    a = ap.parse_args(); site = json.load(open(f'{a.work}/site.json'))['site']
     rows, inv = [], collections.defaultdict(collections.Counter)
     sameas, ratings, org_fields, nologo = collections.Counter(), collections.defaultdict(list), collections.Counter(), []
     add = lambda *r: rows.append(list(r))
     for fn in sorted(os.listdir(f'{a.work}/html')):
-        p = fn[:-5]; s = p.split('__')[0] if '__' in p else 'landing'
+        p = fn[:-5]; s = kind(p)
         raw = open(f'{a.work}/html/{fn}', encoding='utf-8', errors='ignore').read()
         ns, err = nodes(raw); types = [T(n) for n in ns]
         for t in set(types): inv[s][t] += 1
@@ -61,11 +70,11 @@ def main():
                 if 'logo' not in n: nologo.append(p)
             if T(n) == 'AggregateRating':
                 ratings[f"{n.get('ratingValue')}/{n.get('reviewCount') or n.get('ratingCount')}"].append(p)
-        if 'Product' in types and 'AggregateRating' in types and s not in ('product',):
+        if 'Product' in types and 'AggregateRating' in types and (s != 'page' or not {'Offer', 'AggregateOffer'} & set(types)):
             ar = next(n for n in ns if T(n) == 'AggregateRating')
             add(p, H, f"Послугу розмічено як Product з AggregateRating {ar.get('ratingValue')}/{ar.get('reviewCount') or ar.get('ratingCount')} без самих відгуків",
                 'Product → Service (provider → #organization, serviceType, areaServed); рейтинг прибрати або дати одну цифру з Clutch', WHY['rating'])
-        if faq_html and 'FAQPage' not in types: add(p, H if s in ('case-studies', 'services') else M, 'Видимий FAQ без FAQPage', 'Додати FAQPage з тими самими питаннями й відповідями', WHY['faq'])
+        if faq_html and 'FAQPage' not in types: add(p, H if s in ('case', 'service') else M, 'Видимий FAQ без FAQPage', 'Додати FAQPage з тими самими питаннями й відповідями', WHY['faq'])
         if types.count('FAQPage') > 1: add(p, M, 'Два FAQPage на сторінці', 'Залишити один', 'Помилка в Search Console')
         if video and 'VideoObject' not in types: add(p, M, 'Вбудоване відео без VideoObject', 'VideoObject: name, description, thumbnailUrl, uploadDate, embedUrl, duration, transcript', 'Відеоблоки Google, AI Overviews; транскрипт — текст для цитування')
         arts = [n for n in ns if T(n) in ('Article', 'BlogPosting', 'TechArticle', 'NewsArticle')]
@@ -77,11 +86,11 @@ def main():
                     add(p, H, 'Article без author-Person', 'author → Person з name, url (/our-team/…), jobTitle, sameAs', WHY['blog'])
                 elif not au.get('sameAs'): add(p, M, 'author без sameAs', 'Додати sameAs (LinkedIn)', 'Підтверджує реальну людину-експерта')
                 if not arts[0].get('image'): add(p, L, 'Article без image', 'Додати image ≥1200px', 'Прев’ю в rich results і AI-відповідях')
-        if s == 'case-studies':
+        if s == 'case':
             if not arts: add(p, H, 'Кейс розмічено лише як WebPage', 'Article (+additionalType CaseStudy): headline з результатом, дати, about → Service, mentions → клієнт (якщо публічний), keywords', WHY['case'])
             if re.search(r'testimonial', raw, re.I) and re.search(r'md-slider|single-testimonial', raw) and not ({'Review', 'Quotation'} & set(types)):
                 add(p, M, 'Відгук/цитата без розмітки', 'Review (itemReviewed → #organization, author → Person з посадою) або Quotation', 'Розмічений відгук — одиниця довіри, яку легко процитувати')
-        if s == 'our-team' and 'Person' not in types: add(p, H, 'Сторінка експерта без Person/ProfilePage', 'ProfilePage → Person (name, jobTitle, worksFor #organization, image, sameAs, knowsAbout)', WHY['person'])
+        if s == 'team' and 'Person' not in types and '__' in p: add(p, H, 'Сторінка експерта без Person/ProfilePage', 'ProfilePage → Person (name, jobTitle, worksFor #organization, image, sameAs, knowsAbout)', WHY['person'])
         if any(T(n) == 'Service' and 'provider' not in n for n in ns): add(p, L, 'Service без provider', 'provider: {"@id": ".../#organization"}', 'Прив’язує послугу до компанії')
         if 'HowTo' in types: add(p, L, 'HowTo', 'Можна лишити, але rich result Google прибрав у 2023', 'Не шкодить, ефекту в Google немає')
     site_rows = []

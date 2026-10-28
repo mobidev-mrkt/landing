@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Step 6. Merge agent findings, verify every quote against the page text, collapse template repeats.
 
-Usage: python3 -I verify_merge.py --site https://mobidev.biz --work WORK
+Usage: python3 -I verify_merge.py --work WORK
 Reads  WORK/out/*.jsonl (agent output), WORK/txt/*.txt
 Writes WORK/findings.json (verified, deduplicated) and WORK/cross_facts.json (company claims).
 
@@ -18,8 +18,8 @@ def nz(x):
     return re.sub(r'\s+', ' ', x).strip().lower()
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument('--site', required=True); ap.add_argument('--work', required=True)
-    a = ap.parse_args(); site = a.site.rstrip('/') + '/'
+    ap = argparse.ArgumentParser(); ap.add_argument('--work', required=True)
+    a = ap.parse_args(); site = json.load(open(f'{a.work}/site.json'))['site'] + '/'
     meta = json.load(open(f'{a.work}/txt/_meta.json')); cache = {}
     def page_text(url):
         k = url.replace(site, '').strip('/').replace('/', '__') or 'home'

@@ -24,5 +24,5 @@ The `quote` MUST be copied exactly from the batch file so it can be verified by 
 ## Extra notes (apply to every batch; matter most for blog posts)
 - Skip code samples, CLI commands, config snippets and data tables of identifiers entirely.
 - Competitor names and their descriptions in "top companies" listicles are fine; still report typos/grammar in our text about them.
-- Company-level claims about MobiDev (years in business, clients, projects, ratings, team size, "since YYYY") → `cross_fact` as before. Authors' personal experience years are NOT company facts.
+- Company-level claims about the site owner (years in business, clients, projects, ratings, team size, "since YYYY") → `cross_fact` as before. Authors' personal experience years are NOT company facts.
 - Also report `outdated` for statistics or "trends for 2023/2024"-style framing that now reads stale (compare against today's date, given in your task), and for "Read also"/links text that names a wrong year.
