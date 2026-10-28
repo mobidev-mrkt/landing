@@ -39,7 +39,7 @@ def main():
             t, q = page_text(r.get('url', '')), nz(re.sub(r'^(TITLE|META DESCRIPTION):\s*', '', r.get('quote', '')))
             (rows if t and q and q in t else bad).append(r)
     grp = collections.defaultdict(list)
-    for r in rows: grp[(nz(r['quote'])[:80], r['category'])].append(r)
+    for r in rows: grp[(nz(r['quote'])[:80], r['category'], nz(r.get('fix', ''))[:60])].append(r)
     out = []
     for g in grp.values():
         urls = sorted(set(x['url'] for x in g))
