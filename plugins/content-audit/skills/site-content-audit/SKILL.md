@@ -5,6 +5,9 @@ description: Content audit of a published website from a single link. Use when s
 
 # site-content-audit — "here's a link, audit the content"
 
+Files: proofreading brief [references/proof_brief.md](references/proof_brief.md) (given to every proofreading agent) ·
+JSON-LD templates [references/schema_templates.json](references/schema_templates.json) (land on the last report sheet) · scripts in `scripts/`.
+
 The person gives a link. You return one `.xlsx` and a short summary. Don't ask them to configure
 anything; decide from the link and the defaults below. Reply in the person's language.
 
@@ -21,7 +24,7 @@ Schema — весь сайт · Schema — по сторінках · Schema —
 
 ## The run
 ```bash
-S="<this skill's base directory>/scripts"
+S="${CLAUDE_SKILL_DIR}/scripts"   # this skill's folder; if the variable is empty, use the base directory shown when the skill loaded
 WORK="<scratch>/content-audit-<domain>-<YYYY-MM-DD>"
 python3 -I $S/crawl.py --url "<link>" --work $WORK            # 1. scope + download
 python3 -I $S/extract.py --work $WORK [--stop-regex '<footer text>']  # 2. main text + meta
