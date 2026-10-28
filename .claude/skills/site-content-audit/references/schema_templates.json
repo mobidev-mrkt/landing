@@ -1,0 +1,175 @@
+{
+  "Кейс (case study)": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "additionalType": "https://schema.org/CaseStudy",
+    "@id": "https://mobidev.biz/case-studies/<slug>#article",
+    "headline": "<H1 з головною цифрою>",
+    "description": "<1–2 речення: клієнт, задача, результат з цифрою>",
+    "image": "<URL hero ≥1200px>",
+    "datePublished": "2026-09-24",
+    "dateModified": "2026-09-30",
+    "author": {
+      "@id": "https://mobidev.biz/#organization"
+    },
+    "publisher": {
+      "@id": "https://mobidev.biz/#organization"
+    },
+    "mainEntityOfPage": "https://mobidev.biz/case-studies/<slug>",
+    "about": [
+      {
+        "@type": "Service",
+        "name": "AI SDLC Consulting",
+        "url": "https://mobidev.biz/services/<service>"
+      }
+    ],
+    "mentions": [
+      {
+        "@type": "Organization",
+        "name": "<клієнт, лише якщо публічний>"
+      }
+    ],
+    "keywords": "Retail, Ruby on Rails, AI SDLC, legacy modernization",
+    "review": {
+      "@type": "Review",
+      "reviewBody": "<цитата клієнта>",
+      "author": {
+        "@type": "Person",
+        "name": "<ім’я або «Owner»>",
+        "jobTitle": "<посада>",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "<компанія або «US retail operations platform»>"
+        }
+      },
+      "itemReviewed": {
+        "@id": "https://mobidev.biz/#organization"
+      }
+    }
+  },
+  "Стаття блогу": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://mobidev.biz/blog/<slug>#article",
+    "headline": "<H1>",
+    "description": "<meta description>",
+    "image": "<cover URL>",
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "author": {
+      "@type": "Person",
+      "@id": "https://mobidev.biz/our-team/<author>#person",
+      "name": "<Ім’я Прізвище>",
+      "jobTitle": "Solutions Architect",
+      "url": "https://mobidev.biz/our-team/<author>",
+      "sameAs": [
+        "https://www.linkedin.com/in/<author>"
+      ]
+    },
+    "publisher": {
+      "@id": "https://mobidev.biz/#organization"
+    },
+    "mainEntityOfPage": "https://mobidev.biz/blog/<slug>"
+  },
+  "Сторінка експерта (/our-team/)": {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://mobidev.biz/our-team/<author>#person",
+      "name": "<Ім’я Прізвище>",
+      "jobTitle": "<посада>",
+      "worksFor": {
+        "@id": "https://mobidev.biz/#organization"
+      },
+      "image": "<фото>",
+      "sameAs": [
+        "https://www.linkedin.com/in/<author>"
+      ],
+      "knowsAbout": [
+        "Ruby on Rails",
+        "AI SDLC",
+        "Legacy modernization"
+      ]
+    }
+  },
+  "Сервісна сторінка": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://mobidev.biz/services/<slug>#service",
+    "name": "<назва послуги>",
+    "serviceType": "<тип>",
+    "description": "<1–2 речення>",
+    "provider": {
+      "@id": "https://mobidev.biz/#organization"
+    },
+    "areaServed": [
+      "US",
+      "CA",
+      "GB",
+      "EU",
+      "AU"
+    ],
+    "url": "https://mobidev.biz/services/<slug>",
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "url": "https://mobidev.biz/case-studies/<related-case>"
+      }
+    ]
+  },
+  "Organization (один раз у шаблоні)": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://mobidev.biz/#organization",
+    "name": "MobiDev",
+    "url": "https://mobidev.biz/",
+    "logo": "<logo URL>",
+    "description": "<одне речення позиціонування, як у llms.txt і LinkedIn>",
+    "foundingDate": "2009",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Sacramento",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-916-243-0946",
+      "email": "contact@mobidev.biz",
+      "contactType": "sales"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/mobidev/",
+      "https://clutch.co/profile/mobidev",
+      "https://www.youtube.com/@MobidevBizCorp",
+      "https://x.com/MobiDev_",
+      "https://www.facebook.com/MobiDev.Corporation",
+      "https://www.reddit.com/r/MobiDev/",
+      "https://mobidev-biz.medium.com/",
+      "https://www.upwork.com/agencies/mobidev/"
+    ]
+  },
+  "Вебінар / відео": {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "<назва>",
+    "description": "<опис>",
+    "thumbnailUrl": "<URL>",
+    "uploadDate": "YYYY-MM-DD",
+    "duration": "PT58M",
+    "embedUrl": "https://www.youtube.com/embed/<id>",
+    "transcript": "<текст транскрипту або посилання>",
+    "publisher": {
+      "@id": "https://mobidev.biz/#organization"
+    }
+  }
+}
