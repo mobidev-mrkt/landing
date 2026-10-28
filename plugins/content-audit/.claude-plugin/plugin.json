@@ -1,0 +1,7 @@
+{
+  "name": "content-audit",
+  "version": "0.1.0",
+  "description": "Send a website link and say \"зроби аудит контенту\": crawls the site (or one section/page), proofreads every page with parallel agents, runs automatic checks and a JSON-LD schema audit for Google and AI search, and returns one Excel report with exact quotes, fixes and a status column.",
+  "author": { "name": "MobiDev Marketing" },
+  "keywords": ["content audit", "proofreading", "schema", "seo", "geo", "ai search", "website"]
+}

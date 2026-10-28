@@ -1,0 +1,12 @@
+{
+  "name": "mobidev-skills",
+  "owner": { "name": "MobiDev Marketing" },
+  "description": "Скіли маркетингу MobiDev для Claude Code",
+  "plugins": [
+    {
+      "name": "content-audit",
+      "source": "./plugins/content-audit",
+      "description": "Аудит контенту сайту за одним посиланням: вичитка, автоперевірки, schema для AI-пошуку, Excel-звіт."
+    }
+  ]
+}
