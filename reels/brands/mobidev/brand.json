@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "slug": "mobidev",
+  "name": "MobiDev",
+  "description": "",
+  "language": "en",
+  "colors": {
+    "primary": "#222222",
+    "accent": "#4AD57B",
+    "light": "#F7F7F7",
+    "text_on_primary": "#FFFFFF",
+    "text_on_accent": "#222222",
+    "extra": {
+      "white": "#FFFFFF",
+      "gradient_from": "#2EB0F1",
+      "gradient_to": "#12B292"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Inter",
+      "weights": [
+        600,
+        700,
+        800
+      ],
+      "source": "google"
+    },
+    "body": {
+      "family": "Open Sans",
+      "weights": [
+        500,
+        600,
+        700
+      ],
+      "source": "google"
+    }
+  },
+  "logos": {
+    "on_light": "assets/mobidev-logo.png"
+  },
+  "lut": null,
+  "tagline": "",
+  "guide": null,
+  "rules": "rules.md",
+  "styles": {
+    "default": "marker",
+    "allowed": [
+      "marker",
+      "brand",
+      "minimal",
+      "editorial",
+      "bold"
+    ]
+  },
+  "subtitles_default": "accent",
+  "motion": null,
+  "tone": {
+    "preset": "expert"
+  },
+  "voice": "",
+  "forbidden_imagery": [],
+  "forbidden_imagery_en": [],
+  "cta_library": null,
+  "asset_verdicts": null,
+  "approver": "brand owner (to confirm)",
+  "account": "business",
+  "music_policy": "do not burn in without a commercial license; pick the track in the app when publishing",
+  "memes_policy": "strict",
+  "inserts": {},
+  "brandbook": [],
+  "fonts_found": null,
+  "examples": [],
+  "derived": [],
+  "created": "2026-10-30",
+  "updated": "2026-10-30",
+  "last_used": null
+}
