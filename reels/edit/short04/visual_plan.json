@@ -1,0 +1,488 @@
+{
+ "schema": 1,
+ "id": "short04",
+ "created": "2026-10-30T18:36",
+ "duration": 44.3,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 4.915,
+   "text": "First thing which you will notice and Serhii mentioned about that, that actually",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 12.8 s segment without a cut: room for a change of picture",
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 4.915,
+   "end": 8.606,
+   "text": "code writing speed is increased even by 30, 40%.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 12.8 s segment without a cut: room for a change of picture",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 8.606,
+   "end": 10.224,
+   "text": "And you think, whoa, cool.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 12.8 s segment without a cut: room for a change of picture",
+    "scene:list - an enumeration -> a list scene (items on their own words)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 10.224,
+   "end": 11.552,
+   "text": "Now we should deliver faster.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 12.8 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 11.552,
+   "end": 16.367,
+   "text": "But then you realize that like code review and QA verification degrades by 50%",
+   "cut_segs": [
+    0,
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 12.8 s segment without a cut: room for a change of picture",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 16.367,
+   "end": 17.761,
+   "text": "because like",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 17.761,
+   "end": 23.342,
+   "text": "QA team and architects can do a review and verify such a huge amount of user stories,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 13.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 23.342,
+   "end": 26.161,
+   "text": "tasks. And as a delivery manager,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 26.161,
+   "end": 31.03,
+   "text": "you see the time to market it actually the same or it's getting worse.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 31.03,
+   "end": 35.448,
+   "text": "do some cleaning with legacy code, prepare the project for AI integration and",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 35.448,
+   "end": 39.521,
+   "text": "don't forget to remember that you will have to apply AI to the complete",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 39.521,
+   "end": 44.3,
+   "text": "software development life cycle not just a separate stages of the software development life cycle.",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.7 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "stat",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s02",
+   "start": 5.442,
+   "dur": 5.0,
+   "at": "word:speed#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "code writing speed"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": null,
+   "value": {
+    "from": 30,
+    "to": 40,
+    "prefix": "+",
+    "suffix": "%"
+   },
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    480,
+    360
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "26:24-26:28"
+   },
+   "what": "+30-40% code writing speed",
+   "why": "the number the argument starts from",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": false,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "stat",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s05",
+   "start": 14.815,
+   "dur": 5.5,
+   "at": "word:degrades#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "code review and QA verification"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": null,
+   "value": {
+    "from": 0,
+    "to": 50,
+    "prefix": "−",
+    "suffix": "%"
+   },
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    230,
+    900,
+    370
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "26:31-26:36"
+   },
+   "what": "-50% review and QA throughput",
+   "why": "the bottleneck number",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": false,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [
+  {
+   "start": 5.442,
+   "end": 10.442,
+   "box": [
+    60,
+    250,
+    480,
+    360
+   ],
+   "what": "scene c01 stat (overlay)",
+   "scene": "c01",
+   "mode": "overlay"
+  },
+  {
+   "start": 14.815,
+   "end": 20.315,
+   "box": [
+    60,
+    230,
+    900,
+    370
+   ],
+   "what": "scene c02 stat (overlay)",
+   "scene": "c02",
+   "mode": "overlay"
+  }
+ ],
+ "captions_id": "7201d2af69ab",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "window": [
+   25,
+   480,
+   1030,
+   1000
+  ],
+  "speaker": "IEVGEN ZADOROZHNYI · PRODUCT MANAGER",
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "window": "reel.json",
+  "speaker": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 5,
+  "coverage_max_s": 9.75
+ },
+ "subtitles_band": [
+  1292,
+  1460
+ ],
+ "end_card": {
+  "kind": "card",
+  "seconds": 2.6
+ }
+}

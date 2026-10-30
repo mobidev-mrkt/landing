@@ -1,0 +1,353 @@
+{
+ "schema": 1,
+ "id": "short09",
+ "created": "2026-10-30T18:36",
+ "duration": 24.9,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 1.767,
+   "text": "So what I want you",
+   "cut_segs": [
+    0,
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 1.767,
+   "end": 4.836,
+   "text": "to take from this is like three questions.",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 4.836,
+   "end": 8.655,
+   "text": "When you're thinking about writing the legacy with AI.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 6.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 8.655,
+   "end": 13.012,
+   "text": "So first question can AI see the whole system",
+   "cut_segs": [
+    3,
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 6.2 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 13.012,
+   "end": 17.448,
+   "text": "second question is does it know your rules and the third question will you",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 6.3 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 17.448,
+   "end": 19.333,
+   "text": "notice if it breaks something.",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 6.3 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 19.333,
+   "end": 23.333,
+   "text": "If you have three yes to all the questions AI can help with the legacy migration.",
+   "cut_segs": [
+    6
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a number -> a card works better than B-roll",
+    "ending/CTA: no memes here",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 23.333,
+   "end": 24.9,
+   "text": "it's the setup that makes it safe.",
+   "cut_segs": [
+    7
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s04",
+   "start": 8.764,
+   "dur": 14.0,
+   "at": "word:first#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "3 questions"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "Can AI see the whole system?",
+     "at": "word:see#1",
+     "t": 11.739
+    },
+    {
+     "text": "Does it know your rules?",
+     "at": "word:know#1",
+     "t": 14.43
+    },
+    {
+     "text": "Will you notice if it breaks something?",
+     "at": "word:notice#1",
+     "t": 17.448
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    480,
+    360
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "20:55-21:13"
+   },
+   "what": "the three questions",
+   "why": "the checklist the video promises",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "41f79cf290bb",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
+  "window": [
+   25,
+   480,
+   1030,
+   1000
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 3,
+  "coverage_max_s": 5.48
+ }
+}

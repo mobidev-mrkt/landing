@@ -1,0 +1,465 @@
+{
+ "schema": 1,
+ "id": "short01",
+ "created": "2026-10-30T18:36",
+ "duration": 39.333,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.642,
+   "text": "If only the developers get the engine,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 2.642,
+   "end": 4.521,
+   "text": "everyone else becomes the bottleneck.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 4.521,
+   "end": 6.958,
+   "text": "Last year, we started with coding.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 6.958,
+   "end": 10.067,
+   "text": "We called it AI-driven development.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 10.067,
+   "end": 12.467,
+   "text": "And yes, developers got faster.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 12.467,
+   "end": 17.121,
+   "text": "But when we rolled it out wider,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 17.121,
+   "end": 19.212,
+   "text": "delivery didn't get faster.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 19.212,
+   "end": 22.703,
+   "text": "Teams were redoing work over and over again,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 22.703,
+   "end": 26.267,
+   "text": "or teams were just waiting for a spec,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 26.267,
+   "end": 28.267,
+   "text": "for the QA or something else.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 28.267,
+   "end": 31.927,
+   "text": "That's when this AI SDLC clicked.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 27.1 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 31.927,
+   "end": 36.327,
+   "text": "So my definition of AI SDLC is when AI is in every stage of",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.1 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 36.327,
+   "end": 39.333,
+   "text": "the cycle, not just in the IDE.",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.1 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s08",
+   "start": 20.03,
+   "dur": 8.6,
+   "at": "word:redoing#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "What slowed delivery"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "Redoing work over and over",
+     "at": "word:redoing#1",
+     "t": 20.03
+    },
+    {
+     "text": "Waiting for a spec",
+     "at": "word:waiting#1",
+     "t": 23.885
+    },
+    {
+     "text": "Waiting for QA",
+     "at": "word:QA#1",
+     "t": 26.648
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    600,
+    450
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "06:15-06:28"
+   },
+   "what": "list of what blocked delivery",
+   "why": "turns the problem into three readable items",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "quote",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s12",
+   "start": 32.255,
+   "dur": 7.05,
+   "at": "word:definition#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "AI is in every stage of the cycle,",
+     "not just in the IDE"
+    ],
+    "accent": "every stage",
+    "label": "SERHII IVANOV"
+   },
+   "items": null,
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    600,
+    450
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "06:36-06:44"
+   },
+   "what": "the definition as a quote",
+   "why": "the video's main thought, named speaker",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "a2e1f4f43084",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
+  "window": [
+   25,
+   480,
+   1030,
+   1000
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 4,
+  "coverage_max_s": 8.65
+ }
+}

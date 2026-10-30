@@ -1,0 +1,470 @@
+{
+ "schema": 1,
+ "id": "short08",
+ "created": "2026-10-30T18:36",
+ "duration": 48.167,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.297,
+   "text": "a little scary story.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.297,
+   "end": 7.615,
+   "text": "On one .NET project a very very motivated engineer decided to",
+   "cut_segs": [
+    0,
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 7.615,
+   "end": 9.852,
+   "text": "save everyone a few months.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 9.852,
+   "end": 15.048,
+   "text": "Friday evening he asked the agent to migrate the whole repo to .NET 8.",
+   "cut_segs": [
+    1,
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 15.048,
+   "end": 19.23,
+   "text": "By Monday we had a pull request with thousands of change lines.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 15.5 s segment without a cut: room for a change of picture",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 19.23,
+   "end": 23.558,
+   "text": "It compiled but no one could review it because like it's too much",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 15.5 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 23.558,
+   "end": 26.467,
+   "text": "and no one could say exactly what has changed.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 15.5 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 26.467,
+   "end": 30.0,
+   "text": "So we rolled it back zero value a lot of effort.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 15.5 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 30.0,
+   "end": 32.133,
+   "text": "What worked later",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 32.133,
+   "end": 37.494,
+   "text": "is less exciting but more practical.",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 37.494,
+   "end": 42.427,
+   "text": "We migrated one point, reviewed it together with the team and agreed",
+   "cut_segs": [
+    6
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 42.427,
+   "end": 47.582,
+   "text": "on a pattern. Then we write that pattern down and repeat it in small reviewable",
+   "cut_segs": [
+    7,
+    8
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 47.582,
+   "end": 48.167,
+   "text": "batches",
+   "cut_segs": [
+    8
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "quote",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s08",
+   "start": 27.412,
+   "dur": 3.4,
+   "at": "word:back#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "Zero value,",
+     "a lot of effort"
+    ],
+    "accent": "Zero value",
+    "label": "SERHII IVANOV"
+   },
+   "items": null,
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    600,
+    450
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "20:15-20:19"
+   },
+   "what": "the result of the big-bang migration",
+   "why": "the punchline of the story",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s11",
+   "start": 37.603,
+   "dur": 10.5,
+   "at": "word:migrated#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "What worked"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "Migrate one part",
+     "at": "word:migrated#1",
+     "t": 37.603
+    },
+    {
+     "text": "Review it with the team",
+     "at": "word:reviewed#1",
+     "t": 39.058
+    },
+    {
+     "text": "Agree on a pattern",
+     "at": "word:agreed#1",
+     "t": 41.948
+    },
+    {
+     "text": "Repeat in small batches",
+     "at": "word:repeat#1",
+     "t": 45.8
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    250,
+    480,
+    360
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "20:28-20:41"
+   },
+   "what": "the safe migration, step by step",
+   "why": "the lesson as a checklist",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "5fb1c1f4d713",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
+  "window": [
+   25,
+   480,
+   1030,
+   1000
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 5,
+  "coverage_max_s": 10.6
+ }
+}
