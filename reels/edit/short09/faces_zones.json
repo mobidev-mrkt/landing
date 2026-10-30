@@ -1,0 +1,176 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  480,
+  1030,
+  1000
+ ],
+ "segments": [
+  {
+   "id": "k00",
+   "start": 0.0,
+   "end": 0.433,
+   "face": [
+    322,
+    768,
+    303,
+    380
+   ],
+   "ceiling": [
+    480,
+    708
+   ],
+   "chest": null,
+   "left": 237,
+   "right": 275,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k01",
+   "start": 0.433,
+   "end": 1.5,
+   "face": [
+    322,
+    746,
+    355,
+    402
+   ],
+   "ceiling": [
+    480,
+    686
+   ],
+   "chest": null,
+   "left": 237,
+   "right": 223,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k02",
+   "start": 1.5,
+   "end": 4.667,
+   "face": [
+    364,
+    746,
+    313,
+    412
+   ],
+   "ceiling": [
+    480,
+    686
+   ],
+   "chest": null,
+   "left": 279,
+   "right": 223,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k03",
+   "start": 4.667,
+   "end": 10.867,
+   "face": [
+    308,
+    757,
+    359,
+    413
+   ],
+   "ceiling": [
+    480,
+    697
+   ],
+   "chest": null,
+   "left": 223,
+   "right": 233,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k04",
+   "start": 10.867,
+   "end": 13.0,
+   "face": [
+    361,
+    750,
+    335,
+    419
+   ],
+   "ceiling": [
+    480,
+    690
+   ],
+   "chest": null,
+   "left": 276,
+   "right": 204,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k05",
+   "start": 13.0,
+   "end": 19.333,
+   "face": [
+    287,
+    753,
+    390,
+    447
+   ],
+   "ceiling": [
+    480,
+    693
+   ],
+   "chest": null,
+   "left": 202,
+   "right": 223,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k06",
+   "start": 19.333,
+   "end": 23.266,
+   "face": [
+    287,
+    766,
+    507,
+    481
+   ],
+   "ceiling": [
+    480,
+    706
+   ],
+   "chest": null,
+   "left": 202,
+   "right": 106,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k07",
+   "start": 23.267,
+   "end": 24.9,
+   "face": [
+    471,
+    771,
+    335,
+    433
+   ],
+   "ceiling": [
+    480,
+    711
+   ],
+   "chest": null,
+   "left": 386,
+   "right": 94,
+   "sub_ok": true,
+   "cut_top": false
+  }
+ ]
+}

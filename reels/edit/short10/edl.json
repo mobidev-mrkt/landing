@@ -1,0 +1,70 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/s10.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.05:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 3.8,
+   "end": 26.033,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 29.533,
+   "end": 36.9,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 37.1,
+   "end": 40.3,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 49.5,
+   "end": 50.933,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 51.267,
+   "end": 60.233,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 60.633,
+   "end": 65.733,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 65.933,
+   "end": 73.833,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 85.5,
+   "end": 90.233,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 55.367
+}

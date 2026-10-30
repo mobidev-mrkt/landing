@@ -1,0 +1,757 @@
+{
+ "duration": 36.933,
+ "segments": [
+  {
+   "i": 0,
+   "source": "main",
+   "src_start": 11.8,
+   "src_end": 19.767,
+   "out_start": 0.0,
+   "out_dur": 7.233,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 1,
+   "source": "main",
+   "src_start": 31.1,
+   "src_end": 33.6,
+   "out_start": 7.233,
+   "out_dur": 2.267,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 2,
+   "source": "main",
+   "src_start": 33.867,
+   "src_end": 35.333,
+   "out_start": 9.5,
+   "out_dur": 1.333,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 3,
+   "source": "main",
+   "src_start": 35.567,
+   "src_end": 59.767,
+   "out_start": 10.833,
+   "out_dur": 22.0,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 4,
+   "source": "main",
+   "src_start": 60.067,
+   "src_end": 64.567,
+   "out_start": 32.833,
+   "out_dur": 4.1,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "words": [
+  {
+   "text": "Code",
+   "src": 12.08,
+   "start": 0.255,
+   "end": 0.491,
+   "seg": 0
+  },
+  {
+   "text": "goes",
+   "src": 12.34,
+   "start": 0.491,
+   "end": 0.782,
+   "seg": 0
+  },
+  {
+   "text": "cheap",
+   "src": 12.66,
+   "start": 0.782,
+   "end": 1.109,
+   "seg": 0
+  },
+  {
+   "text": "and",
+   "src": 13.02,
+   "start": 1.109,
+   "end": 1.545,
+   "seg": 0
+  },
+  {
+   "text": "the",
+   "src": 13.5,
+   "start": 1.545,
+   "end": 1.745,
+   "seg": 0
+  },
+  {
+   "text": "bottleneck",
+   "src": 13.72,
+   "start": 1.745,
+   "end": 2.109,
+   "seg": 0
+  },
+  {
+   "text": "moves",
+   "src": 14.12,
+   "start": 2.109,
+   "end": 2.273,
+   "seg": 0
+  },
+  {
+   "text": "somewhere",
+   "src": 14.3,
+   "start": 2.273,
+   "end": 2.636,
+   "seg": 0
+  },
+  {
+   "text": "else.",
+   "src": 14.7,
+   "start": 2.636,
+   "end": 3.018,
+   "seg": 0
+  },
+  {
+   "text": "That's",
+   "src": 15.52,
+   "start": 3.382,
+   "end": 3.8,
+   "seg": 0
+  },
+  {
+   "text": "the",
+   "src": 15.98,
+   "start": 3.8,
+   "end": 3.873,
+   "seg": 0
+  },
+  {
+   "text": "real",
+   "src": 16.06,
+   "start": 3.873,
+   "end": 4.036,
+   "seg": 0
+  },
+  {
+   "text": "change",
+   "src": 16.24,
+   "start": 4.036,
+   "end": 4.382,
+   "seg": 0
+  },
+  {
+   "text": "and",
+   "src": 16.62,
+   "start": 4.382,
+   "end": 5.0,
+   "seg": 0
+  },
+  {
+   "text": "in",
+   "src": 17.3,
+   "start": 5.0,
+   "end": 5.236,
+   "seg": 0
+  },
+  {
+   "text": "how",
+   "src": 17.56,
+   "start": 5.236,
+   "end": 5.345,
+   "seg": 0
+  },
+  {
+   "text": "we",
+   "src": 17.68,
+   "start": 5.345,
+   "end": 5.582,
+   "seg": 0
+  },
+  {
+   "text": "work.",
+   "src": 17.94,
+   "start": 5.582,
+   "end": 5.764,
+   "seg": 0
+  },
+  {
+   "text": "And",
+   "src": 18.42,
+   "start": 6.018,
+   "end": 6.364,
+   "seg": 0
+  },
+  {
+   "text": "that's",
+   "src": 18.8,
+   "start": 6.364,
+   "end": 6.6,
+   "seg": 0
+  },
+  {
+   "text": "not",
+   "src": 19.06,
+   "start": 6.6,
+   "end": 6.727,
+   "seg": 0
+  },
+  {
+   "text": "the",
+   "src": 19.2,
+   "start": 6.727,
+   "end": 6.855,
+   "seg": 0
+  },
+  {
+   "text": "marketing.",
+   "src": 19.34,
+   "start": 6.855,
+   "end": 7.2,
+   "seg": 0
+  },
+  {
+   "text": "if",
+   "src": 31.1,
+   "start": 7.233,
+   "end": 8.052,
+   "seg": 1
+  },
+  {
+   "text": "it's",
+   "src": 32.0,
+   "start": 8.052,
+   "end": 8.288,
+   "seg": 1
+  },
+  {
+   "text": "a",
+   "src": 32.26,
+   "start": 8.288,
+   "end": 8.397,
+   "seg": 1
+  },
+  {
+   "text": "buzzword,",
+   "src": 32.38,
+   "start": 8.397,
+   "end": 8.815,
+   "seg": 1
+  },
+  {
+   "text": "sometimes",
+   "src": 32.92,
+   "start": 8.888,
+   "end": 9.506,
+   "seg": 1
+  },
+  {
+   "text": "when",
+   "src": 33.86,
+   "start": 9.5,
+   "end": 10.694,
+   "seg": 2
+  },
+  {
+   "text": "you",
+   "src": 35.18,
+   "start": 10.833,
+   "end": 11.209,
+   "seg": 3
+  },
+  {
+   "text": "hear",
+   "src": 35.98,
+   "start": 11.209,
+   "end": 11.445,
+   "seg": 3
+  },
+  {
+   "text": "a",
+   "src": 36.24,
+   "start": 11.445,
+   "end": 11.555,
+   "seg": 3
+  },
+  {
+   "text": "company",
+   "src": 36.36,
+   "start": 11.555,
+   "end": 11.882,
+   "seg": 3
+  },
+  {
+   "text": "brag",
+   "src": 36.72,
+   "start": 11.882,
+   "end": 12.191,
+   "seg": 3
+  },
+  {
+   "text": "about",
+   "src": 37.06,
+   "start": 12.191,
+   "end": 12.736,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 37.66,
+   "start": 12.736,
+   "end": 13.427,
+   "seg": 3
+  },
+  {
+   "text": "percentage",
+   "src": 38.42,
+   "start": 13.427,
+   "end": 13.918,
+   "seg": 3
+  },
+  {
+   "text": "of",
+   "src": 38.96,
+   "start": 13.918,
+   "end": 14.518,
+   "seg": 3
+  },
+  {
+   "text": "code",
+   "src": 39.62,
+   "start": 14.518,
+   "end": 14.664,
+   "seg": 3
+  },
+  {
+   "text": "written",
+   "src": 39.78,
+   "start": 14.664,
+   "end": 14.991,
+   "seg": 3
+  },
+  {
+   "text": "by",
+   "src": 40.14,
+   "start": 14.991,
+   "end": 15.282,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 40.46,
+   "start": 15.282,
+   "end": 15.427,
+   "seg": 3
+  },
+  {
+   "text": "AI",
+   "src": 40.62,
+   "start": 15.427,
+   "end": 15.791,
+   "seg": 3
+  },
+  {
+   "text": "or",
+   "src": 41.02,
+   "start": 15.791,
+   "end": 16.173,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 41.44,
+   "start": 16.173,
+   "end": 16.282,
+   "seg": 3
+  },
+  {
+   "text": "number",
+   "src": 41.56,
+   "start": 16.282,
+   "end": 16.609,
+   "seg": 3
+  },
+  {
+   "text": "of",
+   "src": 41.92,
+   "start": 16.609,
+   "end": 17.355,
+   "seg": 3
+  },
+  {
+   "text": "code",
+   "src": 42.74,
+   "start": 17.355,
+   "end": 17.573,
+   "seg": 3
+  },
+  {
+   "text": "licenses,",
+   "src": 42.98,
+   "start": 17.573,
+   "end": 18.064,
+   "seg": 3
+  },
+  {
+   "text": "that's",
+   "src": 44.44,
+   "start": 18.9,
+   "end": 19.5,
+   "seg": 3
+  },
+  {
+   "text": "totally",
+   "src": 45.1,
+   "start": 19.5,
+   "end": 19.718,
+   "seg": 3
+  },
+  {
+   "text": "a",
+   "src": 45.34,
+   "start": 19.718,
+   "end": 19.864,
+   "seg": 3
+  },
+  {
+   "text": "buzzword.",
+   "src": 45.5,
+   "start": 19.864,
+   "end": 20.264,
+   "seg": 3
+  },
+  {
+   "text": "If",
+   "src": 46.6,
+   "start": 20.864,
+   "end": 21.045,
+   "seg": 3
+  },
+  {
+   "text": "they",
+   "src": 46.8,
+   "start": 21.045,
+   "end": 21.391,
+   "seg": 3
+  },
+  {
+   "text": "can",
+   "src": 47.18,
+   "start": 21.391,
+   "end": 21.645,
+   "seg": 3
+  },
+  {
+   "text": "show",
+   "src": 47.46,
+   "start": 21.645,
+   "end": 21.882,
+   "seg": 3
+  },
+  {
+   "text": "you",
+   "src": 47.72,
+   "start": 21.882,
+   "end": 22.355,
+   "seg": 3
+  },
+  {
+   "text": "a",
+   "src": 48.24,
+   "start": 22.355,
+   "end": 22.464,
+   "seg": 3
+  },
+  {
+   "text": "written",
+   "src": 48.36,
+   "start": 22.464,
+   "end": 22.718,
+   "seg": 3
+  },
+  {
+   "text": "spec",
+   "src": 48.64,
+   "start": 22.718,
+   "end": 23.264,
+   "seg": 3
+  },
+  {
+   "text": "before",
+   "src": 49.24,
+   "start": 23.264,
+   "end": 24.518,
+   "seg": 3
+  },
+  {
+   "text": "code",
+   "src": 50.62,
+   "start": 24.518,
+   "end": 24.773,
+   "seg": 3
+  },
+  {
+   "text": "generations,",
+   "src": 50.9,
+   "start": 24.773,
+   "end": 25.318,
+   "seg": 3
+  },
+  {
+   "text": "if",
+   "src": 51.82,
+   "start": 25.609,
+   "end": 25.718,
+   "seg": 3
+  },
+  {
+   "text": "they",
+   "src": 51.94,
+   "start": 25.718,
+   "end": 25.882,
+   "seg": 3
+  },
+  {
+   "text": "can",
+   "src": 52.12,
+   "start": 25.882,
+   "end": 26.045,
+   "seg": 3
+  },
+  {
+   "text": "show",
+   "src": 52.3,
+   "start": 26.045,
+   "end": 26.191,
+   "seg": 3
+  },
+  {
+   "text": "you",
+   "src": 52.46,
+   "start": 26.191,
+   "end": 26.373,
+   "seg": 3
+  },
+  {
+   "text": "context",
+   "src": 52.66,
+   "start": 26.373,
+   "end": 26.609,
+   "seg": 3
+  },
+  {
+   "text": "files",
+   "src": 52.92,
+   "start": 26.609,
+   "end": 26.991,
+   "seg": 3
+  },
+  {
+   "text": "in",
+   "src": 53.34,
+   "start": 26.991,
+   "end": 27.227,
+   "seg": 3
+  },
+  {
+   "text": "their",
+   "src": 53.6,
+   "start": 27.227,
+   "end": 27.427,
+   "seg": 3
+  },
+  {
+   "text": "repositories,",
+   "src": 53.82,
+   "start": 27.427,
+   "end": 28.027,
+   "seg": 3
+  },
+  {
+   "text": "if",
+   "src": 54.92,
+   "start": 28.427,
+   "end": 28.682,
+   "seg": 3
+  },
+  {
+   "text": "they",
+   "src": 55.2,
+   "start": 28.682,
+   "end": 28.845,
+   "seg": 3
+  },
+  {
+   "text": "can",
+   "src": 55.38,
+   "start": 28.845,
+   "end": 28.991,
+   "seg": 3
+  },
+  {
+   "text": "show",
+   "src": 55.54,
+   "start": 28.991,
+   "end": 29.209,
+   "seg": 3
+  },
+  {
+   "text": "you",
+   "src": 55.78,
+   "start": 29.209,
+   "end": 29.336,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 55.92,
+   "start": 29.336,
+   "end": 29.882,
+   "seg": 3
+  },
+  {
+   "text": "process",
+   "src": 56.52,
+   "start": 29.882,
+   "end": 29.973,
+   "seg": 3
+  },
+  {
+   "text": "with",
+   "src": 56.62,
+   "start": 29.973,
+   "end": 30.3,
+   "seg": 3
+  },
+  {
+   "text": "reviewers",
+   "src": 56.98,
+   "start": 30.3,
+   "end": 30.755,
+   "seg": 3
+  },
+  {
+   "text": "who",
+   "src": 57.48,
+   "start": 30.755,
+   "end": 30.991,
+   "seg": 3
+  },
+  {
+   "text": "is",
+   "src": 57.74,
+   "start": 30.991,
+   "end": 31.173,
+   "seg": 3
+  },
+  {
+   "text": "responsible",
+   "src": 57.94,
+   "start": 31.173,
+   "end": 31.609,
+   "seg": 3
+  },
+  {
+   "text": "for",
+   "src": 58.42,
+   "start": 31.609,
+   "end": 32.118,
+   "seg": 3
+  },
+  {
+   "text": "these",
+   "src": 58.98,
+   "start": 32.118,
+   "end": 32.373,
+   "seg": 3
+  },
+  {
+   "text": "files,",
+   "src": 59.26,
+   "start": 32.373,
+   "end": 32.791,
+   "seg": 3
+  },
+  {
+   "text": "then",
+   "src": 61.28,
+   "start": 33.936,
+   "end": 34.3,
+   "seg": 4
+  },
+  {
+   "text": "they're",
+   "src": 61.68,
+   "start": 34.3,
+   "end": 34.773,
+   "seg": 4
+  },
+  {
+   "text": "actually",
+   "src": 62.2,
+   "start": 34.773,
+   "end": 35.009,
+   "seg": 4
+  },
+  {
+   "text": "doing",
+   "src": 62.46,
+   "start": 35.009,
+   "end": 35.209,
+   "seg": 4
+  },
+  {
+   "text": "something",
+   "src": 62.68,
+   "start": 35.209,
+   "end": 35.536,
+   "seg": 4
+  },
+  {
+   "text": "and",
+   "src": 63.04,
+   "start": 35.536,
+   "end": 35.864,
+   "seg": 4
+  },
+  {
+   "text": "it's",
+   "src": 63.4,
+   "start": 35.864,
+   "end": 36.191,
+   "seg": 4
+  },
+  {
+   "text": "not",
+   "src": 63.76,
+   "start": 36.191,
+   "end": 36.264,
+   "seg": 4
+  },
+  {
+   "text": "just",
+   "src": 63.84,
+   "start": 36.264,
+   "end": 36.555,
+   "seg": 4
+  },
+  {
+   "text": "a",
+   "src": 64.16,
+   "start": 36.555,
+   "end": 36.682,
+   "seg": 4
+  },
+  {
+   "text": "buzzword.",
+   "src": 64.3,
+   "start": 36.682,
+   "end": 36.924,
+   "seg": 4
+  }
+ ]
+}

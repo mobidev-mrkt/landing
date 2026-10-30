@@ -1,0 +1,176 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  480,
+  1030,
+  1000
+ ],
+ "segments": [
+  {
+   "id": "k00",
+   "start": 0.0,
+   "end": 20.2,
+   "face": [
+    372,
+    777,
+    432,
+    496
+   ],
+   "ceiling": [
+    480,
+    717
+   ],
+   "chest": null,
+   "left": 287,
+   "right": 96,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k01",
+   "start": 20.2,
+   "end": 26.9,
+   "face": [
+    372,
+    704,
+    420,
+    569
+   ],
+   "ceiling": [
+    480,
+    644
+   ],
+   "chest": null,
+   "left": 287,
+   "right": 108,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k02",
+   "start": 26.9,
+   "end": 29.799999999999997,
+   "face": [
+    353,
+    753,
+    496,
+    436
+   ],
+   "ceiling": [
+    480,
+    693
+   ],
+   "chest": null,
+   "left": 268,
+   "right": 51,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k03",
+   "start": 29.8,
+   "end": 31.1,
+   "face": [
+    358,
+    729,
+    392,
+    460
+   ],
+   "ceiling": [
+    480,
+    669
+   ],
+   "chest": null,
+   "left": 273,
+   "right": 150,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k04",
+   "start": 31.1,
+   "end": 39.267,
+   "face": [
+    427,
+    729,
+    331,
+    407
+   ],
+   "ceiling": [
+    480,
+    669
+   ],
+   "chest": null,
+   "left": 342,
+   "right": 142,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k05",
+   "start": 39.267,
+   "end": 43.900000000000006,
+   "face": [
+    439,
+    720,
+    360,
+    443
+   ],
+   "ceiling": [
+    480,
+    660
+   ],
+   "chest": null,
+   "left": 354,
+   "right": 101,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k06",
+   "start": 43.9,
+   "end": 51.067,
+   "face": [
+    430,
+    720,
+    362,
+    474
+   ],
+   "ceiling": [
+    480,
+    660
+   ],
+   "chest": null,
+   "left": 345,
+   "right": 108,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "k07",
+   "start": 51.067,
+   "end": 55.367,
+   "face": [
+    412,
+    772,
+    413,
+    455
+   ],
+   "ceiling": [
+    480,
+    712
+   ],
+   "chest": null,
+   "left": 327,
+   "right": 75,
+   "sub_ok": false,
+   "cut_top": false
+  }
+ ]
+}

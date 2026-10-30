@@ -1,0 +1,96 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  480,
+  1030,
+  1000
+ ],
+ "segments": [
+  {
+   "id": "k00",
+   "start": 0.0,
+   "end": 5.8,
+   "face": [
+    414,
+    773,
+    352,
+    466
+   ],
+   "ceiling": [
+    480,
+    713
+   ],
+   "chest": null,
+   "left": 329,
+   "right": 134,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k01",
+   "start": 5.8,
+   "end": 8.966999999999999,
+   "face": [
+    417,
+    784,
+    328,
+    460
+   ],
+   "ceiling": [
+    480,
+    724
+   ],
+   "chest": null,
+   "left": 332,
+   "right": 155,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k02",
+   "start": 8.967,
+   "end": 35.967,
+   "face": [
+    369,
+    700,
+    452,
+    563
+   ],
+   "ceiling": [
+    480,
+    640
+   ],
+   "chest": null,
+   "left": 284,
+   "right": 79,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "k03",
+   "start": 35.967,
+   "end": 46.034,
+   "face": [
+    410,
+    732,
+    439,
+    509
+   ],
+   "ceiling": [
+    480,
+    672
+   ],
+   "chest": null,
+   "left": 325,
+   "right": 51,
+   "sub_ok": false,
+   "cut_top": false
+  }
+ ]
+}
