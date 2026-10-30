@@ -1,0 +1,51 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s10.mp4",
+   "transcript": "edit/short10/transcripts/s10.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 3.8,
+   "end": 26.033
+  },
+  {
+   "start": 29.533,
+   "end": 36.9
+  },
+  {
+   "start": 37.1,
+   "end": 40.3
+  },
+  {
+   "start": 49.5,
+   "end": 50.933
+  },
+  {
+   "start": 51.267,
+   "end": 60.233
+  },
+  {
+   "start": 60.633,
+   "end": 65.733
+  },
+  {
+   "start": 65.933,
+   "end": 73.833
+  },
+  {
+   "start": 85.5,
+   "end": 90.233
+  }
+ ],
+ "fix": {
+  "create": "flipped"
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ }
+}

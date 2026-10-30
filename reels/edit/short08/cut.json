@@ -1,0 +1,62 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s08.mp4",
+   "transcript": "edit/short08/transcripts/s08.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 6.333,
+   "end": 11.5
+  },
+  {
+   "start": 11.733,
+   "end": 18.267
+  },
+  {
+   "start": 18.467,
+   "end": 22.7
+  },
+  {
+   "start": 22.9,
+   "end": 40.0
+  },
+  {
+   "start": 41.533,
+   "end": 43.867
+  },
+  {
+   "start": 44.067,
+   "end": 48.867
+  },
+  {
+   "start": 49.067,
+   "end": 55.367
+  },
+  {
+   "start": 55.567,
+   "end": 56.933
+  },
+  {
+   "start": 57.133,
+   "end": 62.3
+  }
+ ],
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix": {
+  "wrapper": "repo"
+ },
+ "fix_at": [
+  {
+   "text": "and",
+   "at": 26.46,
+   "to": ""
+  }
+ ]
+}

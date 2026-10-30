@@ -1,0 +1,176 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  600,
+  1030,
+  900
+ ],
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 1.767,
+   "face": [
+    343,
+    839,
+    320,
+    362
+   ],
+   "ceiling": [
+    600,
+    779
+   ],
+   "chest": null,
+   "left": 258,
+   "right": 237,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s02",
+   "start": 1.767,
+   "end": 4.836,
+   "face": [
+    382,
+    839,
+    281,
+    382
+   ],
+   "ceiling": [
+    600,
+    779
+   ],
+   "chest": null,
+   "left": 297,
+   "right": 237,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s03",
+   "start": 4.836,
+   "end": 8.655,
+   "face": [
+    331,
+    849,
+    324,
+    372
+   ],
+   "ceiling": [
+    600,
+    789
+   ],
+   "chest": null,
+   "left": 246,
+   "right": 245,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s04",
+   "start": 8.655,
+   "end": 13.012,
+   "face": [
+    379,
+    843,
+    301,
+    377
+   ],
+   "ceiling": [
+    600,
+    783
+   ],
+   "chest": null,
+   "left": 294,
+   "right": 220,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s05",
+   "start": 13.012,
+   "end": 17.448,
+   "face": [
+    354,
+    845,
+    297,
+    383
+   ],
+   "ceiling": [
+    600,
+    785
+   ],
+   "chest": null,
+   "left": 269,
+   "right": 249,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s06",
+   "start": 17.448,
+   "end": 19.333,
+   "face": [
+    312,
+    851,
+    336,
+    397
+   ],
+   "ceiling": [
+    600,
+    791
+   ],
+   "chest": null,
+   "left": 227,
+   "right": 252,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s07",
+   "start": 19.333,
+   "end": 23.333,
+   "face": [
+    312,
+    857,
+    456,
+    433
+   ],
+   "ceiling": [
+    600,
+    797
+   ],
+   "chest": null,
+   "left": 227,
+   "right": 132,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s08",
+   "start": 23.333,
+   "end": 24.9,
+   "face": [
+    478,
+    861,
+    301,
+    391
+   ],
+   "ceiling": [
+    600,
+    801
+   ],
+   "chest": null,
+   "left": 393,
+   "right": 121,
+   "sub_ok": false,
+   "cut_top": false
+  }
+ ]
+}

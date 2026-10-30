@@ -1,0 +1,49 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/s02.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.05:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 11.8,
+   "end": 19.767,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 31.1,
+   "end": 33.6,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 33.867,
+   "end": 35.333,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 35.567,
+   "end": 59.767,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 60.067,
+   "end": 64.567,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 36.933
+}

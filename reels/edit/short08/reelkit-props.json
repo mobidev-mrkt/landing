@@ -1,0 +1,1111 @@
+{
+ "video": "short08/video.mp4",
+ "captions": {
+  "duration": 48.167,
+  "segments": [
+   {
+    "i": 0,
+    "source": "main",
+    "src_start": 6.333,
+    "src_end": 11.5,
+    "out_start": 0.0,
+    "out_dur": 4.7,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 1,
+    "source": "main",
+    "src_start": 11.733,
+    "src_end": 18.267,
+    "out_start": 4.7,
+    "out_dur": 5.933,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 2,
+    "source": "main",
+    "src_start": 18.467,
+    "src_end": 22.7,
+    "out_start": 10.633,
+    "out_dur": 3.833,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 3,
+    "source": "main",
+    "src_start": 22.9,
+    "src_end": 40.0,
+    "out_start": 14.467,
+    "out_dur": 15.533,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 4,
+    "source": "main",
+    "src_start": 41.533,
+    "src_end": 43.867,
+    "out_start": 30.0,
+    "out_dur": 2.133,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 5,
+    "source": "main",
+    "src_start": 44.067,
+    "src_end": 48.867,
+    "out_start": 32.133,
+    "out_dur": 4.367,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 6,
+    "source": "main",
+    "src_start": 49.067,
+    "src_end": 55.367,
+    "out_start": 36.5,
+    "out_dur": 5.733,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 7,
+    "source": "main",
+    "src_start": 55.567,
+    "src_end": 56.933,
+    "out_start": 42.233,
+    "out_dur": 1.233,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 8,
+    "source": "main",
+    "src_start": 57.133,
+    "src_end": 62.3,
+    "out_start": 43.467,
+    "out_dur": 4.7,
+    "speed": 1.1,
+    "beat": ""
+   }
+  ],
+  "words": [
+   {
+    "text": "a",
+    "src": 6.88,
+    "start": 0.497,
+    "end": 0.697,
+    "seg": 0
+   },
+   {
+    "text": "little",
+    "src": 7.1,
+    "start": 0.697,
+    "end": 0.897,
+    "seg": 0
+   },
+   {
+    "text": "scary",
+    "src": 7.32,
+    "start": 0.897,
+    "end": 1.224,
+    "seg": 0
+   },
+   {
+    "text": "story.",
+    "src": 7.68,
+    "start": 1.224,
+    "end": 1.715,
+    "seg": 0
+   },
+   {
+    "text": "On",
+    "src": 9.96,
+    "start": 3.297,
+    "end": 3.588,
+    "seg": 0
+   },
+   {
+    "text": "one",
+    "src": 10.28,
+    "start": 3.588,
+    "end": 4.061,
+    "seg": 0
+   },
+   {
+    "text": ".NET",
+    "src": 10.8,
+    "start": 4.061,
+    "end": 4.261,
+    "seg": 0
+   },
+   {
+    "text": "project",
+    "src": 11.02,
+    "start": 4.261,
+    "end": 4.697,
+    "seg": 0
+   },
+   {
+    "text": "a",
+    "src": 11.56,
+    "start": 4.7,
+    "end": 5.215,
+    "seg": 1
+   },
+   {
+    "text": "very",
+    "src": 12.3,
+    "start": 5.215,
+    "end": 5.652,
+    "seg": 1
+   },
+   {
+    "text": "very",
+    "src": 12.78,
+    "start": 5.652,
+    "end": 5.979,
+    "seg": 1
+   },
+   {
+    "text": "motivated",
+    "src": 13.14,
+    "start": 5.979,
+    "end": 6.361,
+    "seg": 1
+   },
+   {
+    "text": "engineer",
+    "src": 13.56,
+    "start": 6.361,
+    "end": 6.87,
+    "seg": 1
+   },
+   {
+    "text": "decided",
+    "src": 14.12,
+    "start": 6.87,
+    "end": 7.379,
+    "seg": 1
+   },
+   {
+    "text": "to",
+    "src": 14.68,
+    "start": 7.379,
+    "end": 7.615,
+    "seg": 1
+   },
+   {
+    "text": "save",
+    "src": 14.94,
+    "start": 7.615,
+    "end": 7.815,
+    "seg": 1
+   },
+   {
+    "text": "everyone",
+    "src": 15.16,
+    "start": 7.815,
+    "end": 8.179,
+    "seg": 1
+   },
+   {
+    "text": "a",
+    "src": 15.56,
+    "start": 8.179,
+    "end": 8.324,
+    "seg": 1
+   },
+   {
+    "text": "few",
+    "src": 15.72,
+    "start": 8.324,
+    "end": 8.397,
+    "seg": 1
+   },
+   {
+    "text": "months.",
+    "src": 15.8,
+    "start": 8.397,
+    "end": 8.906,
+    "seg": 1
+   },
+   {
+    "text": "Friday",
+    "src": 17.4,
+    "start": 9.852,
+    "end": 10.233,
+    "seg": 1
+   },
+   {
+    "text": "evening",
+    "src": 17.82,
+    "start": 10.233,
+    "end": 10.639,
+    "seg": 1
+   },
+   {
+    "text": "he",
+    "src": 18.38,
+    "start": 10.633,
+    "end": 11.009,
+    "seg": 2
+   },
+   {
+    "text": "asked",
+    "src": 18.88,
+    "start": 11.009,
+    "end": 11.082,
+    "seg": 2
+   },
+   {
+    "text": "the",
+    "src": 18.88,
+    "start": 11.009,
+    "end": 11.318,
+    "seg": 2
+   },
+   {
+    "text": "agent",
+    "src": 19.22,
+    "start": 11.318,
+    "end": 11.536,
+    "seg": 2
+   },
+   {
+    "text": "to",
+    "src": 19.46,
+    "start": 11.536,
+    "end": 11.773,
+    "seg": 2
+   },
+   {
+    "text": "migrate",
+    "src": 19.72,
+    "start": 11.773,
+    "end": 12.082,
+    "seg": 2
+   },
+   {
+    "text": "the",
+    "src": 20.06,
+    "start": 12.082,
+    "end": 12.336,
+    "seg": 2
+   },
+   {
+    "text": "whole",
+    "src": 20.34,
+    "start": 12.336,
+    "end": 12.5,
+    "seg": 2
+   },
+   {
+    "text": "repo",
+    "src": 20.52,
+    "start": 12.5,
+    "end": 12.809,
+    "seg": 2
+   },
+   {
+    "text": "to",
+    "src": 20.86,
+    "start": 12.809,
+    "end": 13.536,
+    "seg": 2
+   },
+   {
+    "text": ".NET",
+    "src": 21.66,
+    "start": 13.536,
+    "end": 14.009,
+    "seg": 2
+   },
+   {
+    "text": "8.",
+    "src": 22.18,
+    "start": 14.009,
+    "end": 14.318,
+    "seg": 2
+   },
+   {
+    "text": "By",
+    "src": 23.54,
+    "start": 15.048,
+    "end": 15.303,
+    "seg": 3
+   },
+   {
+    "text": "Monday",
+    "src": 23.82,
+    "start": 15.303,
+    "end": 15.576,
+    "seg": 3
+   },
+   {
+    "text": "we",
+    "src": 24.12,
+    "start": 15.576,
+    "end": 15.812,
+    "seg": 3
+   },
+   {
+    "text": "had",
+    "src": 24.38,
+    "start": 15.812,
+    "end": 16.03,
+    "seg": 3
+   },
+   {
+    "text": "a",
+    "src": 24.62,
+    "start": 16.03,
+    "end": 16.267,
+    "seg": 3
+   },
+   {
+    "text": "pull",
+    "src": 24.88,
+    "start": 16.267,
+    "end": 16.394,
+    "seg": 3
+   },
+   {
+    "text": "request",
+    "src": 25.02,
+    "start": 16.394,
+    "end": 16.776,
+    "seg": 3
+   },
+   {
+    "text": "with",
+    "src": 25.44,
+    "start": 16.776,
+    "end": 17.267,
+    "seg": 3
+   },
+   {
+    "text": "thousands",
+    "src": 25.98,
+    "start": 17.267,
+    "end": 17.703,
+    "seg": 3
+   },
+   {
+    "text": "of",
+    "src": 26.86,
+    "start": 18.067,
+    "end": 18.503,
+    "seg": 3
+   },
+   {
+    "text": "change",
+    "src": 27.34,
+    "start": 18.503,
+    "end": 18.83,
+    "seg": 3
+   },
+   {
+    "text": "lines.",
+    "src": 27.7,
+    "start": 18.83,
+    "end": 19.23,
+    "seg": 3
+   },
+   {
+    "text": "It",
+    "src": 28.14,
+    "start": 19.23,
+    "end": 19.721,
+    "seg": 3
+   },
+   {
+    "text": "compiled",
+    "src": 28.68,
+    "start": 19.721,
+    "end": 20.139,
+    "seg": 3
+   },
+   {
+    "text": "but",
+    "src": 29.14,
+    "start": 20.139,
+    "end": 21.012,
+    "seg": 3
+   },
+   {
+    "text": "no",
+    "src": 30.1,
+    "start": 21.012,
+    "end": 21.23,
+    "seg": 3
+   },
+   {
+    "text": "one",
+    "src": 30.34,
+    "start": 21.23,
+    "end": 21.303,
+    "seg": 3
+   },
+   {
+    "text": "could",
+    "src": 30.42,
+    "start": 21.303,
+    "end": 21.503,
+    "seg": 3
+   },
+   {
+    "text": "review",
+    "src": 30.64,
+    "start": 21.503,
+    "end": 21.721,
+    "seg": 3
+   },
+   {
+    "text": "it",
+    "src": 30.88,
+    "start": 21.721,
+    "end": 22.048,
+    "seg": 3
+   },
+   {
+    "text": "because",
+    "src": 31.24,
+    "start": 22.048,
+    "end": 22.394,
+    "seg": 3
+   },
+   {
+    "text": "like",
+    "src": 31.62,
+    "start": 22.394,
+    "end": 22.758,
+    "seg": 3
+   },
+   {
+    "text": "it's",
+    "src": 32.02,
+    "start": 22.758,
+    "end": 22.976,
+    "seg": 3
+   },
+   {
+    "text": "too",
+    "src": 32.26,
+    "start": 22.976,
+    "end": 23.158,
+    "seg": 3
+   },
+   {
+    "text": "much",
+    "src": 32.46,
+    "start": 23.158,
+    "end": 23.558,
+    "seg": 3
+   },
+   {
+    "text": "and",
+    "src": 32.9,
+    "start": 23.558,
+    "end": 24.339,
+    "seg": 3
+   },
+   {
+    "text": "no",
+    "src": 33.76,
+    "start": 24.339,
+    "end": 24.558,
+    "seg": 3
+   },
+   {
+    "text": "one",
+    "src": 34.0,
+    "start": 24.558,
+    "end": 24.648,
+    "seg": 3
+   },
+   {
+    "text": "could",
+    "src": 34.1,
+    "start": 24.648,
+    "end": 24.83,
+    "seg": 3
+   },
+   {
+    "text": "say",
+    "src": 34.3,
+    "start": 24.83,
+    "end": 25.067,
+    "seg": 3
+   },
+   {
+    "text": "exactly",
+    "src": 34.56,
+    "start": 25.067,
+    "end": 25.467,
+    "seg": 3
+   },
+   {
+    "text": "what",
+    "src": 35.0,
+    "start": 25.467,
+    "end": 25.648,
+    "seg": 3
+   },
+   {
+    "text": "has",
+    "src": 35.2,
+    "start": 25.648,
+    "end": 25.867,
+    "seg": 3
+   },
+   {
+    "text": "changed.",
+    "src": 35.44,
+    "start": 25.867,
+    "end": 26.194,
+    "seg": 3
+   },
+   {
+    "text": "So",
+    "src": 36.1,
+    "start": 26.467,
+    "end": 26.739,
+    "seg": 3
+   },
+   {
+    "text": "we",
+    "src": 36.4,
+    "start": 26.739,
+    "end": 27.012,
+    "seg": 3
+   },
+   {
+    "text": "rolled",
+    "src": 36.7,
+    "start": 27.012,
+    "end": 27.212,
+    "seg": 3
+   },
+   {
+    "text": "it",
+    "src": 36.92,
+    "start": 27.212,
+    "end": 27.412,
+    "seg": 3
+   },
+   {
+    "text": "back",
+    "src": 37.14,
+    "start": 27.412,
+    "end": 27.885,
+    "seg": 3
+   },
+   {
+    "text": "zero",
+    "src": 37.66,
+    "start": 27.885,
+    "end": 28.539,
+    "seg": 3
+   },
+   {
+    "text": "value",
+    "src": 38.38,
+    "start": 28.539,
+    "end": 28.939,
+    "seg": 3
+   },
+   {
+    "text": "a",
+    "src": 38.82,
+    "start": 28.939,
+    "end": 29.485,
+    "seg": 3
+   },
+   {
+    "text": "lot",
+    "src": 39.42,
+    "start": 29.485,
+    "end": 29.594,
+    "seg": 3
+   },
+   {
+    "text": "of",
+    "src": 39.54,
+    "start": 29.594,
+    "end": 29.794,
+    "seg": 3
+   },
+   {
+    "text": "effort.",
+    "src": 39.76,
+    "start": 29.794,
+    "end": 30.012,
+    "seg": 3
+   },
+   {
+    "text": "What",
+    "src": 41.38,
+    "start": 30.0,
+    "end": 30.315,
+    "seg": 4
+   },
+   {
+    "text": "worked",
+    "src": 41.88,
+    "start": 30.315,
+    "end": 31.024,
+    "seg": 4
+   },
+   {
+    "text": "later",
+    "src": 42.66,
+    "start": 31.024,
+    "end": 32.006,
+    "seg": 4
+   },
+   {
+    "text": "is",
+    "src": 43.74,
+    "start": 32.133,
+    "end": 32.673,
+    "seg": 5
+   },
+   {
+    "text": "less",
+    "src": 44.66,
+    "start": 32.673,
+    "end": 33.182,
+    "seg": 5
+   },
+   {
+    "text": "exciting",
+    "src": 45.22,
+    "start": 33.182,
+    "end": 33.782,
+    "seg": 5
+   },
+   {
+    "text": "but",
+    "src": 45.88,
+    "start": 33.782,
+    "end": 34.964,
+    "seg": 5
+   },
+   {
+    "text": "more",
+    "src": 47.18,
+    "start": 34.964,
+    "end": 35.873,
+    "seg": 5
+   },
+   {
+    "text": "practical.",
+    "src": 48.18,
+    "start": 35.873,
+    "end": 36.473,
+    "seg": 5
+   },
+   {
+    "text": "We",
+    "src": 50.16,
+    "start": 37.494,
+    "end": 37.603,
+    "seg": 6
+   },
+   {
+    "text": "migrated",
+    "src": 50.28,
+    "start": 37.603,
+    "end": 38.112,
+    "seg": 6
+   },
+   {
+    "text": "one",
+    "src": 50.84,
+    "start": 38.112,
+    "end": 38.567,
+    "seg": 6
+   },
+   {
+    "text": "point,",
+    "src": 51.34,
+    "start": 38.567,
+    "end": 39.058,
+    "seg": 6
+   },
+   {
+    "text": "reviewed",
+    "src": 51.88,
+    "start": 39.058,
+    "end": 39.894,
+    "seg": 6
+   },
+   {
+    "text": "it",
+    "src": 52.8,
+    "start": 39.894,
+    "end": 40.203,
+    "seg": 6
+   },
+   {
+    "text": "together",
+    "src": 53.14,
+    "start": 40.203,
+    "end": 40.476,
+    "seg": 6
+   },
+   {
+    "text": "with",
+    "src": 53.44,
+    "start": 40.476,
+    "end": 40.694,
+    "seg": 6
+   },
+   {
+    "text": "the",
+    "src": 53.68,
+    "start": 40.694,
+    "end": 40.858,
+    "seg": 6
+   },
+   {
+    "text": "team",
+    "src": 53.86,
+    "start": 40.858,
+    "end": 41.094,
+    "seg": 6
+   },
+   {
+    "text": "and",
+    "src": 54.12,
+    "start": 41.094,
+    "end": 41.948,
+    "seg": 6
+   },
+   {
+    "text": "agreed",
+    "src": 55.06,
+    "start": 41.948,
+    "end": 42.227,
+    "seg": 6
+   },
+   {
+    "text": "on",
+    "src": 55.78,
+    "start": 42.427,
+    "end": 42.736,
+    "seg": 7
+   },
+   {
+    "text": "a",
+    "src": 56.12,
+    "start": 42.736,
+    "end": 43.045,
+    "seg": 7
+   },
+   {
+    "text": "pattern.",
+    "src": 56.46,
+    "start": 43.045,
+    "end": 43.318,
+    "seg": 7
+   },
+   {
+    "text": "Then",
+    "src": 57.3,
+    "start": 43.618,
+    "end": 43.818,
+    "seg": 8
+   },
+   {
+    "text": "we",
+    "src": 57.52,
+    "start": 43.818,
+    "end": 44.073,
+    "seg": 8
+   },
+   {
+    "text": "write",
+    "src": 57.8,
+    "start": 44.073,
+    "end": 44.345,
+    "seg": 8
+   },
+   {
+    "text": "that",
+    "src": 58.1,
+    "start": 44.345,
+    "end": 44.636,
+    "seg": 8
+   },
+   {
+    "text": "pattern",
+    "src": 58.42,
+    "start": 44.636,
+    "end": 44.873,
+    "seg": 8
+   },
+   {
+    "text": "down",
+    "src": 58.68,
+    "start": 44.873,
+    "end": 45.309,
+    "seg": 8
+   },
+   {
+    "text": "and",
+    "src": 59.16,
+    "start": 45.309,
+    "end": 45.8,
+    "seg": 8
+   },
+   {
+    "text": "repeat",
+    "src": 59.7,
+    "start": 45.8,
+    "end": 46.073,
+    "seg": 8
+   },
+   {
+    "text": "it",
+    "src": 60.0,
+    "start": 46.073,
+    "end": 46.273,
+    "seg": 8
+   },
+   {
+    "text": "in",
+    "src": 60.22,
+    "start": 46.273,
+    "end": 46.418,
+    "seg": 8
+   },
+   {
+    "text": "small",
+    "src": 60.38,
+    "start": 46.418,
+    "end": 47.018,
+    "seg": 8
+   },
+   {
+    "text": "reviewable",
+    "src": 61.04,
+    "start": 47.018,
+    "end": 47.582,
+    "seg": 8
+   },
+   {
+    "text": "batches",
+    "src": 61.66,
+    "start": 47.582,
+    "end": 48.164,
+    "seg": 8
+   }
+  ]
+ },
+ "brand": {
+  "slug": "mobidev",
+  "name": "MobiDev",
+  "tagline": "",
+  "colors": {
+   "primary": "#222222",
+   "accent": "#4AD57B",
+   "light": "#F7F7F7",
+   "text_on_primary": "#FFFFFF",
+   "text_on_accent": "#222222",
+   "extra": {
+    "white": "#FFFFFF",
+    "gradient_from": "#2EB0F1",
+    "gradient_to": "#12B292"
+   }
+  },
+  "fonts": {
+   "heading": {
+    "family": "Inter",
+    "weights": [
+     600,
+     700,
+     800,
+     900
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/Inter-SemiBold.woff2",
+     "brands/mobidev/Inter-Bold.woff2",
+     "brands/mobidev/Inter-ExtraBold.woff2",
+     "brands/mobidev/Inter-Black.woff2"
+    ]
+   },
+   "body": {
+    "family": "Open Sans",
+    "weights": [
+     500,
+     600,
+     700,
+     800
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/OpenSans-Medium.woff2",
+     "brands/mobidev/OpenSans-SemiBold.woff2",
+     "brands/mobidev/OpenSans-Bold.woff2",
+     "brands/mobidev/OpenSans-ExtraBold.woff2"
+    ]
+   }
+  },
+  "logos": {
+   "on_light": "brands/mobidev/mobidev-logo.png",
+   "on_dark": "brands/mobidev/mobidev-logo.png"
+  },
+  "motion": "calm",
+  "tone": {
+   "preset": "expert",
+   "label": "Expert, calm",
+   "loudness": "calm",
+   "overshoot": false,
+   "shake": false,
+   "scene_tone": "calm",
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "full_scenes_max": 2,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "sfx": "sparse"
+  },
+  "subtitles_default": "accent",
+  "style_default": "marker"
+ },
+ "inserts": [],
+ "subtitles": "accent",
+ "style": "brand",
+ "hideSubtitles": [
+  [
+   27.412,
+   30.812
+  ],
+  [
+   37.603,
+   48.103
+  ]
+ ],
+ "drift": true,
+ "hook": {
+  "text": "A Friday-night AI migration",
+  "until": 27.31
+ },
+ "corner": false,
+ "endCard": {
+  "line1": "Download the free AI-Driven Modernization Readiness Checklist",
+  "line2": "Link in description",
+  "seconds": 2.6
+ },
+ "framed": {
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "label": null,
+  "source": [
+   1536,
+   888
+  ],
+  "radius": 50,
+  "field": "#222222"
+ },
+ "subtitlesTop": 1312,
+ "scenes": [
+  {
+   "id": "c01",
+   "type": "quote",
+   "mode": "overlay",
+   "start": 27.412,
+   "dur": 3.4,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "20:15-20:19"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "Zero value,",
+     "a lot of effort"
+    ],
+    "accent": "Zero value",
+    "label": "SERHII IVANOV"
+   },
+   "hide_subtitles": true
+  },
+  {
+   "id": "c02",
+   "type": "list",
+   "mode": "overlay",
+   "start": 37.603,
+   "dur": 10.5,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "20:28-20:41"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "What worked"
+    ]
+   },
+   "items": [
+    {
+     "text": "Migrate one part",
+     "t": 37.603
+    },
+    {
+     "text": "Review it with the team",
+     "t": 39.058
+    },
+    {
+     "text": "Agree on a pattern",
+     "t": 41.948
+    },
+    {
+     "text": "Repeat in small batches",
+     "t": 45.8
+    }
+   ],
+   "hide_subtitles": true
+  }
+ ],
+ "sceneTone": "calm"
+}

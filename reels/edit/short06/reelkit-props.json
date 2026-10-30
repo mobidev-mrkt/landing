@@ -1,0 +1,1235 @@
+{
+ "video": "short06/video.mp4",
+ "captions": {
+  "duration": 51.833,
+  "segments": [
+   {
+    "i": 0,
+    "source": "main",
+    "src_start": 3.567,
+    "src_end": 19.2,
+    "out_start": 0.0,
+    "out_dur": 14.2,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 1,
+    "source": "main",
+    "src_start": 19.433,
+    "src_end": 24.333,
+    "out_start": 14.2,
+    "out_dur": 4.467,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 2,
+    "source": "main",
+    "src_start": 24.533,
+    "src_end": 38.7,
+    "out_start": 18.667,
+    "out_dur": 12.867,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 3,
+    "source": "main",
+    "src_start": 58.633,
+    "src_end": 69.6,
+    "out_start": 31.533,
+    "out_dur": 9.967,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 4,
+    "source": "main",
+    "src_start": 70.167,
+    "src_end": 81.533,
+    "out_start": 41.5,
+    "out_dur": 10.333,
+    "speed": 1.1,
+    "beat": ""
+   }
+  ],
+  "words": [
+   {
+    "text": "And",
+    "src": 4.02,
+    "start": 0.412,
+    "end": 0.958,
+    "seg": 0
+   },
+   {
+    "text": "if",
+    "src": 4.62,
+    "start": 0.958,
+    "end": 1.285,
+    "seg": 0
+   },
+   {
+    "text": "you",
+    "src": 4.98,
+    "start": 1.285,
+    "end": 1.848,
+    "seg": 0
+   },
+   {
+    "text": "are",
+    "src": 5.6,
+    "start": 1.848,
+    "end": 2.03,
+    "seg": 0
+   },
+   {
+    "text": "building",
+    "src": 5.8,
+    "start": 2.03,
+    "end": 2.248,
+    "seg": 0
+   },
+   {
+    "text": "something",
+    "src": 6.04,
+    "start": 2.248,
+    "end": 2.612,
+    "seg": 0
+   },
+   {
+    "text": "on",
+    "src": 6.44,
+    "start": 2.612,
+    "end": 2.958,
+    "seg": 0
+   },
+   {
+    "text": "the",
+    "src": 6.82,
+    "start": 2.958,
+    "end": 3.158,
+    "seg": 0
+   },
+   {
+    "text": "top",
+    "src": 7.04,
+    "start": 3.158,
+    "end": 3.376,
+    "seg": 0
+   },
+   {
+    "text": "of",
+    "src": 7.28,
+    "start": 3.376,
+    "end": 3.667,
+    "seg": 0
+   },
+   {
+    "text": "the",
+    "src": 7.6,
+    "start": 3.667,
+    "end": 3.776,
+    "seg": 0
+   },
+   {
+    "text": "legacy",
+    "src": 7.72,
+    "start": 3.776,
+    "end": 4.067,
+    "seg": 0
+   },
+   {
+    "text": "project,",
+    "src": 8.04,
+    "start": 4.067,
+    "end": 4.63,
+    "seg": 0
+   },
+   {
+    "text": "which",
+    "src": 8.88,
+    "start": 4.83,
+    "end": 5.012,
+    "seg": 0
+   },
+   {
+    "text": "wasn't",
+    "src": 9.08,
+    "start": 5.012,
+    "end": 5.303,
+    "seg": 0
+   },
+   {
+    "text": "refactored,",
+    "src": 9.4,
+    "start": 5.303,
+    "end": 5.976,
+    "seg": 0
+   },
+   {
+    "text": "this",
+    "src": 11.04,
+    "start": 6.794,
+    "end": 7.048,
+    "seg": 0
+   },
+   {
+    "text": "means",
+    "src": 11.32,
+    "start": 7.048,
+    "end": 7.248,
+    "seg": 0
+   },
+   {
+    "text": "that",
+    "src": 11.54,
+    "start": 7.248,
+    "end": 7.503,
+    "seg": 0
+   },
+   {
+    "text": "actually",
+    "src": 11.82,
+    "start": 7.503,
+    "end": 8.067,
+    "seg": 0
+   },
+   {
+    "text": "the",
+    "src": 12.44,
+    "start": 8.067,
+    "end": 8.467,
+    "seg": 0
+   },
+   {
+    "text": "initial",
+    "src": 12.88,
+    "start": 8.467,
+    "end": 8.685,
+    "seg": 0
+   },
+   {
+    "text": "project",
+    "src": 13.12,
+    "start": 8.685,
+    "end": 9.03,
+    "seg": 0
+   },
+   {
+    "text": "is",
+    "src": 13.5,
+    "start": 9.03,
+    "end": 9.23,
+    "seg": 0
+   },
+   {
+    "text": "not",
+    "src": 13.72,
+    "start": 9.23,
+    "end": 9.43,
+    "seg": 0
+   },
+   {
+    "text": "ready",
+    "src": 13.94,
+    "start": 9.43,
+    "end": 9.648,
+    "seg": 0
+   },
+   {
+    "text": "for",
+    "src": 14.18,
+    "start": 9.648,
+    "end": 10.139,
+    "seg": 0
+   },
+   {
+    "text": "AI",
+    "src": 14.72,
+    "start": 10.139,
+    "end": 10.339,
+    "seg": 0
+   },
+   {
+    "text": "integration.",
+    "src": 14.94,
+    "start": 10.339,
+    "end": 10.83,
+    "seg": 0
+   },
+   {
+    "text": "So",
+    "src": 16.82,
+    "start": 12.048,
+    "end": 12.139,
+    "seg": 0
+   },
+   {
+    "text": "developers,",
+    "src": 16.92,
+    "start": 12.139,
+    "end": 12.739,
+    "seg": 0
+   },
+   {
+    "text": "they're",
+    "src": 18.56,
+    "start": 13.63,
+    "end": 14.212,
+    "seg": 0
+   },
+   {
+    "text": "releasing",
+    "src": 19.88,
+    "start": 14.606,
+    "end": 14.824,
+    "seg": 1
+   },
+   {
+    "text": "new",
+    "src": 20.12,
+    "start": 14.824,
+    "end": 15.042,
+    "seg": 1
+   },
+   {
+    "text": "features,",
+    "src": 20.36,
+    "start": 15.042,
+    "end": 15.461,
+    "seg": 1
+   },
+   {
+    "text": "but",
+    "src": 21.28,
+    "start": 15.879,
+    "end": 16.206,
+    "seg": 1
+   },
+   {
+    "text": "the",
+    "src": 21.64,
+    "start": 16.206,
+    "end": 16.442,
+    "seg": 1
+   },
+   {
+    "text": "initial",
+    "src": 21.9,
+    "start": 16.442,
+    "end": 16.679,
+    "seg": 1
+   },
+   {
+    "text": "code",
+    "src": 22.16,
+    "start": 16.679,
+    "end": 16.988,
+    "seg": 1
+   },
+   {
+    "text": "base",
+    "src": 22.5,
+    "start": 16.988,
+    "end": 17.242,
+    "seg": 1
+   },
+   {
+    "text": "is",
+    "src": 22.78,
+    "start": 17.242,
+    "end": 17.588,
+    "seg": 1
+   },
+   {
+    "text": "still",
+    "src": 23.16,
+    "start": 17.588,
+    "end": 18.297,
+    "seg": 1
+   },
+   {
+    "text": "old,",
+    "src": 23.94,
+    "start": 18.297,
+    "end": 18.606,
+    "seg": 1
+   },
+   {
+    "text": "which",
+    "src": 24.68,
+    "start": 18.8,
+    "end": 19.018,
+    "seg": 2
+   },
+   {
+    "text": "creates",
+    "src": 24.92,
+    "start": 19.018,
+    "end": 19.327,
+    "seg": 2
+   },
+   {
+    "text": "a",
+    "src": 25.26,
+    "start": 19.327,
+    "end": 19.436,
+    "seg": 2
+   },
+   {
+    "text": "lot",
+    "src": 25.38,
+    "start": 19.436,
+    "end": 19.655,
+    "seg": 2
+   },
+   {
+    "text": "of",
+    "src": 25.62,
+    "start": 19.655,
+    "end": 20.109,
+    "seg": 2
+   },
+   {
+    "text": "bugs,",
+    "src": 26.12,
+    "start": 20.109,
+    "end": 20.327,
+    "seg": 2
+   },
+   {
+    "text": "which",
+    "src": 26.52,
+    "start": 20.473,
+    "end": 20.636,
+    "seg": 2
+   },
+   {
+    "text": "creates",
+    "src": 26.7,
+    "start": 20.636,
+    "end": 20.927,
+    "seg": 2
+   },
+   {
+    "text": "a",
+    "src": 27.02,
+    "start": 20.927,
+    "end": 21.036,
+    "seg": 2
+   },
+   {
+    "text": "lot",
+    "src": 27.14,
+    "start": 21.036,
+    "end": 21.182,
+    "seg": 2
+   },
+   {
+    "text": "of",
+    "src": 27.3,
+    "start": 21.182,
+    "end": 21.382,
+    "seg": 2
+   },
+   {
+    "text": "bottlenecks.",
+    "src": 27.52,
+    "start": 21.382,
+    "end": 21.964,
+    "seg": 2
+   },
+   {
+    "text": "And",
+    "src": 28.16,
+    "start": 21.964,
+    "end": 22.764,
+    "seg": 2
+   },
+   {
+    "text": "when",
+    "src": 29.04,
+    "start": 22.764,
+    "end": 23.491,
+    "seg": 2
+   },
+   {
+    "text": "you",
+    "src": 29.84,
+    "start": 23.491,
+    "end": 23.709,
+    "seg": 2
+   },
+   {
+    "text": "create",
+    "src": 30.08,
+    "start": 23.709,
+    "end": 24.0,
+    "seg": 2
+   },
+   {
+    "text": "like",
+    "src": 30.4,
+    "start": 24.0,
+    "end": 24.291,
+    "seg": 2
+   },
+   {
+    "text": "one",
+    "src": 30.72,
+    "start": 24.291,
+    "end": 24.455,
+    "seg": 2
+   },
+   {
+    "text": "feature,",
+    "src": 30.9,
+    "start": 24.455,
+    "end": 24.745,
+    "seg": 2
+   },
+   {
+    "text": "two,",
+    "src": 31.22,
+    "start": 24.745,
+    "end": 25.073,
+    "seg": 2
+   },
+   {
+    "text": "three,",
+    "src": 31.58,
+    "start": 25.073,
+    "end": 25.491,
+    "seg": 2
+   },
+   {
+    "text": "10",
+    "src": 32.04,
+    "start": 25.491,
+    "end": 26.018,
+    "seg": 2
+   },
+   {
+    "text": "features",
+    "src": 32.62,
+    "start": 26.018,
+    "end": 26.345,
+    "seg": 2
+   },
+   {
+    "text": "on",
+    "src": 32.98,
+    "start": 26.345,
+    "end": 26.564,
+    "seg": 2
+   },
+   {
+    "text": "the",
+    "src": 33.22,
+    "start": 26.564,
+    "end": 26.691,
+    "seg": 2
+   },
+   {
+    "text": "top",
+    "src": 33.36,
+    "start": 26.691,
+    "end": 26.8,
+    "seg": 2
+   },
+   {
+    "text": "of",
+    "src": 33.48,
+    "start": 26.8,
+    "end": 26.982,
+    "seg": 2
+   },
+   {
+    "text": "the",
+    "src": 33.68,
+    "start": 26.982,
+    "end": 27.109,
+    "seg": 2
+   },
+   {
+    "text": "old",
+    "src": 33.82,
+    "start": 27.109,
+    "end": 27.309,
+    "seg": 2
+   },
+   {
+    "text": "code",
+    "src": 34.04,
+    "start": 27.309,
+    "end": 27.509,
+    "seg": 2
+   },
+   {
+    "text": "base,",
+    "src": 34.26,
+    "start": 27.509,
+    "end": 27.764,
+    "seg": 2
+   },
+   {
+    "text": "the",
+    "src": 35.96,
+    "start": 29.055,
+    "end": 29.182,
+    "seg": 2
+   },
+   {
+    "text": "old",
+    "src": 36.1,
+    "start": 29.182,
+    "end": 29.491,
+    "seg": 2
+   },
+   {
+    "text": "code",
+    "src": 36.44,
+    "start": 29.491,
+    "end": 29.709,
+    "seg": 2
+   },
+   {
+    "text": "base",
+    "src": 36.68,
+    "start": 29.709,
+    "end": 30.0,
+    "seg": 2
+   },
+   {
+    "text": "can't",
+    "src": 37.0,
+    "start": 30.0,
+    "end": 30.455,
+    "seg": 2
+   },
+   {
+    "text": "support",
+    "src": 37.5,
+    "start": 30.455,
+    "end": 30.745,
+    "seg": 2
+   },
+   {
+    "text": "all",
+    "src": 37.82,
+    "start": 30.745,
+    "end": 31.018,
+    "seg": 2
+   },
+   {
+    "text": "of",
+    "src": 38.12,
+    "start": 31.018,
+    "end": 31.127,
+    "seg": 2
+   },
+   {
+    "text": "that",
+    "src": 38.24,
+    "start": 31.127,
+    "end": 31.273,
+    "seg": 2
+   },
+   {
+    "text": "stuff.",
+    "src": 38.4,
+    "start": 31.273,
+    "end": 31.545,
+    "seg": 2
+   },
+   {
+    "text": "And",
+    "src": 59.16,
+    "start": 32.012,
+    "end": 32.103,
+    "seg": 3
+   },
+   {
+    "text": "then",
+    "src": 59.26,
+    "start": 32.103,
+    "end": 32.23,
+    "seg": 3
+   },
+   {
+    "text": "investors",
+    "src": 59.4,
+    "start": 32.23,
+    "end": 32.667,
+    "seg": 3
+   },
+   {
+    "text": "sees",
+    "src": 59.88,
+    "start": 32.667,
+    "end": 32.939,
+    "seg": 3
+   },
+   {
+    "text": "that",
+    "src": 60.18,
+    "start": 32.939,
+    "end": 33.158,
+    "seg": 3
+   },
+   {
+    "text": "they're",
+    "src": 60.42,
+    "start": 33.158,
+    "end": 33.358,
+    "seg": 3
+   },
+   {
+    "text": "investing",
+    "src": 60.64,
+    "start": 33.358,
+    "end": 33.612,
+    "seg": 3
+   },
+   {
+    "text": "money,",
+    "src": 60.92,
+    "start": 33.612,
+    "end": 33.958,
+    "seg": 3
+   },
+   {
+    "text": "but",
+    "src": 61.68,
+    "start": 34.303,
+    "end": 34.576,
+    "seg": 3
+   },
+   {
+    "text": "they",
+    "src": 61.98,
+    "start": 34.576,
+    "end": 34.867,
+    "seg": 3
+   },
+   {
+    "text": "can't",
+    "src": 62.3,
+    "start": 34.867,
+    "end": 35.303,
+    "seg": 3
+   },
+   {
+    "text": "actually",
+    "src": 62.78,
+    "start": 35.303,
+    "end": 35.721,
+    "seg": 3
+   },
+   {
+    "text": "see",
+    "src": 63.24,
+    "start": 35.721,
+    "end": 35.958,
+    "seg": 3
+   },
+   {
+    "text": "the",
+    "src": 63.5,
+    "start": 35.958,
+    "end": 36.176,
+    "seg": 3
+   },
+   {
+    "text": "result",
+    "src": 63.74,
+    "start": 36.176,
+    "end": 36.448,
+    "seg": 3
+   },
+   {
+    "text": "because",
+    "src": 64.04,
+    "start": 36.448,
+    "end": 37.121,
+    "seg": 3
+   },
+   {
+    "text": "we're",
+    "src": 64.78,
+    "start": 37.121,
+    "end": 37.448,
+    "seg": 3
+   },
+   {
+    "text": "still",
+    "src": 65.14,
+    "start": 37.448,
+    "end": 37.685,
+    "seg": 3
+   },
+   {
+    "text": "delivering",
+    "src": 65.4,
+    "start": 37.685,
+    "end": 38.067,
+    "seg": 3
+   },
+   {
+    "text": "like",
+    "src": 65.82,
+    "start": 38.067,
+    "end": 38.521,
+    "seg": 3
+   },
+   {
+    "text": "we",
+    "src": 66.32,
+    "start": 38.521,
+    "end": 38.758,
+    "seg": 3
+   },
+   {
+    "text": "delivered",
+    "src": 66.58,
+    "start": 38.758,
+    "end": 38.994,
+    "seg": 3
+   },
+   {
+    "text": "previously",
+    "src": 66.84,
+    "start": 38.994,
+    "end": 39.521,
+    "seg": 3
+   },
+   {
+    "text": "or",
+    "src": 67.42,
+    "start": 39.521,
+    "end": 40.23,
+    "seg": 3
+   },
+   {
+    "text": "the",
+    "src": 68.2,
+    "start": 40.23,
+    "end": 40.394,
+    "seg": 3
+   },
+   {
+    "text": "situation",
+    "src": 68.38,
+    "start": 40.394,
+    "end": 40.721,
+    "seg": 3
+   },
+   {
+    "text": "is",
+    "src": 68.74,
+    "start": 40.721,
+    "end": 40.921,
+    "seg": 3
+   },
+   {
+    "text": "even",
+    "src": 68.96,
+    "start": 40.921,
+    "end": 41.085,
+    "seg": 3
+   },
+   {
+    "text": "worse.",
+    "src": 69.14,
+    "start": 41.085,
+    "end": 41.467,
+    "seg": 3
+   },
+   {
+    "text": "So",
+    "src": 71.06,
+    "start": 42.312,
+    "end": 42.767,
+    "seg": 4
+   },
+   {
+    "text": "to",
+    "src": 71.56,
+    "start": 42.767,
+    "end": 43.185,
+    "seg": 4
+   },
+   {
+    "text": "summarize",
+    "src": 72.02,
+    "start": 43.185,
+    "end": 43.512,
+    "seg": 4
+   },
+   {
+    "text": "this,",
+    "src": 72.38,
+    "start": 43.512,
+    "end": 43.785,
+    "seg": 4
+   },
+   {
+    "text": "first",
+    "src": 72.82,
+    "start": 43.912,
+    "end": 44.094,
+    "seg": 4
+   },
+   {
+    "text": "of",
+    "src": 73.02,
+    "start": 44.094,
+    "end": 44.294,
+    "seg": 4
+   },
+   {
+    "text": "all,",
+    "src": 73.24,
+    "start": 44.294,
+    "end": 44.603,
+    "seg": 4
+   },
+   {
+    "text": "think",
+    "src": 74.28,
+    "start": 45.239,
+    "end": 45.439,
+    "seg": 4
+   },
+   {
+    "text": "about",
+    "src": 74.5,
+    "start": 45.439,
+    "end": 45.839,
+    "seg": 4
+   },
+   {
+    "text": "the",
+    "src": 74.94,
+    "start": 45.839,
+    "end": 46.094,
+    "seg": 4
+   },
+   {
+    "text": "initial",
+    "src": 75.22,
+    "start": 46.094,
+    "end": 46.512,
+    "seg": 4
+   },
+   {
+    "text": "legacy",
+    "src": 75.68,
+    "start": 46.512,
+    "end": 47.076,
+    "seg": 4
+   },
+   {
+    "text": "code",
+    "src": 76.3,
+    "start": 47.076,
+    "end": 47.312,
+    "seg": 4
+   },
+   {
+    "text": "refactoring",
+    "src": 76.56,
+    "start": 47.312,
+    "end": 47.785,
+    "seg": 4
+   },
+   {
+    "text": "with",
+    "src": 77.08,
+    "start": 47.785,
+    "end": 48.003,
+    "seg": 4
+   },
+   {
+    "text": "using",
+    "src": 77.32,
+    "start": 48.003,
+    "end": 48.294,
+    "seg": 4
+   },
+   {
+    "text": "AI",
+    "src": 77.64,
+    "start": 48.294,
+    "end": 48.585,
+    "seg": 4
+   },
+   {
+    "text": "tools.",
+    "src": 77.96,
+    "start": 48.585,
+    "end": 48.967,
+    "seg": 4
+   },
+   {
+    "text": "Prepare",
+    "src": 78.7,
+    "start": 49.258,
+    "end": 49.676,
+    "seg": 4
+   },
+   {
+    "text": "like",
+    "src": 79.16,
+    "start": 49.676,
+    "end": 50.13,
+    "seg": 4
+   },
+   {
+    "text": "an",
+    "src": 79.66,
+    "start": 50.13,
+    "end": 50.348,
+    "seg": 4
+   },
+   {
+    "text": "estimate",
+    "src": 79.9,
+    "start": 50.348,
+    "end": 50.658,
+    "seg": 4
+   },
+   {
+    "text": "and",
+    "src": 80.24,
+    "start": 50.658,
+    "end": 51.003,
+    "seg": 4
+   },
+   {
+    "text": "a",
+    "src": 80.62,
+    "start": 51.003,
+    "end": 51.148,
+    "seg": 4
+   },
+   {
+    "text": "budget",
+    "src": 80.78,
+    "start": 51.148,
+    "end": 51.312,
+    "seg": 4
+   },
+   {
+    "text": "for",
+    "src": 80.96,
+    "start": 51.312,
+    "end": 51.585,
+    "seg": 4
+   },
+   {
+    "text": "that.",
+    "src": 81.26,
+    "start": 51.585,
+    "end": 51.821,
+    "seg": 4
+   }
+  ]
+ },
+ "brand": {
+  "slug": "mobidev",
+  "name": "MobiDev",
+  "tagline": "",
+  "colors": {
+   "primary": "#222222",
+   "accent": "#4AD57B",
+   "light": "#F7F7F7",
+   "text_on_primary": "#FFFFFF",
+   "text_on_accent": "#222222",
+   "extra": {
+    "white": "#FFFFFF",
+    "gradient_from": "#2EB0F1",
+    "gradient_to": "#12B292"
+   }
+  },
+  "fonts": {
+   "heading": {
+    "family": "Inter",
+    "weights": [
+     600,
+     700,
+     800,
+     900
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/Inter-SemiBold.woff2",
+     "brands/mobidev/Inter-Bold.woff2",
+     "brands/mobidev/Inter-ExtraBold.woff2",
+     "brands/mobidev/Inter-Black.woff2"
+    ]
+   },
+   "body": {
+    "family": "Open Sans",
+    "weights": [
+     500,
+     600,
+     700,
+     800
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/OpenSans-Medium.woff2",
+     "brands/mobidev/OpenSans-SemiBold.woff2",
+     "brands/mobidev/OpenSans-Bold.woff2",
+     "brands/mobidev/OpenSans-ExtraBold.woff2"
+    ]
+   }
+  },
+  "logos": {
+   "on_light": "brands/mobidev/mobidev-logo.png",
+   "on_dark": "brands/mobidev/mobidev-logo.png"
+  },
+  "motion": "calm",
+  "tone": {
+   "preset": "expert",
+   "label": "Expert, calm",
+   "loudness": "calm",
+   "overshoot": false,
+   "shake": false,
+   "scene_tone": "calm",
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "full_scenes_max": 2,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "sfx": "sparse"
+  },
+  "subtitles_default": "accent",
+  "style_default": "marker"
+ },
+ "inserts": [],
+ "subtitles": "accent",
+ "style": "brand",
+ "hideSubtitles": [
+  [
+   6.794,
+   11.994
+  ],
+  [
+   20.109,
+   33.409
+  ]
+ ],
+ "drift": true,
+ "hook": {
+  "text": "Legacy isn't AI-ready",
+  "until": 6.69
+ },
+ "corner": false,
+ "endCard": {
+  "line1": "Download the free AI-Driven Modernization Readiness Checklist",
+  "line2": "Link in description",
+  "seconds": 2.6
+ },
+ "framed": {
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "label": null,
+  "source": [
+   1536,
+   888
+  ],
+  "radius": 50,
+  "field": "#222222"
+ },
+ "subtitlesTop": 1312,
+ "scenes": [
+  {
+   "id": "c01",
+   "type": "quote",
+   "mode": "overlay",
+   "start": 6.794,
+   "dur": 5.2,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "14:42-14:48"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "The initial project is not ready",
+     "for AI integration"
+    ],
+    "accent": "not ready",
+    "label": "IEVGEN ZADOROZHNYI"
+   },
+   "hide_subtitles": true
+  },
+  {
+   "id": "c02",
+   "type": "list",
+   "mode": "overlay",
+   "start": 20.109,
+   "dur": 13.3,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "14:50-15:10"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "New features on old code"
+    ]
+   },
+   "items": [
+    {
+     "text": "More bugs",
+     "t": 20.109
+    },
+    {
+     "text": "More bottlenecks",
+     "t": 21.382
+    },
+    {
+     "text": "The old code base cannot support it",
+     "t": 30.455
+    }
+   ],
+   "hide_subtitles": true
+  }
+ ],
+ "sceneTone": "calm"
+}

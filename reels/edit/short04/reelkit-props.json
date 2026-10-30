@@ -1,0 +1,1130 @@
+{
+ "video": "short04/video.mp4",
+ "captions": {
+  "duration": 44.3,
+  "segments": [
+   {
+    "i": 0,
+    "source": "main",
+    "src_start": 3.433,
+    "src_end": 17.567,
+    "out_start": 0.0,
+    "out_dur": 12.833,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 1,
+    "source": "main",
+    "src_start": 17.8,
+    "src_end": 21.7,
+    "out_start": 12.833,
+    "out_dur": 3.533,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 2,
+    "source": "main",
+    "src_start": 22.167,
+    "src_end": 23.567,
+    "out_start": 16.367,
+    "out_dur": 1.267,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 3,
+    "source": "main",
+    "src_start": 24.0,
+    "src_end": 38.267,
+    "out_start": 17.633,
+    "out_dur": 12.967,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 4,
+    "source": "main",
+    "src_start": 53.367,
+    "src_end": 68.433,
+    "out_start": 30.6,
+    "out_dur": 13.7,
+    "speed": 1.1,
+    "beat": ""
+   }
+  ],
+  "words": [
+   {
+    "text": "First",
+    "src": 4.18,
+    "start": 0.679,
+    "end": 1.133,
+    "seg": 0
+   },
+   {
+    "text": "thing",
+    "src": 4.68,
+    "start": 1.133,
+    "end": 1.424,
+    "seg": 0
+   },
+   {
+    "text": "which",
+    "src": 5.0,
+    "start": 1.424,
+    "end": 1.661,
+    "seg": 0
+   },
+   {
+    "text": "you",
+    "src": 5.26,
+    "start": 1.661,
+    "end": 1.788,
+    "seg": 0
+   },
+   {
+    "text": "will",
+    "src": 5.4,
+    "start": 1.788,
+    "end": 1.952,
+    "seg": 0
+   },
+   {
+    "text": "notice",
+    "src": 5.58,
+    "start": 1.952,
+    "end": 2.352,
+    "seg": 0
+   },
+   {
+    "text": "and",
+    "src": 6.02,
+    "start": 2.352,
+    "end": 2.806,
+    "seg": 0
+   },
+   {
+    "text": "Serhii",
+    "src": 6.52,
+    "start": 2.806,
+    "end": 3.006,
+    "seg": 0
+   },
+   {
+    "text": "mentioned",
+    "src": 6.74,
+    "start": 3.006,
+    "end": 3.37,
+    "seg": 0
+   },
+   {
+    "text": "about",
+    "src": 7.14,
+    "start": 3.37,
+    "end": 3.642,
+    "seg": 0
+   },
+   {
+    "text": "that,",
+    "src": 7.44,
+    "start": 3.642,
+    "end": 4.042,
+    "seg": 0
+   },
+   {
+    "text": "that",
+    "src": 8.08,
+    "start": 4.224,
+    "end": 4.406,
+    "seg": 0
+   },
+   {
+    "text": "actually",
+    "src": 8.28,
+    "start": 4.406,
+    "end": 4.915,
+    "seg": 0
+   },
+   {
+    "text": "code",
+    "src": 8.84,
+    "start": 4.915,
+    "end": 5.224,
+    "seg": 0
+   },
+   {
+    "text": "writing",
+    "src": 9.18,
+    "start": 5.224,
+    "end": 5.442,
+    "seg": 0
+   },
+   {
+    "text": "speed",
+    "src": 9.42,
+    "start": 5.442,
+    "end": 5.861,
+    "seg": 0
+   },
+   {
+    "text": "is",
+    "src": 9.88,
+    "start": 5.861,
+    "end": 6.242,
+    "seg": 0
+   },
+   {
+    "text": "increased",
+    "src": 10.3,
+    "start": 6.242,
+    "end": 6.661,
+    "seg": 0
+   },
+   {
+    "text": "even",
+    "src": 10.76,
+    "start": 6.661,
+    "end": 7.242,
+    "seg": 0
+   },
+   {
+    "text": "by",
+    "src": 11.4,
+    "start": 7.242,
+    "end": 7.497,
+    "seg": 0
+   },
+   {
+    "text": "30,",
+    "src": 11.68,
+    "start": 7.497,
+    "end": 7.715,
+    "seg": 0
+   },
+   {
+    "text": "40%.",
+    "src": 11.92,
+    "start": 7.715,
+    "end": 8.606,
+    "seg": 0
+   },
+   {
+    "text": "And",
+    "src": 12.9,
+    "start": 8.606,
+    "end": 8.897,
+    "seg": 0
+   },
+   {
+    "text": "you",
+    "src": 13.22,
+    "start": 8.897,
+    "end": 9.061,
+    "seg": 0
+   },
+   {
+    "text": "think,",
+    "src": 13.4,
+    "start": 9.061,
+    "end": 9.242,
+    "seg": 0
+   },
+   {
+    "text": "whoa,",
+    "src": 13.62,
+    "start": 9.261,
+    "end": 9.624,
+    "seg": 0
+   },
+   {
+    "text": "cool.",
+    "src": 14.06,
+    "start": 9.661,
+    "end": 10.042,
+    "seg": 0
+   },
+   {
+    "text": "Now",
+    "src": 14.68,
+    "start": 10.224,
+    "end": 10.497,
+    "seg": 0
+   },
+   {
+    "text": "we",
+    "src": 14.98,
+    "start": 10.497,
+    "end": 10.679,
+    "seg": 0
+   },
+   {
+    "text": "should",
+    "src": 15.18,
+    "start": 10.679,
+    "end": 10.788,
+    "seg": 0
+   },
+   {
+    "text": "deliver",
+    "src": 15.3,
+    "start": 10.788,
+    "end": 11.097,
+    "seg": 0
+   },
+   {
+    "text": "faster.",
+    "src": 15.64,
+    "start": 11.097,
+    "end": 11.479,
+    "seg": 0
+   },
+   {
+    "text": "But",
+    "src": 16.14,
+    "start": 11.552,
+    "end": 11.733,
+    "seg": 0
+   },
+   {
+    "text": "then",
+    "src": 16.34,
+    "start": 11.733,
+    "end": 11.861,
+    "seg": 0
+   },
+   {
+    "text": "you",
+    "src": 16.48,
+    "start": 11.861,
+    "end": 12.097,
+    "seg": 0
+   },
+   {
+    "text": "realize",
+    "src": 16.74,
+    "start": 12.097,
+    "end": 12.497,
+    "seg": 0
+   },
+   {
+    "text": "that",
+    "src": 17.18,
+    "start": 12.497,
+    "end": 12.848,
+    "seg": 0
+   },
+   {
+    "text": "like",
+    "src": 17.94,
+    "start": 12.961,
+    "end": 13.27,
+    "seg": 1
+   },
+   {
+    "text": "code",
+    "src": 18.28,
+    "start": 13.27,
+    "end": 13.506,
+    "seg": 1
+   },
+   {
+    "text": "review",
+    "src": 18.54,
+    "start": 13.506,
+    "end": 13.779,
+    "seg": 1
+   },
+   {
+    "text": "and",
+    "src": 18.84,
+    "start": 13.779,
+    "end": 13.942,
+    "seg": 1
+   },
+   {
+    "text": "QA",
+    "src": 19.02,
+    "start": 13.942,
+    "end": 14.07,
+    "seg": 1
+   },
+   {
+    "text": "verification",
+    "src": 19.16,
+    "start": 14.07,
+    "end": 14.815,
+    "seg": 1
+   },
+   {
+    "text": "degrades",
+    "src": 19.98,
+    "start": 14.815,
+    "end": 15.397,
+    "seg": 1
+   },
+   {
+    "text": "by",
+    "src": 20.62,
+    "start": 15.397,
+    "end": 15.652,
+    "seg": 1
+   },
+   {
+    "text": "50%",
+    "src": 20.9,
+    "start": 15.652,
+    "end": 16.07,
+    "seg": 1
+   },
+   {
+    "text": "because",
+    "src": 21.92,
+    "start": 16.367,
+    "end": 17.088,
+    "seg": 2
+   },
+   {
+    "text": "like",
+    "src": 22.96,
+    "start": 17.088,
+    "end": 17.639,
+    "seg": 2
+   },
+   {
+    "text": "QA",
+    "src": 24.14,
+    "start": 17.761,
+    "end": 18.179,
+    "seg": 3
+   },
+   {
+    "text": "team",
+    "src": 24.6,
+    "start": 18.179,
+    "end": 18.415,
+    "seg": 3
+   },
+   {
+    "text": "and",
+    "src": 24.86,
+    "start": 18.415,
+    "end": 18.797,
+    "seg": 3
+   },
+   {
+    "text": "architects",
+    "src": 25.28,
+    "start": 18.797,
+    "end": 19.161,
+    "seg": 3
+   },
+   {
+    "text": "can",
+    "src": 25.68,
+    "start": 19.161,
+    "end": 19.415,
+    "seg": 3
+   },
+   {
+    "text": "do",
+    "src": 25.96,
+    "start": 19.415,
+    "end": 19.597,
+    "seg": 3
+   },
+   {
+    "text": "a",
+    "src": 26.16,
+    "start": 19.597,
+    "end": 19.742,
+    "seg": 3
+   },
+   {
+    "text": "review",
+    "src": 26.32,
+    "start": 19.742,
+    "end": 19.961,
+    "seg": 3
+   },
+   {
+    "text": "and",
+    "src": 26.56,
+    "start": 19.961,
+    "end": 20.524,
+    "seg": 3
+   },
+   {
+    "text": "verify",
+    "src": 27.18,
+    "start": 20.524,
+    "end": 20.597,
+    "seg": 3
+   },
+   {
+    "text": "such",
+    "src": 27.18,
+    "start": 20.524,
+    "end": 21.179,
+    "seg": 3
+   },
+   {
+    "text": "a",
+    "src": 27.9,
+    "start": 21.179,
+    "end": 21.361,
+    "seg": 3
+   },
+   {
+    "text": "huge",
+    "src": 28.1,
+    "start": 21.361,
+    "end": 21.524,
+    "seg": 3
+   },
+   {
+    "text": "amount",
+    "src": 28.28,
+    "start": 21.524,
+    "end": 22.07,
+    "seg": 3
+   },
+   {
+    "text": "of",
+    "src": 28.88,
+    "start": 22.07,
+    "end": 22.452,
+    "seg": 3
+   },
+   {
+    "text": "user",
+    "src": 29.3,
+    "start": 22.452,
+    "end": 22.706,
+    "seg": 3
+   },
+   {
+    "text": "stories,",
+    "src": 29.58,
+    "start": 22.706,
+    "end": 23.07,
+    "seg": 3
+   },
+   {
+    "text": "tasks.",
+    "src": 30.28,
+    "start": 23.342,
+    "end": 23.633,
+    "seg": 3
+   },
+   {
+    "text": "And",
+    "src": 31.26,
+    "start": 24.233,
+    "end": 24.652,
+    "seg": 3
+   },
+   {
+    "text": "as",
+    "src": 31.72,
+    "start": 24.652,
+    "end": 24.961,
+    "seg": 3
+   },
+   {
+    "text": "a",
+    "src": 32.06,
+    "start": 24.961,
+    "end": 25.142,
+    "seg": 3
+   },
+   {
+    "text": "delivery",
+    "src": 32.26,
+    "start": 25.142,
+    "end": 25.379,
+    "seg": 3
+   },
+   {
+    "text": "manager,",
+    "src": 32.52,
+    "start": 25.379,
+    "end": 25.833,
+    "seg": 3
+   },
+   {
+    "text": "you",
+    "src": 33.38,
+    "start": 26.161,
+    "end": 26.324,
+    "seg": 3
+   },
+   {
+    "text": "see",
+    "src": 33.56,
+    "start": 26.324,
+    "end": 26.488,
+    "seg": 3
+   },
+   {
+    "text": "the",
+    "src": 33.74,
+    "start": 26.488,
+    "end": 26.724,
+    "seg": 3
+   },
+   {
+    "text": "time",
+    "src": 34.0,
+    "start": 26.724,
+    "end": 26.833,
+    "seg": 3
+   },
+   {
+    "text": "to",
+    "src": 34.12,
+    "start": 26.833,
+    "end": 27.033,
+    "seg": 3
+   },
+   {
+    "text": "market",
+    "src": 34.34,
+    "start": 27.033,
+    "end": 27.415,
+    "seg": 3
+   },
+   {
+    "text": "it",
+    "src": 34.76,
+    "start": 27.415,
+    "end": 27.997,
+    "seg": 3
+   },
+   {
+    "text": "actually",
+    "src": 35.4,
+    "start": 27.997,
+    "end": 28.47,
+    "seg": 3
+   },
+   {
+    "text": "the",
+    "src": 35.92,
+    "start": 28.47,
+    "end": 29.124,
+    "seg": 3
+   },
+   {
+    "text": "same",
+    "src": 36.64,
+    "start": 29.124,
+    "end": 29.324,
+    "seg": 3
+   },
+   {
+    "text": "or",
+    "src": 36.86,
+    "start": 29.324,
+    "end": 29.67,
+    "seg": 3
+   },
+   {
+    "text": "it's",
+    "src": 37.24,
+    "start": 29.67,
+    "end": 29.979,
+    "seg": 3
+   },
+   {
+    "text": "getting",
+    "src": 37.58,
+    "start": 29.979,
+    "end": 30.197,
+    "seg": 3
+   },
+   {
+    "text": "worse.",
+    "src": 37.82,
+    "start": 30.197,
+    "end": 30.597,
+    "seg": 3
+   },
+   {
+    "text": "do",
+    "src": 53.84,
+    "start": 31.03,
+    "end": 31.139,
+    "seg": 4
+   },
+   {
+    "text": "some",
+    "src": 53.96,
+    "start": 31.139,
+    "end": 31.376,
+    "seg": 4
+   },
+   {
+    "text": "cleaning",
+    "src": 54.22,
+    "start": 31.376,
+    "end": 31.739,
+    "seg": 4
+   },
+   {
+    "text": "with",
+    "src": 54.62,
+    "start": 31.739,
+    "end": 32.158,
+    "seg": 4
+   },
+   {
+    "text": "legacy",
+    "src": 55.08,
+    "start": 32.158,
+    "end": 32.467,
+    "seg": 4
+   },
+   {
+    "text": "code,",
+    "src": 55.42,
+    "start": 32.467,
+    "end": 32.721,
+    "seg": 4
+   },
+   {
+    "text": "prepare",
+    "src": 55.7,
+    "start": 32.721,
+    "end": 33.212,
+    "seg": 4
+   },
+   {
+    "text": "the",
+    "src": 56.24,
+    "start": 33.212,
+    "end": 33.43,
+    "seg": 4
+   },
+   {
+    "text": "project",
+    "src": 56.48,
+    "start": 33.43,
+    "end": 33.739,
+    "seg": 4
+   },
+   {
+    "text": "for",
+    "src": 56.82,
+    "start": 33.739,
+    "end": 34.067,
+    "seg": 4
+   },
+   {
+    "text": "AI",
+    "src": 57.18,
+    "start": 34.067,
+    "end": 34.248,
+    "seg": 4
+   },
+   {
+    "text": "integration",
+    "src": 57.38,
+    "start": 34.248,
+    "end": 34.739,
+    "seg": 4
+   },
+   {
+    "text": "and",
+    "src": 57.92,
+    "start": 34.739,
+    "end": 35.448,
+    "seg": 4
+   },
+   {
+    "text": "don't",
+    "src": 58.7,
+    "start": 35.448,
+    "end": 35.83,
+    "seg": 4
+   },
+   {
+    "text": "forget",
+    "src": 59.12,
+    "start": 35.83,
+    "end": 36.067,
+    "seg": 4
+   },
+   {
+    "text": "to",
+    "src": 59.38,
+    "start": 36.067,
+    "end": 36.321,
+    "seg": 4
+   },
+   {
+    "text": "remember",
+    "src": 59.66,
+    "start": 36.321,
+    "end": 36.648,
+    "seg": 4
+   },
+   {
+    "text": "that",
+    "src": 60.02,
+    "start": 36.648,
+    "end": 36.903,
+    "seg": 4
+   },
+   {
+    "text": "you",
+    "src": 60.3,
+    "start": 36.903,
+    "end": 37.048,
+    "seg": 4
+   },
+   {
+    "text": "will",
+    "src": 60.46,
+    "start": 37.048,
+    "end": 37.248,
+    "seg": 4
+   },
+   {
+    "text": "have",
+    "src": 60.68,
+    "start": 37.248,
+    "end": 37.43,
+    "seg": 4
+   },
+   {
+    "text": "to",
+    "src": 60.88,
+    "start": 37.43,
+    "end": 37.612,
+    "seg": 4
+   },
+   {
+    "text": "apply",
+    "src": 61.08,
+    "start": 37.612,
+    "end": 37.848,
+    "seg": 4
+   },
+   {
+    "text": "AI",
+    "src": 61.34,
+    "start": 37.848,
+    "end": 38.267,
+    "seg": 4
+   },
+   {
+    "text": "to",
+    "src": 61.8,
+    "start": 38.267,
+    "end": 38.848,
+    "seg": 4
+   },
+   {
+    "text": "the",
+    "src": 62.44,
+    "start": 38.848,
+    "end": 39.048,
+    "seg": 4
+   },
+   {
+    "text": "complete",
+    "src": 62.66,
+    "start": 39.048,
+    "end": 39.521,
+    "seg": 4
+   },
+   {
+    "text": "software",
+    "src": 63.18,
+    "start": 39.521,
+    "end": 39.976,
+    "seg": 4
+   },
+   {
+    "text": "development",
+    "src": 63.68,
+    "start": 39.976,
+    "end": 40.503,
+    "seg": 4
+   },
+   {
+    "text": "life",
+    "src": 64.26,
+    "start": 40.503,
+    "end": 40.776,
+    "seg": 4
+   },
+   {
+    "text": "cycle",
+    "src": 64.56,
+    "start": 40.776,
+    "end": 41.03,
+    "seg": 4
+   },
+   {
+    "text": "not",
+    "src": 64.84,
+    "start": 41.03,
+    "end": 41.412,
+    "seg": 4
+   },
+   {
+    "text": "just",
+    "src": 65.26,
+    "start": 41.412,
+    "end": 41.721,
+    "seg": 4
+   },
+   {
+    "text": "a",
+    "src": 65.6,
+    "start": 41.721,
+    "end": 41.921,
+    "seg": 4
+   },
+   {
+    "text": "separate",
+    "src": 65.82,
+    "start": 41.921,
+    "end": 42.212,
+    "seg": 4
+   },
+   {
+    "text": "stages",
+    "src": 66.14,
+    "start": 42.212,
+    "end": 42.667,
+    "seg": 4
+   },
+   {
+    "text": "of",
+    "src": 66.64,
+    "start": 42.667,
+    "end": 42.921,
+    "seg": 4
+   },
+   {
+    "text": "the",
+    "src": 66.92,
+    "start": 42.921,
+    "end": 43.103,
+    "seg": 4
+   },
+   {
+    "text": "software",
+    "src": 67.12,
+    "start": 43.103,
+    "end": 43.339,
+    "seg": 4
+   },
+   {
+    "text": "development",
+    "src": 67.38,
+    "start": 43.339,
+    "end": 43.812,
+    "seg": 4
+   },
+   {
+    "text": "life",
+    "src": 67.9,
+    "start": 43.812,
+    "end": 44.048,
+    "seg": 4
+   },
+   {
+    "text": "cycle.",
+    "src": 68.16,
+    "start": 44.048,
+    "end": 44.297,
+    "seg": 4
+   }
+  ]
+ },
+ "brand": {
+  "slug": "mobidev",
+  "name": "MobiDev",
+  "tagline": "",
+  "colors": {
+   "primary": "#222222",
+   "accent": "#4AD57B",
+   "light": "#F7F7F7",
+   "text_on_primary": "#FFFFFF",
+   "text_on_accent": "#222222",
+   "extra": {
+    "white": "#FFFFFF",
+    "gradient_from": "#2EB0F1",
+    "gradient_to": "#12B292"
+   }
+  },
+  "fonts": {
+   "heading": {
+    "family": "Inter",
+    "weights": [
+     600,
+     700,
+     800,
+     900
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/Inter-SemiBold.woff2",
+     "brands/mobidev/Inter-Bold.woff2",
+     "brands/mobidev/Inter-ExtraBold.woff2",
+     "brands/mobidev/Inter-Black.woff2"
+    ]
+   },
+   "body": {
+    "family": "Open Sans",
+    "weights": [
+     500,
+     600,
+     700,
+     800
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/OpenSans-Medium.woff2",
+     "brands/mobidev/OpenSans-SemiBold.woff2",
+     "brands/mobidev/OpenSans-Bold.woff2",
+     "brands/mobidev/OpenSans-ExtraBold.woff2"
+    ]
+   }
+  },
+  "logos": {
+   "on_light": "brands/mobidev/mobidev-logo.png",
+   "on_dark": "brands/mobidev/mobidev-logo.png"
+  },
+  "motion": "calm",
+  "tone": {
+   "preset": "expert",
+   "label": "Expert, calm",
+   "loudness": "calm",
+   "overshoot": false,
+   "shake": false,
+   "scene_tone": "calm",
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "full_scenes_max": 2,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "sfx": "sparse"
+  },
+  "subtitles_default": "accent",
+  "style_default": "marker"
+ },
+ "inserts": [],
+ "subtitles": "accent",
+ "style": "brand",
+ "hideSubtitles": [],
+ "drift": true,
+ "hook": {
+  "text": "Code +40%. Same delivery.",
+  "until": 5.34
+ },
+ "corner": false,
+ "endCard": {
+  "line1": "Free AI SDLC Readiness Discovery",
+  "line2": "Book yours — link in description",
+  "seconds": 2.6
+ },
+ "framed": {
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "label": null,
+  "source": [
+   1536,
+   888
+  ],
+  "radius": 50,
+  "field": "#222222"
+ },
+ "subtitlesTop": 1312,
+ "scenes": [
+  {
+   "id": "c01",
+   "type": "stat",
+   "mode": "overlay",
+   "start": 5.442,
+   "dur": 5.0,
+   "value": {
+    "from": 30,
+    "to": 40,
+    "prefix": "+",
+    "suffix": "%"
+   },
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "26:24-26:28"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "code writing speed"
+    ]
+   },
+   "hide_subtitles": false
+  },
+  {
+   "id": "c02",
+   "type": "stat",
+   "mode": "overlay",
+   "start": 14.815,
+   "dur": 5.5,
+   "value": {
+    "from": 0,
+    "to": 50,
+    "prefix": "−",
+    "suffix": "%"
+   },
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "26:31-26:36"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "code review and QA verification"
+    ]
+   },
+   "hide_subtitles": false
+  }
+ ],
+ "sceneTone": "calm"
+}

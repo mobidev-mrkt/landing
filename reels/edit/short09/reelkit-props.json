@@ -1,0 +1,763 @@
+{
+ "video": "short09/video.mp4",
+ "captions": {
+  "duration": 24.9,
+  "segments": [
+   {
+    "i": 0,
+    "source": "main",
+    "src_start": 3.033,
+    "src_end": 3.5,
+    "out_start": 0.0,
+    "out_dur": 0.433,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 1,
+    "source": "main",
+    "src_start": 3.833,
+    "src_end": 5.0,
+    "out_start": 0.433,
+    "out_dur": 1.067,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 2,
+    "source": "main",
+    "src_start": 5.267,
+    "src_end": 8.767,
+    "out_start": 1.5,
+    "out_dur": 3.167,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 3,
+    "source": "main",
+    "src_start": 10.133,
+    "src_end": 16.967,
+    "out_start": 4.667,
+    "out_dur": 6.2,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 4,
+    "source": "main",
+    "src_start": 17.3,
+    "src_end": 19.633,
+    "out_start": 10.867,
+    "out_dur": 2.133,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 5,
+    "source": "main",
+    "src_start": 21.967,
+    "src_end": 28.933,
+    "out_start": 13.0,
+    "out_dur": 6.333,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 6,
+    "source": "main",
+    "src_start": 29.167,
+    "src_end": 33.5,
+    "out_start": 19.333,
+    "out_dur": 3.933,
+    "speed": 1.1,
+    "beat": ""
+   },
+   {
+    "i": 7,
+    "source": "main",
+    "src_start": 39.267,
+    "src_end": 41.067,
+    "out_start": 23.267,
+    "out_dur": 1.633,
+    "speed": 1.1,
+    "beat": ""
+   }
+  ],
+  "words": [
+   {
+    "text": "So",
+    "src": 2.9,
+    "start": 0.0,
+    "end": 0.352,
+    "seg": 0
+   },
+   {
+    "text": "what",
+    "src": 3.42,
+    "start": 0.433,
+    "end": 0.712,
+    "seg": 1
+   },
+   {
+    "text": "I",
+    "src": 4.14,
+    "start": 0.712,
+    "end": 0.876,
+    "seg": 1
+   },
+   {
+    "text": "want",
+    "src": 4.32,
+    "start": 0.876,
+    "end": 1.112,
+    "seg": 1
+   },
+   {
+    "text": "you",
+    "src": 4.58,
+    "start": 1.112,
+    "end": 1.494,
+    "seg": 1
+   },
+   {
+    "text": "to",
+    "src": 5.56,
+    "start": 1.767,
+    "end": 1.93,
+    "seg": 2
+   },
+   {
+    "text": "take",
+    "src": 5.74,
+    "start": 1.93,
+    "end": 2.203,
+    "seg": 2
+   },
+   {
+    "text": "from",
+    "src": 6.04,
+    "start": 2.203,
+    "end": 2.421,
+    "seg": 2
+   },
+   {
+    "text": "this",
+    "src": 6.28,
+    "start": 2.421,
+    "end": 2.803,
+    "seg": 2
+   },
+   {
+    "text": "is",
+    "src": 6.7,
+    "start": 2.803,
+    "end": 3.694,
+    "seg": 2
+   },
+   {
+    "text": "like",
+    "src": 7.68,
+    "start": 3.694,
+    "end": 3.967,
+    "seg": 2
+   },
+   {
+    "text": "three",
+    "src": 7.98,
+    "start": 3.967,
+    "end": 4.13,
+    "seg": 2
+   },
+   {
+    "text": "questions.",
+    "src": 8.16,
+    "start": 4.13,
+    "end": 4.682,
+    "seg": 2
+   },
+   {
+    "text": "When",
+    "src": 10.32,
+    "start": 4.836,
+    "end": 4.945,
+    "seg": 3
+   },
+   {
+    "text": "you're",
+    "src": 10.44,
+    "start": 4.945,
+    "end": 5.164,
+    "seg": 3
+   },
+   {
+    "text": "thinking",
+    "src": 10.68,
+    "start": 5.164,
+    "end": 5.436,
+    "seg": 3
+   },
+   {
+    "text": "about",
+    "src": 10.98,
+    "start": 5.436,
+    "end": 6.0,
+    "seg": 3
+   },
+   {
+    "text": "writing",
+    "src": 11.6,
+    "start": 6.0,
+    "end": 6.382,
+    "seg": 3
+   },
+   {
+    "text": "the",
+    "src": 12.02,
+    "start": 6.382,
+    "end": 6.873,
+    "seg": 3
+   },
+   {
+    "text": "legacy",
+    "src": 12.56,
+    "start": 6.873,
+    "end": 7.218,
+    "seg": 3
+   },
+   {
+    "text": "with",
+    "src": 12.94,
+    "start": 7.218,
+    "end": 7.473,
+    "seg": 3
+   },
+   {
+    "text": "AI.",
+    "src": 13.22,
+    "start": 7.473,
+    "end": 7.727,
+    "seg": 3
+   },
+   {
+    "text": "So",
+    "src": 14.52,
+    "start": 8.655,
+    "end": 8.764,
+    "seg": 3
+   },
+   {
+    "text": "first",
+    "src": 14.64,
+    "start": 8.764,
+    "end": 8.945,
+    "seg": 3
+   },
+   {
+    "text": "question",
+    "src": 14.84,
+    "start": 8.945,
+    "end": 9.618,
+    "seg": 3
+   },
+   {
+    "text": "can",
+    "src": 15.58,
+    "start": 9.618,
+    "end": 10.879,
+    "seg": 3
+   },
+   {
+    "text": "AI",
+    "src": 17.42,
+    "start": 10.976,
+    "end": 11.739,
+    "seg": 4
+   },
+   {
+    "text": "see",
+    "src": 18.26,
+    "start": 11.739,
+    "end": 12.048,
+    "seg": 4
+   },
+   {
+    "text": "the",
+    "src": 18.6,
+    "start": 12.048,
+    "end": 12.267,
+    "seg": 4
+   },
+   {
+    "text": "whole",
+    "src": 18.84,
+    "start": 12.267,
+    "end": 12.448,
+    "seg": 4
+   },
+   {
+    "text": "system",
+    "src": 19.04,
+    "start": 12.448,
+    "end": 12.958,
+    "seg": 4
+   },
+   {
+    "text": "second",
+    "src": 21.98,
+    "start": 13.012,
+    "end": 13.212,
+    "seg": 5
+   },
+   {
+    "text": "question",
+    "src": 22.2,
+    "start": 13.212,
+    "end": 13.503,
+    "seg": 5
+   },
+   {
+    "text": "is",
+    "src": 22.52,
+    "start": 13.503,
+    "end": 13.921,
+    "seg": 5
+   },
+   {
+    "text": "does",
+    "src": 22.98,
+    "start": 13.921,
+    "end": 14.23,
+    "seg": 5
+   },
+   {
+    "text": "it",
+    "src": 23.32,
+    "start": 14.23,
+    "end": 14.43,
+    "seg": 5
+   },
+   {
+    "text": "know",
+    "src": 23.54,
+    "start": 14.43,
+    "end": 14.685,
+    "seg": 5
+   },
+   {
+    "text": "your",
+    "src": 23.82,
+    "start": 14.685,
+    "end": 15.012,
+    "seg": 5
+   },
+   {
+    "text": "rules",
+    "src": 24.18,
+    "start": 15.012,
+    "end": 15.285,
+    "seg": 5
+   },
+   {
+    "text": "and",
+    "src": 24.48,
+    "start": 15.285,
+    "end": 16.267,
+    "seg": 5
+   },
+   {
+    "text": "the",
+    "src": 25.56,
+    "start": 16.267,
+    "end": 16.412,
+    "seg": 5
+   },
+   {
+    "text": "third",
+    "src": 25.72,
+    "start": 16.412,
+    "end": 16.521,
+    "seg": 5
+   },
+   {
+    "text": "question",
+    "src": 25.84,
+    "start": 16.521,
+    "end": 17.067,
+    "seg": 5
+   },
+   {
+    "text": "will",
+    "src": 26.44,
+    "start": 17.067,
+    "end": 17.303,
+    "seg": 5
+   },
+   {
+    "text": "you",
+    "src": 26.7,
+    "start": 17.303,
+    "end": 17.448,
+    "seg": 5
+   },
+   {
+    "text": "notice",
+    "src": 26.86,
+    "start": 17.448,
+    "end": 17.812,
+    "seg": 5
+   },
+   {
+    "text": "if",
+    "src": 27.26,
+    "start": 17.812,
+    "end": 18.303,
+    "seg": 5
+   },
+   {
+    "text": "it",
+    "src": 27.8,
+    "start": 18.303,
+    "end": 18.648,
+    "seg": 5
+   },
+   {
+    "text": "breaks",
+    "src": 28.18,
+    "start": 18.648,
+    "end": 18.812,
+    "seg": 5
+   },
+   {
+    "text": "something.",
+    "src": 28.36,
+    "start": 18.812,
+    "end": 19.267,
+    "seg": 5
+   },
+   {
+    "text": "If",
+    "src": 29.14,
+    "start": 19.333,
+    "end": 19.855,
+    "seg": 6
+   },
+   {
+    "text": "you",
+    "src": 29.74,
+    "start": 19.855,
+    "end": 20.055,
+    "seg": 6
+   },
+   {
+    "text": "have",
+    "src": 29.96,
+    "start": 20.055,
+    "end": 20.236,
+    "seg": 6
+   },
+   {
+    "text": "three",
+    "src": 30.16,
+    "start": 20.236,
+    "end": 20.527,
+    "seg": 6
+   },
+   {
+    "text": "yes",
+    "src": 30.48,
+    "start": 20.527,
+    "end": 20.691,
+    "seg": 6
+   },
+   {
+    "text": "to",
+    "src": 30.66,
+    "start": 20.691,
+    "end": 20.891,
+    "seg": 6
+   },
+   {
+    "text": "all",
+    "src": 30.88,
+    "start": 20.891,
+    "end": 21.0,
+    "seg": 6
+   },
+   {
+    "text": "the",
+    "src": 31.0,
+    "start": 21.0,
+    "end": 21.164,
+    "seg": 6
+   },
+   {
+    "text": "questions",
+    "src": 31.18,
+    "start": 21.164,
+    "end": 21.527,
+    "seg": 6
+   },
+   {
+    "text": "AI",
+    "src": 31.58,
+    "start": 21.527,
+    "end": 21.909,
+    "seg": 6
+   },
+   {
+    "text": "can",
+    "src": 32.0,
+    "start": 21.909,
+    "end": 22.109,
+    "seg": 6
+   },
+   {
+    "text": "help",
+    "src": 32.22,
+    "start": 22.109,
+    "end": 22.309,
+    "seg": 6
+   },
+   {
+    "text": "with",
+    "src": 32.44,
+    "start": 22.309,
+    "end": 22.509,
+    "seg": 6
+   },
+   {
+    "text": "the",
+    "src": 32.66,
+    "start": 22.509,
+    "end": 22.636,
+    "seg": 6
+   },
+   {
+    "text": "legacy",
+    "src": 32.8,
+    "start": 22.636,
+    "end": 22.818,
+    "seg": 6
+   },
+   {
+    "text": "migration.",
+    "src": 33.0,
+    "start": 22.818,
+    "end": 23.236,
+    "seg": 6
+   },
+   {
+    "text": "it's",
+    "src": 39.34,
+    "start": 23.333,
+    "end": 23.715,
+    "seg": 7
+   },
+   {
+    "text": "the",
+    "src": 39.76,
+    "start": 23.715,
+    "end": 23.988,
+    "seg": 7
+   },
+   {
+    "text": "setup",
+    "src": 40.06,
+    "start": 23.988,
+    "end": 24.133,
+    "seg": 7
+   },
+   {
+    "text": "that",
+    "src": 40.22,
+    "start": 24.133,
+    "end": 24.352,
+    "seg": 7
+   },
+   {
+    "text": "makes",
+    "src": 40.46,
+    "start": 24.352,
+    "end": 24.515,
+    "seg": 7
+   },
+   {
+    "text": "it",
+    "src": 40.64,
+    "start": 24.515,
+    "end": 24.733,
+    "seg": 7
+   },
+   {
+    "text": "safe.",
+    "src": 40.88,
+    "start": 24.733,
+    "end": 24.903,
+    "seg": 7
+   }
+  ]
+ },
+ "brand": {
+  "slug": "mobidev",
+  "name": "MobiDev",
+  "tagline": "",
+  "colors": {
+   "primary": "#222222",
+   "accent": "#4AD57B",
+   "light": "#F7F7F7",
+   "text_on_primary": "#FFFFFF",
+   "text_on_accent": "#222222",
+   "extra": {
+    "white": "#FFFFFF",
+    "gradient_from": "#2EB0F1",
+    "gradient_to": "#12B292"
+   }
+  },
+  "fonts": {
+   "heading": {
+    "family": "Inter",
+    "weights": [
+     600,
+     700,
+     800,
+     900
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/Inter-SemiBold.woff2",
+     "brands/mobidev/Inter-Bold.woff2",
+     "brands/mobidev/Inter-ExtraBold.woff2",
+     "brands/mobidev/Inter-Black.woff2"
+    ]
+   },
+   "body": {
+    "family": "Open Sans",
+    "weights": [
+     500,
+     600,
+     700,
+     800
+    ],
+    "source": "local",
+    "files": [
+     "brands/mobidev/OpenSans-Medium.woff2",
+     "brands/mobidev/OpenSans-SemiBold.woff2",
+     "brands/mobidev/OpenSans-Bold.woff2",
+     "brands/mobidev/OpenSans-ExtraBold.woff2"
+    ]
+   }
+  },
+  "logos": {
+   "on_light": "brands/mobidev/mobidev-logo.png",
+   "on_dark": "brands/mobidev/mobidev-logo.png"
+  },
+  "motion": "calm",
+  "tone": {
+   "preset": "expert",
+   "label": "Expert, calm",
+   "loudness": "calm",
+   "overshoot": false,
+   "shake": false,
+   "scene_tone": "calm",
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "full_scenes_max": 2,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "sfx": "sparse"
+  },
+  "subtitles_default": "accent",
+  "style_default": "marker"
+ },
+ "inserts": [],
+ "subtitles": "accent",
+ "style": "brand",
+ "hideSubtitles": [
+  [
+   8.764,
+   22.764
+  ]
+ ],
+ "drift": true,
+ "hook": {
+  "text": "AI + legacy: 3 questions",
+  "until": 8.66
+ },
+ "corner": false,
+ "endCard": {
+  "line1": "Download the free AI-Driven Modernization Readiness Checklist",
+  "line2": "Link in description",
+  "seconds": 2.6
+ },
+ "framed": {
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "label": null,
+  "source": [
+   1536,
+   888
+  ],
+  "radius": 50,
+  "field": "#222222"
+ },
+ "subtitlesTop": 1312,
+ "scenes": [
+  {
+   "id": "c01",
+   "type": "list",
+   "mode": "overlay",
+   "start": 8.764,
+   "dur": 14.0,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "source": {
+    "kind": "speech",
+    "ref": "20:55-21:13"
+   },
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "tone": "calm",
+   "text": {
+    "lines": [
+     "3 questions"
+    ]
+   },
+   "items": [
+    {
+     "text": "Can AI see the whole system?",
+     "t": 11.739
+    },
+    {
+     "text": "Does it know your rules?",
+     "t": 14.43
+    },
+    {
+     "text": "Will you notice if it breaks something?",
+     "t": 17.448
+    }
+   ],
+   "hide_subtitles": true
+  }
+ ],
+ "sceneTone": "calm"
+}
