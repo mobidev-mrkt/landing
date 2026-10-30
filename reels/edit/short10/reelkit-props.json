@@ -1380,13 +1380,13 @@
  "hideSubtitles": [],
  "drift": true,
  "hook": {
-  "text": "x",
-  "until": 2.4
+  "text": "Half the code was dead",
+  "until": 33.7
  },
  "corner": false,
  "endCard": {
-  "line1": "a",
-  "line2": "b",
+  "line1": "Download the free AI-Driven Modernization Readiness Checklist",
+  "line2": "Link in description",
   "seconds": 2.6
  },
  "framed": {

@@ -1052,13 +1052,13 @@
  ],
  "drift": true,
  "hook": {
-  "text": "x",
-  "until": 2.4
+  "text": "Slower AI, better code",
+  "until": 27.54
  },
  "corner": false,
  "endCard": {
-  "line1": "a",
-  "line2": "b",
+  "line1": "Free AI SDLC Readiness Discovery",
+  "line2": "Book yours — link in description",
   "seconds": 2.6
  },
  "framed": {

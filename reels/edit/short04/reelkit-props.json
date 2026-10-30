@@ -1035,7 +1035,7 @@
  "hideSubtitles": [],
  "drift": true,
  "hook": {
-  "text": "Code 40% faster. Delivery isn't.",
+  "text": "Code +40%. Same delivery.",
   "until": 5.34
  },
  "corner": false,
@@ -1047,9 +1047,9 @@
  "framed": {
   "window": [
    25,
-   480,
+   600,
    1030,
-   1000
+   900
   ],
   "label": null,
   "source": [
@@ -1059,7 +1059,7 @@
   "radius": 50,
   "field": "#222222"
  },
- "subtitlesTop": 1292,
+ "subtitlesTop": 1312,
  "scenes": [
   {
    "id": "c01",
@@ -1075,9 +1075,9 @@
    },
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "source": {
     "kind": "speech",
@@ -1107,9 +1107,9 @@
    },
    "box": [
     60,
-    230,
+    240,
     900,
-    370
+    340
    ],
    "source": {
     "kind": "speech",

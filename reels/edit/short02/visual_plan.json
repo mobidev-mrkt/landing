@@ -236,7 +236,21 @@
    "fallback": "main footage"
   }
  ],
- "keep_clear": [],
+ "keep_clear": [
+  {
+   "start": 21.645,
+   "end": 36.845,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "what": "scene c01 list (overlay)",
+   "scene": "c01",
+   "mode": "overlay"
+  }
+ ],
  "captions_id": "b1f546c671b3",
  "brand": "mobidev",
  "settings": {
@@ -379,5 +393,13 @@
   "min_gap_s": 3.5,
   "broll_max": 4,
   "coverage_max_s": 8.13
+ },
+ "subtitles_band": [
+  1312,
+  1480
+ ],
+ "end_card": {
+  "kind": "card",
+  "seconds": 2.6
  }
 }

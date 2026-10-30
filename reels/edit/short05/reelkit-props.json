@@ -1407,13 +1407,13 @@
  ],
  "drift": true,
  "hook": {
-  "text": "x",
-  "until": 2.4
+  "text": "AI SDLC is a window robot",
+  "until": 10.85
  },
  "corner": false,
  "endCard": {
-  "line1": "a",
-  "line2": "b",
+  "line1": "Free AI SDLC Readiness Discovery",
+  "line2": "Book yours — link in description",
   "seconds": 2.6
  },
  "framed": {

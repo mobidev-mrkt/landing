@@ -312,9 +312,9 @@
    "end": 10.442,
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "what": "scene c01 stat (overlay)",
    "scene": "c01",
@@ -325,9 +325,9 @@
    "end": 20.315,
    "box": [
     60,
-    230,
+    240,
     900,
-    370
+    340
    ],
    "what": "scene c02 stat (overlay)",
    "scene": "c02",
@@ -478,8 +478,8 @@
   "coverage_max_s": 9.75
  },
  "subtitles_band": [
-  1292,
-  1460
+  1312,
+  1480
  ],
  "end_card": {
   "kind": "card",

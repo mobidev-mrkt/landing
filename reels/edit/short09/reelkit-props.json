@@ -692,13 +692,13 @@
  ],
  "drift": true,
  "hook": {
-  "text": "x",
-  "until": 2.4
+  "text": "AI + legacy: 3 questions",
+  "until": 8.66
  },
  "corner": false,
  "endCard": {
-  "line1": "a",
-  "line2": "b",
+  "line1": "Download the free AI-Driven Modernization Readiness Checklist",
+  "line2": "Link in description",
   "seconds": 2.6
  },
  "framed": {
