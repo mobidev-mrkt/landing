@@ -1,0 +1,86 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s07.mp4",
+   "transcript": "edit/short07/transcripts/s07.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 2.933,
+   "end": 6.767
+  },
+  {
+   "start": 7.0,
+   "end": 9.233
+  },
+  {
+   "start": 9.833,
+   "end": 11.5
+  },
+  {
+   "start": 11.733,
+   "end": 13.333
+  },
+  {
+   "start": 16.067,
+   "end": 19.933
+  },
+  {
+   "start": 20.067,
+   "end": 20.367
+  },
+  {
+   "start": 20.6,
+   "end": 31.433
+  },
+  {
+   "start": 31.7,
+   "end": 34.033
+  },
+  {
+   "start": 34.167,
+   "end": 44.2
+  },
+  {
+   "start": 44.367,
+   "end": 44.633
+  },
+  {
+   "start": 44.8,
+   "end": 46.1
+  },
+  {
+   "start": 46.533,
+   "end": 48.233
+  },
+  {
+   "start": 48.4,
+   "end": 50.633
+  },
+  {
+   "start": 50.767,
+   "end": 51.533
+  },
+  {
+   "start": 51.833,
+   "end": 53.467
+  },
+  {
+   "start": 53.567,
+   "end": 56.667
+  },
+  {
+   "start": 56.967,
+   "end": 57.533
+  }
+ ],
+ "fix": {
+  "log": "lock",
+  "patchup.": "pattern.",
+  "imputed": "included"
+ }
+}
