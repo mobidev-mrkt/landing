@@ -1,0 +1,7 @@
+{
+  "name": "mobidev-webinar-shorts",
+  "version": "0.1.0",
+  "description": "Turns a MobiDev webinar recording (Google Drive link) into 10 branded vertical YouTube Shorts with CTA end cards, titles, descriptions and Google Drive folders. Needs the it-reelsmaker plugin and Claude Code.",
+  "author": { "name": "MobiDev marketing" },
+  "keywords": ["youtube-shorts", "webinar", "video", "mobidev", "reels"]
+}
