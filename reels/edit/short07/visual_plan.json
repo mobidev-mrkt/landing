@@ -232,9 +232,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    600,
-    450
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -295,9 +295,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -355,9 +355,9 @@
   "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
   "window": [
    25,
-   480,
+   600,
    1030,
-   1000
+   900
   ],
   "brand_tone": {
    "label": "Expert, calm",

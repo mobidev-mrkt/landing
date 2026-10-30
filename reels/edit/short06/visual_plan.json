@@ -280,9 +280,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -338,9 +338,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -398,9 +398,9 @@
   "speaker": "IEVGEN ZADOROZHNYI · PRODUCT MANAGER",
   "window": [
    25,
-   480,
+   600,
    1030,
-   1000
+   900
   ],
   "brand_tone": {
    "label": "Expert, calm",

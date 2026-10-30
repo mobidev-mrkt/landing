@@ -7,149 +7,269 @@
  "margin": 60,
  "frame": [
   25,
-  480,
+  600,
   1030,
-  1000
+  900
  ],
  "segments": [
   {
-   "id": "k00",
+   "id": "s01",
    "start": 0.0,
-   "end": 8.5,
+   "end": 4.339,
    "face": [
-    414,
-    739,
-    352,
-    440
+    446,
+    844,
+    297,
+    375
    ],
    "ceiling": [
-    480,
-    679
+    600,
+    784
    ],
    "chest": null,
-   "left": 329,
-   "right": 134,
+   "left": 361,
+   "right": 157,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k01",
-   "start": 8.5,
-   "end": 12.333,
+   "id": "s02",
+   "start": 4.339,
+   "end": 9.603,
    "face": [
-    417,
-    731,
-    306,
-    426
+    426,
+    833,
+    303,
+    396
    ],
    "ceiling": [
-    480,
-    671
+    600,
+    773
    ],
    "chest": null,
-   "left": 332,
-   "right": 177,
+   "left": 341,
+   "right": 171,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s03",
+   "start": 9.603,
+   "end": 10.785,
+   "face": [
+    437,
+    826,
+    259,
+    380
+   ],
+   "ceiling": [
+    600,
+    766
+   ],
+   "chest": null,
+   "left": 352,
+   "right": 204,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k02",
-   "start": 12.333,
-   "end": 15.966000000000001,
+   "id": "s04",
+   "start": 10.785,
+   "end": 15.967,
    "face": [
-    414,
-    739,
-    336,
-    418
+    426,
+    829,
+    302,
+    380
    ],
    "ceiling": [
-    480,
-    679
+    600,
+    769
    ],
    "chest": null,
-   "left": 329,
-   "right": 150,
+   "left": 341,
+   "right": 172,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k03",
+   "id": "s05",
    "start": 15.967,
-   "end": 35.334,
+   "end": 20.227,
    "face": [
-    443,
-    696,
-    461,
-    438
+    453,
+    830,
+    352,
+    359
    ],
    "ceiling": [
-    480,
-    636
+    600,
+    770
    ],
    "chest": null,
-   "left": 358,
-   "right": 0,
+   "left": 368,
+   "right": 95,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k04",
-   "start": 35.333,
+   "id": "s06",
+   "start": 20.227,
+   "end": 25.555,
+   "face": [
+    495,
+    799,
+    372,
+    367
+   ],
+   "ceiling": [
+    600,
+    739
+   ],
+   "chest": null,
+   "left": 410,
+   "right": 33,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s07",
+   "start": 25.555,
+   "end": 31.082,
+   "face": [
+    484,
+    795,
+    264,
+    308
+   ],
+   "ceiling": [
+    600,
+    735
+   ],
+   "chest": null,
+   "left": 399,
+   "right": 152,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s08",
+   "start": 31.082,
+   "end": 36.194,
+   "face": [
+    481,
+    808,
+    256,
+    342
+   ],
+   "ceiling": [
+    600,
+    748
+   ],
+   "chest": null,
+   "left": 396,
+   "right": 163,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s09",
+   "start": 36.194,
+   "end": 40.448,
+   "face": [
+    459,
+    819,
+    280,
+    349
+   ],
+   "ceiling": [
+    600,
+    759
+   ],
+   "chest": null,
+   "left": 374,
+   "right": 161,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s10",
+   "start": 40.448,
    "end": 42.733,
    "face": [
-    450,
-    720,
-    311,
-    392
+    477,
+    816,
+    240,
+    305
    ],
    "ceiling": [
-    480,
-    660
+    600,
+    756
    ],
    "chest": null,
-   "left": 365,
-   "right": 139,
+   "left": 392,
+   "right": 183,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k05",
+   "id": "s11",
    "start": 42.733,
-   "end": 49.933,
+   "end": 46.903,
    "face": [
-    469,
-    713,
-    297,
-    435
+    482,
+    810,
+    243,
+    382
    ],
    "ceiling": [
-    480,
-    653
+    600,
+    750
    ],
    "chest": null,
-   "left": 384,
-   "right": 134,
+   "left": 397,
+   "right": 175,
    "sub_ok": true,
    "cut_top": false
   },
   {
-   "id": "k06",
-   "start": 49.933,
+   "id": "s12",
+   "start": 46.903,
+   "end": 51.218,
+   "face": [
+    470,
+    815,
+    285,
+    427
+   ],
+   "ceiling": [
+    600,
+    755
+   ],
+   "chest": null,
+   "left": 385,
+   "right": 145,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s13",
+   "start": 51.218,
    "end": 53.633,
    "face": [
-    462,
-    744,
-    317,
-    450
+    470,
+    842,
+    278,
+    400
    ],
    "ceiling": [
-    480,
-    684
+    600,
+    782
    ],
    "chest": null,
-   "left": 377,
-   "right": 121,
-   "sub_ok": true,
+   "left": 385,
+   "right": 152,
+   "sub_ok": false,
    "cut_top": false
   }
  ]

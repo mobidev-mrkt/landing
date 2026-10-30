@@ -4,7 +4,7 @@ S=/root/.claude/plugins/synced/c347354c-4cb9-45b3-b39b-0ac1576e85d9_7e769f59-ffb
 VP="python3 $S/visual_plan.py"
 SER="SERHII IVANOV"
 IEV="IEVGEN ZADOROZHNYI"
-add(){ id=$1; shift; $VP add edit/short$id --kind scene --mode overlay --source speech "$@" || echo "!! add failed: $id $*"; }
+add(){ id=$1; shift; $VP add edit/short$id --kind scene --mode overlay --box 60,240,900,340 --source speech "$@" || echo "!! add failed: $id $*"; }
 
 add 01 --type list --at "word:redoing#1" --dur 8.6 --source-ref "06:15-06:28" --lines "What slowed delivery" \
   --items-json '[{"text":"Redoing work over and over","at":"word:redoing#1"},{"text":"Waiting for a spec","at":"word:waiting#1"},{"text":"Waiting for QA","at":"word:QA#1"}]' \
@@ -24,7 +24,7 @@ add 03 --type list --at "word:speed#1" --dur 7.0 --source-ref "24:47-24:54" --li
 
 add 04 --type stat --at "word:speed#1" --dur 5.0 --source-ref "26:24-26:28" --value-json '{"from":30,"to":40,"prefix":"+","suffix":"%"}' --lines "code writing speed" \
   --what "+30-40% code writing speed" --why "the number the argument starts from"
-add 04 --type stat --at "word:degrades#1" --dur 5.5 --box 60,230,900,370 --source-ref "26:31-26:36" --value-json '{"from":0,"to":50,"prefix":"−","suffix":"%"}' --lines "code review and QA verification" \
+add 04 --type stat --at "word:degrades#1" --dur 5.5 --source-ref "26:31-26:36" --value-json '{"from":0,"to":50,"prefix":"−","suffix":"%"}' --lines "code review and QA verification" \
   --what "-50% review and QA throughput" --why "the bottleneck number"
 
 add 05 --type list --at "word:cleans#2" --dur 16.4 --source-ref "40:06-40:20" --lines "The window robot" \

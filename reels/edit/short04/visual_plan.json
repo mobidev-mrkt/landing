@@ -240,9 +240,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    480,
-    360
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -287,9 +287,9 @@
    "interaction": null,
    "box": [
     60,
-    230,
+    240,
     900,
-    370
+    340
    ],
    "side": null,
    "source": {
@@ -373,9 +373,9 @@
   "format": "framed",
   "window": [
    25,
-   480,
+   600,
    1030,
-   1000
+   900
   ],
   "speaker": "IEVGEN ZADOROZHNYI · PRODUCT MANAGER",
   "brand_tone": {

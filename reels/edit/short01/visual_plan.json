@@ -256,9 +256,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    600,
-    450
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -299,9 +299,9 @@
    "interaction": null,
    "box": [
     60,
-    250,
-    600,
-    450
+    240,
+    900,
+    340
    ],
    "side": null,
    "source": {
@@ -318,7 +318,34 @@
    "fallback": "main footage"
   }
  ],
- "keep_clear": [],
+ "keep_clear": [
+  {
+   "start": 20.03,
+   "end": 28.63,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "what": "scene c01 list (overlay)",
+   "scene": "c01",
+   "mode": "overlay"
+  },
+  {
+   "start": 32.255,
+   "end": 39.305,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "what": "scene c02 quote (overlay)",
+   "scene": "c02",
+   "mode": "overlay"
+  }
+ ],
  "captions_id": "a2e1f4f43084",
  "brand": "mobidev",
  "settings": {
@@ -359,9 +386,9 @@
   "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
   "window": [
    25,
-   480,
+   600,
    1030,
-   1000
+   900
   ],
   "brand_tone": {
    "label": "Expert, calm",
@@ -461,5 +488,13 @@
   "min_gap_s": 3.5,
   "broll_max": 4,
   "coverage_max_s": 8.65
+ },
+ "subtitles_band": [
+  1272,
+  1440
+ ],
+ "end_card": {
+  "kind": "card",
+  "seconds": 2.6
  }
 }
