@@ -17,14 +17,16 @@ weakest axis = Technical layer.** Points are lost on the inputs below, not on co
 - [ ] Call length, and whether the client gets anything in writing after it.
 - [ ] What the "readiness level" looks like (a scale? how many levels?).
 - [ ] "Offer valid for 48 hours" from the webinar slide was left out on purpose: add it back only if it applies to this page.
-- [ ] Speaker bios (12+ / 13+ years, roles) are from the webinar intro: confirm with Serhii and Ievgen.
+- [ ] The call is with Helen Khailova-Horash (Senior Solutions Manager; title from the webinar's contact slide). Confirm the line
+      "she brings MobiDev's delivery engineers into the conversation" matches how presales works (on the webinar she said she
+      would bring them in "if our schedules allow").
 
 ## Content that would lift the score
 - [ ] **Soft alternative:** set `CHECKLIST_URL` in the page script to the AI-Driven Modernization Readiness Checklist page;
       the "Not ready for a call?" line appears by itself.
 - [ ] **One short case** with a number (e.g. the legacy retail operations platform from the webinar) for screen 2.
 - [ ] **FAQ of 3–4 questions** with FAQPage schema, once the answers above are known.
-- [ ] **Headshots:** the avatars are stills from the webinar video; replace with official photos.
+- [ ] **Headshot:** Helen's photo is cropped from the webinar's contact slide (168 px); swap for the original file.
 
 ## Deliberately left out (3-screen limit, campaign page)
 Navigation and breadcrumbs, related services, standards/stack, engagement models table (the offer is free).

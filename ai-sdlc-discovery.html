@@ -88,8 +88,7 @@ a{color:inherit}
 .q blockquote::before{content:"“";display:block;font-weight:900;font-size:44px;line-height:.8;color:var(--green);margin-bottom:6px}
 .q p{margin-top:12px;font-size:15px}
 .q small{display:block;margin-top:14px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#6B6E6D;font-weight:700}
-.people{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
-.person{display:flex;gap:18px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px}
+.person{display:flex;gap:18px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:40px;max-width:760px}
 .person img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid var(--green);flex:0 0 84px}
 .person b{font-family:var(--font-display);font-size:17px;display:block}
 .person span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
@@ -145,8 +144,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   .quotes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -24px;padding:0 24px 8px;scroll-padding:0 24px}
   .q{flex:0 0 84%;scroll-snap-align:start;padding:22px}
   .q blockquote{font-size:17px}
-  .people{grid-template-columns:1fr;gap:12px;margin-top:24px}
-  .person{padding:14px;gap:14px}
+  .person{padding:14px;gap:14px;margin-top:24px}
   .person img{width:60px;height:60px;flex-basis:60px}
   .person span{font-size:13px}
   .limit{font-size:14px;margin-top:20px}
@@ -186,7 +184,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <h2 id="get-h">A clear read on where AI stalls in your delivery</h2>
       <div class="row"><span>Your AI SDLC readiness level</span><b>specs to release</b></div>
       <div class="row"><span>What holds delivery back</span><b>named on the call</b></div>
-      <div class="row"><span>Who you talk to</span><b>MobiDev AI SDLC experts</b></div>
+      <div class="row"><span>Who you talk to</span><b>Helen Khailova-Horash, Senior Solutions Manager</b></div>
       <div class="row"><span>Cost</span><b>Free</b></div>
     </aside>
   </div>
@@ -218,17 +216,11 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
         <small>From our webinar Q&amp;A list</small>
       </figure>
     </div>
-    <div class="people" aria-label="Who runs the Discovery">
-      <div class="person">
-        <img src="ai-sdlc-discovery/serhii.webp" alt="Serhii Ivanov" width="84" height="84" loading="lazy">
-        <div><b>Serhii Ivanov</b><span>Head of Resource Management at MobiDev. 12+ years scaling engineering teams, drives AI adoption on the delivery side.</span></div>
-      </div>
-      <div class="person">
-        <img src="ai-sdlc-discovery/ievgen.webp" alt="Ievgen Zadorozhnyi" width="84" height="84" loading="lazy">
-        <div><b>Ievgen Zadorozhnyi</b><span>Product Manager and delivery expert at MobiDev. 13+ years consulting on delivery and product, now on AI SDLC projects.</span></div>
-      </div>
+    <div class="person" aria-label="Who you talk to">
+      <img src="ai-sdlc-discovery/helen.webp" alt="Helen Khailova-Horash" width="84" height="84" loading="lazy">
+      <div><b>Your call is with Helen Khailova-Horash</b><span>Senior Solutions Manager at MobiDev. Helen hosted the webinar these questions come from. When your case needs a deeper technical look, she brings MobiDev's delivery engineers into the conversation.</span></div>
     </div>
-    <p class="limit"><b>What it is not:</b> a sales pitch or a promise of 10× speed. As Serhii put it on the webinar, anyone promising a flat 10× from day one either hasn't measured it or is selling something. You get a read of where your team is today, including the parts that are slow.</p>
+    <p class="limit"><b>What it is not:</b> a sales pitch or a promise of 10× speed. As our Head of Resource Management put it on the webinar, anyone promising a flat 10× from day one either hasn't measured it or is selling something. You get a read of where your team is today, including the parts that are slow.</p>
   </div>
 </section>
 
@@ -241,7 +233,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
       <ol class="steps">
         <li><div><b>Leave your details</b>The form on this page, then a few quick questions about how your team ships.</div></li>
         <li><div><b>An AI SDLC expert goes through your answers</b>Before the call, so the time is spent on your delivery, not on intake.</div></li>
-        <li><div><b>A call about your readiness</b>Your AI SDLC readiness level and what's actually holding delivery back.</div></li>
+        <li><div><b>A call with Helen</b>Your AI SDLC readiness level and what's actually holding delivery back.</div></li>
       </ol>
       <p class="soft" id="soft" hidden>Not ready for a call? <a href="#" id="soft-link" data-ev="soft_checklist">Download the free AI-Driven Modernization Readiness Checklist</a>.</p>
     </div>
