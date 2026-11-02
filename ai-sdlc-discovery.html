@@ -60,15 +60,18 @@ a{color:inherit}
 /* screen 1: hero */
 .top{position:absolute;top:0;left:0;right:0;z-index:3;padding:22px 0}
 .top img{height:26px;width:auto;display:block}
-.hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;padding:96px 0 56px}
+.hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;padding:96px 0 48px}
 .hero::after{content:"";position:absolute;inset:auto -10% -55% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%);pointer-events:none}
-.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;grid-template-areas:"copy form" "facts form";column-gap:56px;align-items:start}
+.hero-copy{grid-area:copy;align-self:end}
+.hero form{grid-area:form;align-self:center}
+.hero .facts{grid-area:facts;align-self:start;display:grid;grid-template-columns:repeat(3,auto);justify-content:start}
+.form-h{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--white);line-height:1.25}
+.form-sub{font-size:14px;color:#C9CCCB;margin:6px 0 20px}
 .hero .eyebrow{color:var(--green)}
 .hero h1{color:var(--white)}
 .hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-sub{color:#C9CCCB;font-size:clamp(16px,1vw + 8px,19px);margin-top:20px;max-width:560px}
-.hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px}
-.hero-cta span{color:#9A9D9C;font-size:14px}
 .facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:24px;border-top:1px solid #3A3A3A}
 .facts li{color:#C9CCCB;font-size:14px}
 .facts b{display:block;font-family:var(--font-display);font-weight:900;font-size:28px;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -132,8 +135,11 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
 
 @media(max-width:900px){
   .hero{padding:76px 0 40px;min-height:auto}
-  .hero-in,.start-in{grid-template-columns:1fr;gap:28px}
-  .hero .card{display:none} /* the offer and "Free" are already in the copy and the CTA line */
+  .hero-in{grid-template-columns:1fr;grid-template-areas:"copy" "form" "facts";row-gap:24px}
+  .start-in{grid-template-columns:1fr;gap:28px}
+  .hero-sub{margin-top:14px}
+  .hero-sub .more{display:none} /* on a phone the form card says the rest */
+  .hero .facts{grid-template-columns:repeat(3,1fr)}
   .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;padding-top:20px}
   .facts li{font-size:13px;line-height:1.35}
   .facts b{font-size:24px}
@@ -153,40 +159,66 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   form{padding:22px}
   .f-row{margin-bottom:14px}
   .sticky.on{display:block}
-  .hero-cta .btn{width:100%}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
 
-<!-- SCREEN 1 · hero -->
+<!-- SCREEN 1 · hero with the form -->
 <header class="hero" id="top">
   <div class="top"><div class="wrap"><img src="mobidev-logo.png" alt="MobiDev" width="104" height="26"></div></div>
   <div class="wrap hero-in">
-    <div>
+    <div class="hero-copy">
       <p class="eyebrow">Free AI SDLC Readiness Discovery</p>
       <h1>AI made coding faster. <em>Find out why delivery didn't follow.</em></h1>
-      <p class="hero-sub">For CTOs, engineering and product leaders who rolled out AI tools and still ship at the old pace. Answer a few questions, one of our AI SDLC experts goes through them, and on a call you get your readiness level and what is actually holding delivery back.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#start" data-ev="cta_hero">Check my AI SDLC readiness</a>
-        <span>Free. A few questions, then one call.</span>
-      </div>
-      <!-- figures as published on mobidev.biz (checked 2026-11-02) -->
-      <ul class="facts" aria-label="MobiDev in numbers">
-        <li><b>400+</b>software products launched</li>
-        <li><b>8+ years</b>in AI consulting and development</li>
-        <li><b>9.1</b>NPS, 2025 client survey</li>
-      </ul>
+      <p class="hero-sub">For CTOs, engineering and product leaders who rolled out AI tools and still ship at the old pace.<span class="more"> Leave your details, an AI SDLC expert goes through your answers, and on a call you get your readiness level and what is actually holding delivery back.</span></p>
     </div>
-    <aside class="card" aria-labelledby="get-h">
-      <p class="lbl">What you leave the call with</p>
-      <h2 id="get-h">A clear read on where AI stalls in your delivery</h2>
-      <div class="row"><span>Your AI SDLC readiness level</span><b>specs to release</b></div>
-      <div class="row"><span>What holds delivery back</span><b>named on the call</b></div>
-      <div class="row"><span>Who you talk to</span><b>Helen Khailova-Horash, Senior Solutions Manager</b></div>
-      <div class="row"><span>Cost</span><b>Free</b></div>
-    </aside>
+      <form id="f" name="ai-sdlc-discovery" method="POST" data-netlify="true" netlify-honeypot="company-website" novalidate>
+        <div class="fields">
+          <p class="form-h">Book your free Discovery</p>
+          <p class="form-sub">A call with Helen Khailova-Horash, Senior Solutions Manager. No payment, no obligation.</p>
+          <input type="hidden" name="form-name" value="ai-sdlc-discovery">
+          <p hidden><label>Leave this empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+          <div class="f-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" required aria-describedby="name-err">
+            <p class="err" id="name-err">Please enter your name.</p>
+          </div>
+          <div class="f-row">
+            <label for="email">Work email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required aria-describedby="email-err">
+            <p class="err" id="email-err">Please enter a valid email.</p>
+          </div>
+          <div class="f-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="f-row">
+            <label for="stall">Where does delivery stall most?</label>
+            <select id="stall" name="stall">
+              <option value="">Choose one</option>
+              <option>Specs and requirements</option>
+              <option>Code review</option>
+              <option>QA and testing</option>
+              <option>Legacy code</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="send">Book my free Discovery</button>
+          <p class="f-note">We use your details only to arrange the call. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+        <div class="done" role="status" aria-live="polite">
+          <h3>Thanks, it's on our side now</h3>
+          <p>We'll get back to you by email with the next step.</p>
+        </div>
+      </form>
+    <!-- figures as published on mobidev.biz (checked 2026-11-02) -->
+    <ul class="facts" aria-label="MobiDev in numbers">
+      <li><b>400+</b>software products launched</li>
+      <li><b>8+ years</b>in AI consulting and development</li>
+      <li><b>9.1</b>NPS, 2025 client survey</li>
+    </ul>
   </div>
 </header>
 
@@ -224,57 +256,27 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   </div>
 </section>
 
-<!-- SCREEN 3 · steps and the form -->
+<!-- SCREEN 3 · how it works and what you leave with -->
 <section class="start" id="start" aria-labelledby="start-h">
   <div class="wrap start-in">
     <div>
       <p class="eyebrow" style="color:var(--green)">How it works</p>
       <h2 id="start-h">Three steps to your readiness level</h2>
       <ol class="steps">
-        <li><div><b>Leave your details</b>The form on this page, then a few quick questions about how your team ships.</div></li>
+        <li><div><b>Leave your details</b>The form at the top of this page, then a few quick questions about how your team ships.</div></li>
         <li><div><b>An AI SDLC expert goes through your answers</b>Before the call, so the time is spent on your delivery, not on intake.</div></li>
         <li><div><b>A call with Helen</b>Your AI SDLC readiness level and what's actually holding delivery back.</div></li>
       </ol>
       <p class="soft" id="soft" hidden>Not ready for a call? <a href="#" id="soft-link" data-ev="soft_checklist">Download the free AI-Driven Modernization Readiness Checklist</a>.</p>
     </div>
-
-    <form id="f" name="ai-sdlc-discovery" method="POST" data-netlify="true" netlify-honeypot="company-website" novalidate>
-      <div class="fields">
-        <input type="hidden" name="form-name" value="ai-sdlc-discovery">
-        <p hidden><label>Leave this empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
-        <div class="f-row">
-          <label for="name">Your name</label>
-          <input id="name" name="name" autocomplete="name" required aria-describedby="name-err">
-          <p class="err" id="name-err">Please enter your name.</p>
-        </div>
-        <div class="f-row">
-          <label for="email">Work email</label>
-          <input id="email" type="email" name="email" autocomplete="email" required aria-describedby="email-err">
-          <p class="err" id="email-err">Please enter a valid email.</p>
-        </div>
-        <div class="f-row">
-          <label for="company">Company</label>
-          <input id="company" name="company" autocomplete="organization">
-        </div>
-        <div class="f-row">
-          <label for="stall">Where does delivery stall most?</label>
-          <select id="stall" name="stall">
-            <option value="">Choose one</option>
-            <option>Specs and requirements</option>
-            <option>Code review</option>
-            <option>QA and testing</option>
-            <option>Legacy code</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full" id="send">Book my free Discovery</button>
-        <p class="f-note">No payment, no obligation. See our <a href="privacy.html">Privacy Policy</a>.</p>
-      </div>
-      <div class="done" role="status" aria-live="polite">
-        <h3>Thanks, it's on our side now</h3>
-        <p>We'll get back to you by email with the next step.</p>
-      </div>
-    </form>
+    <aside class="card" aria-labelledby="get-h">
+      <p class="lbl">What you leave the call with</p>
+      <h2 id="get-h">A clear read on where AI stalls in your delivery</h2>
+      <div class="row"><span>Your AI SDLC readiness level</span><b>specs to release</b></div>
+      <div class="row"><span>What holds delivery back</span><b>named on the call</b></div>
+      <div class="row"><span>Cost</span><b>Free</b></div>
+      <a class="btn btn-primary btn-full" href="#f" data-ev="cta_bottom" style="margin-top:20px">Book my free Discovery</a>
+    </aside>
   </div>
 </section>
 </main>
@@ -286,7 +288,7 @@ footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;paddin
   </div>
 </footer>
 
-<div class="sticky" id="sticky"><a class="btn btn-primary btn-full" href="#start" data-ev="cta_sticky">Check my AI SDLC readiness</a></div>
+<div class="sticky" id="sticky"><a class="btn btn-primary btn-full" href="#f" data-ev="cta_sticky">Book my free Discovery</a></div>
 
 <script>
 /* ─────────────────────────────────────────────────────────────
