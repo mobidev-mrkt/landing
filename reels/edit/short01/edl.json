@@ -1,0 +1,35 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/s01.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.05:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 34.733,
+   "end": 39.267,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 4.533,
+   "end": 34.3,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 39.7,
+   "end": 48.633,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 39.333
+}

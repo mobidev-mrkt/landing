@@ -1,0 +1,40 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s02.mp4",
+   "transcript": "edit/short02/transcripts/s02.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 11.8,
+   "end": 19.767
+  },
+  {
+   "start": 31.1,
+   "end": 33.6
+  },
+  {
+   "start": 33.867,
+   "end": 35.333
+  },
+  {
+   "start": 35.567,
+   "end": 59.767
+  },
+  {
+   "start": 60.067,
+   "end": 64.567
+  }
+ ],
+ "fix": {
+  "AIS": "AI",
+  "DLC": "SDLC"
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ }
+}

@@ -1,0 +1,838 @@
+{
+ "duration": 46.333,
+ "segments": [
+  {
+   "i": 0,
+   "source": "main",
+   "src_start": 2.933,
+   "src_end": 9.3,
+   "out_start": 0.0,
+   "out_dur": 5.8,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 1,
+   "source": "main",
+   "src_start": 9.733,
+   "src_end": 13.233,
+   "out_start": 5.8,
+   "out_dur": 3.167,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 2,
+   "source": "main",
+   "src_start": 16.467,
+   "src_end": 46.167,
+   "out_start": 8.967,
+   "out_dur": 27.0,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 3,
+   "source": "main",
+   "src_start": 46.467,
+   "src_end": 57.867,
+   "out_start": 35.967,
+   "out_dur": 10.367,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "words": [
+  {
+   "text": "Out",
+   "src": 3.2,
+   "start": 0.242,
+   "end": 0.442,
+   "seg": 0
+  },
+  {
+   "text": "of",
+   "src": 3.42,
+   "start": 0.442,
+   "end": 0.606,
+   "seg": 0
+  },
+  {
+   "text": "the",
+   "src": 3.6,
+   "start": 0.606,
+   "end": 0.697,
+   "seg": 0
+  },
+  {
+   "text": "box,",
+   "src": 3.7,
+   "start": 0.697,
+   "end": 0.97,
+   "seg": 0
+  },
+  {
+   "text": "AI",
+   "src": 4.26,
+   "start": 1.206,
+   "end": 1.497,
+   "seg": 0
+  },
+  {
+   "text": "doesn't",
+   "src": 4.58,
+   "start": 1.497,
+   "end": 1.842,
+   "seg": 0
+  },
+  {
+   "text": "understand",
+   "src": 4.96,
+   "start": 1.842,
+   "end": 2.352,
+   "seg": 0
+  },
+  {
+   "text": "legacy.",
+   "src": 5.52,
+   "start": 2.352,
+   "end": 2.697,
+   "seg": 0
+  },
+  {
+   "text": "It",
+   "src": 6.38,
+   "start": 3.133,
+   "end": 3.206,
+   "seg": 0
+  },
+  {
+   "text": "guesses",
+   "src": 6.38,
+   "start": 3.133,
+   "end": 3.442,
+   "seg": 0
+  },
+  {
+   "text": "and",
+   "src": 6.72,
+   "start": 3.442,
+   "end": 4.461,
+   "seg": 0
+  },
+  {
+   "text": "guesses",
+   "src": 7.84,
+   "start": 4.461,
+   "end": 4.879,
+   "seg": 0
+  },
+  {
+   "text": "very",
+   "src": 8.3,
+   "start": 4.879,
+   "end": 5.206,
+   "seg": 0
+  },
+  {
+   "text": "convincingly.",
+   "src": 8.66,
+   "start": 5.206,
+   "end": 5.788,
+   "seg": 0
+  },
+  {
+   "text": "A",
+   "src": 10.2,
+   "start": 6.224,
+   "end": 6.297,
+   "seg": 1
+  },
+  {
+   "text": "quick",
+   "src": 10.28,
+   "start": 6.297,
+   "end": 6.406,
+   "seg": 1
+  },
+  {
+   "text": "example",
+   "src": 10.4,
+   "start": 6.406,
+   "end": 6.824,
+   "seg": 1
+  },
+  {
+   "text": "from",
+   "src": 10.86,
+   "start": 6.824,
+   "end": 7.152,
+   "seg": 1
+  },
+  {
+   "text": "our",
+   "src": 11.22,
+   "start": 7.152,
+   "end": 7.715,
+   "seg": 1
+  },
+  {
+   "text": "past",
+   "src": 11.84,
+   "start": 7.715,
+   "end": 8.097,
+   "seg": 1
+  },
+  {
+   "text": "experience,",
+   "src": 12.26,
+   "start": 8.097,
+   "end": 8.952,
+   "seg": 1
+  },
+  {
+   "text": "An",
+   "src": 16.46,
+   "start": 8.967,
+   "end": 9.124,
+   "seg": 2
+  },
+  {
+   "text": "old",
+   "src": 16.64,
+   "start": 9.124,
+   "end": 9.361,
+   "seg": 2
+  },
+  {
+   "text": "PHP",
+   "src": 16.9,
+   "start": 9.361,
+   "end": 9.652,
+   "seg": 2
+  },
+  {
+   "text": "system",
+   "src": 17.22,
+   "start": 9.652,
+   "end": 10.233,
+   "seg": 2
+  },
+  {
+   "text": "and",
+   "src": 17.86,
+   "start": 10.233,
+   "end": 10.942,
+   "seg": 2
+  },
+  {
+   "text": "a",
+   "src": 18.64,
+   "start": 10.942,
+   "end": 11.197,
+   "seg": 2
+  },
+  {
+   "text": "developer",
+   "src": 18.92,
+   "start": 11.197,
+   "end": 11.579,
+   "seg": 2
+  },
+  {
+   "text": "placed",
+   "src": 19.34,
+   "start": 11.579,
+   "end": 12.197,
+   "seg": 2
+  },
+  {
+   "text": "a",
+   "src": 20.02,
+   "start": 12.197,
+   "end": 12.888,
+   "seg": 2
+  },
+  {
+   "text": "single",
+   "src": 20.78,
+   "start": 12.888,
+   "end": 13.179,
+   "seg": 2
+  },
+  {
+   "text": "file",
+   "src": 21.1,
+   "start": 13.179,
+   "end": 13.633,
+   "seg": 2
+  },
+  {
+   "text": "into",
+   "src": 21.6,
+   "start": 13.633,
+   "end": 14.488,
+   "seg": 2
+  },
+  {
+   "text": "ChatGPT",
+   "src": 22.54,
+   "start": 14.488,
+   "end": 14.906,
+   "seg": 2
+  },
+  {
+   "text": "and",
+   "src": 23.56,
+   "start": 15.415,
+   "end": 15.724,
+   "seg": 2
+  },
+  {
+   "text": "asked",
+   "src": 23.9,
+   "start": 15.724,
+   "end": 16.07,
+   "seg": 2
+  },
+  {
+   "text": "what",
+   "src": 24.28,
+   "start": 16.07,
+   "end": 16.306,
+   "seg": 2
+  },
+  {
+   "text": "this",
+   "src": 24.54,
+   "start": 16.306,
+   "end": 16.561,
+   "seg": 2
+  },
+  {
+   "text": "function",
+   "src": 24.82,
+   "start": 16.561,
+   "end": 17.052,
+   "seg": 2
+  },
+  {
+   "text": "does.",
+   "src": 25.36,
+   "start": 17.052,
+   "end": 17.433,
+   "seg": 2
+  },
+  {
+   "text": "And",
+   "src": 26.48,
+   "start": 18.07,
+   "end": 18.415,
+   "seg": 2
+  },
+  {
+   "text": "the",
+   "src": 26.86,
+   "start": 18.415,
+   "end": 18.597,
+   "seg": 2
+  },
+  {
+   "text": "answer",
+   "src": 27.06,
+   "start": 18.597,
+   "end": 19.07,
+   "seg": 2
+  },
+  {
+   "text": "is",
+   "src": 27.58,
+   "start": 19.07,
+   "end": 19.361,
+   "seg": 2
+  },
+  {
+   "text": "very",
+   "src": 27.9,
+   "start": 19.361,
+   "end": 19.615,
+   "seg": 2
+  },
+  {
+   "text": "confident,",
+   "src": 28.18,
+   "start": 19.615,
+   "end": 20.233,
+   "seg": 2
+  },
+  {
+   "text": "but",
+   "src": 28.86,
+   "start": 20.233,
+   "end": 20.597,
+   "seg": 2
+  },
+  {
+   "text": "it",
+   "src": 29.26,
+   "start": 20.597,
+   "end": 20.815,
+   "seg": 2
+  },
+  {
+   "text": "describes",
+   "src": 29.5,
+   "start": 20.815,
+   "end": 21.197,
+   "seg": 2
+  },
+  {
+   "text": "the",
+   "src": 29.92,
+   "start": 21.197,
+   "end": 21.452,
+   "seg": 2
+  },
+  {
+   "text": "code",
+   "src": 30.2,
+   "start": 21.452,
+   "end": 21.579,
+   "seg": 2
+  },
+  {
+   "text": "that",
+   "src": 30.34,
+   "start": 21.579,
+   "end": 21.833,
+   "seg": 2
+  },
+  {
+   "text": "the",
+   "src": 30.62,
+   "start": 21.833,
+   "end": 22.015,
+   "seg": 2
+  },
+  {
+   "text": "system",
+   "src": 30.82,
+   "start": 22.015,
+   "end": 22.088,
+   "seg": 2
+  },
+  {
+   "text": "never",
+   "src": 30.88,
+   "start": 22.07,
+   "end": 22.379,
+   "seg": 2
+  },
+  {
+   "text": "used.",
+   "src": 31.22,
+   "start": 22.379,
+   "end": 22.579,
+   "seg": 2
+  },
+  {
+   "text": "The",
+   "src": 32.18,
+   "start": 23.252,
+   "end": 23.324,
+   "seg": 2
+  },
+  {
+   "text": "real",
+   "src": 32.26,
+   "start": 23.324,
+   "end": 23.542,
+   "seg": 2
+  },
+  {
+   "text": "behavior",
+   "src": 32.5,
+   "start": 23.542,
+   "end": 24.033,
+   "seg": 2
+  },
+  {
+   "text": "depended",
+   "src": 33.04,
+   "start": 24.033,
+   "end": 25.452,
+   "seg": 2
+  },
+  {
+   "text": "on",
+   "src": 34.6,
+   "start": 25.452,
+   "end": 25.67,
+   "seg": 2
+  },
+  {
+   "text": "a",
+   "src": 34.84,
+   "start": 25.67,
+   "end": 25.906,
+   "seg": 2
+  },
+  {
+   "text": "global",
+   "src": 35.1,
+   "start": 25.906,
+   "end": 26.142,
+   "seg": 2
+  },
+  {
+   "text": "variable",
+   "src": 35.36,
+   "start": 26.142,
+   "end": 26.652,
+   "seg": 2
+  },
+  {
+   "text": "that",
+   "src": 35.92,
+   "start": 26.652,
+   "end": 26.87,
+   "seg": 2
+  },
+  {
+   "text": "was",
+   "src": 36.16,
+   "start": 26.87,
+   "end": 27.379,
+   "seg": 2
+  },
+  {
+   "text": "in an",
+   "src": 36.72,
+   "start": 27.379,
+   "end": 27.488,
+   "seg": 2
+  },
+  {
+   "text": "included",
+   "src": 36.84,
+   "start": 27.488,
+   "end": 27.797,
+   "seg": 2
+  },
+  {
+   "text": "file",
+   "src": 37.18,
+   "start": 27.797,
+   "end": 28.161,
+   "seg": 2
+  },
+  {
+   "text": "three",
+   "src": 37.58,
+   "start": 28.161,
+   "end": 28.361,
+   "seg": 2
+  },
+  {
+   "text": "files",
+   "src": 37.8,
+   "start": 28.361,
+   "end": 28.706,
+   "seg": 2
+  },
+  {
+   "text": "away.",
+   "src": 38.18,
+   "start": 28.706,
+   "end": 29.124,
+   "seg": 2
+  },
+  {
+   "text": "The",
+   "src": 39.3,
+   "start": 29.724,
+   "end": 29.888,
+   "seg": 2
+  },
+  {
+   "text": "model",
+   "src": 39.48,
+   "start": 29.888,
+   "end": 30.033,
+   "seg": 2
+  },
+  {
+   "text": "couldn't",
+   "src": 39.64,
+   "start": 30.033,
+   "end": 30.397,
+   "seg": 2
+  },
+  {
+   "text": "see",
+   "src": 40.04,
+   "start": 30.397,
+   "end": 30.652,
+   "seg": 2
+  },
+  {
+   "text": "that",
+   "src": 40.32,
+   "start": 30.652,
+   "end": 30.906,
+   "seg": 2
+  },
+  {
+   "text": "context,",
+   "src": 40.6,
+   "start": 30.906,
+   "end": 31.252,
+   "seg": 2
+  },
+  {
+   "text": "so",
+   "src": 41.04,
+   "start": 31.306,
+   "end": 31.506,
+   "seg": 2
+  },
+  {
+   "text": "it",
+   "src": 41.26,
+   "start": 31.506,
+   "end": 31.652,
+   "seg": 2
+  },
+  {
+   "text": "guessed",
+   "src": 41.42,
+   "start": 31.652,
+   "end": 31.852,
+   "seg": 2
+  },
+  {
+   "text": "and",
+   "src": 41.64,
+   "start": 31.852,
+   "end": 32.288,
+   "seg": 2
+  },
+  {
+   "text": "provided",
+   "src": 42.12,
+   "start": 32.288,
+   "end": 32.688,
+   "seg": 2
+  },
+  {
+   "text": "a",
+   "src": 42.56,
+   "start": 32.688,
+   "end": 33.142,
+   "seg": 2
+  },
+  {
+   "text": "convincing",
+   "src": 43.06,
+   "start": 33.142,
+   "end": 33.688,
+   "seg": 2
+  },
+  {
+   "text": "answer.",
+   "src": 43.66,
+   "start": 33.688,
+   "end": 34.397,
+   "seg": 2
+  },
+  {
+   "text": "So",
+   "src": 45.42,
+   "start": 35.288,
+   "end": 35.488,
+   "seg": 2
+  },
+  {
+   "text": "in",
+   "src": 45.64,
+   "start": 35.488,
+   "end": 35.652,
+   "seg": 2
+  },
+  {
+   "text": "legacy,",
+   "src": 45.82,
+   "start": 35.652,
+   "end": 35.967,
+   "seg": 2
+  },
+  {
+   "text": "AI",
+   "src": 47.06,
+   "start": 36.506,
+   "end": 36.579,
+   "seg": 3
+  },
+  {
+   "text": "is",
+   "src": 47.06,
+   "start": 36.506,
+   "end": 36.706,
+   "seg": 3
+  },
+  {
+   "text": "dumb,",
+   "src": 47.28,
+   "start": 36.706,
+   "end": 36.852,
+   "seg": 3
+  },
+  {
+   "text": "it's",
+   "src": 47.64,
+   "start": 37.033,
+   "end": 37.252,
+   "seg": 3
+  },
+  {
+   "text": "blind.",
+   "src": 47.88,
+   "start": 37.252,
+   "end": 37.597,
+   "seg": 3
+  },
+  {
+   "text": "The",
+   "src": 49.0,
+   "start": 38.27,
+   "end": 38.433,
+   "seg": 3
+  },
+  {
+   "text": "fix",
+   "src": 49.18,
+   "start": 38.433,
+   "end": 38.561,
+   "seg": 3
+  },
+  {
+   "text": "is",
+   "src": 49.32,
+   "start": 38.561,
+   "end": 39.197,
+   "seg": 3
+  },
+  {
+   "text": "four",
+   "src": 50.02,
+   "start": 39.197,
+   "end": 39.452,
+   "seg": 3
+  },
+  {
+   "text": "steps.",
+   "src": 50.3,
+   "start": 39.452,
+   "end": 39.797,
+   "seg": 3
+  },
+  {
+   "text": "Give",
+   "src": 50.92,
+   "start": 40.015,
+   "end": 40.124,
+   "seg": 3
+  },
+  {
+   "text": "it",
+   "src": 51.04,
+   "start": 40.124,
+   "end": 40.288,
+   "seg": 3
+  },
+  {
+   "text": "context,",
+   "src": 51.22,
+   "start": 40.288,
+   "end": 40.706,
+   "seg": 3
+  },
+  {
+   "text": "set",
+   "src": 52.54,
+   "start": 41.488,
+   "end": 41.633,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 52.7,
+   "start": 41.633,
+   "end": 41.852,
+   "seg": 3
+  },
+  {
+   "text": "rules,",
+   "src": 52.94,
+   "start": 41.852,
+   "end": 42.161,
+   "seg": 3
+  },
+  {
+   "text": "lock",
+   "src": 54.06,
+   "start": 42.87,
+   "end": 43.033,
+   "seg": 3
+  },
+  {
+   "text": "the",
+   "src": 54.24,
+   "start": 43.033,
+   "end": 43.288,
+   "seg": 3
+  },
+  {
+   "text": "current",
+   "src": 54.52,
+   "start": 43.288,
+   "end": 43.524,
+   "seg": 3
+  },
+  {
+   "text": "behavior,",
+   "src": 54.78,
+   "start": 43.524,
+   "end": 44.015,
+   "seg": 3
+  },
+  {
+   "text": "then",
+   "src": 55.62,
+   "start": 44.288,
+   "end": 44.47,
+   "seg": 3
+  },
+  {
+   "text": "define",
+   "src": 55.82,
+   "start": 44.47,
+   "end": 44.742,
+   "seg": 3
+  },
+  {
+   "text": "a",
+   "src": 56.12,
+   "start": 44.742,
+   "end": 44.924,
+   "seg": 3
+  },
+  {
+   "text": "pattern.",
+   "src": 56.32,
+   "start": 44.924,
+   "end": 45.615,
+   "seg": 3
+  }
+ ]
+}

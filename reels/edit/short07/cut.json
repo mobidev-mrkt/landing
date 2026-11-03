@@ -1,0 +1,44 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s07.mp4",
+   "transcript": "edit/short07/transcripts/s07.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 2.933,
+   "end": 9.3
+  },
+  {
+   "start": 9.733,
+   "end": 13.233
+  },
+  {
+   "start": 16.467,
+   "end": 46.167
+  },
+  {
+   "start": 46.467,
+   "end": 57.867
+  }
+ ],
+ "fix": {
+  "log": "lock",
+  "patchup.": "pattern.",
+  "imputed": "included"
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix_at": [
+  {
+   "text": "an",
+   "at": 36.72,
+   "to": "in an"
+  }
+ ]
+}

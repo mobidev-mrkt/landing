@@ -1,0 +1,74 @@
+/* MobiDev styling for the embedded HubSpot form on the AI SDLC Readiness Discovery page.
+   Paste into the page (Custom HTML block: <style> … </style>) or the theme's Additional CSS.
+   Scope: page id 59932 only, so other HubSpot forms on mobidev.biz keep their look.
+   Works for the inline embed (form markup on the page). If the form sits inside an <iframe>,
+   CSS from the page can't reach it: style it in HubSpot's form editor instead. */
+
+/* the card stays above the hero's decorative stripe, so every field is clickable */
+.postid-59932 .hbspt-form{position:relative;z-index:5;pointer-events:auto}
+
+.postid-59932 .hs-form{font-family:'Open Sans',-apple-system,Segoe UI,sans-serif;color:#222}
+.postid-59932 .hs-form fieldset{max-width:none!important;border:0;padding:0;margin:0;min-width:0}
+.postid-59932 .hs-form fieldset.form-columns-2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.postid-59932 .hs-form fieldset.form-columns-2 .hs-form-field{width:auto!important;float:none!important;padding:0!important}
+.postid-59932 .hs-form fieldset.form-columns-1 .hs-form-field .input,
+.postid-59932 .hs-form fieldset.form-columns-2 .hs-form-field .input{margin-right:0!important}
+.postid-59932 .hs-form .hs-form-field{margin-bottom:18px}
+
+/* labels */
+.postid-59932 .hs-form .hs-form-field > label{display:block;margin-bottom:8px;font-family:'Inter',-apple-system,Segoe UI,sans-serif;font-weight:700;font-size:14px;line-height:1.35;color:#222}
+.postid-59932 .hs-form .hs-form-required{color:#0B7A64;margin-left:2px}
+
+/* text inputs and selects: one box style */
+.postid-59932 .hs-form input.hs-input:not([type=checkbox]):not([type=radio]),
+.postid-59932 .hs-form select.hs-input,
+.postid-59932 .hs-form textarea.hs-input{
+  width:100%!important;min-height:50px;box-sizing:border-box;margin:0;
+  padding:12px 14px;border:1px solid #C9CCCB;border-radius:8px;background:#fff;box-shadow:none;
+  font:400 16px/1.4 'Open Sans',-apple-system,Segoe UI,sans-serif;
+  color:#222!important;-webkit-text-fill-color:#222;opacity:1;
+}
+.postid-59932 .hs-form textarea.hs-input{min-height:96px;resize:vertical}
+.postid-59932 .hs-form .hs-input::placeholder{color:#8A8D8C;-webkit-text-fill-color:#8A8D8C}
+
+/* select: native list, own arrow, readable options */
+.postid-59932 .hs-form select.hs-input{
+  -webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;padding-right:44px;
+  background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23222' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center;
+  text-indent:0;line-height:1.4;height:auto;
+}
+.postid-59932 .hs-form select.hs-input.is-placeholder{color:#8A8D8C!important;-webkit-text-fill-color:#8A8D8C}
+.postid-59932 .hs-form select.hs-input option{color:#222;background:#fff;-webkit-text-fill-color:#222}
+
+/* focus and errors */
+.postid-59932 .hs-form .hs-input:focus{outline:none;border-color:#12B292;box-shadow:0 0 0 3px rgba(74,213,123,.35)}
+.postid-59932 .hs-form .hs-input.invalid.error{border-color:#D14343}
+.postid-59932 .hs-form .hs-error-msgs{list-style:none;margin:6px 0 0;padding:0}
+.postid-59932 .hs-form .hs-error-msgs label,
+.postid-59932 .hs-form .hs-error-msg{font-size:13px;font-weight:600;color:#B42318}
+.postid-59932 .hs-form .hs_error_rollup{display:none}
+
+/* consent */
+.postid-59932 .hs-form .legal-consent-container{margin-top:4px;font-size:13px;line-height:1.5;color:#5A5C5B}
+.postid-59932 .hs-form .legal-consent-container p{margin:0 0 6px;font-size:13px;color:#5A5C5B}
+.postid-59932 .hs-form .legal-consent-container a{color:#0B7A64;text-decoration:underline}
+.postid-59932 .hs-form .inputs-list{list-style:none;margin:0;padding:0}
+.postid-59932 .hs-form .hs-form-booleancheckbox-display{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:14px;color:#222}
+.postid-59932 .hs-form .hs-form-booleancheckbox-display input{width:20px;height:20px;margin:1px 0 0;flex:0 0 20px;accent-color:#4AD57B}
+.postid-59932 .hs-form .hs-form-booleancheckbox-display span{margin:0;font-weight:400}
+
+/* submit: MobiDev primary button */
+.postid-59932 .hs-form .hs-submit{margin-top:20px}
+.postid-59932 .hs-form .hs-submit .actions{padding:0;margin:0;text-align:left}
+.postid-59932 .hs-form input.hs-button{
+  width:100%;min-height:54px;padding:16px 28px;border:0;border-radius:8px;cursor:pointer;
+  background:#4AD57B;color:#222;-webkit-text-fill-color:#222;
+  font:700 16px/1.2 'Open Sans',-apple-system,Segoe UI,sans-serif;text-transform:none;letter-spacing:0;
+  box-shadow:none;transition:background .18s ease;
+}
+.postid-59932 .hs-form input.hs-button:hover{background:#35C169}
+.postid-59932 .hs-form input.hs-button:focus-visible{outline:3px solid #12B292;outline-offset:3px}
+
+@media (max-width:600px){
+  .postid-59932 .hs-form fieldset.form-columns-2{grid-template-columns:1fr}
+}

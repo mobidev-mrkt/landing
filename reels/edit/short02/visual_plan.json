@@ -1,0 +1,405 @@
+{
+ "schema": 1,
+ "id": "short02",
+ "created": "2026-10-30T18:36",
+ "duration": 36.933,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.382,
+   "text": "Code goes cheap and the bottleneck moves somewhere else.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 7.2 s segment without a cut: room for a change of picture",
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.382,
+   "end": 7.233,
+   "text": "That's the real change and in how we work. And that's not the marketing.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 7.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 7.233,
+   "end": 10.833,
+   "text": "if it's a buzzword, sometimes when",
+   "cut_segs": [
+    1,
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 10.833,
+   "end": 15.282,
+   "text": "you hear a company brag about the percentage of code written by",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 22.0 s segment without a cut: room for a change of picture",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 15.282,
+   "end": 18.9,
+   "text": "the AI or the number of code licenses,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 18.9,
+   "end": 20.864,
+   "text": "that's totally a buzzword.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.864,
+   "end": 25.609,
+   "text": "If they can show you a written spec before code generations,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.0 s segment without a cut: room for a change of picture",
+    "pointing at an object -> B-roll of the object",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 25.609,
+   "end": 28.427,
+   "text": "if they can show you context files in their repositories,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.0 s segment without a cut: room for a change of picture",
+    "pointing at an object -> B-roll of the object"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 28.427,
+   "end": 33.936,
+   "text": "if they can show you the process with reviewers who is responsible for these files,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.0 s segment without a cut: room for a change of picture",
+    "pointing at an object -> B-roll of the object",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 33.936,
+   "end": 36.933,
+   "text": "then they're actually doing something and it's not just a buzzword.",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s07",
+   "start": 21.645,
+   "dur": 15.2,
+   "at": "word:show#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "Not a buzzword if they show"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "A written spec before code generation",
+     "at": "word:spec#1",
+     "t": 22.718
+    },
+    {
+     "text": "Context files in the repo",
+     "at": "word:context#1",
+     "t": 26.373
+    },
+    {
+     "text": "Reviewers responsible for the files",
+     "at": "word:reviewers#1",
+     "t": 30.3
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "09:26-09:45"
+   },
+   "what": "three signs of a real AI SDLC",
+   "why": "the practical test, readable without sound",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [
+  {
+   "start": 21.645,
+   "end": 36.845,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "what": "scene c01 list (overlay)",
+   "scene": "c01",
+   "mode": "overlay"
+  }
+ ],
+ "captions_id": "b1f546c671b3",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "SERHII IVANOV · HEAD OF RESOURCE MANAGEMENT",
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 4,
+  "coverage_max_s": 8.13
+ },
+ "subtitles_band": [
+  1312,
+  1480
+ ],
+ "end_card": {
+  "kind": "card",
+  "seconds": 2.6
+ }
+}

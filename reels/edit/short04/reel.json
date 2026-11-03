@@ -1,0 +1,18 @@
+{
+ "brand": "mobidev",
+ "style": "brand",
+ "subtitles": "accent",
+ "scene_tone": "calm",
+ "format": "framed",
+ "use_broll": false,
+ "use_scenes": true,
+ "use_memes": false,
+ "use_generated_footage": false,
+ "window": [
+  25,
+  600,
+  1030,
+  900
+ ],
+ "speaker": "IEVGEN ZADOROZHNYI · PRODUCT MANAGER"
+}

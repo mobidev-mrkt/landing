@@ -1,0 +1,32 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s03.mp4",
+   "transcript": "edit/short03/transcripts/s03.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 3.2,
+   "end": 38.767
+  },
+  {
+   "start": 47.167,
+   "end": 48.667
+  },
+  {
+   "start": 48.933,
+   "end": 62.867
+  }
+ ],
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix": {
+  "space": "spec"
+ },
+ "fix_at": []
+}

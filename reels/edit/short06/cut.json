@@ -1,0 +1,44 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s06.mp4",
+   "transcript": "edit/short06/transcripts/s06.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 3.567,
+   "end": 19.2
+  },
+  {
+   "start": 19.433,
+   "end": 24.333
+  },
+  {
+   "start": 24.533,
+   "end": 38.7
+  },
+  {
+   "start": 58.633,
+   "end": 69.6
+  },
+  {
+   "start": 70.167,
+   "end": 81.533
+  }
+ ],
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix": {},
+ "fix_at": [
+  {
+   "text": "was",
+   "at": 77.08,
+   "to": "with"
+  }
+ ]
+}

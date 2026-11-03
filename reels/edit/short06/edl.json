@@ -1,0 +1,49 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/s06.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.05:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 3.567,
+   "end": 19.2,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 19.433,
+   "end": 24.333,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 24.533,
+   "end": 38.7,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 58.633,
+   "end": 69.6,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 70.167,
+   "end": 81.533,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 51.833
+}

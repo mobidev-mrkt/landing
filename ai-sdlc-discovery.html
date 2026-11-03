@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free AI SDLC Readiness Discovery | MobiDev</title>
+<meta name="description" content="Find out why AI made coding faster but delivery didn't follow. A free AI SDLC Readiness Discovery with MobiDev: a few questions, an expert review, one call.">
+<!-- Campaign page for YouTube Shorts traffic: kept out of the index so it never competes with the main site's service pages -->
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="mobidev-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI SDLC Readiness Discovery",
+  "serviceType": "AI-driven software development lifecycle assessment",
+  "provider": {"@type": "Organization", "name": "MobiDev", "url": "https://mobidev.biz"},
+  "description": "A short questionnaire, an expert review of the answers and a call about your AI SDLC readiness level and what is holding delivery back.",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+<style>
+/* Tokens copied from index.html (MobiDev landing design system) */
+:root{
+  --black:#222222;
+  --green:#4AD57B;
+  --green-dark:#12B292;
+  --grad:linear-gradient(90deg,#2EB0F1 0%,#12B292 100%);
+  --sec-white:#F7F7F7;
+  --white:#FFFFFF;
+  --line:#E4E6E5;
+  --muted:#5A5C5B;
+  --font-display:'Inter',-apple-system,Segoe UI,sans-serif;
+  --font-body:'Open Sans',-apple-system,Segoe UI,sans-serif;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--black);background:var(--white);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+h1,h2{font-family:var(--font-display)}
+h1{font-weight:900;font-size:clamp(32px,3.4vw + 10px,52px);line-height:1.08;letter-spacing:-.02em}
+h2{font-weight:700;font-size:clamp(28px,2.4vw + 10px,40px);line-height:1.15;letter-spacing:-.015em}
+h3{font-weight:700;font-size:18px;line-height:1.35}
+p{color:var(--muted)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.eyebrow{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#0B7A64;margin-bottom:14px} /* darker than --green-dark: 4.9:1 on the grey section (12B292 is 2.5:1) */
+
+/* buttons (index.html) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;font-family:var(--font-body);font-weight:700;font-size:16px;padding:16px 28px;border-radius:8px;border:2px solid transparent;text-decoration:none;cursor:pointer;transition:background .18s ease,color .18s ease}
+.btn-primary{background:var(--green);color:var(--black)}
+.btn-primary:hover{background:#35C169}
+.btn-full{width:100%}
+.btn[disabled]{opacity:.6;cursor:wait}
+
+/* screen 1: hero */
+.top{position:absolute;top:0;left:0;right:0;z-index:3;padding:22px 0}
+.top img{height:26px;width:auto;display:block}
+.hero{background:var(--black);color:var(--white);position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;padding:96px 0 48px}
+.hero::after{content:"";position:absolute;inset:auto -10% -55% auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(74,213,123,.22) 0%,rgba(34,34,34,0) 68%);pointer-events:none}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;grid-template-areas:"copy form" "facts form";column-gap:56px;align-items:start}
+.hero-copy{grid-area:copy;align-self:end}
+.hero form{grid-area:form;align-self:center}
+.hero .facts{grid-area:facts;align-self:start;display:grid;grid-template-columns:repeat(3,auto);justify-content:start}
+.form-h{font-family:var(--font-display);font-weight:700;font-size:22px;color:var(--white);line-height:1.25}
+.form-sub{font-size:14px;color:#C9CCCB;margin:6px 0 20px}
+.hero .eyebrow{color:var(--green)}
+.hero h1{color:var(--white)}
+.hero h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:#C9CCCB;font-size:clamp(16px,1vw + 8px,19px);margin-top:20px;max-width:560px}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:24px;border-top:1px solid #3A3A3A}
+.facts li{color:#C9CCCB;font-size:14px}
+.facts b{display:block;font-family:var(--font-display);font-weight:900;font-size:28px;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:26px}
+.card .lbl{font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.card h2{color:var(--white);font-size:21px;margin:8px 0 12px;line-height:1.3}
+.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #3A3A3A;font-size:15px;color:#C9CCCB}
+.row b{font-family:var(--font-display);color:var(--white);text-align:right}
+
+/* screen 2: why delivery stalls + who runs it */
+.why{padding:88px 0;background:var(--sec-white)}
+.sec-head{max-width:720px;margin-bottom:40px}
+.sec-head p{font-size:18px;margin-top:14px}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.q{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:26px}
+.q blockquote{font-family:var(--font-display);font-weight:700;font-size:18px;line-height:1.35;color:var(--black)}
+.q blockquote::before{content:"“";display:block;font-weight:900;font-size:44px;line-height:.8;color:var(--green);margin-bottom:6px}
+.q p{margin-top:12px;font-size:15px}
+.person{display:flex;gap:18px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:40px;max-width:760px}
+.person img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid var(--green);flex:0 0 84px}
+.person b{font-family:var(--font-display);font-size:17px;display:block}
+.person span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+.limit{margin-top:28px;font-size:15px;max-width:760px}
+.limit b{color:var(--black)}
+
+/* screen 3: steps + form */
+.start{padding:88px 0;background:var(--black);color:var(--white)}
+.start-in{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.start h2{color:var(--white)}
+.steps{list-style:none;margin-top:28px;display:grid;gap:20px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:start;color:#C9CCCB}
+.steps li::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--green);color:var(--black);font-family:var(--font-display);font-weight:900;display:grid;place-items:center}
+.steps b{display:block;color:var(--white);font-family:var(--font-display);font-size:17px;margin-bottom:2px}
+.soft{margin-top:32px;font-size:15px;color:#9A9D9C}
+.soft a{color:var(--green);font-weight:700}
+form{background:#2C2C2C;border:1px solid #3A3A3A;border-radius:16px;padding:30px}
+.f-row{margin-bottom:18px}
+label{display:block;font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#C9CCCB;margin-bottom:8px}
+input,select{width:100%;min-height:50px;background:#222;border:1px solid #6A6C6B;border-radius:8px;padding:13px 14px;color:var(--white);font-family:var(--font-body);font-size:16px}
+input:focus,select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 2px rgba(74,213,123,.35)}
+.err{display:none;color:#FF9B8F;font-size:14px;margin-top:6px}
+.f-row.bad .err{display:block}
+.f-row.bad input{border-color:#FF9B8F}
+.f-note{font-size:13px;color:#9A9D9C;margin-top:14px;text-align:center}
+.f-note a{color:var(--green)}
+.done{display:none;text-align:center;padding:24px 4px}
+.done h3{color:var(--white);font-family:var(--font-display);font-size:22px;margin-bottom:8px}
+.done p{color:#C9CCCB}
+form.sent .fields{display:none}
+form.sent .done{display:block}
+
+footer{background:var(--black);color:#9A9D9C;border-top:1px solid #3A3A3A;padding:28px 0;font-size:14px}
+.foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.foot-in img{height:22px;width:auto;display:block}
+.foot-in a{color:#C9CCCB;text-decoration:none;font-weight:600;margin-left:16px}
+.foot-in a:hover{color:var(--green)}
+
+/* sticky mobile action: only while the form is off screen */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(34,34,34,.96);border-top:1px solid #3A3A3A;display:none}
+
+@media(max-width:900px){
+  .hero{padding:76px 0 40px;min-height:auto}
+  .hero-in{grid-template-columns:1fr;grid-template-areas:"copy" "form" "facts";row-gap:24px}
+  .start-in{grid-template-columns:1fr;gap:28px}
+  .hero-sub{margin-top:14px}
+  .hero-sub .more{display:none} /* on a phone the form card says the rest */
+  .hero .facts{grid-template-columns:repeat(3,1fr)}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:28px;padding-top:20px}
+  .facts li{font-size:13px;line-height:1.35}
+  .facts b{font-size:24px}
+  .why,.start{padding:56px 0}
+  .sec-head{margin-bottom:24px}
+  .sec-head p{font-size:16px}
+  /* the three questions swipe sideways instead of stacking */
+  .quotes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -24px;padding:0 24px 8px;scroll-padding:0 24px}
+  .q{flex:0 0 84%;scroll-snap-align:start;padding:22px}
+  .q blockquote{font-size:17px}
+  .person{padding:14px;gap:14px;margin-top:24px}
+  .person img{width:60px;height:60px;flex-basis:60px}
+  .person span{font-size:13px}
+  .limit{font-size:14px;margin-top:20px}
+  .steps{gap:14px;margin-top:20px}
+  .soft{margin-top:20px}
+  form{padding:22px}
+  .f-row{margin-bottom:14px}
+  .sticky.on{display:block}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- SCREEN 1 · hero with the form -->
+<header class="hero" id="top">
+  <div class="top"><div class="wrap"><img src="mobidev-logo.png" alt="MobiDev" width="104" height="26"></div></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Free AI SDLC Readiness Discovery</p>
+      <h1>AI made coding faster. <em>Find out why delivery didn't follow.</em></h1>
+      <p class="hero-sub">For CTOs, engineering and product leaders who rolled out AI tools and still ship at the old pace.<span class="more"> Leave your details, an AI SDLC expert goes through your answers, and on a call you get your readiness level and what is actually holding delivery back.</span></p>
+    </div>
+      <form id="f" name="ai-sdlc-discovery" method="POST" data-netlify="true" netlify-honeypot="company-website" novalidate>
+        <div class="fields">
+          <p class="form-h">Book your free Discovery</p>
+          <p class="form-sub">A call with Helen Khailova-Horash, Senior Solutions Manager. No payment, no obligation.</p>
+          <input type="hidden" name="form-name" value="ai-sdlc-discovery">
+          <p hidden><label>Leave this empty <input name="company-website" tabindex="-1" autocomplete="off"></label></p>
+          <div class="f-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" autocomplete="name" required aria-describedby="name-err">
+            <p class="err" id="name-err">Please enter your name.</p>
+          </div>
+          <div class="f-row">
+            <label for="email">Work email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required aria-describedby="email-err">
+            <p class="err" id="email-err">Please enter a valid email.</p>
+          </div>
+          <div class="f-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="f-row">
+            <label for="stall">Where does delivery stall most?</label>
+            <select id="stall" name="stall">
+              <option value="">Choose one</option>
+              <option>Specs and requirements</option>
+              <option>Code review</option>
+              <option>QA and testing</option>
+              <option>Legacy code</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="send">Book my free Discovery</button>
+          <p class="f-note">We use your details only to arrange the call. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        </div>
+        <div class="done" role="status" aria-live="polite">
+          <h3>Thanks, it's on our side now</h3>
+          <p>We'll get back to you by email with the next step.</p>
+        </div>
+      </form>
+    <!-- figures as published on mobidev.biz (checked 2026-11-02) -->
+    <ul class="facts" aria-label="MobiDev in numbers">
+      <li><b>400+</b>software products launched</li>
+      <li><b>8+ years</b>in AI consulting and development</li>
+      <li><b>9.1</b>NPS, 2025 client survey</li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- SCREEN 2 · why delivery stalls, and who runs the Discovery -->
+<section class="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why it stalls</p>
+      <h2 id="why-h">Code got cheap. The bottleneck moved.</h2>
+      <p>When only developers get AI, everyone after them becomes the bottleneck: specs, code review, QA, release. Three questions we hear from engineering and product leaders, and the short answers.</p>
+    </div>
+    <div class="quotes">
+      <figure class="q">
+        <blockquote>We paid for AI coding licenses and somehow got slower, not faster.</blockquote>
+        <p>Adoption runs on a curve. Speed goes up, quality drops, the team learns a spec-first process and slows down, then real speed arrives. The Discovery tells you which stage you're in.</p>
+      </figure>
+      <figure class="q">
+        <blockquote>Our competitors are shipping features noticeably faster. How do we catch up using AI?</blockquote>
+        <p>Usually one stage is the gap. AI writes 500 lines where a developer wrote 100, and review and QA can't keep up. Or specs arrive too slowly for anyone to start.</p>
+      </figure>
+      <figure class="q">
+        <blockquote>Why does our roadmap keep shrinking despite us actively using AI tools?</blockquote>
+        <p>New features on legacy code that was never refactored bring more bugs and harder reviews. The codebase has to be ready for AI before AI speeds it up.</p>
+      </figure>
+    </div>
+    <div class="person" aria-label="Who you talk to">
+      <img src="ai-sdlc-discovery/helen.webp" alt="Helen Khailova-Horash" width="84" height="84" loading="lazy">
+      <div><b>Your call is with Helen Khailova-Horash</b><span>Senior Solutions Manager at MobiDev. When your case needs a deeper technical look, she brings MobiDev's delivery engineers into the conversation.</span></div>
+    </div>
+    <p class="limit"><b>What it is not:</b> a sales pitch or a promise of 10× speed. As our Head of Resource Management puts it, anyone promising a flat 10× from day one either hasn't measured it or is selling something. You get a read of where your team is today, including the parts that are slow.</p>
+  </div>
+</section>
+
+<!-- SCREEN 3 · how it works and what you leave with -->
+<section class="start" id="start" aria-labelledby="start-h">
+  <div class="wrap start-in">
+    <div>
+      <p class="eyebrow" style="color:var(--green)">How it works</p>
+      <h2 id="start-h">Three steps to your readiness level</h2>
+      <ol class="steps">
+        <li><div><b>Leave your details</b>The form at the top of this page, then a few quick questions about how your team ships.</div></li>
+        <li><div><b>An AI SDLC expert goes through your answers</b>Before the call, so the time is spent on your delivery, not on intake.</div></li>
+        <li><div><b>A call with Helen</b>Your AI SDLC readiness level and what's actually holding delivery back.</div></li>
+      </ol>
+      <p class="soft" id="soft" hidden>Not ready for a call? <a href="#" id="soft-link" data-ev="soft_checklist">Download the free AI-Driven Modernization Readiness Checklist</a>.</p>
+    </div>
+    <aside class="card" aria-labelledby="get-h">
+      <p class="lbl">What you leave the call with</p>
+      <h2 id="get-h">A clear read on where AI stalls in your delivery</h2>
+      <div class="row"><span>Your AI SDLC readiness level</span><b>specs to release</b></div>
+      <div class="row"><span>What holds delivery back</span><b>named on the call</b></div>
+      <div class="row"><span>Cost</span><b>Free</b></div>
+      <a class="btn btn-primary btn-full" href="#f" data-ev="cta_bottom" style="margin-top:20px">Book my free Discovery</a>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <img src="mobidev-logo.png" alt="MobiDev" width="88" height="22">
+    <div><a href="privacy.html">Privacy Policy</a><a href="mailto:business@mobidev.biz">business@mobidev.biz</a></div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky"><a class="btn btn-primary btn-full" href="#f" data-ev="cta_sticky">Book my free Discovery</a></div>
+
+<script>
+/* ─────────────────────────────────────────────────────────────
+   Settings. CHECKLIST_URL: the checklist download page; while it
+   is empty the "Not ready for a call?" line stays hidden.
+   ───────────────────────────────────────────────────────────── */
+var CHECKLIST_URL = '';
+
+/* Analytics: every event goes to dataLayer (GTM / GA4 pick it up). */
+window.dataLayer = window.dataLayer || [];
+function track(name, extra){ var e = {event: name, page: 'ai-sdlc-discovery'}; for (var k in extra) e[k] = extra[k]; window.dataLayer.push(e); }
+
+if (CHECKLIST_URL) { document.getElementById('soft-link').href = CHECKLIST_URL; document.getElementById('soft').hidden = false; }
+
+document.querySelectorAll('[data-ev]').forEach(function(a){ a.addEventListener('click', function(){ track(a.getAttribute('data-ev')); }); });
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){ a.addEventListener('click', function(){ track('contact_email'); }); });
+
+var form = document.getElementById('f'), started = false, seen = false, sticky = document.getElementById('sticky');
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (e.isIntersecting && !seen) { seen = true; track('form_view'); }
+      sticky.classList.toggle('on', !e.isIntersecting && window.scrollY > 200);
+    });
+  }, {threshold: 0.2}).observe(form);
+  window.addEventListener('scroll', function(){ if (window.scrollY <= 200) sticky.classList.remove('on'); }, {passive: true});
+}
+form.addEventListener('input', function(){ if (!started) { started = true; track('form_start'); } });
+
+function check(id, ok){ var row = document.getElementById(id).closest('.f-row'); row.classList.toggle('bad', !ok); document.getElementById(id).setAttribute('aria-invalid', ok ? 'false' : 'true'); return ok; }
+form.addEventListener('submit', function(ev){
+  ev.preventDefault();
+  var okName = check('name', document.getElementById('name').value.trim() !== '');
+  var okMail = check('email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById('email').value.trim()));
+  if (!okName || !okMail) { (okName ? document.getElementById('email') : document.getElementById('name')).focus(); return; }
+  var btn = document.getElementById('send'); btn.disabled = true; btn.textContent = 'Sending…';
+  fetch('/', {method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(new FormData(form)).toString()})
+    .then(function(r){ if (!r.ok) throw new Error(r.status); })
+    .then(function(){ track('form_submit', {stall: document.getElementById('stall').value}); form.classList.add('sent'); sticky.remove(); })
+    .catch(function(){ btn.disabled = false; btn.textContent = 'Book my free Discovery'; alert('Sorry, the form did not send. Please email business@mobidev.biz.'); });
+});
+</script>
+</body>
+</html>

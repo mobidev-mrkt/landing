@@ -1,0 +1,44 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/s01.mp4",
+   "transcript": "edit/short01/transcripts/s01.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 34.733,
+   "end": 39.267
+  },
+  {
+   "start": 4.533,
+   "end": 34.3
+  },
+  {
+   "start": 39.7,
+   "end": 48.633
+  }
+ ],
+ "fix": {
+  "Cosmic": "",
+  "Radio": ""
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix_at": [
+  {
+   "text": "doing",
+   "at": 22.02,
+   "to": "redoing"
+  },
+  {
+   "text": "the",
+   "at": 27.84,
+   "to": ""
+  }
+ ]
+}

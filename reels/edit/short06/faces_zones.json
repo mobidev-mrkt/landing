@@ -1,0 +1,316 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  600,
+  1030,
+  900
+ ],
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 4.83,
+   "face": [
+    351,
+    807,
+    369,
+    512
+   ],
+   "ceiling": [
+    600,
+    747
+   ],
+   "chest": null,
+   "left": 266,
+   "right": 180,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s02",
+   "start": 4.83,
+   "end": 6.794,
+   "face": [
+    368,
+    801,
+    352,
+    516
+   ],
+   "ceiling": [
+    600,
+    741
+   ],
+   "chest": null,
+   "left": 283,
+   "right": 180,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s03",
+   "start": 6.794,
+   "end": 12.048,
+   "face": [
+    350,
+    802,
+    388,
+    518
+   ],
+   "ceiling": [
+    600,
+    742
+   ],
+   "chest": null,
+   "left": 265,
+   "right": 162,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s04",
+   "start": 12.048,
+   "end": 15.879,
+   "face": [
+    341,
+    805,
+    436,
+    509
+   ],
+   "ceiling": [
+    600,
+    745
+   ],
+   "chest": null,
+   "left": 256,
+   "right": 123,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s05",
+   "start": 15.879,
+   "end": 18.8,
+   "face": [
+    352,
+    807,
+    375,
+    512
+   ],
+   "ceiling": [
+    600,
+    747
+   ],
+   "chest": null,
+   "left": 267,
+   "right": 173,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s06",
+   "start": 18.8,
+   "end": 21.964,
+   "face": [
+    350,
+    802,
+    358,
+    517
+   ],
+   "ceiling": [
+    600,
+    742
+   ],
+   "chest": null,
+   "left": 265,
+   "right": 192,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s07",
+   "start": 21.964,
+   "end": 26.345,
+   "face": [
+    311,
+    802,
+    397,
+    517
+   ],
+   "ceiling": [
+    600,
+    742
+   ],
+   "chest": null,
+   "left": 226,
+   "right": 192,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s08",
+   "start": 26.345,
+   "end": 29.055,
+   "face": [
+    308,
+    803,
+    358,
+    516
+   ],
+   "ceiling": [
+    600,
+    743
+   ],
+   "chest": null,
+   "left": 223,
+   "right": 234,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s09",
+   "start": 29.055,
+   "end": 32.012,
+   "face": [
+    304,
+    803,
+    396,
+    515
+   ],
+   "ceiling": [
+    600,
+    743
+   ],
+   "chest": null,
+   "left": 219,
+   "right": 200,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s10",
+   "start": 32.012,
+   "end": 34.303,
+   "face": [
+    324,
+    804,
+    391,
+    515
+   ],
+   "ceiling": [
+    600,
+    744
+   ],
+   "chest": null,
+   "left": 239,
+   "right": 185,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s11",
+   "start": 34.303,
+   "end": 38.758,
+   "face": [
+    344,
+    809,
+    361,
+    508
+   ],
+   "ceiling": [
+    600,
+    749
+   ],
+   "chest": null,
+   "left": 259,
+   "right": 195,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s12",
+   "start": 38.758,
+   "end": 42.312,
+   "face": [
+    340,
+    815,
+    413,
+    518
+   ],
+   "ceiling": [
+    600,
+    755
+   ],
+   "chest": null,
+   "left": 255,
+   "right": 147,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s13",
+   "start": 42.312,
+   "end": 45.239,
+   "face": [
+    365,
+    811,
+    393,
+    509
+   ],
+   "ceiling": [
+    600,
+    751
+   ],
+   "chest": null,
+   "left": 280,
+   "right": 142,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s14",
+   "start": 45.239,
+   "end": 49.258,
+   "face": [
+    282,
+    806,
+    439,
+    521
+   ],
+   "ceiling": [
+    600,
+    746
+   ],
+   "chest": null,
+   "left": 197,
+   "right": 179,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s15",
+   "start": 49.258,
+   "end": 51.833,
+   "face": [
+    282,
+    807,
+    475,
+    574
+   ],
+   "ceiling": [
+    600,
+    747
+   ],
+   "chest": null,
+   "left": 197,
+   "right": 143,
+   "sub_ok": false,
+   "cut_top": false
+  }
+ ]
+}
