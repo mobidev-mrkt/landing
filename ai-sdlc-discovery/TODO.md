@@ -17,7 +17,7 @@ weakest axis = Technical layer.** Points are lost on the inputs below, not on co
 - [ ] Call length, and whether the client gets anything in writing after it.
 - [ ] What the "readiness level" looks like (a scale? how many levels?).
 - [ ] "Offer valid for 48 hours" from the webinar slide was left out on purpose: add it back only if it applies to this page.
-- [ ] The call is with Helen Khailova-Horash (Senior Solutions Manager; title from the webinar's contact slide). Confirm the line
+- [ ] The call is with Helen Khailova-Horash (Senior Solutions Manager). Confirm the line
       "she brings MobiDev's delivery engineers into the conversation" matches how presales works (on the webinar she said she
       would bring them in "if our schedules allow").
 
