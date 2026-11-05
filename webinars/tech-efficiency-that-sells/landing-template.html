@@ -97,7 +97,7 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 .hero h1{color:#fff;font-size:clamp(28px,3vw,40px);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin:16px 0 14px}
 .hero .pre{color:rgba(255,255,255,.9);font:700 clamp(15px,1.35vw,18px)/1.3 var(--head);letter-spacing:-.005em;margin:0}
 .hero .pre + h1{margin-top:8px}
-.fit{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:6px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.82)}
+.fit{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.82)}
 .fit li{position:relative;padding-left:26px}
 .fit li::before{position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font:700 11px/1 var(--head)}
 .fit .yes::before{content:"\2713";background:var(--green);color:var(--ink)}
@@ -105,7 +105,7 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 .fit b{color:#fff}
 .hero .vp{font-size:16px;line-height:1.6;color:rgba(255,255,255,.86);margin:0 0 18px;max-width:600px}
 .hero .vp strong{color:#fff;font-weight:700}
-.with-list{display:grid;gap:10px;margin:0}
+.with-list{display:grid;gap:10px;margin:0 0 16px}
 .hero .with{display:flex;align-items:flex-start;gap:12px;margin:0;font-size:14px;line-height:1.4;color:rgba(255,255,255,.86)}
 .hero .with .av{flex:none;width:36px;height:36px;margin-top:1px}
 .hero .with .sub{display:block;margin-top:2px;font-size:13px;color:rgba(255,255,255,.66)}
@@ -119,7 +119,7 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 
 /* Form */
 .form-card{background:rgba(23,24,26,.88);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:28px;box-shadow:0 30px 60px rgba(0,0,0,.4);backdrop-filter:blur(6px)}
-.form-card h2{color:#fff;font-size:24px;font-weight:700;margin:0 0 4px}
+.form-card h2{color:#fff;font-size:24px;font-weight:700;margin:0 0 18px}
 .form-card .chip{margin:0 0 16px;font-size:12px;padding:6px 12px}
 .form-card .meta{margin:0 0 20px;color:var(--muted);font-size:14px}
 .row{display:grid;gap:14px}
@@ -258,7 +258,6 @@ footer a{color:#fff}
   .hero .wrap{padding-top:32px;padding-bottom:56px;gap:28px}
   .hero h1{font-size:28px;margin:12px 0 12px}
   .hero .vp{font-size:15px;margin-bottom:16px}
-  .with-list{margin:0 0 20px}
   .hero .with{font-size:14px}
   .sec{padding:64px 0}
 }
@@ -284,16 +283,16 @@ footer a{color:#fff}
   <div class="wrap">
     <div>
       <h2 class="pre">Legacy Codebase: The $M Bottleneck to Scaling or Selling</h2>
-      <h1 id="h1"><span class="grad">Accelerate Growth or Maximize Valuation:</span> Modernize Your Architecture with AI</h1>
+      <h1 id="h1">Modernize Your Architecture with AI <span class="grad">to Accelerate Growth or Maximize Valuation</span></h1>
       <p class="vp"><strong>Whether you're scaling fast or negotiating an exit, tech debt is your most expensive liability.</strong> In 60 minutes, see how operators who've done it use AI-driven SDLC to modernize the systems their business runs on, <strong>eliminate due diligence discounts</strong> and <strong>ship twice as fast</strong>, without a full rewrite.</p>
-      <ul class="fit" aria-label="Who this webinar is for">
-        <li class="yes"><b>For</b> CEOs, founders and owners of products 5+ years in production, deciding whether to scale or sell in the next 1–2 years.</li>
-        <li class="no"><b>Not for</b> developers looking for AI coding tips. This is a business session, not a technical workshop.</li>
-      </ul>
       <div class="with-list" aria-label="Speakers">
         <p class="with"><span class="av av-r" aria-hidden="true"></span><span><b>Richard Stack</b> · VP Sales and Marketing, Island Pacific Systems<br><span class="sub">Serial founder with 35 years in business. Built and sold a SaaS Retail ERP company, now bringing a new AI-native Retail ERP to market.</span></span></p>
         <p class="with"><span class="av av-o" aria-hidden="true"></span><span><b>Oleksii Ostroverkhyi</b> · President, MobiDev<br><span class="sub">PhD in AI. Leads MobiDev's move to AI SDLC. Will walk through two real client cases and their financial numbers.</span></span></p>
       </div>
+      <ul class="fit" aria-label="Who this webinar is for">
+        <li class="yes"><b>For</b> CEOs, founders and owners of products 5+ years in production, deciding whether to scale or sell in the next 1–2 years.</li>
+        <li class="no"><b>Not for</b> developers looking for AI coding tips. This is a business session, not a technical workshop.</li>
+      </ul>
       <a class="btn hero-cta-mobile" href="#register" data-track="cta_click_hero">Save My Seat &amp; Get the Checklist</a>
     </div>
 
@@ -303,7 +302,6 @@ footer a{color:#fff}
         <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
         <span class="chip"><span class="dot" aria-hidden="true"></span>Free Live Session · Nov 18 · 10:00 AM PST / 1:00 PM EST</span>
         <h2>Save your seat</h2>
-        <p class="meta">Free · Online · Takes under a minute</p>
         <div class="row two">
           <div class="field">
             <label for="f-first">First name<span class="req" aria-hidden="true">*</span></label>
