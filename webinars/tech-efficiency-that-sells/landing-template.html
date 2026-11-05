@@ -105,7 +105,10 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 .fit b{color:#fff}
 .hero .vp{font-size:clamp(17px,1.6vw,19px);color:rgba(255,255,255,.86);margin:0 0 32px;max-width:620px}
 .hero .vp strong{color:#fff;font-weight:700}
-.hero .with{display:flex;align-items:center;gap:14px;margin:-8px 0 0;font-size:15px;color:rgba(255,255,255,.72)}
+.with-list{display:grid;gap:14px;margin:-8px 0 0}
+.hero .with{display:flex;align-items:flex-start;gap:14px;margin:0;font-size:15px;line-height:1.45;color:rgba(255,255,255,.86)}
+.hero .with .av{flex:none;margin-top:2px}
+.hero .with .sub{display:block;margin-top:3px;font-size:14px;color:rgba(255,255,255,.66)}
 .avs{display:flex;flex:none}
 .av{width:44px;height:44px;border-radius:50%;background:center/cover no-repeat;box-shadow:0 0 0 2px #1B1D1F}
 .av + .av{margin-left:-12px}
@@ -254,7 +257,8 @@ footer a{color:#fff}
   .hero .wrap{padding-top:32px;padding-bottom:56px;gap:28px}
   .hero h1{font-size:30px;margin:16px 0 14px}
   .hero .vp{font-size:16px;margin-bottom:18px}
-  .hero .with{margin:0 0 20px;font-size:14px}
+  .with-list{margin:0 0 20px}
+  .hero .with{font-size:14px}
   .sec{padding:64px 0}
 }
 </style>
@@ -286,7 +290,10 @@ footer a{color:#fff}
         <li class="yes"><b>For</b> CEOs, founders and owners of products 5+ years in production, deciding whether to scale or sell in the next 1–2 years.</li>
         <li class="no"><b>Not for</b> developers looking for AI coding tips. This is a business session, not a technical workshop.</li>
       </ul>
-      <p class="with"><span class="avs" aria-hidden="true"><span class="av av-r"></span><span class="av av-o"></span></span><span>With <b>Richard Stack</b>, a California-based serial founder, and <b>Oleksii Ostroverkhyi</b>, President of MobiDev.</span></p>
+      <div class="with-list" aria-label="Speakers">
+        <p class="with"><span class="av av-r" aria-hidden="true"></span><span><b>Richard Stack</b> · VP Sales and Marketing, Island Pacific Systems<br><span class="sub">Serial founder with 35 years in business. Built and sold a SaaS Retail ERP company, now bringing a new AI-native Retail ERP to market.</span></span></p>
+        <p class="with"><span class="av av-o" aria-hidden="true"></span><span><b>Oleksii Ostroverkhyi</b> · President, MobiDev<br><span class="sub">PhD in AI. Leads MobiDev's move to AI SDLC and walks through two client projects and their numbers.</span></span></p>
+      </div>
       <a class="btn hero-cta-mobile" href="#register" data-track="cta_click_hero">Save my seat</a>
     </div>
 
