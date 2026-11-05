@@ -94,21 +94,21 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 .hero .wrap{position:relative;z-index:1;display:grid;gap:40px;padding-top:56px;padding-bottom:72px}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid rgba(255,255,255,.18);border-radius:var(--pill);background:rgba(255,255,255,.06);font:600 13px var(--head);color:#fff}
 .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(74,213,123,.2)}
-.hero h1{color:#fff;font-size:clamp(30px,3.9vw,48px);font-weight:900;line-height:1.06;letter-spacing:-.025em;margin:22px 0 20px}
-.hero .pre{color:#fff;font:700 clamp(18px,1.9vw,24px)/1.25 var(--head);letter-spacing:-.01em;margin:22px 0 0}
-.hero .pre + h1{margin-top:10px}
-.fit{list-style:none;margin:0 0 22px;padding:0;display:grid;gap:8px;font-size:14px;line-height:1.5;color:rgba(255,255,255,.82)}
+.hero h1{color:#fff;font-size:clamp(28px,3vw,40px);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin:16px 0 14px}
+.hero .pre{color:rgba(255,255,255,.9);font:700 clamp(15px,1.35vw,18px)/1.3 var(--head);letter-spacing:-.005em;margin:0}
+.hero .pre + h1{margin-top:8px}
+.fit{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:6px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.82)}
 .fit li{position:relative;padding-left:26px}
 .fit li::before{position:absolute;left:0;top:1px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font:700 11px/1 var(--head)}
 .fit .yes::before{content:"\2713";background:var(--green);color:var(--ink)}
 .fit .no::before{content:"\2715";background:rgba(255,255,255,.18);color:#fff}
 .fit b{color:#fff}
-.hero .vp{font-size:clamp(17px,1.6vw,19px);color:rgba(255,255,255,.86);margin:0 0 32px;max-width:620px}
+.hero .vp{font-size:16px;line-height:1.6;color:rgba(255,255,255,.86);margin:0 0 18px;max-width:600px}
 .hero .vp strong{color:#fff;font-weight:700}
-.with-list{display:grid;gap:14px;margin:-8px 0 0}
-.hero .with{display:flex;align-items:flex-start;gap:14px;margin:0;font-size:15px;line-height:1.45;color:rgba(255,255,255,.86)}
-.hero .with .av{flex:none;margin-top:2px}
-.hero .with .sub{display:block;margin-top:3px;font-size:14px;color:rgba(255,255,255,.66)}
+.with-list{display:grid;gap:10px;margin:0}
+.hero .with{display:flex;align-items:flex-start;gap:12px;margin:0;font-size:14px;line-height:1.4;color:rgba(255,255,255,.86)}
+.hero .with .av{flex:none;width:36px;height:36px;margin-top:1px}
+.hero .with .sub{display:block;margin-top:2px;font-size:13px;color:rgba(255,255,255,.66)}
 .avs{display:flex;flex:none}
 .av{width:44px;height:44px;border-radius:50%;background:center/cover no-repeat;box-shadow:0 0 0 2px #1B1D1F}
 .av + .av{margin-left:-12px}
@@ -120,6 +120,7 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 /* Form */
 .form-card{background:rgba(23,24,26,.88);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:28px;box-shadow:0 30px 60px rgba(0,0,0,.4);backdrop-filter:blur(6px)}
 .form-card h2{color:#fff;font-size:24px;font-weight:700;margin:0 0 4px}
+.form-card .chip{margin:0 0 16px;font-size:12px;padding:6px 12px}
 .form-card .meta{margin:0 0 20px;color:var(--muted);font-size:14px}
 .row{display:grid;gap:14px}
 .field label{display:block;font:700 13px var(--head);color:var(--muted);margin-bottom:6px}
@@ -248,15 +249,15 @@ footer a{color:#fff}
   .speakers{grid-template-columns:1fr 1fr}
 }
 @media (min-width:1000px){
-  .hero .wrap{grid-template-columns:1.12fr .88fr;align-items:center;padding-top:72px;padding-bottom:96px}
+  .hero .wrap{grid-template-columns:1.12fr .88fr;align-items:center;padding-top:40px;padding-bottom:56px}
   .hero-cta-mobile{display:none}
   .why,.roles{grid-template-columns:repeat(3,1fr)}
   .get{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:999px){
   .hero .wrap{padding-top:32px;padding-bottom:56px;gap:28px}
-  .hero h1{font-size:30px;margin:16px 0 14px}
-  .hero .vp{font-size:16px;margin-bottom:18px}
+  .hero h1{font-size:28px;margin:12px 0 12px}
+  .hero .vp{font-size:15px;margin-bottom:16px}
   .with-list{margin:0 0 20px}
   .hero .with{font-size:14px}
   .sec{padding:64px 0}
@@ -282,25 +283,25 @@ footer a{color:#fff}
 <section class="hero" aria-labelledby="h1">
   <div class="wrap">
     <div>
-      <span class="chip"><span class="dot" aria-hidden="true"></span>Free Live Session · Nov 18 · 10:00 AM PST / 1:00 PM EST</span>
       <h2 class="pre">Legacy Codebase: The $M Bottleneck to Scaling or Selling</h2>
       <h1 id="h1"><span class="grad">Accelerate Growth or Maximize Valuation:</span> Modernize Your Architecture with AI</h1>
-      <p class="vp"><strong>Whether scaling fast or negotiating an exit, tech debt is your most expensive liability.</strong> In 60 minutes, see how top operators leverage AI-driven SDLC to modernize mission-critical systems, eliminate due diligence discounts, and double release velocity—without a full rewrite.</p>
+      <p class="vp"><strong>Whether you're scaling fast or negotiating an exit, tech debt is your most expensive liability.</strong> In 60 minutes, see how operators who've done it use AI-driven SDLC to modernize the systems their business runs on, <strong>eliminate due diligence discounts</strong> and <strong>ship twice as fast</strong>, without a full rewrite.</p>
       <ul class="fit" aria-label="Who this webinar is for">
         <li class="yes"><b>For</b> CEOs, founders and owners of products 5+ years in production, deciding whether to scale or sell in the next 1–2 years.</li>
         <li class="no"><b>Not for</b> developers looking for AI coding tips. This is a business session, not a technical workshop.</li>
       </ul>
       <div class="with-list" aria-label="Speakers">
         <p class="with"><span class="av av-r" aria-hidden="true"></span><span><b>Richard Stack</b> · VP Sales and Marketing, Island Pacific Systems<br><span class="sub">Serial founder with 35 years in business. Built and sold a SaaS Retail ERP company, now bringing a new AI-native Retail ERP to market.</span></span></p>
-        <p class="with"><span class="av av-o" aria-hidden="true"></span><span><b>Oleksii Ostroverkhyi</b> · President, MobiDev<br><span class="sub">PhD in AI. Leads MobiDev's move to AI SDLC and walks through two client projects and their numbers.</span></span></p>
+        <p class="with"><span class="av av-o" aria-hidden="true"></span><span><b>Oleksii Ostroverkhyi</b> · President, MobiDev<br><span class="sub">PhD in AI. Leads MobiDev's move to AI SDLC. Will walk through two real client cases and their financial numbers.</span></span></p>
       </div>
-      <a class="btn hero-cta-mobile" href="#register" data-track="cta_click_hero">Save my seat</a>
+      <a class="btn hero-cta-mobile" href="#register" data-track="cta_click_hero">Save My Seat &amp; Get the Checklist</a>
     </div>
 
     <div class="form-card" id="register">
       <!-- Submits to HubSpot form "Webinar registrations | Tech Efficiency That Sells" (5a41b8ca-...) via Forms API v3; design stays custom. -->
       <form id="reg-form" action="https://api.hsforms.com/submissions/v3/integration/submit/47062060/5a41b8ca-8b91-42a1-9a26-8f4785bb41ea" method="post" novalidate>
         <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
+        <span class="chip"><span class="dot" aria-hidden="true"></span>Free Live Session · Nov 18 · 10:00 AM PST / 1:00 PM EST</span>
         <h2>Save your seat</h2>
         <p class="meta">Free · Online · Takes under a minute</p>
         <div class="row two">
@@ -326,7 +327,7 @@ footer a{color:#fff}
             <input id="f-title" name="jobtitle" type="text" autocomplete="organization-title">
           </div>
         </div>
-        <button class="btn btn-block" type="submit" id="submit-btn">Save my seat</button>
+        <button class="btn btn-block" type="submit" id="submit-btn">Save My Seat &amp; Get the Checklist</button>
         <p class="form-msg" id="form-msg" role="alert" hidden>Something went wrong and your registration wasn't sent. Please try again in a moment.</p>
         <div class="bonus">
           <svg width="22" height="22" viewbox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9z" fill="#4AD57B" /><rect x="3" y="7" width="18" height="4" rx="1" fill="#12B292" /><path d="M12 7v14" stroke="#0E2A2C" stroke-width="1.6" /><path d="M12 7c-1.5-3-5-3.5-5-1.2C7 7 10 7 12 7zm0 0c1.5-3 5-3.5 5-1.2C17 7 14 7 12 7z" fill="none" stroke="#4AD57B" stroke-width="1.6" /></svg>
