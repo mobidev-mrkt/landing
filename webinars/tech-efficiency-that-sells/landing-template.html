@@ -94,7 +94,7 @@ h1,h2,h3{font-family:var(--head);color:var(--heading);margin:0}
 .hero .wrap{position:relative;z-index:1;display:grid;gap:40px;padding-top:56px;padding-bottom:72px}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid rgba(255,255,255,.18);border-radius:var(--pill);background:rgba(255,255,255,.06);font:600 13px var(--head);color:#fff}
 .chip .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(74,213,123,.2)}
-.hero h1{color:#fff;font-size:clamp(28px,3vw,40px);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin:16px 0 14px}
+.hero h1{color:#fff;font-size:clamp(28px,3vw,40px);font-weight:900;line-height:1.08;letter-spacing:-.02em;margin:0 0 16px}
 .hero .pre{color:rgba(255,255,255,.9);font:700 clamp(15px,1.35vw,18px)/1.3 var(--head);letter-spacing:-.005em;margin:0}
 .hero .pre + h1{margin-top:8px}
 .fit{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,.82)}
@@ -287,7 +287,6 @@ footer a{color:#fff}
 <section class="hero" aria-labelledby="h1">
   <div class="wrap">
     <div>
-      <h2 class="pre">Legacy Product: The $M Bottleneck to Scaling or Selling</h2>
       <h1 id="h1">Planning to Sell Your Software Company? <span class="grad">Don’t Let Legacy Code Cut Your Exit Valuation.</span></h1>
       <p class="vp">Learn from a founder who has already done it! <strong>Richard Stack built and sold a SaaS company.</strong></p>
       <p class="vp">Join him and MobiDev President <strong>Oleksii Ostroverkhyi</strong> for a practical conversation about how technical debt and legacy software can put your valuation at risk, what to address before buyer due diligence, and where AI-assisted modernization can help.</p>
@@ -380,25 +379,12 @@ footer a{color:#fff}
 <section class="sec soft" aria-labelledby="angles-h">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Scale or sell</span>
-      <h2 id="angles-h">The work pays off<br>whichever way you go</h2>
+      <span class="eyebrow">Who should join</span>
+      <h2 id="angles-h">What each seat at the table<br class="br">takes from the hour</h2>
     </div>
-    <div class="angles">
-      <article class="card angle reveal">
-        <span class="tag">If you scale</span>
-        <h3>More roadmap from<br class="br">the same engineering budget</h3>
-        <p>Faster delivery and a lower cost per feature, with modernization done step by step while new features keep shipping.</p>
-      </article>
-      <article class="card angle reveal">
-        <span class="tag">If you sell</span>
-        <h3>A codebase that holds up<br class="br">in due diligence</h3>
-        <p>Tests, a clear architecture and less dependence on a few key engineers: numbers a buyer can check instead of a reason to discount.</p>
-      </article>
-    </div>
-    <p class="roles-h reveal">What each seat at the table takes from the hour</p>
     <div class="roles">
       <article class="card role-card reveal"><b>CEO / Founder</b><p>How a buyer will price your product, and which levers to pull in the 6–12 months before a deal.</p></article>
-      <article class="card role-card reveal"><b>CTO</b><p>A safe way to bring AI into a legacy codebase, and when refactoring beats a rewrite.</p></article>
+      <article class="card role-card reveal"><b>CTO</b><p>What to fix, document, or defer before technical due diligence, without stopping the product roadmap.</p></article>
       <article class="card role-card reveal"><b>CFO / COO</b><p>What modernization costs, and which delivery metrics a buyer turns into price.</p></article>
     </div>
     <p class="sec-cta reveal"><a class="btn" href="#register" data-track="cta_click_roles">Save my seat</a></p>
@@ -409,33 +395,33 @@ footer a{color:#fff}
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">What you'll take away</span>
-      <h2 id="get-h">One hour, six things you can act on</h2>
+      <h2 id="get-h">One hour, six things to take<br class="br">into your next deal</h2>
     </div>
     <div class="get">
       <article class="card reveal">
         <span class="ico" aria-hidden="true"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#0E2A2C" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg></span>
-        <h3>A founder's view<br class="br">of your codebase</h3>
-        <p>Richard Stack, a California-based serial founder with 35 years of founding and running companies, now taking an AI-native Retail ERP to market, on what AI-native changes for an established business.</p>
+        <h3>A founder's view<br class="br">of the deal</h3>
+        <p>Richard Stack built and sold a SaaS company. How a sale looks from the founder's side of the table, and where technology shows up in the price.</p>
       </article>
       <article class="card reveal">
         <span class="ico" aria-hidden="true"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#0E2A2C" stroke-width="2" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" /></svg></span>
-        <h3>A pre-deal plan</h3>
-        <p>Which metrics to move first: delivery speed, cost per feature, test coverage, dependence on a few key engineers.</p>
+        <h3>What buyers will<br class="br">question first</h3>
+        <p>What a buyer's due diligence team looks at in your technology: architecture, test coverage, documentation, and dependence on a few key engineers.</p>
       </article>
       <article class="card reveal">
         <span class="ico" aria-hidden="true"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#0E2A2C" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3" /><path d="M18 3v4h-4M6 21v-4h4" /></svg></span>
-        <h3>A clear call on<br class="br">refactor vs rewrite</h3>
-        <p>When a step-by-step modernization<br class="br">beats starting over, and why it matters<br class="br">before a sale.</p>
+        <h3>What to fix, document,<br class="br">or defer before a sale</h3>
+        <p>Which improvements move the price, which only need documenting, and why step-by-step modernization beats a full rewrite.</p>
       </article>
       <article class="card reveal">
         <span class="ico" aria-hidden="true"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#0E2A2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V7l8-4z" /><path d="M8.5 12l2.5 2.5 4.5-4.5" /></svg></span>
-        <h3>A safe way to let<br class="br">your team use AI</h3>
-        <p>The five-stage AI SDLC rollout from a real project, so AI speeds delivery up instead of breaking the platform.</p>
+        <h3>AI without freezing<br class="br">your roadmap</h3>
+        <p>A five-stage AI SDLC rollout from a real project: modernization runs alongside new features instead of stopping them.</p>
       </article>
       <article class="card reveal">
         <span class="ico" aria-hidden="true"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#0E2A2C" stroke-width="2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8" /><path d="M15 7h6v6" /></svg></span>
-        <h3>Real numbers<br class="br">to benchmark against</h3>
-        <p>An 18-month scope in 8 months with 81% less estimated effort, and up to 40% faster development on a 7-year-old platform.</p>
+        <h3>Numbers you can put<br class="br">in front of a buyer</h3>
+        <p>An 18-month roadmap delivered in 8 months, and up to 40% faster delivery on a 7-year-old platform.</p>
       </article>
       <article class="card is-bonus reveal">
         <span class="tag">Registration bonus</span>
@@ -466,10 +452,10 @@ footer a{color:#fff}
         <div class="sp-body">
           <span class="label">Why listen</span>
           <!-- TO CONFIRM with Oleksii: bio wording -->
-          <p>Runs MobiDev as a business and leads its move to AI SDLC, so he speaks to both sides of the decision: what modernization costs the company and how the engineering gets done.</p>
+          <p>Runs MobiDev and leads its move to AI SDLC. He speaks to what a buyer's technical team will see in a legacy product, and what it takes to get it deal-ready without stopping the roadmap.</p>
           <ul>
-            <li>Explains code quality in the terms a board or buyer cares about: cost, speed and risk</li>
-            <li>Walks through two client projects and the numbers behind them</li>
+            <li>Translates code quality into what a buyer prices: cost, speed and risk</li>
+            <li>Walks through two real client cases and the numbers behind them</li>
           </ul>
         </div>
       </article>
@@ -502,7 +488,7 @@ footer a{color:#fff}
           <p class="role">Senior Solutions Manager, MobiDev</p>
         </div>
       </div>
-      <blockquote>Founders keep asking me the same thing: is our codebase helping the sale or quietly hurting it? I'm excited to put the person who builds the fix and a California-based founder who has built and sold a company in one conversation, and get you a straight answer.</blockquote>
+      <blockquote>Founders keep asking me the same thing: what will a buyer find when they look under the hood, and how much will it cost us in the deal? I'm putting a founder who has built and sold a SaaS company and the person who leads MobiDev's modernization work in one conversation, so you get a straight answer before a buyer asks.</blockquote>
     </article>
     <p class="sec-cta reveal"><a class="btn" href="#register" data-track="cta_click_speakers">Save my seat</a></p>
   </div>
