@@ -17,7 +17,7 @@
 
 1. **Тривалість дзвінка.** Скрізь у тексті стоїть `[CONFIRM: 30]` хвилин.
 2. **Що людина отримує письмово** після дзвінка і в які строки (`[CONFIRM: written summary within 2 business days]`).
-3. **З чого складається readiness score**: які 4–5 вимірів і яка шкала.
+3. **З чого складається readiness score**: які 4–5 вимірів і яка шкала. Score ставиться за відповідями й розмовою, без доступу до коду, тому виміри мають бути про процес (інструменти, review і тести, delivery, governance), а не про якість коду. Вік і стан кодової бази враховуються як контекст зі слів клієнта.
 4. **«9.1 NPS».** Це або «9.1/10 client satisfaction», або реальний NPS (тоді число зовсім інше). Як є зараз, публікувати не можна.
 5. **Кому підходить**: мінімальний розмір команди (`[CONFIRM: 10+ engineers]`).
 6. **Одна історія з цифрою** (case card) і **одна цитата клієнта** (Clutch). Якщо їх немає, блок 6 скорочується до цифр і логотипів.
@@ -43,7 +43,7 @@
 > Free AI SDLC readiness review: find out where AI slows your delivery
 
 **Підзаголовок**
-> Your team has AI coding tools. Releases still ship at the same pace. A Claude Certified Architect reads your answers before the call, then spends [CONFIRM: 30] minutes with you on the few things holding your releases back. You leave with a readiness score and a list of what to fix first.
+> Your team has AI coding tools. Releases still ship at the same pace. A Claude Certified Architect reads your answers before the call, then spends [CONFIRM: 30] minutes with you on the few things holding your releases back. You leave with a readiness score for your delivery process and a list of what to fix first.
 
 **Картка спікера** (під H1, фото та ім'я змінюються за тією самою `utm_content`)
 `[VISUAL: кругле фото 56px, зелена обводка, як у блоці експертів]`
@@ -112,7 +112,7 @@
 
 `[VISUAL: зразок звіту, розмитий, як «документ» у правій колонці. Підпис "Sample, client details removed". Якщо реального зразка немає, не малювати фейковий, а прибрати візуал і залишити тільки список.]`
 
-1. **An AI readiness score** across [CONFIRM: codebase, tooling, code review and testing, delivery process, governance]. You see where you stand on each, on one page.
+1. **An AI readiness score for how your team ships.** The architect rates [CONFIRM: AI tool adoption, code review and testing, delivery process, governance] from your answers and the call, and marks the one that limits you most. It's an expert assessment of your process. Grading the code itself would take repository access, and this review doesn't ask for it.
 2. **Your two or three real bottlenecks**, each with where it shows up in your pipeline and why it holds releases back.
 3. **A fix-first list** for the next 30 days, ordered by impact, written so your team can act on it without us.
 4. **[CONFIRM: a written summary in your inbox within 2 business days]**
