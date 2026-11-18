@@ -1,0 +1,161 @@
+{
+  "Кейс (case study)": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "additionalType": "https://schema.org/CaseStudy",
+    "@id": "https://<SITE>/case-studies/<slug>#article",
+    "headline": "<H1 з головною цифрою>",
+    "description": "<1–2 речення: клієнт, задача, результат з цифрою>",
+    "image": "<URL hero ≥1200px>",
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "author": {
+      "@id": "https://<SITE>/#organization"
+    },
+    "publisher": {
+      "@id": "https://<SITE>/#organization"
+    },
+    "mainEntityOfPage": "https://<SITE>/case-studies/<slug>",
+    "about": [
+      {
+        "@type": "Service",
+        "name": "<послуга>",
+        "url": "https://<SITE>/services/<service>"
+      }
+    ],
+    "mentions": [
+      {
+        "@type": "Organization",
+        "name": "<клієнт, лише якщо публічний>"
+      }
+    ],
+    "keywords": "<галузь, технології, тип проєкту>",
+    "review": {
+      "@type": "Review",
+      "reviewBody": "<цитата клієнта>",
+      "author": {
+        "@type": "Person",
+        "name": "<ім’я або «Owner»>",
+        "jobTitle": "<посада>",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "<компанія або «US retail operations platform»>"
+        }
+      },
+      "itemReviewed": {
+        "@id": "https://<SITE>/#organization"
+      }
+    }
+  },
+  "Стаття блогу": {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://<SITE>/blog/<slug>#article",
+    "headline": "<H1>",
+    "description": "<meta description>",
+    "image": "<cover URL>",
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "author": {
+      "@type": "Person",
+      "@id": "https://<SITE>/our-team/<author>#person",
+      "name": "<Ім’я Прізвище>",
+      "jobTitle": "Solutions Architect",
+      "url": "https://<SITE>/our-team/<author>",
+      "sameAs": [
+        "https://www.linkedin.com/in/<author>"
+      ]
+    },
+    "publisher": {
+      "@id": "https://<SITE>/#organization"
+    },
+    "mainEntityOfPage": "https://<SITE>/blog/<slug>"
+  },
+  "Сторінка експерта (/our-team/)": {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://<SITE>/our-team/<author>#person",
+      "name": "<Ім’я Прізвище>",
+      "jobTitle": "<посада>",
+      "worksFor": {
+        "@id": "https://<SITE>/#organization"
+      },
+      "image": "<фото>",
+      "sameAs": [
+        "https://www.linkedin.com/in/<author>"
+      ],
+      "knowsAbout": [
+        "<тема 1>",
+        "<тема 2>"
+      ]
+    }
+  },
+  "Сервісна сторінка": {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://<SITE>/services/<slug>#service",
+    "name": "<назва послуги>",
+    "serviceType": "<тип>",
+    "description": "<1–2 речення>",
+    "provider": {
+      "@id": "https://<SITE>/#organization"
+    },
+    "areaServed": [
+      "<країни/регіони>"
+    ],
+    "url": "https://<SITE>/services/<slug>",
+    "subjectOf": [
+      {
+        "@type": "Article",
+        "url": "https://<SITE>/case-studies/<related-case>"
+      }
+    ]
+  },
+  "Organization (один раз у шаблоні)": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://<SITE>/#organization",
+    "name": "<Company>",
+    "url": "https://<SITE>/",
+    "logo": "<logo URL>",
+    "description": "<одне речення позиціонування — однакове з llms.txt і LinkedIn>",
+    "foundingDate": "<YYYY>",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "<місто>",
+        "addressRegion": "<регіон>",
+        "addressCountry": "<країна>"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "<+1-...>",
+      "email": "<email>",
+      "contactType": "sales"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/<...>",
+      "https://clutch.co/profile/<...>",
+      "https://www.youtube.com/@<...>",
+      "https://x.com/<...>",
+      "<інші профілі: Facebook, Reddit, Medium, G2, Upwork>"
+    ]
+  },
+  "Вебінар / відео": {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "<назва>",
+    "description": "<опис>",
+    "thumbnailUrl": "<URL>",
+    "uploadDate": "YYYY-MM-DD",
+    "duration": "PT58M",
+    "embedUrl": "https://www.youtube.com/embed/<id>",
+    "transcript": "<текст транскрипту або посилання>",
+    "publisher": {
+      "@id": "https://<SITE>/#organization"
+    }
+  }
+}
