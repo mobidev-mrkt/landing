@@ -1,0 +1,15 @@
+source/
+edit/*/transcripts/
+edit/*/*.wav
+models/
+edit/*/clips/
+edit/*/snip/
+edit/*/verify/
+edit/*/*.mp4
+edit/*/*.log
+edit/*/audio16k-*.json
+edit/preview/*.mp4
+edit/delivery/
+edit/*/cover.jpg
+edit/render-all.log
+edit/_scout/

@@ -1,0 +1,104 @@
+{
+ "schema": 2,
+ "slug": "mobidev",
+ "name": "MobiDev",
+ "description": "",
+ "language": "en",
+ "colors": {
+  "primary": "#222222",
+  "accent": "#4AD57B",
+  "light": "#FFFFFF",
+  "text_on_primary": "#FFFFFF",
+  "text_on_accent": "#222222",
+  "extra": {
+   "white": "#FFFFFF",
+   "problem": "#DE7356",
+   "on_problem": "#FFFFFF"
+  }
+ },
+ "fonts": {
+  "heading": {
+   "family": "Inter",
+   "weights": [
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "source": "local",
+   "files": [
+    "assets/fonts/Inter-Medium.woff2",
+    "assets/fonts/Inter-SemiBold.woff2",
+    "assets/fonts/Inter-Bold.woff2",
+    "assets/fonts/Inter-ExtraBold.woff2",
+    "assets/fonts/Inter-Black.woff2"
+   ]
+  },
+  "body": {
+   "family": "Open Sans",
+   "weights": [
+    500,
+    600,
+    700,
+    800
+   ],
+   "source": "local",
+   "files": [
+    "assets/fonts/OpenSans-Medium.woff2",
+    "assets/fonts/OpenSans-SemiBold.woff2",
+    "assets/fonts/OpenSans-Bold.woff2",
+    "assets/fonts/OpenSans-ExtraBold.woff2"
+   ]
+  }
+ },
+ "logos": {
+  "on_light": "assets/mobidev-logo.png",
+  "on_dark": "assets/mobidev-logo.png"
+ },
+ "lut": null,
+ "tagline": "",
+ "guide": null,
+ "rules": "rules.md",
+ "styles": {
+  "default": "brand",
+  "allowed": [
+   "marker",
+   "brand",
+   "minimal",
+   "editorial",
+   "bold"
+  ]
+ },
+ "subtitles_default": "accent",
+ "motion": null,
+ "tone": {
+  "preset": "expert",
+  "overrides": {
+   "scene_tone": "feature",
+   "memes": {
+    "max": 0,
+    "allowed": false
+   }
+  }
+ },
+ "voice": "",
+ "forbidden_imagery": [],
+ "forbidden_imagery_en": [],
+ "cta_library": null,
+ "asset_verdicts": null,
+ "approver": "brand owner (to confirm)",
+ "account": "business",
+ "music_policy": "do not burn in without a commercial license; pick the track in the app when publishing",
+ "memes_policy": "strict",
+ "inserts": {},
+ "brandbook": [
+  "Google Drive folder 1V91AS2daFVsoZZ1M6gJ-vX718yaOsaqo: Brand Book 2026 Design Guidlines.fig, LN Profile/Posts Design/Colors.jpg, Typography.jpg"
+ ],
+ "fonts_found": null,
+ "examples": [],
+ "derived": [],
+ "created": "2026-10-30",
+ "updated": "2026-11-19",
+ "last_used": "2026-10-30"
+}
