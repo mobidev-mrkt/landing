@@ -1,0 +1,608 @@
+{
+ "duration": 23.467,
+ "segments": [
+  {
+   "i": 0,
+   "source": "main",
+   "src_start": 3.867,
+   "src_end": 9.6,
+   "out_start": 0.0,
+   "out_dur": 5.2,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "i": 1,
+   "source": "main",
+   "src_start": 9.9,
+   "src_end": 30.0,
+   "out_start": 5.2,
+   "out_dur": 18.267,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "words": [
+  {
+   "text": "I",
+   "src": 3.94,
+   "start": 0.067,
+   "end": 0.139,
+   "seg": 0
+  },
+  {
+   "text": "think",
+   "src": 4.02,
+   "start": 0.139,
+   "end": 0.321,
+   "seg": 0
+  },
+  {
+   "text": "to",
+   "src": 4.22,
+   "start": 0.321,
+   "end": 0.485,
+   "seg": 0
+  },
+  {
+   "text": "sum",
+   "src": 4.4,
+   "start": 0.485,
+   "end": 0.63,
+   "seg": 0
+  },
+  {
+   "text": "it",
+   "src": 4.56,
+   "start": 0.63,
+   "end": 0.776,
+   "seg": 0
+  },
+  {
+   "text": "up,",
+   "src": 4.72,
+   "start": 0.776,
+   "end": 0.939,
+   "seg": 0
+  },
+  {
+   "text": "we",
+   "src": 4.9,
+   "start": 0.939,
+   "end": 1.139,
+   "seg": 0
+  },
+  {
+   "text": "need",
+   "src": 5.12,
+   "start": 1.139,
+   "end": 1.376,
+   "seg": 0
+  },
+  {
+   "text": "to",
+   "src": 5.38,
+   "start": 1.376,
+   "end": 1.558,
+   "seg": 0
+  },
+  {
+   "text": "care",
+   "src": 5.58,
+   "start": 1.558,
+   "end": 1.721,
+   "seg": 0
+  },
+  {
+   "text": "about",
+   "src": 5.76,
+   "start": 1.721,
+   "end": 1.994,
+   "seg": 0
+  },
+  {
+   "text": "a",
+   "src": 6.06,
+   "start": 1.994,
+   "end": 2.067,
+   "seg": 0
+  },
+  {
+   "text": "lot",
+   "src": 6.12,
+   "start": 2.048,
+   "end": 2.23,
+   "seg": 0
+  },
+  {
+   "text": "of",
+   "src": 6.32,
+   "start": 2.23,
+   "end": 2.485,
+   "seg": 0
+  },
+  {
+   "text": "aspects.",
+   "src": 6.6,
+   "start": 2.485,
+   "end": 2.812,
+   "seg": 0
+  },
+  {
+   "text": "Yeah,",
+   "src": 7.3,
+   "start": 3.121,
+   "end": 3.303,
+   "seg": 0
+  },
+  {
+   "text": "preparation,",
+   "src": 7.5,
+   "start": 3.303,
+   "end": 3.776,
+   "seg": 0
+  },
+  {
+   "text": "planning,",
+   "src": 8.28,
+   "start": 4.012,
+   "end": 4.376,
+   "seg": 0
+  },
+  {
+   "text": "clean",
+   "src": 9.06,
+   "start": 4.721,
+   "end": 4.903,
+   "seg": 0
+  },
+  {
+   "text": "up,",
+   "src": 9.26,
+   "start": 4.903,
+   "end": 5.212,
+   "seg": 0
+  },
+  {
+   "text": "correct",
+   "src": 10.22,
+   "start": 5.491,
+   "end": 5.709,
+   "seg": 1
+  },
+  {
+   "text": "implementation,",
+   "src": 10.46,
+   "start": 5.709,
+   "end": 6.4,
+   "seg": 1
+  },
+  {
+   "text": "the",
+   "src": 11.48,
+   "start": 6.636,
+   "end": 6.745,
+   "seg": 1
+  },
+  {
+   "text": "security.",
+   "src": 11.6,
+   "start": 6.745,
+   "end": 7.327,
+   "seg": 1
+  },
+  {
+   "text": "But",
+   "src": 12.92,
+   "start": 7.945,
+   "end": 8.309,
+   "seg": 1
+  },
+  {
+   "text": "if",
+   "src": 13.32,
+   "start": 8.309,
+   "end": 8.582,
+   "seg": 1
+  },
+  {
+   "text": "you",
+   "src": 13.62,
+   "start": 8.582,
+   "end": 8.709,
+   "seg": 1
+  },
+  {
+   "text": "do",
+   "src": 13.76,
+   "start": 8.709,
+   "end": 8.891,
+   "seg": 1
+  },
+  {
+   "text": "it,",
+   "src": 13.96,
+   "start": 8.891,
+   "end": 9.273,
+   "seg": 1
+  },
+  {
+   "text": "yeah,",
+   "src": 14.38,
+   "start": 9.273,
+   "end": 9.545,
+   "seg": 1
+  },
+  {
+   "text": "if",
+   "src": 14.68,
+   "start": 9.545,
+   "end": 9.636,
+   "seg": 1
+  },
+  {
+   "text": "you",
+   "src": 14.78,
+   "start": 9.636,
+   "end": 9.764,
+   "seg": 1
+  },
+  {
+   "text": "don't",
+   "src": 14.92,
+   "start": 9.764,
+   "end": 10.018,
+   "seg": 1
+  },
+  {
+   "text": "skip",
+   "src": 15.2,
+   "start": 10.018,
+   "end": 10.273,
+   "seg": 1
+  },
+  {
+   "text": "it,",
+   "src": 15.48,
+   "start": 10.273,
+   "end": 10.527,
+   "seg": 1
+  },
+  {
+   "text": "if",
+   "src": 16.06,
+   "start": 10.8,
+   "end": 10.909,
+   "seg": 1
+  },
+  {
+   "text": "you",
+   "src": 16.18,
+   "start": 10.909,
+   "end": 11.055,
+   "seg": 1
+  },
+  {
+   "text": "do",
+   "src": 16.34,
+   "start": 11.055,
+   "end": 11.182,
+   "seg": 1
+  },
+  {
+   "text": "it",
+   "src": 16.48,
+   "start": 11.182,
+   "end": 11.545,
+   "seg": 1
+  },
+  {
+   "text": "by",
+   "src": 16.88,
+   "start": 11.545,
+   "end": 11.818,
+   "seg": 1
+  },
+  {
+   "text": "yourself,",
+   "src": 17.18,
+   "start": 11.818,
+   "end": 12.273,
+   "seg": 1
+  },
+  {
+   "text": "with",
+   "src": 17.74,
+   "start": 12.327,
+   "end": 12.491,
+   "seg": 1
+  },
+  {
+   "text": "your",
+   "src": 17.92,
+   "start": 12.491,
+   "end": 12.782,
+   "seg": 1
+  },
+  {
+   "text": "team,",
+   "src": 18.24,
+   "start": 12.782,
+   "end": 13.0,
+   "seg": 1
+  },
+  {
+   "text": "with",
+   "src": 18.66,
+   "start": 13.164,
+   "end": 13.291,
+   "seg": 1
+  },
+  {
+   "text": "a",
+   "src": 18.8,
+   "start": 13.291,
+   "end": 13.436,
+   "seg": 1
+  },
+  {
+   "text": "partner,",
+   "src": 18.96,
+   "start": 13.436,
+   "end": 13.727,
+   "seg": 1
+  },
+  {
+   "text": "development",
+   "src": 19.5,
+   "start": 13.927,
+   "end": 14.145,
+   "seg": 1
+  },
+  {
+   "text": "partner,",
+   "src": 19.74,
+   "start": 14.145,
+   "end": 14.491,
+   "seg": 1
+  },
+  {
+   "text": "who",
+   "src": 20.14,
+   "start": 14.509,
+   "end": 14.673,
+   "seg": 1
+  },
+  {
+   "text": "knows",
+   "src": 20.32,
+   "start": 14.673,
+   "end": 14.945,
+   "seg": 1
+  },
+  {
+   "text": "how",
+   "src": 20.62,
+   "start": 14.945,
+   "end": 15.182,
+   "seg": 1
+  },
+  {
+   "text": "to",
+   "src": 20.88,
+   "start": 15.182,
+   "end": 15.364,
+   "seg": 1
+  },
+  {
+   "text": "do",
+   "src": 21.08,
+   "start": 15.364,
+   "end": 15.527,
+   "seg": 1
+  },
+  {
+   "text": "it",
+   "src": 21.26,
+   "start": 15.527,
+   "end": 15.709,
+   "seg": 1
+  },
+  {
+   "text": "in",
+   "src": 21.46,
+   "start": 15.709,
+   "end": 15.927,
+   "seg": 1
+  },
+  {
+   "text": "a",
+   "src": 21.7,
+   "start": 15.927,
+   "end": 16.0,
+   "seg": 1
+  },
+  {
+   "text": "wise",
+   "src": 21.78,
+   "start": 16.0,
+   "end": 16.2,
+   "seg": 1
+  },
+  {
+   "text": "and",
+   "src": 22.0,
+   "start": 16.2,
+   "end": 16.491,
+   "seg": 1
+  },
+  {
+   "text": "correct",
+   "src": 22.32,
+   "start": 16.491,
+   "end": 16.709,
+   "seg": 1
+  },
+  {
+   "text": "way,",
+   "src": 22.56,
+   "start": 16.709,
+   "end": 17.018,
+   "seg": 1
+  },
+  {
+   "text": "then",
+   "src": 23.3,
+   "start": 17.382,
+   "end": 17.855,
+   "seg": 1
+  },
+  {
+   "text": "AI",
+   "src": 23.82,
+   "start": 17.855,
+   "end": 18.145,
+   "seg": 1
+  },
+  {
+   "text": "will",
+   "src": 24.14,
+   "start": 18.145,
+   "end": 18.636,
+   "seg": 1
+  },
+  {
+   "text": "bring",
+   "src": 24.68,
+   "start": 18.636,
+   "end": 18.8,
+   "seg": 1
+  },
+  {
+   "text": "you",
+   "src": 24.86,
+   "start": 18.8,
+   "end": 19.091,
+   "seg": 1
+  },
+  {
+   "text": "happiness.",
+   "src": 25.18,
+   "start": 19.091,
+   "end": 19.491,
+   "seg": 1
+  },
+  {
+   "text": "Yeah,",
+   "src": 25.84,
+   "start": 19.691,
+   "end": 19.855,
+   "seg": 1
+  },
+  {
+   "text": "but",
+   "src": 26.02,
+   "start": 19.855,
+   "end": 20.109,
+   "seg": 1
+  },
+  {
+   "text": "at",
+   "src": 26.3,
+   "start": 20.109,
+   "end": 20.273,
+   "seg": 1
+  },
+  {
+   "text": "a",
+   "src": 26.48,
+   "start": 20.273,
+   "end": 20.382,
+   "seg": 1
+  },
+  {
+   "text": "cost.",
+   "src": 26.6,
+   "start": 20.382,
+   "end": 20.636,
+   "seg": 1
+  },
+  {
+   "text": "As",
+   "src": 26.98,
+   "start": 20.727,
+   "end": 20.927,
+   "seg": 1
+  },
+  {
+   "text": "Eugene",
+   "src": 27.2,
+   "start": 20.927,
+   "end": 21.127,
+   "seg": 1
+  },
+  {
+   "text": "said,",
+   "src": 27.42,
+   "start": 21.127,
+   "end": 21.527,
+   "seg": 1
+  },
+  {
+   "text": "we",
+   "src": 27.86,
+   "start": 21.527,
+   "end": 21.909,
+   "seg": 1
+  },
+  {
+   "text": "need",
+   "src": 28.28,
+   "start": 21.909,
+   "end": 22.145,
+   "seg": 1
+  },
+  {
+   "text": "to",
+   "src": 28.54,
+   "start": 22.145,
+   "end": 22.291,
+   "seg": 1
+  },
+  {
+   "text": "be",
+   "src": 28.7,
+   "start": 22.291,
+   "end": 22.436,
+   "seg": 1
+  },
+  {
+   "text": "cautious",
+   "src": 28.86,
+   "start": 22.436,
+   "end": 22.727,
+   "seg": 1
+  },
+  {
+   "text": "about",
+   "src": 29.18,
+   "start": 22.727,
+   "end": 22.982,
+   "seg": 1
+  },
+  {
+   "text": "the",
+   "src": 29.46,
+   "start": 22.982,
+   "end": 23.164,
+   "seg": 1
+  },
+  {
+   "text": "costs.",
+   "src": 29.66,
+   "start": 23.164,
+   "end": 23.309,
+   "seg": 1
+  }
+ ]
+}

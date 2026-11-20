@@ -1,0 +1,42 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/w13b-01.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.04:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 21.867,
+   "end": 44.067,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 64.567,
+   "end": 84.233,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 84.467,
+   "end": 88.3,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 90.867,
+   "end": 106.733,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 55.967
+}

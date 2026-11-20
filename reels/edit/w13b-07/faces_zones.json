@@ -1,0 +1,138 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  600,
+  1030,
+  900
+ ],
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.882,
+   "face": [
+    357,
+    783,
+    365,
+    454
+   ],
+   "ceiling": [
+    600,
+    723
+   ],
+   "chest": null,
+   "left": 272,
+   "right": 178,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s02",
+   "start": 2.882,
+   "end": 7.958,
+   "face": [
+    393,
+    760,
+    317,
+    446
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 308,
+   "right": 190,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s03",
+   "start": 7.958,
+   "end": 10.539,
+   "face": [
+    406,
+    758,
+    439,
+    461
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 321,
+   "right": 55,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s04",
+   "start": 10.539,
+   "end": 16.03,
+   "face": [
+    319,
+    701,
+    402,
+    549
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 234,
+   "right": 179,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s05",
+   "start": 16.03,
+   "end": 18.939,
+   "face": [
+    385,
+    748,
+    330,
+    503
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 300,
+   "right": 185,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s06",
+   "start": 18.939,
+   "end": 21.248,
+   "face": [
+    379,
+    747,
+    340,
+    506
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 294,
+   "right": 181,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s07",
+   "start": 21.248,
+   "end": 23.133,
+   "face": [
+    391,
+    773,
+    336,
+    469
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 306,
+   "right": 173,
+   "sub_ok": false,
+   "cut_top": false
+  }
+ ]
+}

@@ -5,7 +5,7 @@
 # style Brand, subtitles Accent, scene tone calm, only designed scenes as inserts.
 source "$(dirname "$0")/env.sh"; cd "$REELS" || exit 1
 w=$1
-while IFS=$'\t' read -r id a b who; do
+while IFS=$'\t' read -r id a b who <&3; do  # fd 3: ffmpeg inside faces.py reads stdin and would eat the list
   [ -z "$id" ] && continue
   python3 "$S/brand.py" use mobidev --edit "edit/$id" >/dev/null 2>&1
   python3 "$S/reelcfg.py" save "edit/$id" --set style=brand subtitles=accent scene_tone=calm format=framed \
@@ -18,4 +18,4 @@ PY
   python3 "$S/faces.py" scan "edit/$id" >/dev/null 2>&1
   python3 "$S/visual_plan.py" init "edit/$id" >/dev/null 2>&1
   echo "$id: spans without room for subtitles: $(python3 "$S/faces.py" zones "edit/$id" 2>&1 | grep -E '^k' | grep -c 'no room')"
-done < "edit/$w-clips.tsv"
+done 3< "edit/$w-clips.tsv"

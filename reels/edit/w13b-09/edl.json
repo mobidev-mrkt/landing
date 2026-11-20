@@ -1,0 +1,28 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/w13b-09.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.05:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 8.867,
+   "end": 26.7,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 26.9,
+   "end": 35.067,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 23.633
+}

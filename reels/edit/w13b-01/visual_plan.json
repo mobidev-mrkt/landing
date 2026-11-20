@@ -1,0 +1,474 @@
+{
+ "schema": 1,
+ "id": "w13b-01",
+ "created": "2026-11-20T10:39",
+ "duration": 55.967,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 1.448,
+   "text": "For example,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture",
+    "hook: the first 1.5 s decide whether people keep watching"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 1.448,
+   "end": 6.394,
+   "text": "if you speed up the development and your developer's writing code really fast, it's cool,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.394,
+   "end": 9.667,
+   "text": "but still your QA team can't handle all of that stuff.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 9.667,
+   "end": 14.085,
+   "text": "And that's actually one of the most widespread problems because a lot of new user",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 14.085,
+   "end": 18.448,
+   "text": "stories are closed, new tasks are completed, and there is a bottleneck when QA",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 18.448,
+   "end": 21.033,
+   "text": "team can't actually cover all of that",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 20.2 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 21.033,
+   "end": 26.615,
+   "text": "We're speaking about bottlenecks here, and even if you take a look at the development workflow,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 17.9 s segment without a cut: room for a change of picture",
+    "pointing at an object -> B-roll of the object",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 26.615,
+   "end": 29.924,
+   "text": "there could be a bottleneck with the code review because with AI,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 17.9 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 29.924,
+   "end": 34.797,
+   "text": "it generates like 500 lines of code instead of 100 lines,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 17.9 s segment without a cut: room for a change of picture",
+    "a number -> a card works better than B-roll",
+    "scene:stat - a number in the speech -> a stat scene (a source is required)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 34.797,
+   "end": 38.936,
+   "text": "which developers usually write, which means that you also have to",
+   "cut_segs": [
+    1,
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 17.9 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 38.936,
+   "end": 41.891,
+   "text": "spend more time on the code review,",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 41.891,
+   "end": 46.273,
+   "text": "So all of those bottlenecks, they are caused by the issue when you don't",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 14.4 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 46.273,
+   "end": 50.927,
+   "text": "really integrate AI on the all stages of the software development life cycle,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 14.4 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 50.927,
+   "end": 55.967,
+   "text": "while your competitors, well, they could do it better than you.",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 14.4 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "quote",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s02",
+   "start": 6.367,
+   "dur": 4.6,
+   "at": "word:still#1",
+   "offset": -0.3,
+   "tone": null,
+   "text": {
+    "lines": [
+     "Your QA team can't handle",
+     "all of that stuff"
+    ],
+    "accent": "can't handle",
+    "label": "IEVGEN ZADOROZHNYI"
+   },
+   "items": null,
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "11:21-11:25"
+   },
+   "what": "the first bottleneck as a quote",
+   "why": "names the problem the hook asks about",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "stat",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s09",
+   "start": 31.779,
+   "dur": 5.0,
+   "at": "word:500#1",
+   "tone": null,
+   "text": {
+    "lines": [
+     "lines of code from AI, instead of 100"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": null,
+   "value": {
+    "from": 100,
+    "to": 500
+   },
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "12:04-12:13"
+   },
+   "what": "500 vs 100 lines",
+   "why": "the number behind the code review bottleneck",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": false,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "4cc889344ebf",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "IEVGEN ZADOROZHNYI",
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 6,
+  "coverage_max_s": 12.31
+ }
+}

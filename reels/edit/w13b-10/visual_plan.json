@@ -1,0 +1,404 @@
+{
+ "schema": 1,
+ "id": "w13b-10",
+ "created": "2026-11-20T10:40",
+ "duration": 23.467,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.121,
+   "text": "I think to sum it up, we need to care about a lot of aspects.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 3.121,
+   "end": 5.491,
+   "text": "Yeah, preparation, planning, clean up,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "scene:list - an enumeration -> a list scene (items on their own words)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 5.491,
+   "end": 7.945,
+   "text": "correct implementation, the security.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 18.3 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 7.945,
+   "end": 10.8,
+   "text": "But if you do it, yeah, if you don't skip it,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 18.3 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 10.8,
+   "end": 15.182,
+   "text": "if you do it by yourself, with your team, with a partner, development partner, who knows how",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 18.3 s segment without a cut: room for a change of picture",
+    "scene:list - an enumeration -> a list scene (items on their own words)",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 15.182,
+   "end": 17.382,
+   "text": "to do it in a wise and correct way,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 18.3 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 17.382,
+   "end": 20.727,
+   "text": "then AI will bring you happiness. Yeah, but at a cost.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 18.3 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 20.727,
+   "end": 23.467,
+   "text": "As Eugene said, we need to be cautious about the costs.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 18.3 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here",
+    "scene:quote - someone else's words -> a quote scene (verbatim, with a source)"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s01",
+   "start": 3.003,
+   "dur": 6.5,
+   "at": "word:preparation#1",
+   "offset": -0.3,
+   "tone": null,
+   "text": {
+    "lines": [
+     "To sum it up"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "Preparation",
+     "at": "word:preparation#1",
+     "t": 3.303
+    },
+    {
+     "text": "Planning",
+     "at": "word:planning#1",
+     "t": 4.012
+    },
+    {
+     "text": "Clean up",
+     "at": "word:clean#1",
+     "t": 4.721
+    },
+    {
+     "text": "Correct implementation",
+     "at": "word:correct#1",
+     "t": 5.491
+    },
+    {
+     "text": "Security",
+     "at": "word:security#1",
+     "t": 6.745
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "42:52-43:00"
+   },
+   "what": "Helen's summary list",
+   "why": "the five points in one look",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "quote",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s07",
+   "start": 17.455,
+   "dur": 4.9,
+   "at": "word:AI#1",
+   "offset": -0.4,
+   "tone": null,
+   "text": {
+    "lines": [
+     "AI will bring you happiness.",
+     "Yeah, but at a cost."
+    ],
+    "accent": "at a cost",
+    "label": "HELEN KHAILOVA-HORASH"
+   },
+   "items": null,
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "43:05-43:10"
+   },
+   "what": "the closing line as a quote",
+   "why": "the honest ending",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "22b1b7db7b34",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "HELEN KHAILOVA-HORASH",
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 3,
+  "coverage_max_s": 5.16
+ }
+}

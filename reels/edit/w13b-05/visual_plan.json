@@ -1,0 +1,478 @@
+{
+ "schema": 1,
+ "id": "w13b-05",
+ "created": "2026-11-20T10:39",
+ "duration": 46.8,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 2.479,
+   "text": "For example, as an engineer,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "hook: the first 1.5 s decide whether people keep watching",
+    "scene:hook - a weak start (a filler word, or > 2 s without a number or a question) -> a hook scene"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 2.479,
+   "end": 6.776,
+   "text": "if you ask AI like to check the code base or repository or take",
+   "cut_segs": [
+    0,
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 6.776,
+   "end": 9.558,
+   "text": "like the library from the GitHub,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 9.558,
+   "end": 14.758,
+   "text": "AI will do exactly what you ask it to do, but it won't validate if for example,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 14.758,
+   "end": 17.685,
+   "text": "that library has kind of like injection,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 17.685,
+   "end": 19.576,
+   "text": "which could cause a security leak.",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 19.576,
+   "end": 23.63,
+   "text": "Also, your vendor should have like a",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 23.63,
+   "end": 25.867,
+   "text": "special rules for using AI,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 25.867,
+   "end": 29.658,
+   "text": "like to not share with the AI company name, client name,",
+   "cut_segs": [
+    1,
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 22.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 29.658,
+   "end": 34.285,
+   "text": "like information about budgets and all of that stuff. So it should be under NDA.",
+   "cut_segs": [
+    2
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 6.4 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 34.285,
+   "end": 38.648,
+   "text": "Make sure that your vendor uses like human in the loop",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 38.648,
+   "end": 43.285,
+   "text": "approach, which means that like skilled people validates AI,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.0 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 43.285,
+   "end": 46.8,
+   "text": "not like AI tells junior engineers what to do",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 13.0 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here",
+    "scene:quote - someone else's words -> a quote scene (verbatim, with a source)"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "quote",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s03",
+   "start": 9.539,
+   "dur": 4.8,
+   "at": "word:exactly#1",
+   "offset": -0.6,
+   "tone": null,
+   "text": {
+    "lines": [
+     "AI will do exactly",
+     "what you ask it to do"
+    ],
+    "accent": "exactly",
+    "label": "IEVGEN ZADOROZHNYI"
+   },
+   "items": null,
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "37:12-37:16"
+   },
+   "what": "the core risk as a quote",
+   "why": "sets up the GitHub example",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  },
+  {
+   "id": "c02",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s09",
+   "start": 26.103,
+   "dur": 20.6,
+   "at": "word:share#1",
+   "offset": -0.4,
+   "tone": null,
+   "text": {
+    "lines": [
+     "Rules your vendor should have"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "No company or client names in AI",
+     "at": "word:share#1",
+     "t": 26.503
+    },
+    {
+     "text": "No budgets in AI",
+     "at": "word:budgets#1",
+     "t": 31.148
+    },
+    {
+     "text": "All of it under NDA",
+     "at": "word:NDA#1",
+     "t": 33.439
+    },
+    {
+     "text": "Human in the loop",
+     "at": "word:human#1",
+     "t": 37.776
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "37:28-38:10"
+   },
+   "what": "the vendor rules",
+   "why": "an actionable checklist",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "e3994454eafa",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "IEVGEN ZADOROZHNYI",
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 5,
+  "coverage_max_s": 10.3
+ }
+}

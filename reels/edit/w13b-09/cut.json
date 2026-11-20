@@ -1,0 +1,39 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/w13b-09.mp4",
+   "transcript": "edit/w13b-09/transcripts/w13b-09.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 8.867,
+   "end": 26.7
+  },
+  {
+   "start": 26.9,
+   "end": 35.067
+  }
+ ],
+ "fix": {
+  "DLC": "SDLC"
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.05:bb=0.96"
+ },
+ "fix_at": [
+  {
+   "text": "as",
+   "at": 29.02,
+   "to": ""
+  },
+  {
+   "text": "a",
+   "at": 29.4,
+   "to": ""
+  }
+ ]
+}

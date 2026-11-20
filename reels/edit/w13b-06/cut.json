@@ -1,0 +1,20 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/w13b-06.mp4",
+   "transcript": "edit/w13b-06/transcripts/w13b-06.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 4.3,
+   "end": 38.933
+  }
+ ],
+ "look": {
+  "correct": "colorchannelmixer=rr=1.04:bb=0.96"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/w13b-08.mp4",
+   "transcript": "edit/w13b-08/transcripts/w13b-08.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 5.333,
+   "end": 11.1
+  },
+  {
+   "start": 11.433,
+   "end": 13.367
+  },
+  {
+   "start": 14.167,
+   "end": 23.6
+  },
+  {
+   "start": 23.767,
+   "end": 42.533
+  },
+  {
+   "start": 42.867,
+   "end": 62.4
+  },
+  {
+   "start": 62.633,
+   "end": 64.1
+  },
+  {
+   "start": 64.367,
+   "end": 67.467
+  }
+ ],
+ "look": {
+  "correct": "colorchannelmixer=rr=1.04:bb=0.96"
+ }
+}

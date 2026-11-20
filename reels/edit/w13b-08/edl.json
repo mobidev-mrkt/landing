@@ -1,0 +1,63 @@
+{
+ "version": 1,
+ "sources": {
+  "main": "/home/user/landing/reels/source/w13b-08.mp4"
+ },
+ "speed": 1.1,
+ "speeds": {
+  "main": 1.1
+ },
+ "grade": "colorchannelmixer=rr=1.04:bb=0.96",
+ "ranges": [
+  {
+   "source": "main",
+   "start": 5.333,
+   "end": 11.1,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 11.433,
+   "end": 13.367,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 14.167,
+   "end": 23.6,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 23.767,
+   "end": 42.533,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 42.867,
+   "end": 62.4,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 62.633,
+   "end": 64.1,
+   "speed": 1.1,
+   "beat": ""
+  },
+  {
+   "source": "main",
+   "start": 64.367,
+   "end": 67.467,
+   "speed": 1.1,
+   "beat": ""
+  }
+ ],
+ "total_duration_s": 54.567
+}

@@ -1,0 +1,54 @@
+{
+ "fps": 30,
+ "speed": 1.1,
+ "scale": "auto",
+ "sources": {
+  "main": {
+   "file": "source/w13b-04.mp4",
+   "transcript": "edit/w13b-04/transcripts/w13b-04.json"
+  }
+ },
+ "ranges": [
+  {
+   "start": 5.033,
+   "end": 6.1
+  },
+  {
+   "start": 6.4,
+   "end": 14.467
+  },
+  {
+   "start": 14.733,
+   "end": 58.633
+  }
+ ],
+ "fix": {
+  "uh,": "",
+  "Uh,": ""
+ },
+ "look": {
+  "correct": "colorchannelmixer=rr=1.04:bb=0.96"
+ },
+ "fix_at": [
+  {
+   "text": "so",
+   "at": 5.58,
+   "to": "So"
+  },
+  {
+   "text": "at",
+   "at": 6.44,
+   "to": "as"
+  },
+  {
+   "text": "the",
+   "at": 6.7,
+   "to": "a"
+  },
+  {
+   "text": "or",
+   "at": 12.7,
+   "to": "for"
+  }
+ ]
+}

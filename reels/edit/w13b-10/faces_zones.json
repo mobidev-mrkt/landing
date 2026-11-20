@@ -1,0 +1,152 @@
+{
+ "cam": null,
+ "sub": [
+  1250,
+  1430
+ ],
+ "margin": 60,
+ "frame": [
+  25,
+  600,
+  1030,
+  900
+ ],
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 3.121,
+   "face": [
+    306,
+    705,
+    399,
+    567
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 221,
+   "right": 195,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s02",
+   "start": 3.121,
+   "end": 5.491,
+   "face": [
+    312,
+    695,
+    469,
+    588
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 227,
+   "right": 119,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s03",
+   "start": 5.491,
+   "end": 7.945,
+   "face": [
+    364,
+    696,
+    417,
+    601
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 279,
+   "right": 119,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s04",
+   "start": 7.945,
+   "end": 10.8,
+   "face": [
+    329,
+    701,
+    424,
+    639
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 244,
+   "right": 147,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s05",
+   "start": 10.8,
+   "end": 15.182,
+   "face": [
+    241,
+    771,
+    502,
+    586
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 156,
+   "right": 157,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s06",
+   "start": 15.182,
+   "end": 17.382,
+   "face": [
+    247,
+    755,
+    495,
+    602
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 162,
+   "right": 158,
+   "sub_ok": false,
+   "cut_top": false
+  },
+  {
+   "id": "s07",
+   "start": 17.382,
+   "end": 20.727,
+   "face": [
+    370,
+    740,
+    421,
+    480
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 285,
+   "right": 109,
+   "sub_ok": true,
+   "cut_top": false
+  },
+  {
+   "id": "s08",
+   "start": 20.727,
+   "end": 23.467,
+   "face": [
+    370,
+    677,
+    396,
+    502
+   ],
+   "ceiling": null,
+   "chest": null,
+   "left": 285,
+   "right": 134,
+   "sub_ok": true,
+   "cut_top": false
+  }
+ ]
+}

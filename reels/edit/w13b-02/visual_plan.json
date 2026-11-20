@@ -1,0 +1,444 @@
+{
+ "schema": 1,
+ "id": "w13b-02",
+ "created": "2026-11-20T10:39",
+ "duration": 49.2,
+ "segments": [
+  {
+   "id": "s01",
+   "start": 0.0,
+   "end": 1.564,
+   "text": "For product owners,",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.7 s segment without a cut: room for a change of picture",
+    "hook: the first 1.5 s decide whether people keep watching"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s02",
+   "start": 1.564,
+   "end": 5.727,
+   "text": "clients, it's usually sounds like a nightmare when you lose like the vendor actually",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.7 s segment without a cut: room for a change of picture",
+    "emotion or irony: room for a meme, if memes are on"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 5.727,
+   "end": 7.491,
+   "text": "tried to build a project for you.",
+   "cut_segs": [
+    0
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 7.491,
+   "end": 11.933,
+   "text": "So then you'll have to look for another vendor to validate a lot of those vendors, then you give",
+   "cut_segs": [
+    0,
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.7 s segment without a cut: room for a change of picture",
+    "pointing at an object -> B-roll of the object"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 11.933,
+   "end": 17.667,
+   "text": "them a code base and then what you're actually afraid to hear is that, well, you know,",
+   "cut_segs": [
+    1
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 8.5 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 17.667,
+   "end": 20.521,
+   "text": "it's better to develop it from scratch. With AI,",
+   "cut_segs": [
+    3
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 20.521,
+   "end": 24.694,
+   "text": "there is like a chance and possibilities that you actually can use the existing code base.",
+   "cut_segs": [
+    4
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 24.694,
+   "end": 28.967,
+   "text": "And then with like reverse engineering and like",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a segment join at the start: B-roll will hide the cut",
+    "a 24.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 28.967,
+   "end": 31.312,
+   "text": "creating AI documentation,",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s10",
+   "start": 31.312,
+   "end": 35.676,
+   "text": "you can analyze the code to create like readable",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s11",
+   "start": 35.676,
+   "end": 39.548,
+   "text": "documentation and also business logic,",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s12",
+   "start": 39.548,
+   "end": 42.076,
+   "text": "generate some sequence diagrams,",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture",
+    "scene:word - a long segment with an abstraction -> a word scene (a weak hint)"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s13",
+   "start": 42.076,
+   "end": 44.839,
+   "text": "UML diagrams of the existing architecture,",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s14",
+   "start": 44.839,
+   "end": 49.2,
+   "text": "and it will help you a lot, like to understand how actually a system looks like and",
+   "cut_segs": [
+    5
+   ],
+   "main": "main shot",
+   "camera": "",
+   "graphics": "",
+   "hints": [
+    "a 24.7 s segment without a cut: room for a change of picture",
+    "ending/CTA: no memes here"
+   ],
+   "notes": ""
+  }
+ ],
+ "inserts": [
+  {
+   "id": "c01",
+   "kind": "scene",
+   "type": "list",
+   "mode": "overlay",
+   "variant": null,
+   "segment": "s08",
+   "start": 25.667,
+   "dur": 23.0,
+   "at": "word:reverse#1",
+   "offset": -0.3,
+   "tone": null,
+   "text": {
+    "lines": [
+     "Instead of a rewrite"
+    ],
+    "accent": null,
+    "label": null
+   },
+   "items": [
+    {
+     "text": "Reverse engineering with AI",
+     "at": "word:reverse#1",
+     "t": 25.967
+    },
+    {
+     "text": "Readable docs and business logic",
+     "at": "word:readable#1",
+     "t": 35.221
+    },
+    {
+     "text": "Sequence and UML diagrams",
+     "at": "word:sequence#1",
+     "t": 40.076
+    }
+   ],
+   "value": null,
+   "media": null,
+   "interaction": null,
+   "box": [
+    60,
+    240,
+    900,
+    340
+   ],
+   "side": null,
+   "source": {
+    "kind": "speech",
+    "ref": "32:58-33:27"
+   },
+   "what": "what AI recovers from legacy code",
+   "why": "the practical answer to losing a vendor",
+   "transition_in": "fade",
+   "transition_out": "fade",
+   "sound": null,
+   "hide_subtitles": true,
+   "status": "ready",
+   "fallback": "main footage"
+  }
+ ],
+ "keep_clear": [],
+ "captions_id": "da19e6f80328",
+ "brand": "mobidev",
+ "settings": {
+  "brand": "mobidev",
+  "style": "brand",
+  "subtitles": "accent",
+  "subtitles_shade": null,
+  "intensity": "moderate",
+  "use_broll": false,
+  "use_project_footage": true,
+  "use_local_footage": true,
+  "use_generated_footage": false,
+  "use_memes": false,
+  "use_local_memes": true,
+  "broll_priority": [
+   "project",
+   "local",
+   "generated"
+  ],
+  "meme_priority": [
+   "local"
+  ],
+  "footage_dirs": [
+   "footage",
+   "broll"
+  ],
+  "memes_dirs": [
+   "memes"
+  ],
+  "generation_engines": [
+   "code"
+  ],
+  "library_dirs": [],
+  "meme_size": "s",
+  "scene_tone": "calm",
+  "use_scenes": true,
+  "format": "framed",
+  "speaker": "IEVGEN ZADOROZHNYI",
+  "window": [
+   25,
+   600,
+   1030,
+   900
+  ],
+  "brand_tone": {
+   "label": "Expert, calm",
+   "for": "consulting, recruiting, education, B2B expertise",
+   "intensity": "moderate",
+   "motion": "calm",
+   "loudness": "calm",
+   "memes": {
+    "allowed": true,
+    "default": false,
+    "max": 1,
+    "size_max": "s",
+    "cutaway": false
+   },
+   "broll_default": true,
+   "transitions": [
+    "cut",
+    "fade",
+    "whip",
+    "slide",
+    "flash"
+   ],
+   "flash_max": 2,
+   "whip_max": 3,
+   "shake": false,
+   "overshoot": false,
+   "full_scenes_max": 2,
+   "scene_tones": [
+    "calm",
+    "feature",
+    "cinematic",
+    "deadpan"
+   ],
+   "scene_tone": "calm",
+   "sfx": "sparse",
+   "preset": "expert"
+  }
+ },
+ "provenance": {
+  "brand": "reel.json",
+  "style": "reel.json",
+  "subtitles": "reel.json",
+  "subtitles_shade": "defaults",
+  "intensity": "tone:expert",
+  "use_broll": "reel.json",
+  "use_project_footage": "defaults",
+  "use_local_footage": "defaults",
+  "use_generated_footage": "reel.json",
+  "use_memes": "reel.json",
+  "use_local_memes": "defaults",
+  "broll_priority": "defaults",
+  "meme_priority": "defaults",
+  "footage_dirs": "defaults",
+  "memes_dirs": "defaults",
+  "generation_engines": "defaults",
+  "library_dirs": "defaults",
+  "meme_size": "tone:expert",
+  "scene_tone": "reel.json",
+  "use_scenes": "reel.json",
+  "format": "reel.json",
+  "speaker": "reel.json",
+  "window": "reel.json",
+  "brand_tone": "brand:mobidev"
+ },
+ "effective": {
+  "broll": false,
+  "project_footage": false,
+  "local_footage": false,
+  "generated_code": false,
+  "memes": false,
+  "local_memes": false,
+  "scenes": true,
+  "online_footage": false,
+  "generated_prompts": false,
+  "generate_now": false,
+  "online_memes": false,
+  "online_footage_providers": [],
+  "online_meme_providers": []
+ },
+ "fallback": {
+  "broll": "use_broll=false",
+  "project_footage": "off",
+  "local_footage": "off",
+  "generated_code": "off",
+  "memes": "use_memes=false",
+  "local_memes": "off",
+  "online_footage": "off",
+  "generated_prompts": "off",
+  "generate_now": "off",
+  "online_memes": "off"
+ },
+ "budget": {
+  "label": "moderate",
+  "broll_per_30s": 3,
+  "memes_max": 2,
+  "coverage_max": 0.22,
+  "min_gap_s": 3.5,
+  "broll_max": 5,
+  "coverage_max_s": 10.82
+ }
+}

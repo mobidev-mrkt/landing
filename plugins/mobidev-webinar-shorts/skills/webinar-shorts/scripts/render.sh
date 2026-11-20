@@ -8,7 +8,7 @@
 source "$(dirname "$0")/env.sh"; cd "$REELS" || exit 1
 w=$1; shift
 cta(){ awk -v k="## $1" -v f="$2" '$0==k{on=1;next} /^## /{on=0} on && $0 ~ "^- "f": "{sub("^- "f": ","");print;exit}' brands/mobidev/cta.md; }
-while IFS=$'\t' read -r id hook key; do
+while IFS=$'\t' read -r id hook key <&3; do
   [ -z "$id" ] && continue
   [ $# -gt 0 ] && [[ ! " $* " =~ " $id " ]] && continue
   E=edit/$id; P=$(pwd)/$E/reelkit-props.json; O=$R/out/$id; D=edit/delivery/$w/$key
@@ -29,4 +29,4 @@ PY
   python3 "$S/master_audio.py" "$O.mp4" -o "$O-master.mp4" > "$E/master.log" 2>&1 || { echo "$id master FAIL"; tail -4 "$E/master.log"; continue; }
   mkdir -p "$D"; python3 "$S/poster.py" attach "$O-master.mp4" --cover "$E/cover.jpg" -o "$D/$id.mp4" >> "$E/poster.log" 2>&1
   echo "$id DONE → $D/$id.mp4 | $(grep -E '^output' "$E/master.log") | audit: $(grep -E '✗|no overlaps' "$E/audit.log" | head -1 | cut -c1-110)"
-done < "edit/$w-hooks.tsv"
+done 3< "edit/$w-hooks.tsv"
